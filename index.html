@@ -821,19 +821,21 @@ function vtdClick(feature, layer) {
     // Don't zoom out — user is already at precinct level
     selectTown(p.town, { zoomToTown: false });
 
-    // Show precinct popup (essential for mobile where hover tooltips don't work)
-    const wardLabel = p.ward && p.ward !== '-' ? ` Ward ${p.ward}` : '';
-    const harrisPct = p.total_votes > 0 ? (p.harris / p.total_votes * 100).toFixed(1) : '0.0';
-    const trumpPct = p.total_votes > 0 ? (p.trump / p.total_votes * 100).toFixed(1) : '0.0';
-    layer.bindPopup(
-      `<div style="font-family:system-ui,sans-serif;font-size:13px;line-height:1.5;min-width:160px;">
-        <strong style="font-size:14px;">${p.town}${wardLabel} Pct ${p.pct}</strong><br>
-        De La Cruz: <b>${p.de_la_cruz_pct}%</b> (${p.de_la_cruz.toLocaleString()} votes)<br>
-        Harris: ${harrisPct}% | Trump: ${trumpPct}%<br>
-        <span style="color:#888;">Total: ${p.total_votes.toLocaleString()} votes</span>
-      </div>`,
-      { closeButton: true, autoClose: true, closeOnClick: true }
-    ).openPopup();
+    // Show precinct popup only on mobile (hover tooltips work fine on desktop)
+    if (isMobile()) {
+      const wardLabel = p.ward && p.ward !== '-' ? ` Ward ${p.ward}` : '';
+      const harrisPct = p.total_votes > 0 ? (p.harris / p.total_votes * 100).toFixed(1) : '0.0';
+      const trumpPct = p.total_votes > 0 ? (p.trump / p.total_votes * 100).toFixed(1) : '0.0';
+      layer.bindPopup(
+        `<div style="font-family:system-ui,sans-serif;font-size:13px;line-height:1.5;min-width:160px;">
+          <strong style="font-size:14px;">${p.town}${wardLabel} Pct ${p.pct}</strong><br>
+          De La Cruz: <b>${p.de_la_cruz_pct}%</b> (${p.de_la_cruz.toLocaleString()} votes)<br>
+          Harris: ${harrisPct}% | Trump: ${trumpPct}%<br>
+          <span style="color:#888;">Total: ${p.total_votes.toLocaleString()} votes</span>
+        </div>`,
+        { closeButton: true, autoClose: true, closeOnClick: true }
+      ).openPopup();
+    }
   });
 }
 
