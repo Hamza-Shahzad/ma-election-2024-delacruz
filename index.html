@@ -362,6 +362,15 @@ body {
 }
 
 /* ── Tooltip ── */
+/* Override Leaflet's default white border/background on tooltips */
+.leaflet-tooltip {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+.leaflet-tooltip-top::before { border-top-color: var(--accent) !important; }
+
 .maptip {
   background: var(--surface);
   color: var(--text);
@@ -803,6 +812,8 @@ function vtdStyle(feature) {
 }
 
 function vtdTooltip(feature, layer) {
+  // Hover tooltips only on desktop — mobile uses the click popup instead
+  if (isMobile()) return;
   const p = feature.properties;
   if (p.matched) {
     const wardLabel = p.ward && p.ward !== '-' ? ` Ward ${p.ward}` : '';
