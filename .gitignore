@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temp files from scripts
+/tmp/
+*.zip
+
+# IDE
+.vscode/
+.idea/

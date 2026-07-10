@@ -1,0 +1,1341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>De La Cruz / Garcia — 2024 MA Presidential Election Results</title>
+
+<!-- Leaflet CSS + JS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #1a1a2e;
+  --surface: #16213e;
+  --surface2: #0f3460;
+  --text: #e0e0e0;
+  --text-dim: #a0a0b0;
+  --accent: #9b59b6;
+  --accent-light: #c39bdb;
+  --accent-dark: #6c3483;
+  --border: #2a2a4a;
+  --highlight: #e94560;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+
+/* ── Map ── */
+#map {
+  flex: 1;
+  min-width: 0;
+  height: 100vh;
+}
+
+/* Leaflet dark tile overrides */
+.leaflet-container { background: #1a1a2e; }
+
+/* ── Sidebar ── */
+#sidebar {
+  width: 420px;
+  height: 100vh;
+  overflow-y: auto;
+  background: var(--surface);
+  border-left: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  flex-shrink: 0;
+}
+
+#sidebar-header {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface2);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+#sidebar-header h1 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--accent-light);
+  margin-bottom: 4px;
+}
+
+#sidebar-header .subtitle {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+}
+
+/* ── Search ── */
+#search-wrap {
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+#search-input {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+#search-input:focus { border-color: var(--accent); }
+#search-input::placeholder { color: var(--text-dim); }
+
+#search-results {
+  max-height: 200px;
+  overflow-y: auto;
+  margin-top: 4px;
+  border-radius: 6px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  display: none;
+}
+#search-results.visible { display: block; }
+
+.search-item {
+  padding: 8px 14px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search-item:hover { background: var(--surface2); }
+.search-item:last-child { border-bottom: none; }
+.search-item .pct {
+  color: var(--accent-light);
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+/* ── Summary stats ── */
+#summary-stats {
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--border);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.stat-card {
+  background: var(--bg);
+  border-radius: 8px;
+  padding: 10px 12px;
+  text-align: center;
+}
+.stat-card .value {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--accent-light);
+}
+.stat-card .label {
+  font-size: 0.7rem;
+  color: var(--text-dim);
+  margin-top: 2px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ── Town detail ── */
+#detail-area {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0;
+}
+
+#detail-empty {
+  padding: 40px 20px;
+  text-align: center;
+  color: var(--text-dim);
+}
+#detail-empty .icon { font-size: 2rem; margin-bottom: 8px; }
+
+#detail-content { display: none; }
+
+.town-card {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface2);
+}
+
+.town-card h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.town-card .rank-badge {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.7rem;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.town-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.town-stat {
+  text-align: center;
+  background: var(--bg);
+  border-radius: 6px;
+  padding: 8px 4px;
+}
+.town-stat .val { font-size: 1.05rem; font-weight: 700; color: var(--accent-light); }
+.town-stat .lbl { font-size: 0.65rem; color: var(--text-dim); text-transform: uppercase; }
+
+/* ── Ward & Precinct tables ── */
+.ward-section {
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.ward-section h3 {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.ward-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+}
+
+.ward-table th {
+  text-align: left;
+  padding: 6px 8px;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-dim);
+  border-bottom: 1px solid var(--border);
+}
+
+.ward-table td {
+  padding: 6px 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+.ward-table tr.ward-row {
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.ward-table tr.ward-row:hover { background: var(--surface2); }
+.ward-table tr.ward-row.expanded { background: var(--surface2); }
+.ward-table tr.ward-row.highlighted {
+  background: rgba(0, 229, 255, 0.12);
+  box-shadow: inset 3px 0 0 #00e5ff;
+}
+
+.ward-table .bar-cell {
+  width: 100px;
+}
+.ward-table .bar-bg {
+  height: 6px;
+  background: var(--bg);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.ward-table .bar-fill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 3px;
+  transition: width 0.3s;
+}
+
+/* Precinct sub-table */
+.precinct-sub {
+  display: none;
+  padding: 8px 0 8px 20px;
+  background: var(--bg);
+  border-radius: 6px;
+  margin: 4px 0 8px;
+}
+.precinct-sub.visible { display: block; }
+
+.precinct-sub table {
+  width: 100%;
+  font-size: 0.78rem;
+}
+.precinct-sub th {
+  text-align: left;
+  padding: 3px 6px;
+  font-size: 0.68rem;
+  color: var(--text-dim);
+}
+.precinct-sub td {
+  padding: 3px 6px;
+}
+
+/* ── Legend ── */
+#legend {
+  position: absolute;
+  bottom: 30px;
+  left: 10px;
+  background: var(--surface);
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 0.75rem;
+  z-index: 1000;
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+#legend-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+#legend h4 {
+  margin: 0;
+}
+
+#fill-toggle {
+  background: #2a2a4a;
+  border: 1px solid #4a4a6a;
+  color: #bbb;
+  border-radius: 4px;
+  padding: 2px 8px;
+  cursor: pointer;
+  font-size: 0.65rem;
+  font-weight: 700;
+  transition: all 0.15s;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+#fill-toggle:hover { background: #3a3a5a; color: #fff; }
+#fill-toggle.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+#legend h4 {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-dim);
+  margin-bottom: 6px;
+}
+
+.legend-gradient {
+  height: 12px;
+  border-radius: 3px;
+  margin: 4px 0;
+  background: linear-gradient(to right, #fff5f0, #fdd0a2, #d6616b, #7b2c8c, #3f007d);
+}
+
+.legend-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.65rem;
+  color: var(--text-dim);
+}
+
+/* ── Tooltip ── */
+.maptip {
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 0.8rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+.maptip strong { color: var(--accent-light); }
+
+/* ── Mobile panel toggle button ── */
+#mobile-toggle {
+  display: none;
+  position: absolute;
+  bottom: 24px;
+  right: 12px;
+  z-index: 1001;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--surface);
+  color: var(--accent-light);
+  border: 1px solid var(--border);
+  font-size: 1.3rem;
+  cursor: pointer;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.5);
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+#mobile-close {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text-dim);
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 4px 8px;
+  line-height: 1;
+}
+
+/* ── Mobile ── */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    position: relative;
+  }
+
+  #map {
+    height: 100vh;
+    width: 100%;
+    flex: none;
+  }
+
+  #sidebar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-height: 65vh;
+    height: auto;
+    border-left: none;
+    border-top: 1px solid var(--border);
+    border-radius: 14px 14px 0 0;
+    z-index: 1000;
+    box-shadow: 0 -4px 20px rgba(0,0,0,0.6);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+  }
+
+  #sidebar.collapsed {
+    transform: translateY(100%);
+  }
+
+  /* Drag handle */
+  #sidebar::before {
+    content: '';
+    display: block;
+    width: 36px;
+    height: 4px;
+    background: var(--border);
+    border-radius: 2px;
+    margin: 8px auto 0;
+    flex-shrink: 0;
+  }
+
+  #sidebar-header {
+    padding: 8px 16px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  #sidebar-header h1 { font-size: 0.95rem; }
+
+  #mobile-close { display: block; }
+
+  #search-wrap {
+    padding: 8px 16px;
+  }
+
+  #summary-stats {
+    padding: 8px 16px;
+    gap: 4px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .stat-card { padding: 6px 8px; }
+  .stat-card .value { font-size: 0.95rem; }
+  .stat-card .label { font-size: 0.65rem; }
+
+  #detail-area {
+    flex: 1;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  #detail-empty { padding: 20px 16px; }
+
+  .town-card { padding: 12px 16px; }
+  .town-card h2 { font-size: 1rem; }
+  .town-stats { gap: 4px; }
+  .town-stat { padding: 6px 4px; }
+  .town-stat .val { font-size: 0.9rem; }
+  .town-stat .lbl { font-size: 0.6rem; }
+
+  .ward-section { padding: 10px 16px; }
+  .ward-section h3 { font-size: 0.78rem; }
+  .ward-table { font-size: 0.75rem; }
+  .ward-table th, .ward-table td { padding: 5px 4px; }
+  .ward-table .bar-cell { width: 60px; }
+
+  .precinct-sub { padding: 6px 0 6px 12px; }
+  .precinct-sub table { font-size: 0.72rem; }
+  .precinct-sub th, .precinct-sub td { padding: 2px 4px; }
+
+  #search-results {
+    max-height: 160px;
+  }
+
+  .search-item {
+    padding: 10px 14px;
+    font-size: 0.85rem;
+  }
+
+  #mobile-toggle {
+    display: flex;
+  }
+
+  /* Legend: move to top-right, compact */
+  #legend {
+    bottom: auto;
+    top: 10px;
+    right: 10px;
+    left: auto;
+    padding: 6px 10px;
+    font-size: 0.65rem;
+    border-radius: 6px;
+  }
+
+  #legend h4 { font-size: 0.62rem; margin-bottom: 3px; }
+  .legend-gradient { height: 8px; }
+  .legend-labels { font-size: 0.58rem; }
+  #fill-toggle { font-size: 0.6rem; padding: 2px 6px; }
+
+  /* Zoom hint */
+  #zoom-hint {
+    margin: 4px 16px 8px;
+    font-size: 0.72rem;
+    padding: 6px 10px;
+  }
+
+  /* Map controls — give room at bottom for the panel */
+  .leaflet-bottom.leaflet-right {
+    bottom: 60px;
+  }
+
+  /* Sidebar expanded: hide the map toggle behind the panel */
+  #sidebar:not(.collapsed) ~ #mobile-toggle {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+/* Scrollbar */
+#sidebar::-webkit-scrollbar { width: 6px; }
+#sidebar::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+#detail-area::-webkit-scrollbar { width: 6px; }
+#detail-area::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+/* Sortable header */
+.sortable { cursor: pointer; user-select: none; }
+.sortable:hover { color: var(--accent-light); }
+.sortable::after { content: ' ↕'; font-size: 0.6rem; }
+.sortable.asc::after { content: ' ↑'; }
+.sortable.desc::after { content: ' ↓'; }
+</style>
+</head>
+<body>
+
+<!-- Map -->
+<div id="map"></div>
+
+<!-- Mobile panel toggle (visible only on small screens) -->
+<button id="mobile-toggle" onclick="toggleMobilePanel()" title="Show data panel" aria-label="Show data panel">☰</button>
+
+<!-- Legend -->
+<div id="legend">
+  <div id="legend-header">
+    <h4>De La Cruz Vote %</h4>
+    <button id="fill-toggle" onclick="toggleFill()" title="Toggle colored overlay to see streets">👁️ Fill</button>
+  </div>
+  <div class="legend-gradient"></div>
+  <div class="legend-labels">
+    <span>0%</span><span>0.4%</span><span>0.8%</span><span>1.2%</span><span>1.6%+</span>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<div id="sidebar">
+  <div id="sidebar-header">
+    <div>
+      <h1>🗳️ Claudia De La Cruz / Karina Garcia</h1>
+      <div class="subtitle">2024 Presidential General Election — Massachusetts</div>
+    </div>
+    <button id="mobile-close" onclick="event.stopPropagation(); collapseMobilePanel();" title="Close panel" aria-label="Close panel">✕</button>
+  </div>
+
+  <div id="search-wrap">
+    <input type="text" id="search-input" placeholder="Search for a city or town…" autocomplete="off">
+    <div id="search-results"></div>
+  </div>
+
+  <div id="summary-stats">
+    <div class="stat-card">
+      <div class="value" id="stat-total">--</div>
+      <div class="label">Statewide Votes</div>
+    </div>
+    <div class="stat-card">
+      <div class="value" id="stat-dlpct">--</div>
+      <div class="label">Statewide %</div>
+    </div>
+    <div class="stat-card">
+      <div class="value" id="stat-towns">--</div>
+      <div class="label">Towns</div>
+    </div>
+    <div class="stat-card">
+      <div class="value" id="stat-precincts">--</div>
+      <div class="label">Precincts</div>
+    </div>
+  </div>
+
+  <div id="zoom-hint" style="text-align:center;padding:8px 12px;margin:0 12px 12px;background:#2a1a3a;border-radius:6px;font-size:0.8rem;color:#bbaacc;display:none;">
+    🔍 Zoom in to see precinct boundaries
+  </div>
+
+  <div id="detail-area">
+    <div id="detail-empty">
+      <div class="icon">📍</div>
+      <p>Click a town on the map or search above to see detailed results.</p>
+    </div>
+    <div id="detail-content"></div>
+  </div>
+</div>
+
+<script>
+// ── Globals ──
+let townsData = [];
+let wardsData = [];
+let precinctsData = [];
+let summaryData = null;
+let geoLayer = null;
+let vtdLayer = null;
+let selectedTown = null;
+let highlightedWard = null;  // { town, ward } or null
+const VTD_ZOOM_THRESHOLD = 12; // Show precinct boundaries at zoom >= 12
+
+const MAP = L.map('map', { zoomControl: true }).setView([42.36, -71.8], 8);
+
+// Dark tile layer
+L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/">CARTO</a>',
+  maxZoom: 19,
+}).addTo(MAP);
+
+// ── Mobile panel ──
+function isMobile() {
+  return window.innerWidth <= 768;
+}
+
+function expandMobilePanel() {
+  const sidebar = document.getElementById('sidebar');
+  if (sidebar) sidebar.classList.remove('collapsed');
+}
+
+function collapseMobilePanel() {
+  const sidebar = document.getElementById('sidebar');
+  if (sidebar) sidebar.classList.add('collapsed');
+}
+
+function toggleMobilePanel() {
+  const sidebar = document.getElementById('sidebar');
+  if (!sidebar) return;
+  if (sidebar.classList.contains('collapsed')) {
+    expandMobilePanel();
+  } else {
+    collapseMobilePanel();
+  }
+}
+
+// Initialize mobile state on load & resize
+function initMobileState() {
+  const sidebar = document.getElementById('sidebar');
+  if (!sidebar) return;
+  if (isMobile()) {
+    sidebar.classList.add('collapsed');
+  } else {
+    sidebar.classList.remove('collapsed');
+  }
+}
+
+// Mobile panel: feature clicks in selectTown set this so map-click doesn't close immediately
+let _lastFeatureClick = 0;
+
+// ── Town name normalization ──
+// The CSV uses abbreviations (N., S., E., W.) while Census GeoJSON uses full names
+const DIR_MAP = {
+  'N.': 'North', 'S.': 'South', 'E.': 'East', 'W.': 'West',
+};
+function normalizeName(name) {
+  for (const [abbr, full] of Object.entries(DIR_MAP)) {
+    if (name.startsWith(abbr + ' ')) return full + name.slice(abbr.length);
+  }
+  return name;
+}
+function denormalizeName(name) {
+  for (const [abbr, full] of Object.entries(DIR_MAP)) {
+    if (name.startsWith(full + ' ')) return abbr + name.slice(full.length);
+  }
+  return name;
+}
+
+// ── Color scale ──
+const MAX_PCT = 1.6;
+let fillVisible = true;
+
+function toggleFill() {
+  fillVisible = !fillVisible;
+  const btn = document.getElementById('fill-toggle');
+  const grad = document.querySelector('#legend .legend-gradient');
+
+  if (fillVisible) {
+    btn.textContent = '👁️ Fill';
+    btn.classList.remove('active');
+    grad.style.opacity = '1';
+  } else {
+    btn.textContent = '👁️‍🗨️ Streets';
+    btn.classList.add('active');
+    grad.style.opacity = '0.3';
+  }
+
+  // Reset all layers — styleFeature/vtdStyle now respect fillVisible
+  if (geoLayer) geoLayer.eachLayer(l => geoLayer.resetStyle(l));
+  if (vtdLayer) vtdLayer.eachLayer(l => vtdLayer.resetStyle(l));
+
+  // Re-apply selection highlight
+  if (selectedTown) {
+    const geoName = normalizeName(selectedTown);
+    if (geoLayer) {
+      geoLayer.eachLayer(layer => {
+        const n = layer.feature.properties.town || layer.feature.properties.name || '';
+        if (n === geoName) {
+          layer.setStyle({ weight: 3, color: '#e94560', opacity: 1, fillOpacity: fillVisible ? 0.5 : 0 });
+        }
+      });
+    }
+    if (vtdLayer && MAP.hasLayer(vtdLayer)) vtdLayer.bringToFront();
+  }
+
+  // Re-apply ward highlight
+  if (highlightedWard) {
+    const hw = highlightedWard;
+    highlightedWard = null;
+    highlightWardOnMap(hw.town, hw.ward);
+  }
+}
+
+function colorScale(pct) {
+  if (pct <= 0) return '#ffffff08';
+  const stops = [
+    [0,    [255, 245, 240]],
+    [0.2,  [253, 208, 162]],
+    [0.4,  [251, 135, 118]],
+    [0.6,  [214, 97,  107]],
+    [0.8,  [158, 52,  131]],
+    [1.0,  [63,  0,   125]],
+  ];
+  const t = Math.min(Math.max(pct / MAX_PCT, 0), 1);
+  for (let i = 0; i < stops.length - 1; i++) {
+    const [t0, c0] = stops[i];
+    const [t1, c1] = stops[i + 1];
+    if (t >= t0 && t <= t1) {
+      const r = (t - t0) / (t1 - t0);
+      return `rgb(${Math.round(c0[0]+(c1[0]-c0[0])*r)},${Math.round(c0[1]+(c1[1]-c0[1])*r)},${Math.round(c0[2]+(c1[2]-c0[2])*r)})`;
+    }
+  }
+  return `rgb(${stops[stops.length-1][1].join(',')})`;
+}
+
+function styleFeature(feature) {
+  const name = feature.properties.town || feature.properties.name || '';
+  const town = window.townByGeoName ? window.townByGeoName[name] : null;
+  const pct = town ? town.de_la_cruz_pct : 0;
+  return {
+    fillColor: colorScale(pct),
+    weight: fillVisible ? 1 : 1.2,
+    opacity: fillVisible ? 0.7 : 0.8,
+    color: fillVisible ? '#3a3a5a' : '#5a5a7a',
+    fillOpacity: fillVisible ? (town ? 0.85 : 0.15) : 0,
+  };
+}
+
+// ── VTD / Precinct layer ──
+function vtdStyle(feature) {
+  const p = feature.properties;
+  const pct = p.matched ? p.de_la_cruz_pct : 0;
+  return {
+    fillColor: p.matched ? colorScale(pct) : '#2a2a3a',
+    weight: fillVisible ? 0.5 : 0.7,
+    opacity: fillVisible ? 0.6 : 0.8,
+    color: fillVisible ? '#555577' : '#7777aa',
+    fillOpacity: fillVisible ? (p.matched ? 0.65 : 0.1) : 0,
+    dashArray: p.matched ? null : '3 3',
+  };
+}
+
+function vtdTooltip(feature, layer) {
+  const p = feature.properties;
+  if (p.matched) {
+    const wardLabel = p.ward && p.ward !== '-' ? ` Ward ${p.ward}` : '';
+    layer.bindTooltip(
+      `<div class="maptip"><strong>${p.town}${wardLabel} Pct ${p.pct}</strong><br>De La Cruz: ${p.de_la_cruz_pct}% (${p.de_la_cruz.toLocaleString()} / ${p.total_votes.toLocaleString()})</div>`,
+      { sticky: true, direction: 'top', offset: [0, -6] }
+    );
+  }
+}
+
+function vtdClick(feature, layer) {
+  layer.on('click', () => {
+    const p = feature.properties;
+    if (!p.matched) return;
+
+    // Don't zoom out — user is already at precinct level
+    selectTown(p.town, { zoomToTown: false });
+
+    // Show precinct popup (essential for mobile where hover tooltips don't work)
+    const wardLabel = p.ward && p.ward !== '-' ? ` Ward ${p.ward}` : '';
+    const harrisPct = p.total_votes > 0 ? (p.harris / p.total_votes * 100).toFixed(1) : '0.0';
+    const trumpPct = p.total_votes > 0 ? (p.trump / p.total_votes * 100).toFixed(1) : '0.0';
+    layer.bindPopup(
+      `<div style="font-family:system-ui,sans-serif;font-size:13px;line-height:1.5;min-width:160px;">
+        <strong style="font-size:14px;">${p.town}${wardLabel} Pct ${p.pct}</strong><br>
+        De La Cruz: <b>${p.de_la_cruz_pct}%</b> (${p.de_la_cruz.toLocaleString()} votes)<br>
+        Harris: ${harrisPct}% | Trump: ${trumpPct}%<br>
+        <span style="color:#888;">Total: ${p.total_votes.toLocaleString()} votes</span>
+      </div>`,
+      { closeButton: true, autoClose: true, closeOnClick: true }
+    ).openPopup();
+  });
+}
+
+async function loadVTDGeoJSON() {
+  try {
+    const geojson = await fetch('data/ma_vtds.geojson').then(r => r.json());
+    vtdLayer = L.geoJSON(geojson, {
+      style: vtdStyle,
+      onEachFeature: (feature, layer) => {
+        vtdTooltip(feature, layer);
+        vtdClick(feature, layer);
+      },
+    });
+    // Don't add to map yet — only at high zoom
+    console.log(`Loaded ${geojson.features.length} VTD precinct boundaries (shown at zoom ≥ ${VTD_ZOOM_THRESHOLD})`);
+  } catch (e) {
+    console.warn('VTD precinct layer not available (run download_vtd_geojson.py first):', e.message);
+  }
+}
+
+// Zoom handler: show/hide VTD precinct layer
+function updateVTDLayer() {
+  const hint = document.getElementById('zoom-hint');
+  if (!vtdLayer) {
+    if (hint) hint.style.display = 'none';
+    return;
+  }
+  const zoom = MAP.getZoom();
+  if (zoom >= VTD_ZOOM_THRESHOLD) {
+    if (!MAP.hasLayer(vtdLayer)) {
+      vtdLayer.addTo(MAP);
+      if (geoLayer) geoLayer.setStyle({ weight: 1.5, opacity: 0.9, color: '#5a5a7a' });
+      // Re-apply ward highlight if any
+      if (highlightedWard) {
+        const hw = highlightedWard;
+        highlightedWard = null;
+        highlightWardOnMap(hw.town, hw.ward);
+      }
+    }
+    if (hint) hint.style.display = 'none';
+  } else {
+    if (MAP.hasLayer(vtdLayer)) {
+      MAP.removeLayer(vtdLayer);
+      if (geoLayer) geoLayer.setStyle({ weight: 1, opacity: 0.7, color: '#3a3a5a' });
+    }
+    if (hint) hint.style.display = 'block';
+  }
+}
+
+// ── Load data ──
+async function loadData() {
+  const [towns, wards, precincts, summary] = await Promise.all([
+    fetch('data/towns.json').then(r => r.json()),
+    fetch('data/wards.json').then(r => r.json()),
+    fetch('data/precincts.json').then(r => r.json()),
+    fetch('data/summary.json').then(r => r.json()),
+  ]);
+  townsData = towns;
+  wardsData = wards;
+  precinctsData = precincts;
+  summaryData = summary;
+
+  // Build lookup maps for town name normalization
+  // Census GeoJSON uses full names (North), CSV uses abbreviations (N.)
+  window.townByGeoName = {};   // GeoJSON full name -> data object
+  window.townByDataName = {};  // Data abbreviated name -> data object
+  for (const t of townsData) {
+    window.townByDataName[t.town] = t;
+    window.townByGeoName[normalizeName(t.town)] = t;
+  }
+  updateSummaryStats();
+}
+
+function updateSummaryStats() {
+  if (!summaryData) return;
+  document.getElementById('stat-total').textContent = summaryData.total_de_la_cruz.toLocaleString();
+  document.getElementById('stat-dlpct').textContent = summaryData.de_la_cruz_pct + '%';
+  document.getElementById('stat-towns').textContent = summaryData.total_towns;
+  document.getElementById('stat-precincts').textContent = summaryData.total_precincts;
+}
+
+// ── Load GeoJSON ──
+async function loadGeoJSON() {
+  try {
+    const geojson = await fetch('data/ma_towns.geojson').then(r => r.json());
+    geoLayer = L.geoJSON(geojson, {
+      style: styleFeature,
+      onEachFeature: onEachFeature,
+    }).addTo(MAP);
+    console.log(`Loaded ${geojson.features.length} town boundaries`);
+  } catch (e) {
+    console.error('Failed to load GeoJSON:', e);
+    document.getElementById('map').insertAdjacentHTML('beforeend',
+      '<div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:#16213e;color:#fff;padding:20px;border-radius:8px;z-index:2000;text-align:center;">' +
+      '<strong>Map data not yet loaded</strong><br><small>Run process_data.py first, then place<br>ma_towns.geojson in the data/ folder.</small></div>');
+  }
+}
+
+function onEachFeature(feature, layer) {
+  const name = feature.properties.town || feature.properties.name || '';
+  const town = window.townByGeoName ? window.townByGeoName[name] : null;
+
+  // Tooltip
+  if (town) {
+    layer.bindTooltip(
+      `<div class="maptip"><strong>${town.town}</strong><br>De La Cruz: ${town.de_la_cruz_pct}% (${town.de_la_cruz.toLocaleString()} / ${town.total_votes.toLocaleString()})<br>Rank: #${town.rank} of ${townsData.length}</div>`,
+      { sticky: true, direction: 'top', offset: [0, -8] }
+    );
+  }
+
+  // Click
+  layer.on('click', () => {
+    if (town) selectTown(town.town);
+  });
+}
+
+// ── Town selection ──
+// opts.zoomToTown: if false, skip fitting bounds (used when clicking a precinct
+//   while already zoomed in — we show the town detail but don't zoom out)
+function selectTown(name, opts = {}) {
+  const { zoomToTown = true } = opts;
+
+  // Mark that a feature was clicked (suppress map-click collapse on mobile)
+  _lastFeatureClick = Date.now();
+  // Auto-expand sidebar on mobile so user sees the data
+  if (isMobile()) expandMobilePanel();
+
+  // Clear ward highlight when switching towns
+  if (selectedTown !== name) {
+    clearWardHighlight();
+    document.querySelectorAll('.ward-row').forEach(r => r.classList.remove('highlighted'));
+  }
+  selectedTown = name;
+  document.getElementById('detail-empty').style.display = 'none';
+  document.getElementById('detail-content').style.display = 'block';
+
+  // Highlight on map — find GeoJSON feature by normalized name
+  const geoName = normalizeName(name);
+  if (geoLayer) {
+    geoLayer.eachLayer(layer => {
+      const n = layer.feature.properties.town || layer.feature.properties.name || '';
+      if (n === geoName) {
+        // Highlight selected town with a border, but keep fill translucent
+        // so precinct boundaries remain visible underneath
+        layer.setStyle({ weight: 3, color: '#e94560', opacity: 1, fillOpacity: fillVisible ? 0.5 : 0 });
+        // Zoom to town bounds only if requested (skip when clicking a precinct)
+        if (zoomToTown) {
+          MAP.fitBounds(layer.getBounds(), { padding: [50, 50], maxZoom: 14 });
+          if (MAP.getZoom() < VTD_ZOOM_THRESHOLD) {
+            MAP.setZoom(VTD_ZOOM_THRESHOLD);
+          }
+        }
+        // Ensure VTD precinct layer stays on top
+        if (vtdLayer && MAP.hasLayer(vtdLayer)) {
+          vtdLayer.bringToFront();
+        }
+      } else {
+        geoLayer.resetStyle(layer);
+      }
+    });
+  }
+
+  renderTownDetail(name);
+}
+
+// ── Ward highlighting on map ──
+function highlightWardOnMap(town, ward) {
+  // Clear previous highlight from the map
+  if (highlightedWard && vtdLayer) {
+    vtdLayer.eachLayer(layer => {
+      const p = layer.feature.properties;
+      if (p.town === highlightedWard.town && p.ward === highlightedWard.ward) {
+        vtdLayer.resetStyle(layer);
+      }
+    });
+  }
+
+  // Always track the highlighted ward (even if VTD layer not yet visible)
+  highlightedWard = { town, ward };
+
+  if (!vtdLayer || !MAP.hasLayer(vtdLayer)) return;
+
+  vtdLayer.eachLayer(layer => {
+    const p = layer.feature.properties;
+    if (p.town === town && p.ward === ward) {
+      layer.setStyle({
+        weight: 3,
+        color: '#00e5ff',
+        opacity: 1,
+        fillOpacity: fillVisible ? 0.75 : 0,
+        dashArray: null,
+      });
+    }
+  });
+}
+
+function clearWardHighlight() {
+  if (highlightedWard && vtdLayer) {
+    vtdLayer.eachLayer(layer => {
+      const p = layer.feature.properties;
+      if (p.town === highlightedWard.town && p.ward === highlightedWard.ward) {
+        vtdLayer.resetStyle(layer);
+      }
+    });
+  }
+  highlightedWard = null;
+}
+
+function renderTownDetail(name) {
+  const town = window.townByDataName ? window.townByDataName[name] : null;
+  if (!town) return;
+
+  const townWards = wardsData.filter(w => w.town === name);
+  const townPrecincts = precinctsData.filter(p => p.city_town === name);
+
+  let html = `
+    <div class="town-card">
+      <h2>${town.town}</h2>
+      <span class="rank-badge">Rank #${town.rank} of ${townsData.length} MA towns</span>
+      <div class="town-stats">
+        <div class="town-stat">
+          <div class="val">${town.de_la_cruz_pct}%</div>
+          <div class="lbl">De La Cruz %</div>
+        </div>
+        <div class="town-stat">
+          <div class="val">${town.de_la_cruz.toLocaleString()}</div>
+          <div class="lbl">De La Cruz Votes</div>
+        </div>
+        <div class="town-stat">
+          <div class="val">${town.total_votes.toLocaleString()}</div>
+          <div class="lbl">Total Votes</div>
+        </div>
+      </div>
+    </div>
+  `;
+
+  // If town has multiple wards, show ward breakdown
+  if (town.has_wards && townWards.length > 1) {
+    html += `<div class="ward-section"><h3>Ward Breakdown (${townWards.length} wards)</h3>`;
+    html += renderWardTable(townWards, townPrecincts);
+    html += `</div>`;
+  } else if (townPrecincts.length > 0) {
+    // Single-ward town: show precincts directly
+    html += `<div class="ward-section"><h3>Precincts (${townPrecincts.length})</h3>`;
+    html += renderPrecinctTable(townPrecincts);
+    html += `</div>`;
+  }
+
+  document.getElementById('detail-content').innerHTML = html;
+
+  // Attach ward expand + highlight handlers
+  document.querySelectorAll('.ward-row').forEach(row => {
+    row.addEventListener('click', function() {
+      const ward = this.dataset.ward;
+      // Toggle precinct sub-table
+      const sub = document.getElementById('precinct-sub-' + ward.replace(/[^a-zA-Z0-9]/g, '_'));
+      if (sub) {
+        sub.classList.toggle('visible');
+        this.classList.toggle('expanded');
+      }
+      // Toggle ward highlighting on map
+      if (highlightedWard && highlightedWard.town === name && highlightedWard.ward === ward) {
+        clearWardHighlight();
+        this.classList.remove('highlighted');
+      } else {
+        document.querySelectorAll('.ward-row').forEach(r => r.classList.remove('highlighted'));
+        this.classList.add('highlighted');
+        highlightWardOnMap(name, ward);
+      }
+    });
+  });
+
+  // Attach sort handlers
+  document.querySelectorAll('.sortable').forEach(th => {
+    th.addEventListener('click', () => sortWardTable(th));
+  });
+}
+
+function renderWardTable(wards, precincts) {
+  // Sort wards initially by de_la_cruz_pct desc
+  const maxDL = Math.max(...wards.map(w => w.de_la_cruz_pct), 0.01);
+
+  let html = `<table class="ward-table" id="ward-table">
+    <thead><tr>
+      <th class="sortable" data-key="ward">Ward</th>
+      <th class="sortable" data-key="de_la_cruz">DL Votes</th>
+      <th class="sortable" data-key="de_la_cruz_pct">DL %</th>
+      <th class="sortable" data-key="total_votes">Total</th>
+      <th>Distribution</th>
+    </tr></thead><tbody>`;
+
+  wards.sort((a, b) => b.de_la_cruz_pct - a.de_la_cruz_pct);
+
+  for (const w of wards) {
+    const barW = (w.de_la_cruz_pct / maxDL * 100).toFixed(1);
+    const wardPrecincts = precincts.filter(p => p.ward === w.ward);
+    html += `
+      <tr class="ward-row" data-ward="${w.ward}">
+        <td><strong>${w.ward === '-' ? 'All' : 'Ward ' + w.ward}</strong> <span style="font-size:0.7rem;color:var(--text-dim)">▸</span></td>
+        <td>${w.de_la_cruz.toLocaleString()}</td>
+        <td style="color:var(--accent-light);font-weight:600;">${w.de_la_cruz_pct}%</td>
+        <td>${w.total_votes.toLocaleString()}</td>
+        <td class="bar-cell"><div class="bar-bg"><div class="bar-fill" style="width:${barW}%"></div></div></td>
+      </tr>
+      <tr>
+        <td colspan="5" style="padding:0;border:none;">
+          <div class="precinct-sub" id="precinct-sub-${w.ward.replace(/[^a-zA-Z0-9]/g, '_')}">
+            ${renderPrecinctTable(wardPrecincts)}
+          </div>
+        </td>
+      </tr>`;
+  }
+
+  html += `</tbody></table>`;
+  return html;
+}
+
+function renderPrecinctTable(precincts) {
+  let html = `<table>
+    <thead><tr>
+      <th>Precinct</th><th>DL</th><th>DL%</th><th>Total</th>
+      <th>Harris</th><th>Trump</th>
+    </tr></thead><tbody>`;
+
+  precincts.sort((a, b) => {
+    const aDL = a.total_votes > 0 ? a.de_la_cruz / a.total_votes : 0;
+    const bDL = b.total_votes > 0 ? b.de_la_cruz / b.total_votes : 0;
+    return bDL - aDL;
+  });
+
+  for (const p of precincts) {
+    const pct = p.total_votes > 0 ? (p.de_la_cruz / p.total_votes * 100).toFixed(2) : '0.00';
+    html += `<tr>
+      <td>${p.pct}</td>
+      <td>${p.de_la_cruz}</td>
+      <td style="color:var(--accent-light)">${pct}%</td>
+      <td>${p.total_votes.toLocaleString()}</td>
+      <td style="color:#7eb8da">${p.harris.toLocaleString()}</td>
+      <td style="color:#e57373">${p.trump.toLocaleString()}</td>
+    </tr>`;
+  }
+
+  html += `</tbody></table>`;
+  return html;
+}
+
+// ── Sort ward table ──
+let wardSortKey = 'de_la_cruz_pct';
+let wardSortDir = 'desc';
+
+function sortWardTable(th) {
+  const key = th.dataset.key;
+  if (wardSortKey === key) {
+    wardSortDir = wardSortDir === 'asc' ? 'desc' : 'asc';
+  } else {
+    wardSortKey = key;
+    wardSortDir = 'desc';
+  }
+
+  // Update sort indicators
+  document.querySelectorAll('.sortable').forEach(s => {
+    s.classList.remove('asc', 'desc');
+  });
+  th.classList.add(wardSortDir);
+
+  const town = selectedTown;
+  if (!town) return;
+  const wards = wardsData.filter(w => w.town === town);
+  wards.sort((a, b) => {
+    const av = a[wardSortKey];
+    const bv = b[wardSortKey];
+    return wardSortDir === 'asc' ? (av > bv ? 1 : -1) : (av < bv ? 1 : -1);
+  });
+
+  const precincts = precinctsData.filter(p => p.city_town === town);
+  const tbody = document.querySelector('#ward-table tbody');
+  if (!tbody) return;
+  tbody.innerHTML = buildWardRows(wards, precincts);
+
+  // Re-attach handlers with highlight support
+  document.querySelectorAll('.ward-row').forEach(row => {
+    row.addEventListener('click', function() {
+      const ward = this.dataset.ward;
+      // Toggle precinct sub-table
+      const sub = document.getElementById('precinct-sub-' + ward.replace(/[^a-zA-Z0-9]/g, '_'));
+      if (sub) { sub.classList.toggle('visible'); this.classList.toggle('expanded'); }
+      // Toggle ward highlighting on map
+      if (highlightedWard && highlightedWard.town === town && highlightedWard.ward === ward) {
+        clearWardHighlight();
+        this.classList.remove('highlighted');
+      } else {
+        document.querySelectorAll('.ward-row').forEach(r => r.classList.remove('highlighted'));
+        this.classList.add('highlighted');
+        highlightWardOnMap(town, ward);
+      }
+    });
+  });
+  // Re-apply highlighted class if a ward is currently highlighted
+  if (highlightedWard && highlightedWard.town === town) {
+    document.querySelectorAll('.ward-row').forEach(row => {
+      if (row.dataset.ward === highlightedWard.ward) {
+        row.classList.add('highlighted');
+      }
+    });
+  }
+}
+
+function buildWardRows(wards, precincts) {
+  const maxDL = Math.max(...wards.map(w => w.de_la_cruz_pct), 0.01);
+  let html = '';
+  for (const w of wards) {
+    const barW = (w.de_la_cruz_pct / maxDL * 100).toFixed(1);
+    const wardPrecincts = precincts.filter(p => p.ward === w.ward);
+    html += `
+      <tr class="ward-row" data-ward="${w.ward}">
+        <td><strong>${w.ward === '-' ? 'All' : 'Ward ' + w.ward}</strong> <span style="font-size:0.7rem;color:var(--text-dim)">▸</span></td>
+        <td>${w.de_la_cruz.toLocaleString()}</td>
+        <td style="color:var(--accent-light);font-weight:600;">${w.de_la_cruz_pct}%</td>
+        <td>${w.total_votes.toLocaleString()}</td>
+        <td class="bar-cell"><div class="bar-bg"><div class="bar-fill" style="width:${barW}%"></div></div></td>
+      </tr>
+      <tr>
+        <td colspan="5" style="padding:0;border:none;">
+          <div class="precinct-sub" id="precinct-sub-${w.ward.replace(/[^a-zA-Z0-9]/g, '_')}">
+            ${renderPrecinctTable(wardPrecincts)}
+          </div>
+        </td>
+      </tr>`;
+  }
+  return html;
+}
+
+// ── Search ──
+const searchInput = document.getElementById('search-input');
+const searchResults = document.getElementById('search-results');
+
+searchInput.addEventListener('input', () => {
+  const q = searchInput.value.toLowerCase().trim();
+  if (q.length < 1) {
+    searchResults.classList.remove('visible');
+    return;
+  }
+  const matches = townsData
+    .filter(t => t.town.toLowerCase().includes(q))
+    .slice(0, 12);
+  if (matches.length === 0) {
+    searchResults.classList.remove('visible');
+    return;
+  }
+  searchResults.innerHTML = matches.map(t =>
+    `<div class="search-item" data-town="${t.town}">
+      <span>${t.town}</span>
+      <span class="pct">#${t.rank} — ${t.de_la_cruz_pct}%</span>
+    </div>`
+  ).join('');
+  searchResults.classList.add('visible');
+});
+
+searchResults.addEventListener('click', (e) => {
+  const item = e.target.closest('.search-item');
+  if (item) {
+    selectTown(item.dataset.town);
+    searchResults.classList.remove('visible');
+    searchInput.value = '';
+  }
+});
+
+document.addEventListener('click', (e) => {
+  if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
+    searchResults.classList.remove('visible');
+  }
+});
+
+// Clear selection when clicking map background
+MAP.on('click', (e) => {
+  if (e.originalEvent.target === MAP.getContainer()) {
+    // Skip if a feature was just clicked (feature click fires slightly before map click)
+    if (Date.now() - _lastFeatureClick < 300) return;
+
+    selectedTown = null;
+    document.getElementById('detail-empty').style.display = 'block';
+    document.getElementById('detail-content').style.display = 'none';
+    if (geoLayer) geoLayer.eachLayer(layer => geoLayer.resetStyle(layer));
+    clearWardHighlight();
+    document.querySelectorAll('.ward-row').forEach(r => r.classList.remove('highlighted'));
+
+    // Collapse sidebar on mobile
+    if (isMobile()) collapseMobilePanel();
+  }
+});
+
+// Zoom listener for VTD precinct layer visibility
+MAP.on('zoomend', updateVTDLayer);
+
+// ── Init ──
+(async function init() {
+  initMobileState();
+  window.addEventListener('resize', initMobileState);
+  await loadData();
+  await loadGeoJSON();
+  await loadVTDGeoJSON();
+})();
+</script>
+</body>
+</html>

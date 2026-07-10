@@ -1,0 +1,4778 @@
+[
+  {
+    "town": "Abington",
+    "ward": "-",
+    "total_votes": 9675,
+    "de_la_cruz": 22,
+    "de_la_cruz_pct": 0.227,
+    "precincts": 5
+  },
+  {
+    "town": "Acton",
+    "ward": "-",
+    "total_votes": 13331,
+    "de_la_cruz": 35,
+    "de_la_cruz_pct": 0.263,
+    "precincts": 8
+  },
+  {
+    "town": "Acushnet",
+    "ward": "-",
+    "total_votes": 6271,
+    "de_la_cruz": 8,
+    "de_la_cruz_pct": 0.128,
+    "precincts": 4
+  },
+  {
+    "town": "Adams",
+    "ward": "-",
+    "total_votes": 4395,
+    "de_la_cruz": 10,
+    "de_la_cruz_pct": 0.228,
+    "precincts": 5
+  },
+  {
+    "town": "Agawam",
+    "ward": "-",
+    "total_votes": 15832,
+    "de_la_cruz": 24,
+    "de_la_cruz_pct": 0.152,
+    "precincts": 8
+  },
+  {
+    "town": "Alford",
+    "ward": "-",
+    "total_votes": 326,
+    "de_la_cruz": 1,
+    "de_la_cruz_pct": 0.307,
+    "precincts": 1
+  },
+  {
+    "town": "Amesbury",
+    "ward": "-",
+    "total_votes": 10421,
+    "de_la_cruz": 15,
+    "de_la_cruz_pct": 0.144,
+    "precincts": 6
+  },
+  {
+    "town": "Amherst",
+    "ward": "-",
+    "total_votes": 10743,
+    "de_la_cruz": 112,
+    "de_la_cruz_pct": 1.043,
+    "precincts": 10
+  },
+  {
+    "town": "Andover",
+    "ward": "-",
+    "total_votes": 20679,
+    "de_la_cruz": 51,
+    "de_la_cruz_pct": 0.247,
+    "precincts": 11
+  },
+  {
+    "town": "Aquinnah",
+    "ward": "-",
+    "total_votes": 351,
+    "de_la_cruz": 2,
+    "de_la_cruz_pct": 0.57,
+    "precincts": 1
+  },
+  {
+    "town": "Arlington",
+    "ward": "-",
+    "total_votes": 27764,
+    "de_la_cruz": 148,
+    "de_la_cruz_pct": 0.533,
+    "precincts": 21
+  },
+  {
+    "town": "Ashburnham",
+    "ward": "-",
+    "total_votes": 3893,
+    "de_la_cruz": 10,
+    "de_la_cruz_pct": 0.257,
+    "precincts": 2
+  },
+  {
+    "town": "Ashby",
+    "ward": "-",
+    "total_votes": 2003,
+    "de_la_cruz": 5,
+    "de_la_cruz_pct": 0.25,
+    "precincts": 1
+  },
+  {
+    "town": "Ashfield",
+    "ward": "-",
+    "total_votes": 1216,
+    "de_la_cruz": 10,
+    "de_la_cruz_pct": 0.822,
+    "precincts": 1
+  },
+  {
+    "town": "Ashland",
+    "ward": "-",
+    "total_votes": 9906,
+    "de_la_cruz": 19,
+    "de_la_cruz_pct": 0.192,
+    "precincts": 6
+  },
+  {
+    "town": "Athol",
+    "ward": "-",
+    "total_votes": 5729,
+    "de_la_cruz": 9,
+    "de_la_cruz_pct": 0.157,
+    "precincts": 3
+  },
+  {
+    "town": "Attleboro",
+    "ward": "1",
+    "total_votes": 3781,
+    "de_la_cruz": 4,
+    "de_la_cruz_pct": 0.106,
+    "precincts": 2
+  },
+  {
+    "town": "Attleboro",
+    "ward": "2",
+    "total_votes": 4133,
+    "de_la_cruz": 14,
+    "de_la_cruz_pct": 0.339,
+    "precincts": 2
+  },
+  {
+    "town": "Attleboro",
+    "ward": "3",
+    "total_votes": 3952,
+    "de_la_cruz": 13,
+    "de_la_cruz_pct": 0.329,
+    "precincts": 2
+  },
+  {
+    "town": "Attleboro",
+    "ward": "4",
+    "total_votes": 4209,
+    "de_la_cruz": 18,
+    "de_la_cruz_pct": 0.428,
+    "precincts": 2
+  },
+  {
+    "town": "Attleboro",
+    "ward": "5",
+    "total_votes": 3341,
+    "de_la_cruz": 20,
+    "de_la_cruz_pct": 0.599,
+    "precincts": 2
+  },
+  {
+    "town": "Attleboro",
+    "ward": "6",
+    "total_votes": 4061,
+    "de_la_cruz": 8,
+    "de_la_cruz_pct": 0.197,
+    "precincts": 2
+  },
+  {
+    "town": "Auburn",
+    "ward": "-",
+    "total_votes": 10073,
+    "de_la_cruz": 25,
+    "de_la_cruz_pct": 0.248,
+    "precincts": 5
+  },
+  {
+    "town": "Avon",
+    "ward": "-",
+    "total_votes": 2583,
+    "de_la_cruz": 6,
+    "de_la_cruz_pct": 0.232,
+    "precincts": 1
+  },
+  {
+    "town": "Ayer",
+    "ward": "-",
+    "total_votes": 4704,
+    "de_la_cruz": 12,
+    "de_la_cruz_pct": 0.255,
+    "precincts": 3
+  },
+  {
+    "town": "Barnstable",
+    "ward": "-",
+    "total_votes": 27997,
+    "de_la_cruz": 64,
+    "de_la_cruz_pct": 0.229,
+    "precincts": 13
+  },
+  {
+    "town": "Barre",
+    "ward": "-",
+    "total_votes": 3125,
+    "de_la_cruz": 5,
+    "de_la_cruz_pct": 0.16,
+    "precincts": 2
+  },
+  {
+    "town": "Becket",
+    "ward": "-",
+    "total_votes": 1247,
+    "de_la_cruz": 4,
+    "de_la_cruz_pct": 0.321,
+    "precincts": 1
+  },
+  {
+    "town": "Bedford",
+    "ward": "-",
+    "total_votes": 8432,
+    "de_la_cruz": 19,
+    "de_la_cruz_pct": 0.225,
+    "precincts": 5
+  },
+  {
+    "town": "Belchertown",
+    "ward": "-",
+    "total_votes": 9631,
+    "de_la_cruz": 28,
+    "de_la_cruz_pct": 0.291,
+    "precincts": 4
+  },
+  {
+    "town": "Bellingham",
+    "ward": "-",
+    "total_votes": 10086,
+    "de_la_cruz": 20,
+    "de_la_cruz_pct": 0.198,
+    "precincts": 5
+  },
+  {
+    "town": "Belmont",
+    "ward": "-",
+    "total_votes": 14654,
+    "de_la_cruz": 77,
+    "de_la_cruz_pct": 0.525,
+    "precincts": 8
+  },
+  {
+    "town": "Berkley",
+    "ward": "-",
+    "total_votes": 4263,
+    "de_la_cruz": 3,
+    "de_la_cruz_pct": 0.07,
+    "precincts": 2
+  },
+  {
+    "town": "Berlin",
+    "ward": "-",
+    "total_votes": 2429,
+    "de_la_cruz": 9,
+    "de_la_cruz_pct": 0.371,
+    "precincts": 1
+  },
+  {
+    "town": "Bernardston",
+    "ward": "-",
+    "total_votes": 1411,
+    "de_la_cruz": 0,
+    "de_la_cruz_pct": 0.0,
+    "precincts": 1
+  },
+  {
+    "town": "Beverly",
+    "ward": "1",
+    "total_votes": 4342,
+    "de_la_cruz": 11,
+    "de_la_cruz_pct": 0.253,
+    "precincts": 2
+  },
+  {
+    "town": "Beverly",
+    "ward": "2",
+    "total_votes": 4095,
+    "de_la_cruz": 34,
+    "de_la_cruz_pct": 0.83,
+    "precincts": 2
+  },
+  {
+    "town": "Beverly",
+    "ward": "3",
+    "total_votes": 3288,
+    "de_la_cruz": 18,
+    "de_la_cruz_pct": 0.547,
+    "precincts": 2
+  },
+  {
+    "town": "Beverly",
+    "ward": "4",
+    "total_votes": 3482,
+    "de_la_cruz": 12,
+    "de_la_cruz_pct": 0.345,
+    "precincts": 2
+  },
+  {
+    "town": "Beverly",
+    "ward": "5",
+    "total_votes": 3976,
+    "de_la_cruz": 10,
+    "de_la_cruz_pct": 0.252,
+    "precincts": 2
+  },
+  {
+    "town": "Beverly",
+    "ward": "6",
+    "total_votes": 4725,
+    "de_la_cruz": 6,
+    "de_la_cruz_pct": 0.127,
+    "precincts": 2
+  },
+  {
+    "town": "Billerica",
+    "ward": "-",
+    "total_votes": 23881,
+    "de_la_cruz": 44,
+    "de_la_cruz_pct": 0.184,
+    "precincts": 12
+  },
+  {
+    "town": "Blackstone",
+    "ward": "-",
+    "total_votes": 5154,
+    "de_la_cruz": 5,
+    "de_la_cruz_pct": 0.097,
+    "precincts": 3
+  },
+  {
+    "town": "Blandford",
+    "ward": "-",
+    "total_votes": 820,
+    "de_la_cruz": 0,
+    "de_la_cruz_pct": 0.0,
+    "precincts": 1
+  },
+  {
+    "town": "Bolton",
+    "ward": "-",
+    "total_votes": 3706,
+    "de_la_cruz": 9,
+    "de_la_cruz_pct": 0.243,
+    "precincts": 1
+  },
+  {
+    "town": "Boston",
+    "ward": "1",
+    "total_votes": 14165,
+    "de_la_cruz": 157,
+    "de_la_cruz_pct": 1.108,
+    "precincts": 15
+  },
+  {
+    "town": "Boston",
+    "ward": "2",
+    "total_votes": 10328,
+    "de_la_cruz": 35,
+    "de_la_cruz_pct": 0.339,
+    "precincts": 8
+  },
+  {
+    "town": "Boston",
+    "ward": "3",
+    "total_votes": 19237,
+    "de_la_cruz": 68,
+    "de_la_cruz_pct": 0.353,
+    "precincts": 18
+  },
+  {
+    "town": "Boston",
+    "ward": "4",
+    "total_votes": 9424,
+    "de_la_cruz": 41,
+    "de_la_cruz_pct": 0.435,
+    "precincts": 12
+  },
+  {
+    "town": "Boston",
+    "ward": "5",
+    "total_votes": 15332,
+    "de_la_cruz": 72,
+    "de_la_cruz_pct": 0.47,
+    "precincts": 15
+  },
+  {
+    "town": "Boston",
+    "ward": "6",
+    "total_votes": 15511,
+    "de_la_cruz": 41,
+    "de_la_cruz_pct": 0.264,
+    "precincts": 13
+  },
+  {
+    "town": "Boston",
+    "ward": "7",
+    "total_votes": 9946,
+    "de_la_cruz": 57,
+    "de_la_cruz_pct": 0.573,
+    "precincts": 10
+  },
+  {
+    "town": "Boston",
+    "ward": "8",
+    "total_votes": 4987,
+    "de_la_cruz": 37,
+    "de_la_cruz_pct": 0.742,
+    "precincts": 7
+  },
+  {
+    "town": "Boston",
+    "ward": "9",
+    "total_votes": 6460,
+    "de_la_cruz": 53,
+    "de_la_cruz_pct": 0.82,
+    "precincts": 7
+  },
+  {
+    "town": "Boston",
+    "ward": "10",
+    "total_votes": 7277,
+    "de_la_cruz": 104,
+    "de_la_cruz_pct": 1.429,
+    "precincts": 10
+  },
+  {
+    "town": "Boston",
+    "ward": "11",
+    "total_votes": 9999,
+    "de_la_cruz": 186,
+    "de_la_cruz_pct": 1.86,
+    "precincts": 10
+  },
+  {
+    "town": "Boston",
+    "ward": "12",
+    "total_votes": 6393,
+    "de_la_cruz": 85,
+    "de_la_cruz_pct": 1.33,
+    "precincts": 9
+  },
+  {
+    "town": "Boston",
+    "ward": "13",
+    "total_votes": 7800,
+    "de_la_cruz": 78,
+    "de_la_cruz_pct": 1.0,
+    "precincts": 10
+  },
+  {
+    "town": "Boston",
+    "ward": "14",
+    "total_votes": 9582,
+    "de_la_cruz": 55,
+    "de_la_cruz_pct": 0.574,
+    "precincts": 14
+  },
+  {
+    "town": "Boston",
+    "ward": "15",
+    "total_votes": 5605,
+    "de_la_cruz": 55,
+    "de_la_cruz_pct": 0.981,
+    "precincts": 9
+  },
+  {
+    "town": "Boston",
+    "ward": "16",
+    "total_votes": 11599,
+    "de_la_cruz": 86,
+    "de_la_cruz_pct": 0.741,
+    "precincts": 12
+  },
+  {
+    "town": "Boston",
+    "ward": "17",
+    "total_votes": 10451,
+    "de_la_cruz": 87,
+    "de_la_cruz_pct": 0.832,
+    "precincts": 14
+  },
+  {
+    "town": "Boston",
+    "ward": "18",
+    "total_votes": 26923,
+    "de_la_cruz": 171,
+    "de_la_cruz_pct": 0.635,
+    "precincts": 23
+  },
+  {
+    "town": "Boston",
+    "ward": "19",
+    "total_votes": 13707,
+    "de_la_cruz": 162,
+    "de_la_cruz_pct": 1.182,
+    "precincts": 13
+  },
+  {
+    "town": "Boston",
+    "ward": "20",
+    "total_votes": 23218,
+    "de_la_cruz": 114,
+    "de_la_cruz_pct": 0.491,
+    "precincts": 21
+  },
+  {
+    "town": "Boston",
+    "ward": "21",
+    "total_votes": 14577,
+    "de_la_cruz": 241,
+    "de_la_cruz_pct": 1.653,
+    "precincts": 16
+  },
+  {
+    "town": "Boston",
+    "ward": "22",
+    "total_votes": 12892,
+    "de_la_cruz": 193,
+    "de_la_cruz_pct": 1.497,
+    "precincts": 13
+  },
+  {
+    "town": "Bourne",
+    "ward": "-",
+    "total_votes": 12272,
+    "de_la_cruz": 15,
+    "de_la_cruz_pct": 0.122,
+    "precincts": 8
+  },
+  {
+    "town": "Boxborough",
+    "ward": "-",
+    "total_votes": 3192,
+    "de_la_cruz": 4,
+    "de_la_cruz_pct": 0.125,
+    "precincts": 1
+  },
+  {
+    "town": "Boxford",
+    "ward": "-",
+    "total_votes": 5463,
+    "de_la_cruz": 7,
+    "de_la_cruz_pct": 0.128,
+    "precincts": 3
+  },
+  {
+    "town": "Boylston",
+    "ward": "-",
+    "total_votes": 3387,
+    "de_la_cruz": 7,
+    "de_la_cruz_pct": 0.207,
+    "precincts": 1
+  },
+  {
+    "town": "Braintree",
+    "ward": "-",
+    "total_votes": 20583,
+    "de_la_cruz": 51,
+    "de_la_cruz_pct": 0.248,
+    "precincts": 12
+  },
+  {
+    "town": "Brewster",
+    "ward": "-",
+    "total_votes": 7349,
+    "de_la_cruz": 12,
+    "de_la_cruz_pct": 0.163,
+    "precincts": 3
+  },
+  {
+    "town": "Bridgewater",
+    "ward": "-",
+    "total_votes": 14657,
+    "de_la_cruz": 31,
+    "de_la_cruz_pct": 0.212,
+    "precincts": 9
+  },
+  {
+    "town": "Brimfield",
+    "ward": "-",
+    "total_votes": 2363,
+    "de_la_cruz": 4,
+    "de_la_cruz_pct": 0.169,
+    "precincts": 1
+  },
+  {
+    "town": "Brockton",
+    "ward": "1",
+    "total_votes": 5738,
+    "de_la_cruz": 29,
+    "de_la_cruz_pct": 0.505,
+    "precincts": 4
+  },
+  {
+    "town": "Brockton",
+    "ward": "2",
+    "total_votes": 3558,
+    "de_la_cruz": 18,
+    "de_la_cruz_pct": 0.506,
+    "precincts": 4
+  },
+  {
+    "town": "Brockton",
+    "ward": "3",
+    "total_votes": 5516,
+    "de_la_cruz": 12,
+    "de_la_cruz_pct": 0.218,
+    "precincts": 4
+  },
+  {
+    "town": "Brockton",
+    "ward": "4",
+    "total_votes": 4817,
+    "de_la_cruz": 19,
+    "de_la_cruz_pct": 0.394,
+    "precincts": 4
+  },
+  {
+    "town": "Brockton",
+    "ward": "5",
+    "total_votes": 5194,
+    "de_la_cruz": 27,
+    "de_la_cruz_pct": 0.52,
+    "precincts": 4
+  },
+  {
+    "town": "Brockton",
+    "ward": "6",
+    "total_votes": 5940,
+    "de_la_cruz": 21,
+    "de_la_cruz_pct": 0.354,
+    "precincts": 4
+  },
+  {
+    "town": "Brockton",
+    "ward": "7",
+    "total_votes": 4721,
+    "de_la_cruz": 20,
+    "de_la_cruz_pct": 0.424,
+    "precincts": 4
+  },
+  {
+    "town": "Brookfield",
+    "ward": "-",
+    "total_votes": 2107,
+    "de_la_cruz": 6,
+    "de_la_cruz_pct": 0.285,
+    "precincts": 1
+  },
+  {
+    "town": "Brookline",
+    "ward": "-",
+    "total_votes": 28586,
+    "de_la_cruz": 160,
+    "de_la_cruz_pct": 0.56,
+    "precincts": 20
+  },
+  {
+    "town": "Buckland",
+    "ward": "-",
+    "total_votes": 1143,
+    "de_la_cruz": 4,
+    "de_la_cruz_pct": 0.35,
+    "precincts": 1
+  },
+  {
+    "town": "Burlington",
+    "ward": "-",
+    "total_votes": 14600,
+    "de_la_cruz": 26,
+    "de_la_cruz_pct": 0.178,
+    "precincts": 7
+  },
+  {
+    "town": "Cambridge",
+    "ward": "1",
+    "total_votes": 3036,
+    "de_la_cruz": 18,
+    "de_la_cruz_pct": 0.593,
+    "precincts": 4
+  },
+  {
+    "town": "Cambridge",
+    "ward": "2",
+    "total_votes": 4713,
+    "de_la_cruz": 48,
+    "de_la_cruz_pct": 1.018,
+    "precincts": 4
+  },
+  {
+    "town": "Cambridge",
+    "ward": "3",
+    "total_votes": 4690,
+    "de_la_cruz": 73,
+    "de_la_cruz_pct": 1.557,
+    "precincts": 4
+  },
+  {
+    "town": "Cambridge",
+    "ward": "4",
+    "total_votes": 5429,
+    "de_la_cruz": 67,
+    "de_la_cruz_pct": 1.234,
+    "precincts": 4
+  },
+  {
+    "town": "Cambridge",
+    "ward": "5",
+    "total_votes": 3501,
+    "de_la_cruz": 34,
+    "de_la_cruz_pct": 0.971,
+    "precincts": 3
+  },
+  {
+    "town": "Cambridge",
+    "ward": "6",
+    "total_votes": 4864,
+    "de_la_cruz": 45,
+    "de_la_cruz_pct": 0.925,
+    "precincts": 4
+  },
+  {
+    "town": "Cambridge",
+    "ward": "7",
+    "total_votes": 3497,
+    "de_la_cruz": 42,
+    "de_la_cruz_pct": 1.201,
+    "precincts": 4
+  },
+  {
+    "town": "Cambridge",
+    "ward": "8",
+    "total_votes": 3623,
+    "de_la_cruz": 39,
+    "de_la_cruz_pct": 1.076,
+    "precincts": 3
+  },
+  {
+    "town": "Cambridge",
+    "ward": "9",
+    "total_votes": 6383,
+    "de_la_cruz": 57,
+    "de_la_cruz_pct": 0.893,
+    "precincts": 3
+  },
+  {
+    "town": "Cambridge",
+    "ward": "10",
+    "total_votes": 6082,
+    "de_la_cruz": 69,
+    "de_la_cruz_pct": 1.134,
+    "precincts": 4
+  },
+  {
+    "town": "Cambridge",
+    "ward": "11",
+    "total_votes": 4843,
+    "de_la_cruz": 41,
+    "de_la_cruz_pct": 0.847,
+    "precincts": 5
+  },
+  {
+    "town": "Canton",
+    "ward": "-",
+    "total_votes": 14198,
+    "de_la_cruz": 28,
+    "de_la_cruz_pct": 0.197,
+    "precincts": 7
+  },
+  {
+    "town": "Carlisle",
+    "ward": "-",
+    "total_votes": 3461,
+    "de_la_cruz": 7,
+    "de_la_cruz_pct": 0.202,
+    "precincts": 1
+  },
+  {
+    "town": "Carver",
+    "ward": "-",
+    "total_votes": 7184,
+    "de_la_cruz": 12,
+    "de_la_cruz_pct": 0.167,
+    "precincts": 3
+  },
+  {
+    "town": "Charlemont",
+    "ward": "-",
+    "total_votes": 744,
+    "de_la_cruz": 1,
+    "de_la_cruz_pct": 0.134,
+    "precincts": 1
+  },
+  {
+    "town": "Charlton",
+    "ward": "-",
+    "total_votes": 8296,
+    "de_la_cruz": 24,
+    "de_la_cruz_pct": 0.289,
+    "precincts": 5
+  },
+  {
+    "town": "Chatham",
+    "ward": "-",
+    "total_votes": 4901,
+    "de_la_cruz": 10,
+    "de_la_cruz_pct": 0.204,
+    "precincts": 2
+  },
+  {
+    "town": "Chelmsford",
+    "ward": "-",
+    "total_votes": 21705,
+    "de_la_cruz": 45,
+    "de_la_cruz_pct": 0.207,
+    "precincts": 13
+  },
+  {
+    "town": "Chelsea",
+    "ward": "1",
+    "total_votes": 1591,
+    "de_la_cruz": 25,
+    "de_la_cruz_pct": 1.571,
+    "precincts": 4
+  },
+  {
+    "town": "Chelsea",
+    "ward": "2",
+    "total_votes": 2552,
+    "de_la_cruz": 23,
+    "de_la_cruz_pct": 0.901,
+    "precincts": 4
+  },
+  {
+    "town": "Chelsea",
+    "ward": "3",
+    "total_votes": 2156,
+    "de_la_cruz": 24,
+    "de_la_cruz_pct": 1.113,
+    "precincts": 4
+  },
+  {
+    "town": "Chelsea",
+    "ward": "4",
+    "total_votes": 2570,
+    "de_la_cruz": 27,
+    "de_la_cruz_pct": 1.051,
+    "precincts": 4
+  },
+  {
+    "town": "Cheshire",
+    "ward": "-",
+    "total_votes": 1954,
+    "de_la_cruz": 0,
+    "de_la_cruz_pct": 0.0,
+    "precincts": 1
+  },
+  {
+    "town": "Chester",
+    "ward": "-",
+    "total_votes": 751,
+    "de_la_cruz": 3,
+    "de_la_cruz_pct": 0.399,
+    "precincts": 1
+  },
+  {
+    "town": "Chesterfield",
+    "ward": "-",
+    "total_votes": 836,
+    "de_la_cruz": 7,
+    "de_la_cruz_pct": 0.837,
+    "precincts": 1
+  },
+  {
+    "town": "Chicopee",
+    "ward": "1",
+    "total_votes": 3152,
+    "de_la_cruz": 6,
+    "de_la_cruz_pct": 0.19,
+    "precincts": 2
+  },
+  {
+    "town": "Chicopee",
+    "ward": "2",
+    "total_votes": 2465,
+    "de_la_cruz": 15,
+    "de_la_cruz_pct": 0.609,
+    "precincts": 2
+  },
+  {
+    "town": "Chicopee",
+    "ward": "3",
+    "total_votes": 2474,
+    "de_la_cruz": 12,
+    "de_la_cruz_pct": 0.485,
+    "precincts": 3
+  },
+  {
+    "town": "Chicopee",
+    "ward": "4",
+    "total_votes": 2444,
+    "de_la_cruz": 11,
+    "de_la_cruz_pct": 0.45,
+    "precincts": 2
+  },
+  {
+    "town": "Chicopee",
+    "ward": "5",
+    "total_votes": 2740,
+    "de_la_cruz": 15,
+    "de_la_cruz_pct": 0.547,
+    "precincts": 2
+  },
+  {
+    "town": "Chicopee",
+    "ward": "6",
+    "total_votes": 3287,
+    "de_la_cruz": 10,
+    "de_la_cruz_pct": 0.304,
+    "precincts": 4
+  },
+  {
+    "town": "Chicopee",
+    "ward": "7",
+    "total_votes": 2164,
+    "de_la_cruz": 12,
+    "de_la_cruz_pct": 0.555,
+    "precincts": 2
+  },
+  {
+    "town": "Chicopee",
+    "ward": "8",
+    "total_votes": 2869,
+    "de_la_cruz": 10,
+    "de_la_cruz_pct": 0.349,
+    "precincts": 2
+  },
+  {
+    "town": "Chicopee",
+    "ward": "9",
+    "total_votes": 3074,
+    "de_la_cruz": 10,
+    "de_la_cruz_pct": 0.325,
+    "precincts": 2
+  },
+  {
+    "town": "Chilmark",
+    "ward": "-",
+    "total_votes": 945,
+    "de_la_cruz": 1,
+    "de_la_cruz_pct": 0.106,
+    "precincts": 1
+  },
+  {
+    "town": "Clarksburg",
+    "ward": "-",
+    "total_votes": 980,
+    "de_la_cruz": 2,
+    "de_la_cruz_pct": 0.204,
+    "precincts": 1
+  },
+  {
+    "town": "Clinton",
+    "ward": "-",
+    "total_votes": 7566,
+    "de_la_cruz": 21,
+    "de_la_cruz_pct": 0.278,
+    "precincts": 4
+  },
+  {
+    "town": "Cohasset",
+    "ward": "-",
+    "total_votes": 5431,
+    "de_la_cruz": 6,
+    "de_la_cruz_pct": 0.11,
+    "precincts": 3
+  },
+  {
+    "town": "Colrain",
+    "ward": "-",
+    "total_votes": 1050,
+    "de_la_cruz": 1,
+    "de_la_cruz_pct": 0.095,
+    "precincts": 1
+  },
+  {
+    "town": "Concord",
+    "ward": "-",
+    "total_votes": 12026,
+    "de_la_cruz": 26,
+    "de_la_cruz_pct": 0.216,
+    "precincts": 5
+  },
+  {
+    "town": "Conway",
+    "ward": "-",
+    "total_votes": 1310,
+    "de_la_cruz": 7,
+    "de_la_cruz_pct": 0.534,
+    "precincts": 1
+  },
+  {
+    "town": "Cummington",
+    "ward": "-",
+    "total_votes": 587,
+    "de_la_cruz": 4,
+    "de_la_cruz_pct": 0.681,
+    "precincts": 1
+  },
+  {
+    "town": "Dalton",
+    "ward": "-",
+    "total_votes": 3684,
+    "de_la_cruz": 8,
+    "de_la_cruz_pct": 0.217,
+    "precincts": 2
+  },
+  {
+    "town": "Danvers",
+    "ward": "-",
+    "total_votes": 16535,
+    "de_la_cruz": 37,
+    "de_la_cruz_pct": 0.224,
+    "precincts": 8
+  },
+  {
+    "town": "Dartmouth",
+    "ward": "-",
+    "total_votes": 18549,
+    "de_la_cruz": 22,
+    "de_la_cruz_pct": 0.119,
+    "precincts": 9
+  },
+  {
+    "town": "Dedham",
+    "ward": "-",
+    "total_votes": 15179,
+    "de_la_cruz": 42,
+    "de_la_cruz_pct": 0.277,
+    "precincts": 7
+  },
+  {
+    "town": "Deerfield",
+    "ward": "-",
+    "total_votes": 3308,
+    "de_la_cruz": 8,
+    "de_la_cruz_pct": 0.242,
+    "precincts": 1
+  },
+  {
+    "town": "Dennis",
+    "ward": "-",
+    "total_votes": 10316,
+    "de_la_cruz": 13,
+    "de_la_cruz_pct": 0.126,
+    "precincts": 5
+  },
+  {
+    "town": "Dighton",
+    "ward": "-",
+    "total_votes": 4875,
+    "de_la_cruz": 7,
+    "de_la_cruz_pct": 0.144,
+    "precincts": 3
+  },
+  {
+    "town": "Douglas",
+    "ward": "-",
+    "total_votes": 5873,
+    "de_la_cruz": 4,
+    "de_la_cruz_pct": 0.068,
+    "precincts": 3
+  },
+  {
+    "town": "Dover",
+    "ward": "-",
+    "total_votes": 3794,
+    "de_la_cruz": 9,
+    "de_la_cruz_pct": 0.237,
+    "precincts": 1
+  },
+  {
+    "town": "Dracut",
+    "ward": "-",
+    "total_votes": 17622,
+    "de_la_cruz": 34,
+    "de_la_cruz_pct": 0.193,
+    "precincts": 10
+  },
+  {
+    "town": "Dudley",
+    "ward": "-",
+    "total_votes": 6405,
+    "de_la_cruz": 11,
+    "de_la_cruz_pct": 0.172,
+    "precincts": 4
+  },
+  {
+    "town": "Dunstable",
+    "ward": "-",
+    "total_votes": 2231,
+    "de_la_cruz": 3,
+    "de_la_cruz_pct": 0.134,
+    "precincts": 1
+  },
+  {
+    "town": "Duxbury",
+    "ward": "-",
+    "total_votes": 10797,
+    "de_la_cruz": 18,
+    "de_la_cruz_pct": 0.167,
+    "precincts": 6
+  },
+  {
+    "town": "E. Bridgewater",
+    "ward": "-",
+    "total_votes": 8660,
+    "de_la_cruz": 24,
+    "de_la_cruz_pct": 0.277,
+    "precincts": 4
+  },
+  {
+    "town": "E. Brookfield",
+    "ward": "-",
+    "total_votes": 1363,
+    "de_la_cruz": 1,
+    "de_la_cruz_pct": 0.073,
+    "precincts": 1
+  },
+  {
+    "town": "E. Longmeadow",
+    "ward": "-",
+    "total_votes": 9886,
+    "de_la_cruz": 14,
+    "de_la_cruz_pct": 0.142,
+    "precincts": 8
+  },
+  {
+    "town": "Eastham",
+    "ward": "-",
+    "total_votes": 4164,
+    "de_la_cruz": 2,
+    "de_la_cruz_pct": 0.048,
+    "precincts": 1
+  },
+  {
+    "town": "Easthampton",
+    "ward": "-",
+    "total_votes": 10261,
+    "de_la_cruz": 100,
+    "de_la_cruz_pct": 0.975,
+    "precincts": 5
+  },
+  {
+    "town": "Easton",
+    "ward": "-",
+    "total_votes": 14336,
+    "de_la_cruz": 34,
+    "de_la_cruz_pct": 0.237,
+    "precincts": 8
+  },
+  {
+    "town": "Edgartown",
+    "ward": "-",
+    "total_votes": 2936,
+    "de_la_cruz": 6,
+    "de_la_cruz_pct": 0.204,
+    "precincts": 1
+  },
+  {
+    "town": "Egremont",
+    "ward": "-",
+    "total_votes": 956,
+    "de_la_cruz": 3,
+    "de_la_cruz_pct": 0.314,
+    "precincts": 1
+  },
+  {
+    "town": "Erving",
+    "ward": "-",
+    "total_votes": 978,
+    "de_la_cruz": 4,
+    "de_la_cruz_pct": 0.409,
+    "precincts": 1
+  },
+  {
+    "town": "Essex",
+    "ward": "-",
+    "total_votes": 2438,
+    "de_la_cruz": 5,
+    "de_la_cruz_pct": 0.205,
+    "precincts": 1
+  },
+  {
+    "town": "Everett",
+    "ward": "1",
+    "total_votes": 1828,
+    "de_la_cruz": 9,
+    "de_la_cruz_pct": 0.492,
+    "precincts": 4
+  },
+  {
+    "town": "Everett",
+    "ward": "2",
+    "total_votes": 2024,
+    "de_la_cruz": 20,
+    "de_la_cruz_pct": 0.988,
+    "precincts": 4
+  },
+  {
+    "town": "Everett",
+    "ward": "3",
+    "total_votes": 2293,
+    "de_la_cruz": 3,
+    "de_la_cruz_pct": 0.131,
+    "precincts": 3
+  },
+  {
+    "town": "Everett",
+    "ward": "4",
+    "total_votes": 2287,
+    "de_la_cruz": 16,
+    "de_la_cruz_pct": 0.7,
+    "precincts": 3
+  },
+  {
+    "town": "Everett",
+    "ward": "5",
+    "total_votes": 2006,
+    "de_la_cruz": 11,
+    "de_la_cruz_pct": 0.548,
+    "precincts": 3
+  },
+  {
+    "town": "Everett",
+    "ward": "6",
+    "total_votes": 2220,
+    "de_la_cruz": 9,
+    "de_la_cruz_pct": 0.405,
+    "precincts": 3
+  },
+  {
+    "town": "Fairhaven",
+    "ward": "-",
+    "total_votes": 9628,
+    "de_la_cruz": 13,
+    "de_la_cruz_pct": 0.135,
+    "precincts": 6
+  },
+  {
+    "town": "Fall River",
+    "ward": "1",
+    "total_votes": 4027,
+    "de_la_cruz": 10,
+    "de_la_cruz_pct": 0.248,
+    "precincts": 3
+  },
+  {
+    "town": "Fall River",
+    "ward": "2",
+    "total_votes": 2686,
+    "de_la_cruz": 10,
+    "de_la_cruz_pct": 0.372,
+    "precincts": 3
+  },
+  {
+    "town": "Fall River",
+    "ward": "3",
+    "total_votes": 3632,
+    "de_la_cruz": 5,
+    "de_la_cruz_pct": 0.138,
+    "precincts": 3
+  },
+  {
+    "town": "Fall River",
+    "ward": "4",
+    "total_votes": 2383,
+    "de_la_cruz": 8,
+    "de_la_cruz_pct": 0.336,
+    "precincts": 3
+  },
+  {
+    "town": "Fall River",
+    "ward": "5",
+    "total_votes": 2027,
+    "de_la_cruz": 8,
+    "de_la_cruz_pct": 0.395,
+    "precincts": 3
+  },
+  {
+    "town": "Fall River",
+    "ward": "6",
+    "total_votes": 3561,
+    "de_la_cruz": 7,
+    "de_la_cruz_pct": 0.197,
+    "precincts": 3
+  },
+  {
+    "town": "Fall River",
+    "ward": "7",
+    "total_votes": 3220,
+    "de_la_cruz": 9,
+    "de_la_cruz_pct": 0.28,
+    "precincts": 3
+  },
+  {
+    "town": "Fall River",
+    "ward": "8",
+    "total_votes": 4189,
+    "de_la_cruz": 9,
+    "de_la_cruz_pct": 0.215,
+    "precincts": 3
+  },
+  {
+    "town": "Fall River",
+    "ward": "9",
+    "total_votes": 5081,
+    "de_la_cruz": 12,
+    "de_la_cruz_pct": 0.236,
+    "precincts": 3
+  },
+  {
+    "town": "Falmouth",
+    "ward": "-",
+    "total_votes": 22252,
+    "de_la_cruz": 34,
+    "de_la_cruz_pct": 0.153,
+    "precincts": 9
+  },
+  {
+    "town": "Fitchburg",
+    "ward": "1",
+    "total_votes": 2388,
+    "de_la_cruz": 12,
+    "de_la_cruz_pct": 0.503,
+    "precincts": 2
+  },
+  {
+    "town": "Fitchburg",
+    "ward": "2",
+    "total_votes": 2395,
+    "de_la_cruz": 19,
+    "de_la_cruz_pct": 0.793,
+    "precincts": 2
+  },
+  {
+    "town": "Fitchburg",
+    "ward": "3",
+    "total_votes": 3580,
+    "de_la_cruz": 11,
+    "de_la_cruz_pct": 0.307,
+    "precincts": 2
+  },
+  {
+    "town": "Fitchburg",
+    "ward": "4",
+    "total_votes": 1925,
+    "de_la_cruz": 13,
+    "de_la_cruz_pct": 0.675,
+    "precincts": 2
+  },
+  {
+    "town": "Fitchburg",
+    "ward": "5",
+    "total_votes": 2819,
+    "de_la_cruz": 5,
+    "de_la_cruz_pct": 0.177,
+    "precincts": 2
+  },
+  {
+    "town": "Fitchburg",
+    "ward": "6",
+    "total_votes": 2790,
+    "de_la_cruz": 6,
+    "de_la_cruz_pct": 0.215,
+    "precincts": 2
+  },
+  {
+    "town": "Florida",
+    "ward": "-",
+    "total_votes": 416,
+    "de_la_cruz": 2,
+    "de_la_cruz_pct": 0.481,
+    "precincts": 1
+  },
+  {
+    "town": "Foxborough",
+    "ward": "-",
+    "total_votes": 11212,
+    "de_la_cruz": 15,
+    "de_la_cruz_pct": 0.134,
+    "precincts": 5
+  },
+  {
+    "town": "Framingham",
+    "ward": "-",
+    "total_votes": 30134,
+    "de_la_cruz": 107,
+    "de_la_cruz_pct": 0.355,
+    "precincts": 30
+  },
+  {
+    "town": "Franklin",
+    "ward": "-",
+    "total_votes": 20070,
+    "de_la_cruz": 43,
+    "de_la_cruz_pct": 0.214,
+    "precincts": 9
+  },
+  {
+    "town": "Freetown",
+    "ward": "-",
+    "total_votes": 5587,
+    "de_la_cruz": 7,
+    "de_la_cruz_pct": 0.125,
+    "precincts": 3
+  },
+  {
+    "town": "Gardner",
+    "ward": "1",
+    "total_votes": 1777,
+    "de_la_cruz": 5,
+    "de_la_cruz_pct": 0.281,
+    "precincts": 2
+  },
+  {
+    "town": "Gardner",
+    "ward": "2",
+    "total_votes": 2191,
+    "de_la_cruz": 5,
+    "de_la_cruz_pct": 0.228,
+    "precincts": 2
+  },
+  {
+    "town": "Gardner",
+    "ward": "3",
+    "total_votes": 1929,
+    "de_la_cruz": 5,
+    "de_la_cruz_pct": 0.259,
+    "precincts": 2
+  },
+  {
+    "town": "Gardner",
+    "ward": "4",
+    "total_votes": 1645,
+    "de_la_cruz": 11,
+    "de_la_cruz_pct": 0.669,
+    "precincts": 2
+  },
+  {
+    "town": "Gardner",
+    "ward": "5",
+    "total_votes": 1947,
+    "de_la_cruz": 6,
+    "de_la_cruz_pct": 0.308,
+    "precincts": 2
+  },
+  {
+    "town": "Georgetown",
+    "ward": "-",
+    "total_votes": 5575,
+    "de_la_cruz": 11,
+    "de_la_cruz_pct": 0.197,
+    "precincts": 3
+  },
+  {
+    "town": "Gill",
+    "ward": "-",
+    "total_votes": 1016,
+    "de_la_cruz": 4,
+    "de_la_cruz_pct": 0.394,
+    "precincts": 1
+  },
+  {
+    "town": "Gloucester",
+    "ward": "1",
+    "total_votes": 3892,
+    "de_la_cruz": 4,
+    "de_la_cruz_pct": 0.103,
+    "precincts": 2
+  },
+  {
+    "town": "Gloucester",
+    "ward": "2",
+    "total_votes": 2699,
+    "de_la_cruz": 10,
+    "de_la_cruz_pct": 0.371,
+    "precincts": 2
+  },
+  {
+    "town": "Gloucester",
+    "ward": "3",
+    "total_votes": 2946,
+    "de_la_cruz": 8,
+    "de_la_cruz_pct": 0.272,
+    "precincts": 2
+  },
+  {
+    "town": "Gloucester",
+    "ward": "4",
+    "total_votes": 4038,
+    "de_la_cruz": 4,
+    "de_la_cruz_pct": 0.099,
+    "precincts": 2
+  },
+  {
+    "town": "Gloucester",
+    "ward": "5",
+    "total_votes": 4323,
+    "de_la_cruz": 6,
+    "de_la_cruz_pct": 0.139,
+    "precincts": 2
+  },
+  {
+    "town": "Goshen",
+    "ward": "-",
+    "total_votes": 671,
+    "de_la_cruz": 1,
+    "de_la_cruz_pct": 0.149,
+    "precincts": 1
+  },
+  {
+    "town": "Gosnold",
+    "ward": "-",
+    "total_votes": 70,
+    "de_la_cruz": 0,
+    "de_la_cruz_pct": 0.0,
+    "precincts": 1
+  },
+  {
+    "town": "Grafton",
+    "ward": "-",
+    "total_votes": 11289,
+    "de_la_cruz": 16,
+    "de_la_cruz_pct": 0.142,
+    "precincts": 5
+  },
+  {
+    "town": "Granby",
+    "ward": "-",
+    "total_votes": 3984,
+    "de_la_cruz": 8,
+    "de_la_cruz_pct": 0.201,
+    "precincts": 3
+  },
+  {
+    "town": "Granville",
+    "ward": "-",
+    "total_votes": 995,
+    "de_la_cruz": 6,
+    "de_la_cruz_pct": 0.603,
+    "precincts": 1
+  },
+  {
+    "town": "Great Barrington",
+    "ward": "-",
+    "total_votes": 3961,
+    "de_la_cruz": 24,
+    "de_la_cruz_pct": 0.606,
+    "precincts": 4
+  },
+  {
+    "town": "Greenfield",
+    "ward": "-",
+    "total_votes": 9578,
+    "de_la_cruz": 84,
+    "de_la_cruz_pct": 0.877,
+    "precincts": 9
+  },
+  {
+    "town": "Groton",
+    "ward": "-",
+    "total_votes": 7324,
+    "de_la_cruz": 21,
+    "de_la_cruz_pct": 0.287,
+    "precincts": 3
+  },
+  {
+    "town": "Groveland",
+    "ward": "-",
+    "total_votes": 4469,
+    "de_la_cruz": 4,
+    "de_la_cruz_pct": 0.09,
+    "precincts": 2
+  },
+  {
+    "town": "Hadley",
+    "ward": "-",
+    "total_votes": 3342,
+    "de_la_cruz": 15,
+    "de_la_cruz_pct": 0.449,
+    "precincts": 1
+  },
+  {
+    "town": "Halifax",
+    "ward": "-",
+    "total_votes": 4940,
+    "de_la_cruz": 6,
+    "de_la_cruz_pct": 0.121,
+    "precincts": 3
+  },
+  {
+    "town": "Hamilton",
+    "ward": "-",
+    "total_votes": 4839,
+    "de_la_cruz": 11,
+    "de_la_cruz_pct": 0.227,
+    "precincts": 2
+  },
+  {
+    "town": "Hampden",
+    "ward": "-",
+    "total_votes": 3293,
+    "de_la_cruz": 5,
+    "de_la_cruz_pct": 0.152,
+    "precincts": 1
+  },
+  {
+    "town": "Hancock",
+    "ward": "-",
+    "total_votes": 495,
+    "de_la_cruz": 1,
+    "de_la_cruz_pct": 0.202,
+    "precincts": 1
+  },
+  {
+    "town": "Hanover",
+    "ward": "-",
+    "total_votes": 9818,
+    "de_la_cruz": 10,
+    "de_la_cruz_pct": 0.102,
+    "precincts": 4
+  },
+  {
+    "town": "Hanson",
+    "ward": "-",
+    "total_votes": 6871,
+    "de_la_cruz": 10,
+    "de_la_cruz_pct": 0.146,
+    "precincts": 3
+  },
+  {
+    "town": "Hardwick",
+    "ward": "-",
+    "total_votes": 1584,
+    "de_la_cruz": 2,
+    "de_la_cruz_pct": 0.126,
+    "precincts": 1
+  },
+  {
+    "town": "Harvard",
+    "ward": "-",
+    "total_votes": 4054,
+    "de_la_cruz": 3,
+    "de_la_cruz_pct": 0.074,
+    "precincts": 1
+  },
+  {
+    "town": "Harwich",
+    "ward": "-",
+    "total_votes": 9365,
+    "de_la_cruz": 11,
+    "de_la_cruz_pct": 0.117,
+    "precincts": 4
+  },
+  {
+    "town": "Hatfield",
+    "ward": "-",
+    "total_votes": 2251,
+    "de_la_cruz": 9,
+    "de_la_cruz_pct": 0.4,
+    "precincts": 1
+  },
+  {
+    "town": "Haverhill",
+    "ward": "1",
+    "total_votes": 2901,
+    "de_la_cruz": 19,
+    "de_la_cruz_pct": 0.655,
+    "precincts": 5
+  },
+  {
+    "town": "Haverhill",
+    "ward": "2",
+    "total_votes": 3969,
+    "de_la_cruz": 13,
+    "de_la_cruz_pct": 0.328,
+    "precincts": 3
+  },
+  {
+    "town": "Haverhill",
+    "ward": "3",
+    "total_votes": 3080,
+    "de_la_cruz": 18,
+    "de_la_cruz_pct": 0.584,
+    "precincts": 3
+  },
+  {
+    "town": "Haverhill",
+    "ward": "4",
+    "total_votes": 5787,
+    "de_la_cruz": 19,
+    "de_la_cruz_pct": 0.328,
+    "precincts": 3
+  },
+  {
+    "town": "Haverhill",
+    "ward": "5",
+    "total_votes": 5586,
+    "de_la_cruz": 17,
+    "de_la_cruz_pct": 0.304,
+    "precincts": 5
+  },
+  {
+    "town": "Haverhill",
+    "ward": "6",
+    "total_votes": 4990,
+    "de_la_cruz": 11,
+    "de_la_cruz_pct": 0.22,
+    "precincts": 4
+  },
+  {
+    "town": "Haverhill",
+    "ward": "7",
+    "total_votes": 5278,
+    "de_la_cruz": 21,
+    "de_la_cruz_pct": 0.398,
+    "precincts": 5
+  },
+  {
+    "town": "Hawley",
+    "ward": "-",
+    "total_votes": 196,
+    "de_la_cruz": 0,
+    "de_la_cruz_pct": 0.0,
+    "precincts": 1
+  },
+  {
+    "town": "Heath",
+    "ward": "-",
+    "total_votes": 472,
+    "de_la_cruz": 1,
+    "de_la_cruz_pct": 0.212,
+    "precincts": 1
+  },
+  {
+    "town": "Hingham",
+    "ward": "-",
+    "total_votes": 15849,
+    "de_la_cruz": 23,
+    "de_la_cruz_pct": 0.145,
+    "precincts": 8
+  },
+  {
+    "town": "Hinsdale",
+    "ward": "-",
+    "total_votes": 1218,
+    "de_la_cruz": 2,
+    "de_la_cruz_pct": 0.164,
+    "precincts": 1
+  },
+  {
+    "town": "Holbrook",
+    "ward": "-",
+    "total_votes": 6004,
+    "de_la_cruz": 9,
+    "de_la_cruz_pct": 0.15,
+    "precincts": 4
+  },
+  {
+    "town": "Holden",
+    "ward": "-",
+    "total_votes": 12641,
+    "de_la_cruz": 15,
+    "de_la_cruz_pct": 0.119,
+    "precincts": 6
+  },
+  {
+    "town": "Holland",
+    "ward": "-",
+    "total_votes": 1589,
+    "de_la_cruz": 2,
+    "de_la_cruz_pct": 0.126,
+    "precincts": 1
+  },
+  {
+    "town": "Holliston",
+    "ward": "-",
+    "total_votes": 9397,
+    "de_la_cruz": 27,
+    "de_la_cruz_pct": 0.287,
+    "precincts": 4
+  },
+  {
+    "town": "Holyoke",
+    "ward": "1",
+    "total_votes": 1267,
+    "de_la_cruz": 15,
+    "de_la_cruz_pct": 1.184,
+    "precincts": 2
+  },
+  {
+    "town": "Holyoke",
+    "ward": "2",
+    "total_votes": 1278,
+    "de_la_cruz": 17,
+    "de_la_cruz_pct": 1.33,
+    "precincts": 2
+  },
+  {
+    "town": "Holyoke",
+    "ward": "3",
+    "total_votes": 2424,
+    "de_la_cruz": 23,
+    "de_la_cruz_pct": 0.949,
+    "precincts": 2
+  },
+  {
+    "town": "Holyoke",
+    "ward": "4",
+    "total_votes": 1435,
+    "de_la_cruz": 30,
+    "de_la_cruz_pct": 2.091,
+    "precincts": 2
+  },
+  {
+    "town": "Holyoke",
+    "ward": "5",
+    "total_votes": 3039,
+    "de_la_cruz": 20,
+    "de_la_cruz_pct": 0.658,
+    "precincts": 2
+  },
+  {
+    "town": "Holyoke",
+    "ward": "6",
+    "total_votes": 2290,
+    "de_la_cruz": 22,
+    "de_la_cruz_pct": 0.961,
+    "precincts": 2
+  },
+  {
+    "town": "Holyoke",
+    "ward": "7",
+    "total_votes": 3226,
+    "de_la_cruz": 22,
+    "de_la_cruz_pct": 0.682,
+    "precincts": 2
+  },
+  {
+    "town": "Hopedale",
+    "ward": "-",
+    "total_votes": 3616,
+    "de_la_cruz": 9,
+    "de_la_cruz_pct": 0.249,
+    "precincts": 1
+  },
+  {
+    "town": "Hopkinton",
+    "ward": "-",
+    "total_votes": 10460,
+    "de_la_cruz": 17,
+    "de_la_cruz_pct": 0.163,
+    "precincts": 5
+  },
+  {
+    "town": "Hubbardston",
+    "ward": "-",
+    "total_votes": 2977,
+    "de_la_cruz": 5,
+    "de_la_cruz_pct": 0.168,
+    "precincts": 1
+  },
+  {
+    "town": "Hudson",
+    "ward": "-",
+    "total_votes": 11433,
+    "de_la_cruz": 31,
+    "de_la_cruz_pct": 0.271,
+    "precincts": 6
+  },
+  {
+    "town": "Hull",
+    "ward": "-",
+    "total_votes": 6918,
+    "de_la_cruz": 13,
+    "de_la_cruz_pct": 0.188,
+    "precincts": 3
+  },
+  {
+    "town": "Huntington",
+    "ward": "-",
+    "total_votes": 1239,
+    "de_la_cruz": 1,
+    "de_la_cruz_pct": 0.081,
+    "precincts": 1
+  },
+  {
+    "town": "Ipswich",
+    "ward": "-",
+    "total_votes": 9633,
+    "de_la_cruz": 23,
+    "de_la_cruz_pct": 0.239,
+    "precincts": 4
+  },
+  {
+    "town": "Kingston",
+    "ward": "-",
+    "total_votes": 8760,
+    "de_la_cruz": 20,
+    "de_la_cruz_pct": 0.228,
+    "precincts": 4
+  },
+  {
+    "town": "Lakeville",
+    "ward": "-",
+    "total_votes": 7855,
+    "de_la_cruz": 9,
+    "de_la_cruz_pct": 0.115,
+    "precincts": 3
+  },
+  {
+    "town": "Lancaster",
+    "ward": "-",
+    "total_votes": 4275,
+    "de_la_cruz": 9,
+    "de_la_cruz_pct": 0.211,
+    "precincts": 2
+  },
+  {
+    "town": "Lanesborough",
+    "ward": "-",
+    "total_votes": 1862,
+    "de_la_cruz": 4,
+    "de_la_cruz_pct": 0.215,
+    "precincts": 1
+  },
+  {
+    "town": "Lawrence",
+    "ward": "A",
+    "total_votes": 3431,
+    "de_la_cruz": 31,
+    "de_la_cruz_pct": 0.904,
+    "precincts": 5
+  },
+  {
+    "town": "Lawrence",
+    "ward": "B",
+    "total_votes": 3095,
+    "de_la_cruz": 43,
+    "de_la_cruz_pct": 1.389,
+    "precincts": 4
+  },
+  {
+    "town": "Lawrence",
+    "ward": "C",
+    "total_votes": 2953,
+    "de_la_cruz": 28,
+    "de_la_cruz_pct": 0.948,
+    "precincts": 4
+  },
+  {
+    "town": "Lawrence",
+    "ward": "D",
+    "total_votes": 3152,
+    "de_la_cruz": 30,
+    "de_la_cruz_pct": 0.952,
+    "precincts": 4
+  },
+  {
+    "town": "Lawrence",
+    "ward": "E",
+    "total_votes": 4462,
+    "de_la_cruz": 21,
+    "de_la_cruz_pct": 0.471,
+    "precincts": 5
+  },
+  {
+    "town": "Lawrence",
+    "ward": "F",
+    "total_votes": 4128,
+    "de_la_cruz": 45,
+    "de_la_cruz_pct": 1.09,
+    "precincts": 4
+  },
+  {
+    "town": "Lee",
+    "ward": "-",
+    "total_votes": 3258,
+    "de_la_cruz": 9,
+    "de_la_cruz_pct": 0.276,
+    "precincts": 1
+  },
+  {
+    "town": "Leicester",
+    "ward": "-",
+    "total_votes": 6348,
+    "de_la_cruz": 22,
+    "de_la_cruz_pct": 0.347,
+    "precincts": 4
+  },
+  {
+    "town": "Lenox",
+    "ward": "-",
+    "total_votes": 3297,
+    "de_la_cruz": 9,
+    "de_la_cruz_pct": 0.273,
+    "precincts": 1
+  },
+  {
+    "town": "Leominster",
+    "ward": "1",
+    "total_votes": 4649,
+    "de_la_cruz": 18,
+    "de_la_cruz_pct": 0.387,
+    "precincts": 3
+  },
+  {
+    "town": "Leominster",
+    "ward": "2",
+    "total_votes": 3258,
+    "de_la_cruz": 8,
+    "de_la_cruz_pct": 0.246,
+    "precincts": 3
+  },
+  {
+    "town": "Leominster",
+    "ward": "3",
+    "total_votes": 4654,
+    "de_la_cruz": 12,
+    "de_la_cruz_pct": 0.258,
+    "precincts": 3
+  },
+  {
+    "town": "Leominster",
+    "ward": "4",
+    "total_votes": 4696,
+    "de_la_cruz": 10,
+    "de_la_cruz_pct": 0.213,
+    "precincts": 3
+  },
+  {
+    "town": "Leominster",
+    "ward": "5",
+    "total_votes": 3794,
+    "de_la_cruz": 21,
+    "de_la_cruz_pct": 0.554,
+    "precincts": 3
+  },
+  {
+    "town": "Leverett",
+    "ward": "-",
+    "total_votes": 1310,
+    "de_la_cruz": 9,
+    "de_la_cruz_pct": 0.687,
+    "precincts": 1
+  },
+  {
+    "town": "Lexington",
+    "ward": "-",
+    "total_votes": 18603,
+    "de_la_cruz": 54,
+    "de_la_cruz_pct": 0.29,
+    "precincts": 9
+  },
+  {
+    "town": "Leyden",
+    "ward": "-",
+    "total_votes": 496,
+    "de_la_cruz": 3,
+    "de_la_cruz_pct": 0.605,
+    "precincts": 1
+  },
+  {
+    "town": "Lincoln",
+    "ward": "-",
+    "total_votes": 4047,
+    "de_la_cruz": 5,
+    "de_la_cruz_pct": 0.124,
+    "precincts": 2
+  },
+  {
+    "town": "Littleton",
+    "ward": "-",
+    "total_votes": 6586,
+    "de_la_cruz": 16,
+    "de_la_cruz_pct": 0.243,
+    "precincts": 3
+  },
+  {
+    "town": "Longmeadow",
+    "ward": "-",
+    "total_votes": 9842,
+    "de_la_cruz": 20,
+    "de_la_cruz_pct": 0.203,
+    "precincts": 5
+  },
+  {
+    "town": "Lowell",
+    "ward": "1",
+    "total_votes": 5478,
+    "de_la_cruz": 24,
+    "de_la_cruz_pct": 0.438,
+    "precincts": 5
+  },
+  {
+    "town": "Lowell",
+    "ward": "2",
+    "total_votes": 4294,
+    "de_la_cruz": 21,
+    "de_la_cruz_pct": 0.489,
+    "precincts": 4
+  },
+  {
+    "town": "Lowell",
+    "ward": "3",
+    "total_votes": 6235,
+    "de_la_cruz": 22,
+    "de_la_cruz_pct": 0.353,
+    "precincts": 4
+  },
+  {
+    "town": "Lowell",
+    "ward": "4",
+    "total_votes": 3571,
+    "de_la_cruz": 30,
+    "de_la_cruz_pct": 0.84,
+    "precincts": 6
+  },
+  {
+    "town": "Lowell",
+    "ward": "5",
+    "total_votes": 4322,
+    "de_la_cruz": 27,
+    "de_la_cruz_pct": 0.625,
+    "precincts": 5
+  },
+  {
+    "town": "Lowell",
+    "ward": "6",
+    "total_votes": 3344,
+    "de_la_cruz": 11,
+    "de_la_cruz_pct": 0.329,
+    "precincts": 6
+  },
+  {
+    "town": "Lowell",
+    "ward": "7",
+    "total_votes": 3046,
+    "de_la_cruz": 32,
+    "de_la_cruz_pct": 1.051,
+    "precincts": 4
+  },
+  {
+    "town": "Lowell",
+    "ward": "8",
+    "total_votes": 5102,
+    "de_la_cruz": 19,
+    "de_la_cruz_pct": 0.372,
+    "precincts": 5
+  },
+  {
+    "town": "Ludlow",
+    "ward": "-",
+    "total_votes": 11285,
+    "de_la_cruz": 17,
+    "de_la_cruz_pct": 0.151,
+    "precincts": 6
+  },
+  {
+    "town": "Lunenburg",
+    "ward": "-",
+    "total_votes": 7341,
+    "de_la_cruz": 17,
+    "de_la_cruz_pct": 0.232,
+    "precincts": 6
+  },
+  {
+    "town": "Lynn",
+    "ward": "1",
+    "total_votes": 7321,
+    "de_la_cruz": 23,
+    "de_la_cruz_pct": 0.314,
+    "precincts": 5
+  },
+  {
+    "town": "Lynn",
+    "ward": "2",
+    "total_votes": 4472,
+    "de_la_cruz": 26,
+    "de_la_cruz_pct": 0.581,
+    "precincts": 4
+  },
+  {
+    "town": "Lynn",
+    "ward": "3",
+    "total_votes": 4691,
+    "de_la_cruz": 30,
+    "de_la_cruz_pct": 0.64,
+    "precincts": 4
+  },
+  {
+    "town": "Lynn",
+    "ward": "4",
+    "total_votes": 3331,
+    "de_la_cruz": 29,
+    "de_la_cruz_pct": 0.871,
+    "precincts": 5
+  },
+  {
+    "town": "Lynn",
+    "ward": "5",
+    "total_votes": 3777,
+    "de_la_cruz": 29,
+    "de_la_cruz_pct": 0.768,
+    "precincts": 4
+  },
+  {
+    "town": "Lynn",
+    "ward": "6",
+    "total_votes": 3293,
+    "de_la_cruz": 32,
+    "de_la_cruz_pct": 0.972,
+    "precincts": 4
+  },
+  {
+    "town": "Lynn",
+    "ward": "7",
+    "total_votes": 5162,
+    "de_la_cruz": 28,
+    "de_la_cruz_pct": 0.542,
+    "precincts": 4
+  },
+  {
+    "town": "Lynnfield",
+    "ward": "-",
+    "total_votes": 8167,
+    "de_la_cruz": 9,
+    "de_la_cruz_pct": 0.11,
+    "precincts": 4
+  },
+  {
+    "town": "Malden",
+    "ward": "1",
+    "total_votes": 2592,
+    "de_la_cruz": 21,
+    "de_la_cruz_pct": 0.81,
+    "precincts": 3
+  },
+  {
+    "town": "Malden",
+    "ward": "2",
+    "total_votes": 2629,
+    "de_la_cruz": 21,
+    "de_la_cruz_pct": 0.799,
+    "precincts": 3
+  },
+  {
+    "town": "Malden",
+    "ward": "3",
+    "total_votes": 3421,
+    "de_la_cruz": 35,
+    "de_la_cruz_pct": 1.023,
+    "precincts": 4
+  },
+  {
+    "town": "Malden",
+    "ward": "4",
+    "total_votes": 2348,
+    "de_la_cruz": 22,
+    "de_la_cruz_pct": 0.937,
+    "precincts": 3
+  },
+  {
+    "town": "Malden",
+    "ward": "5",
+    "total_votes": 3355,
+    "de_la_cruz": 16,
+    "de_la_cruz_pct": 0.477,
+    "precincts": 4
+  },
+  {
+    "town": "Malden",
+    "ward": "6",
+    "total_votes": 3238,
+    "de_la_cruz": 17,
+    "de_la_cruz_pct": 0.525,
+    "precincts": 3
+  },
+  {
+    "town": "Malden",
+    "ward": "7",
+    "total_votes": 2491,
+    "de_la_cruz": 20,
+    "de_la_cruz_pct": 0.803,
+    "precincts": 4
+  },
+  {
+    "town": "Malden",
+    "ward": "8",
+    "total_votes": 2801,
+    "de_la_cruz": 21,
+    "de_la_cruz_pct": 0.75,
+    "precincts": 3
+  },
+  {
+    "town": "Manchester-by-the-Sea",
+    "ward": "-",
+    "total_votes": 3682,
+    "de_la_cruz": 9,
+    "de_la_cruz_pct": 0.244,
+    "precincts": 1
+  },
+  {
+    "town": "Mansfield",
+    "ward": "-",
+    "total_votes": 14101,
+    "de_la_cruz": 24,
+    "de_la_cruz_pct": 0.17,
+    "precincts": 9
+  },
+  {
+    "town": "Marblehead",
+    "ward": "-",
+    "total_votes": 13760,
+    "de_la_cruz": 33,
+    "de_la_cruz_pct": 0.24,
+    "precincts": 6
+  },
+  {
+    "town": "Marion",
+    "ward": "-",
+    "total_votes": 3680,
+    "de_la_cruz": 4,
+    "de_la_cruz_pct": 0.109,
+    "precincts": 1
+  },
+  {
+    "town": "Marlborough",
+    "ward": "1",
+    "total_votes": 2923,
+    "de_la_cruz": 5,
+    "de_la_cruz_pct": 0.171,
+    "precincts": 3
+  },
+  {
+    "town": "Marlborough",
+    "ward": "2",
+    "total_votes": 2645,
+    "de_la_cruz": 6,
+    "de_la_cruz_pct": 0.227,
+    "precincts": 3
+  },
+  {
+    "town": "Marlborough",
+    "ward": "3",
+    "total_votes": 2727,
+    "de_la_cruz": 8,
+    "de_la_cruz_pct": 0.293,
+    "precincts": 2
+  },
+  {
+    "town": "Marlborough",
+    "ward": "4",
+    "total_votes": 2527,
+    "de_la_cruz": 5,
+    "de_la_cruz_pct": 0.198,
+    "precincts": 2
+  },
+  {
+    "town": "Marlborough",
+    "ward": "5",
+    "total_votes": 2338,
+    "de_la_cruz": 2,
+    "de_la_cruz_pct": 0.086,
+    "precincts": 2
+  },
+  {
+    "town": "Marlborough",
+    "ward": "6",
+    "total_votes": 2686,
+    "de_la_cruz": 6,
+    "de_la_cruz_pct": 0.223,
+    "precincts": 2
+  },
+  {
+    "town": "Marlborough",
+    "ward": "7",
+    "total_votes": 2442,
+    "de_la_cruz": 4,
+    "de_la_cruz_pct": 0.164,
+    "precincts": 3
+  },
+  {
+    "town": "Marshfield",
+    "ward": "-",
+    "total_votes": 17572,
+    "de_la_cruz": 23,
+    "de_la_cruz_pct": 0.131,
+    "precincts": 8
+  },
+  {
+    "town": "Mashpee",
+    "ward": "-",
+    "total_votes": 10498,
+    "de_la_cruz": 17,
+    "de_la_cruz_pct": 0.162,
+    "precincts": 5
+  },
+  {
+    "town": "Mattapoisett",
+    "ward": "-",
+    "total_votes": 4961,
+    "de_la_cruz": 2,
+    "de_la_cruz_pct": 0.04,
+    "precincts": 2
+  },
+  {
+    "town": "Maynard",
+    "ward": "-",
+    "total_votes": 6762,
+    "de_la_cruz": 24,
+    "de_la_cruz_pct": 0.355,
+    "precincts": 4
+  },
+  {
+    "town": "Medfield",
+    "ward": "-",
+    "total_votes": 8133,
+    "de_la_cruz": 12,
+    "de_la_cruz_pct": 0.148,
+    "precincts": 4
+  },
+  {
+    "town": "Medford",
+    "ward": "1",
+    "total_votes": 3979,
+    "de_la_cruz": 24,
+    "de_la_cruz_pct": 0.603,
+    "precincts": 2
+  },
+  {
+    "town": "Medford",
+    "ward": "2",
+    "total_votes": 4298,
+    "de_la_cruz": 27,
+    "de_la_cruz_pct": 0.628,
+    "precincts": 2
+  },
+  {
+    "town": "Medford",
+    "ward": "3",
+    "total_votes": 4693,
+    "de_la_cruz": 13,
+    "de_la_cruz_pct": 0.277,
+    "precincts": 2
+  },
+  {
+    "town": "Medford",
+    "ward": "4",
+    "total_votes": 2916,
+    "de_la_cruz": 25,
+    "de_la_cruz_pct": 0.857,
+    "precincts": 2
+  },
+  {
+    "town": "Medford",
+    "ward": "5",
+    "total_votes": 3626,
+    "de_la_cruz": 42,
+    "de_la_cruz_pct": 1.158,
+    "precincts": 2
+  },
+  {
+    "town": "Medford",
+    "ward": "6",
+    "total_votes": 4324,
+    "de_la_cruz": 35,
+    "de_la_cruz_pct": 0.809,
+    "precincts": 3
+  },
+  {
+    "town": "Medford",
+    "ward": "7",
+    "total_votes": 2663,
+    "de_la_cruz": 10,
+    "de_la_cruz_pct": 0.376,
+    "precincts": 3
+  },
+  {
+    "town": "Medford",
+    "ward": "8",
+    "total_votes": 3708,
+    "de_la_cruz": 27,
+    "de_la_cruz_pct": 0.728,
+    "precincts": 2
+  },
+  {
+    "town": "Medway",
+    "ward": "-",
+    "total_votes": 8535,
+    "de_la_cruz": 12,
+    "de_la_cruz_pct": 0.141,
+    "precincts": 4
+  },
+  {
+    "town": "Melrose",
+    "ward": "1",
+    "total_votes": 2515,
+    "de_la_cruz": 5,
+    "de_la_cruz_pct": 0.199,
+    "precincts": 2
+  },
+  {
+    "town": "Melrose",
+    "ward": "2",
+    "total_votes": 2584,
+    "de_la_cruz": 8,
+    "de_la_cruz_pct": 0.31,
+    "precincts": 2
+  },
+  {
+    "town": "Melrose",
+    "ward": "3",
+    "total_votes": 2426,
+    "de_la_cruz": 4,
+    "de_la_cruz_pct": 0.165,
+    "precincts": 2
+  },
+  {
+    "town": "Melrose",
+    "ward": "4",
+    "total_votes": 2611,
+    "de_la_cruz": 5,
+    "de_la_cruz_pct": 0.191,
+    "precincts": 2
+  },
+  {
+    "town": "Melrose",
+    "ward": "5",
+    "total_votes": 1876,
+    "de_la_cruz": 7,
+    "de_la_cruz_pct": 0.373,
+    "precincts": 2
+  },
+  {
+    "town": "Melrose",
+    "ward": "6",
+    "total_votes": 2602,
+    "de_la_cruz": 6,
+    "de_la_cruz_pct": 0.231,
+    "precincts": 2
+  },
+  {
+    "town": "Melrose",
+    "ward": "7",
+    "total_votes": 2687,
+    "de_la_cruz": 14,
+    "de_la_cruz_pct": 0.521,
+    "precincts": 2
+  },
+  {
+    "town": "Mendon",
+    "ward": "-",
+    "total_votes": 4008,
+    "de_la_cruz": 3,
+    "de_la_cruz_pct": 0.075,
+    "precincts": 2
+  },
+  {
+    "town": "Merrimac",
+    "ward": "-",
+    "total_votes": 4350,
+    "de_la_cruz": 11,
+    "de_la_cruz_pct": 0.253,
+    "precincts": 2
+  },
+  {
+    "town": "Methuen",
+    "ward": "-",
+    "total_votes": 24703,
+    "de_la_cruz": 81,
+    "de_la_cruz_pct": 0.328,
+    "precincts": 17
+  },
+  {
+    "town": "Middleborough",
+    "ward": "-",
+    "total_votes": 14537,
+    "de_la_cruz": 26,
+    "de_la_cruz_pct": 0.179,
+    "precincts": 9
+  },
+  {
+    "town": "Middlefield",
+    "ward": "-",
+    "total_votes": 317,
+    "de_la_cruz": 1,
+    "de_la_cruz_pct": 0.315,
+    "precincts": 1
+  },
+  {
+    "town": "Middleton",
+    "ward": "-",
+    "total_votes": 5846,
+    "de_la_cruz": 8,
+    "de_la_cruz_pct": 0.137,
+    "precincts": 3
+  },
+  {
+    "town": "Milford",
+    "ward": "-",
+    "total_votes": 14033,
+    "de_la_cruz": 33,
+    "de_la_cruz_pct": 0.235,
+    "precincts": 8
+  },
+  {
+    "town": "Millbury",
+    "ward": "-",
+    "total_votes": 8158,
+    "de_la_cruz": 14,
+    "de_la_cruz_pct": 0.172,
+    "precincts": 4
+  },
+  {
+    "town": "Millis",
+    "ward": "-",
+    "total_votes": 6065,
+    "de_la_cruz": 16,
+    "de_la_cruz_pct": 0.264,
+    "precincts": 3
+  },
+  {
+    "town": "Millville",
+    "ward": "-",
+    "total_votes": 1808,
+    "de_la_cruz": 8,
+    "de_la_cruz_pct": 0.442,
+    "precincts": 1
+  },
+  {
+    "town": "Milton",
+    "ward": "-",
+    "total_votes": 16952,
+    "de_la_cruz": 43,
+    "de_la_cruz_pct": 0.254,
+    "precincts": 11
+  },
+  {
+    "town": "Monroe",
+    "ward": "-",
+    "total_votes": 66,
+    "de_la_cruz": 0,
+    "de_la_cruz_pct": 0.0,
+    "precincts": 1
+  },
+  {
+    "town": "Monson",
+    "ward": "-",
+    "total_votes": 5103,
+    "de_la_cruz": 9,
+    "de_la_cruz_pct": 0.176,
+    "precincts": 3
+  },
+  {
+    "town": "Montague",
+    "ward": "-",
+    "total_votes": 4842,
+    "de_la_cruz": 49,
+    "de_la_cruz_pct": 1.012,
+    "precincts": 6
+  },
+  {
+    "town": "Monterey",
+    "ward": "-",
+    "total_votes": 604,
+    "de_la_cruz": 3,
+    "de_la_cruz_pct": 0.497,
+    "precincts": 1
+  },
+  {
+    "town": "Montgomery",
+    "ward": "-",
+    "total_votes": 556,
+    "de_la_cruz": 0,
+    "de_la_cruz_pct": 0.0,
+    "precincts": 1
+  },
+  {
+    "town": "Mount Washington",
+    "ward": "-",
+    "total_votes": 125,
+    "de_la_cruz": 0,
+    "de_la_cruz_pct": 0.0,
+    "precincts": 1
+  },
+  {
+    "town": "Nahant",
+    "ward": "-",
+    "total_votes": 2352,
+    "de_la_cruz": 1,
+    "de_la_cruz_pct": 0.043,
+    "precincts": 1
+  },
+  {
+    "town": "Nantucket",
+    "ward": "-",
+    "total_votes": 7174,
+    "de_la_cruz": 17,
+    "de_la_cruz_pct": 0.237,
+    "precincts": 1
+  },
+  {
+    "town": "Natick",
+    "ward": "-",
+    "total_votes": 21148,
+    "de_la_cruz": 41,
+    "de_la_cruz_pct": 0.194,
+    "precincts": 10
+  },
+  {
+    "town": "Needham",
+    "ward": "-",
+    "total_votes": 19706,
+    "de_la_cruz": 50,
+    "de_la_cruz_pct": 0.254,
+    "precincts": 10
+  },
+  {
+    "town": "New Ashford",
+    "ward": "-",
+    "total_votes": 164,
+    "de_la_cruz": 0,
+    "de_la_cruz_pct": 0.0,
+    "precincts": 1
+  },
+  {
+    "town": "New Bedford",
+    "ward": "1",
+    "total_votes": 8345,
+    "de_la_cruz": 19,
+    "de_la_cruz_pct": 0.228,
+    "precincts": 9
+  },
+  {
+    "town": "New Bedford",
+    "ward": "2",
+    "total_votes": 4564,
+    "de_la_cruz": 17,
+    "de_la_cruz_pct": 0.372,
+    "precincts": 6
+  },
+  {
+    "town": "New Bedford",
+    "ward": "3",
+    "total_votes": 4960,
+    "de_la_cruz": 25,
+    "de_la_cruz_pct": 0.504,
+    "precincts": 7
+  },
+  {
+    "town": "New Bedford",
+    "ward": "4",
+    "total_votes": 5334,
+    "de_la_cruz": 34,
+    "de_la_cruz_pct": 0.637,
+    "precincts": 7
+  },
+  {
+    "town": "New Bedford",
+    "ward": "5",
+    "total_votes": 7187,
+    "de_la_cruz": 39,
+    "de_la_cruz_pct": 0.543,
+    "precincts": 6
+  },
+  {
+    "town": "New Bedford",
+    "ward": "6",
+    "total_votes": 4546,
+    "de_la_cruz": 23,
+    "de_la_cruz_pct": 0.506,
+    "precincts": 6
+  },
+  {
+    "town": "New Braintree",
+    "ward": "-",
+    "total_votes": 675,
+    "de_la_cruz": 0,
+    "de_la_cruz_pct": 0.0,
+    "precincts": 1
+  },
+  {
+    "town": "New Marlborough",
+    "ward": "-",
+    "total_votes": 1002,
+    "de_la_cruz": 4,
+    "de_la_cruz_pct": 0.399,
+    "precincts": 1
+  },
+  {
+    "town": "New Salem",
+    "ward": "-",
+    "total_votes": 714,
+    "de_la_cruz": 2,
+    "de_la_cruz_pct": 0.28,
+    "precincts": 1
+  },
+  {
+    "town": "Newbury",
+    "ward": "-",
+    "total_votes": 4901,
+    "de_la_cruz": 3,
+    "de_la_cruz_pct": 0.061,
+    "precincts": 2
+  },
+  {
+    "town": "Newburyport",
+    "ward": "1",
+    "total_votes": 2110,
+    "de_la_cruz": 2,
+    "de_la_cruz_pct": 0.095,
+    "precincts": 2
+  },
+  {
+    "town": "Newburyport",
+    "ward": "2",
+    "total_votes": 2071,
+    "de_la_cruz": 4,
+    "de_la_cruz_pct": 0.193,
+    "precincts": 1
+  },
+  {
+    "town": "Newburyport",
+    "ward": "3",
+    "total_votes": 2252,
+    "de_la_cruz": 3,
+    "de_la_cruz_pct": 0.133,
+    "precincts": 1
+  },
+  {
+    "town": "Newburyport",
+    "ward": "4",
+    "total_votes": 2189,
+    "de_la_cruz": 1,
+    "de_la_cruz_pct": 0.046,
+    "precincts": 1
+  },
+  {
+    "town": "Newburyport",
+    "ward": "5",
+    "total_votes": 1891,
+    "de_la_cruz": 1,
+    "de_la_cruz_pct": 0.053,
+    "precincts": 1
+  },
+  {
+    "town": "Newburyport",
+    "ward": "6",
+    "total_votes": 2066,
+    "de_la_cruz": 4,
+    "de_la_cruz_pct": 0.194,
+    "precincts": 1
+  },
+  {
+    "town": "Newton",
+    "ward": "1",
+    "total_votes": 5914,
+    "de_la_cruz": 25,
+    "de_la_cruz_pct": 0.423,
+    "precincts": 5
+  },
+  {
+    "town": "Newton",
+    "ward": "2",
+    "total_votes": 6113,
+    "de_la_cruz": 22,
+    "de_la_cruz_pct": 0.36,
+    "precincts": 4
+  },
+  {
+    "town": "Newton",
+    "ward": "3",
+    "total_votes": 6401,
+    "de_la_cruz": 15,
+    "de_la_cruz_pct": 0.234,
+    "precincts": 5
+  },
+  {
+    "town": "Newton",
+    "ward": "4",
+    "total_votes": 5482,
+    "de_la_cruz": 11,
+    "de_la_cruz_pct": 0.201,
+    "precincts": 4
+  },
+  {
+    "town": "Newton",
+    "ward": "5",
+    "total_votes": 6496,
+    "de_la_cruz": 17,
+    "de_la_cruz_pct": 0.262,
+    "precincts": 4
+  },
+  {
+    "town": "Newton",
+    "ward": "6",
+    "total_votes": 6502,
+    "de_la_cruz": 16,
+    "de_la_cruz_pct": 0.246,
+    "precincts": 4
+  },
+  {
+    "town": "Newton",
+    "ward": "7",
+    "total_votes": 4382,
+    "de_la_cruz": 12,
+    "de_la_cruz_pct": 0.274,
+    "precincts": 4
+  },
+  {
+    "town": "Newton",
+    "ward": "8",
+    "total_votes": 6053,
+    "de_la_cruz": 10,
+    "de_la_cruz_pct": 0.165,
+    "precincts": 4
+  },
+  {
+    "town": "Norfolk",
+    "ward": "-",
+    "total_votes": 6891,
+    "de_la_cruz": 7,
+    "de_la_cruz_pct": 0.102,
+    "precincts": 4
+  },
+  {
+    "town": "N. Adams",
+    "ward": "1",
+    "total_votes": 1289,
+    "de_la_cruz": 5,
+    "de_la_cruz_pct": 0.388,
+    "precincts": 1
+  },
+  {
+    "town": "N. Adams",
+    "ward": "2",
+    "total_votes": 1150,
+    "de_la_cruz": 8,
+    "de_la_cruz_pct": 0.696,
+    "precincts": 1
+  },
+  {
+    "town": "N. Adams",
+    "ward": "3",
+    "total_votes": 819,
+    "de_la_cruz": 10,
+    "de_la_cruz_pct": 1.221,
+    "precincts": 1
+  },
+  {
+    "town": "N. Adams",
+    "ward": "4",
+    "total_votes": 1310,
+    "de_la_cruz": 4,
+    "de_la_cruz_pct": 0.305,
+    "precincts": 1
+  },
+  {
+    "town": "N. Adams",
+    "ward": "5",
+    "total_votes": 1159,
+    "de_la_cruz": 8,
+    "de_la_cruz_pct": 0.69,
+    "precincts": 1
+  },
+  {
+    "town": "N. Andover",
+    "ward": "-",
+    "total_votes": 17141,
+    "de_la_cruz": 35,
+    "de_la_cruz_pct": 0.204,
+    "precincts": 8
+  },
+  {
+    "town": "N. Attleborough",
+    "ward": "-",
+    "total_votes": 17076,
+    "de_la_cruz": 35,
+    "de_la_cruz_pct": 0.205,
+    "precincts": 9
+  },
+  {
+    "town": "N. Brookfield",
+    "ward": "-",
+    "total_votes": 2854,
+    "de_la_cruz": 8,
+    "de_la_cruz_pct": 0.28,
+    "precincts": 1
+  },
+  {
+    "town": "N. Reading",
+    "ward": "-",
+    "total_votes": 10036,
+    "de_la_cruz": 19,
+    "de_la_cruz_pct": 0.189,
+    "precincts": 4
+  },
+  {
+    "town": "Northampton",
+    "ward": "1",
+    "total_votes": 2470,
+    "de_la_cruz": 24,
+    "de_la_cruz_pct": 0.972,
+    "precincts": 2
+  },
+  {
+    "town": "Northampton",
+    "ward": "2",
+    "total_votes": 1822,
+    "de_la_cruz": 31,
+    "de_la_cruz_pct": 1.701,
+    "precincts": 2
+  },
+  {
+    "town": "Northampton",
+    "ward": "3",
+    "total_votes": 2511,
+    "de_la_cruz": 66,
+    "de_la_cruz_pct": 2.628,
+    "precincts": 2
+  },
+  {
+    "town": "Northampton",
+    "ward": "4",
+    "total_votes": 2318,
+    "de_la_cruz": 40,
+    "de_la_cruz_pct": 1.726,
+    "precincts": 2
+  },
+  {
+    "town": "Northampton",
+    "ward": "5",
+    "total_votes": 2439,
+    "de_la_cruz": 20,
+    "de_la_cruz_pct": 0.82,
+    "precincts": 2
+  },
+  {
+    "town": "Northampton",
+    "ward": "6",
+    "total_votes": 3067,
+    "de_la_cruz": 19,
+    "de_la_cruz_pct": 0.619,
+    "precincts": 2
+  },
+  {
+    "town": "Northampton",
+    "ward": "7",
+    "total_votes": 2588,
+    "de_la_cruz": 27,
+    "de_la_cruz_pct": 1.043,
+    "precincts": 2
+  },
+  {
+    "town": "Northborough",
+    "ward": "-",
+    "total_votes": 9240,
+    "de_la_cruz": 21,
+    "de_la_cruz_pct": 0.227,
+    "precincts": 4
+  },
+  {
+    "town": "Northbridge",
+    "ward": "-",
+    "total_votes": 9276,
+    "de_la_cruz": 16,
+    "de_la_cruz_pct": 0.172,
+    "precincts": 5
+  },
+  {
+    "town": "Northfield",
+    "ward": "-",
+    "total_votes": 1954,
+    "de_la_cruz": 4,
+    "de_la_cruz_pct": 0.205,
+    "precincts": 1
+  },
+  {
+    "town": "Norton",
+    "ward": "-",
+    "total_votes": 10723,
+    "de_la_cruz": 19,
+    "de_la_cruz_pct": 0.177,
+    "precincts": 5
+  },
+  {
+    "town": "Norwell",
+    "ward": "-",
+    "total_votes": 7155,
+    "de_la_cruz": 8,
+    "de_la_cruz_pct": 0.112,
+    "precincts": 3
+  },
+  {
+    "town": "Norwood",
+    "ward": "-",
+    "total_votes": 16344,
+    "de_la_cruz": 42,
+    "de_la_cruz_pct": 0.257,
+    "precincts": 9
+  },
+  {
+    "town": "Oak Bluffs",
+    "ward": "-",
+    "total_votes": 3130,
+    "de_la_cruz": 4,
+    "de_la_cruz_pct": 0.128,
+    "precincts": 1
+  },
+  {
+    "town": "Oakham",
+    "ward": "-",
+    "total_votes": 1266,
+    "de_la_cruz": 2,
+    "de_la_cruz_pct": 0.158,
+    "precincts": 1
+  },
+  {
+    "town": "Orange",
+    "ward": "-",
+    "total_votes": 3944,
+    "de_la_cruz": 12,
+    "de_la_cruz_pct": 0.304,
+    "precincts": 2
+  },
+  {
+    "town": "Orleans",
+    "ward": "-",
+    "total_votes": 4822,
+    "de_la_cruz": 6,
+    "de_la_cruz_pct": 0.124,
+    "precincts": 2
+  },
+  {
+    "town": "Otis",
+    "ward": "-",
+    "total_votes": 1073,
+    "de_la_cruz": 3,
+    "de_la_cruz_pct": 0.28,
+    "precincts": 1
+  },
+  {
+    "town": "Oxford",
+    "ward": "-",
+    "total_votes": 7610,
+    "de_la_cruz": 21,
+    "de_la_cruz_pct": 0.276,
+    "precincts": 5
+  },
+  {
+    "town": "Palmer",
+    "ward": "-",
+    "total_votes": 6465,
+    "de_la_cruz": 15,
+    "de_la_cruz_pct": 0.232,
+    "precincts": 4
+  },
+  {
+    "town": "Paxton",
+    "ward": "-",
+    "total_votes": 2997,
+    "de_la_cruz": 4,
+    "de_la_cruz_pct": 0.133,
+    "precincts": 1
+  },
+  {
+    "town": "Peabody",
+    "ward": "1",
+    "total_votes": 5584,
+    "de_la_cruz": 8,
+    "de_la_cruz_pct": 0.143,
+    "precincts": 3
+  },
+  {
+    "town": "Peabody",
+    "ward": "2",
+    "total_votes": 3782,
+    "de_la_cruz": 4,
+    "de_la_cruz_pct": 0.106,
+    "precincts": 3
+  },
+  {
+    "town": "Peabody",
+    "ward": "3",
+    "total_votes": 3668,
+    "de_la_cruz": 14,
+    "de_la_cruz_pct": 0.382,
+    "precincts": 3
+  },
+  {
+    "town": "Peabody",
+    "ward": "4",
+    "total_votes": 4864,
+    "de_la_cruz": 7,
+    "de_la_cruz_pct": 0.144,
+    "precincts": 4
+  },
+  {
+    "town": "Peabody",
+    "ward": "5",
+    "total_votes": 5066,
+    "de_la_cruz": 7,
+    "de_la_cruz_pct": 0.138,
+    "precincts": 3
+  },
+  {
+    "town": "Peabody",
+    "ward": "6",
+    "total_votes": 6134,
+    "de_la_cruz": 2,
+    "de_la_cruz_pct": 0.033,
+    "precincts": 3
+  },
+  {
+    "town": "Pelham",
+    "ward": "-",
+    "total_votes": 861,
+    "de_la_cruz": 4,
+    "de_la_cruz_pct": 0.465,
+    "precincts": 1
+  },
+  {
+    "town": "Pembroke",
+    "ward": "-",
+    "total_votes": 11604,
+    "de_la_cruz": 20,
+    "de_la_cruz_pct": 0.172,
+    "precincts": 6
+  },
+  {
+    "town": "Pepperell",
+    "ward": "-",
+    "total_votes": 7376,
+    "de_la_cruz": 20,
+    "de_la_cruz_pct": 0.271,
+    "precincts": 4
+  },
+  {
+    "town": "Peru",
+    "ward": "-",
+    "total_votes": 528,
+    "de_la_cruz": 2,
+    "de_la_cruz_pct": 0.379,
+    "precincts": 1
+  },
+  {
+    "town": "Petersham",
+    "ward": "-",
+    "total_votes": 901,
+    "de_la_cruz": 5,
+    "de_la_cruz_pct": 0.555,
+    "precincts": 1
+  },
+  {
+    "town": "Phillipston",
+    "ward": "-",
+    "total_votes": 1170,
+    "de_la_cruz": 6,
+    "de_la_cruz_pct": 0.513,
+    "precincts": 1
+  },
+  {
+    "town": "Pittsfield",
+    "ward": "1",
+    "total_votes": 2662,
+    "de_la_cruz": 5,
+    "de_la_cruz_pct": 0.188,
+    "precincts": 2
+  },
+  {
+    "town": "Pittsfield",
+    "ward": "2",
+    "total_votes": 2446,
+    "de_la_cruz": 9,
+    "de_la_cruz_pct": 0.368,
+    "precincts": 2
+  },
+  {
+    "town": "Pittsfield",
+    "ward": "3",
+    "total_votes": 3635,
+    "de_la_cruz": 9,
+    "de_la_cruz_pct": 0.248,
+    "precincts": 2
+  },
+  {
+    "town": "Pittsfield",
+    "ward": "4",
+    "total_votes": 3845,
+    "de_la_cruz": 10,
+    "de_la_cruz_pct": 0.26,
+    "precincts": 2
+  },
+  {
+    "town": "Pittsfield",
+    "ward": "5",
+    "total_votes": 3083,
+    "de_la_cruz": 9,
+    "de_la_cruz_pct": 0.292,
+    "precincts": 2
+  },
+  {
+    "town": "Pittsfield",
+    "ward": "6",
+    "total_votes": 2592,
+    "de_la_cruz": 12,
+    "de_la_cruz_pct": 0.463,
+    "precincts": 2
+  },
+  {
+    "town": "Pittsfield",
+    "ward": "7",
+    "total_votes": 2683,
+    "de_la_cruz": 6,
+    "de_la_cruz_pct": 0.224,
+    "precincts": 2
+  },
+  {
+    "town": "Plainfield",
+    "ward": "-",
+    "total_votes": 432,
+    "de_la_cruz": 4,
+    "de_la_cruz_pct": 0.926,
+    "precincts": 1
+  },
+  {
+    "town": "Plainville",
+    "ward": "-",
+    "total_votes": 5656,
+    "de_la_cruz": 17,
+    "de_la_cruz_pct": 0.301,
+    "precincts": 3
+  },
+  {
+    "town": "Plymouth",
+    "ward": "-",
+    "total_votes": 40835,
+    "de_la_cruz": 68,
+    "de_la_cruz_pct": 0.167,
+    "precincts": 18
+  },
+  {
+    "town": "Plympton",
+    "ward": "-",
+    "total_votes": 2000,
+    "de_la_cruz": 5,
+    "de_la_cruz_pct": 0.25,
+    "precincts": 1
+  },
+  {
+    "town": "Princeton",
+    "ward": "-",
+    "total_votes": 2559,
+    "de_la_cruz": 4,
+    "de_la_cruz_pct": 0.156,
+    "precincts": 1
+  },
+  {
+    "town": "Provincetown",
+    "ward": "-",
+    "total_votes": 2671,
+    "de_la_cruz": 8,
+    "de_la_cruz_pct": 0.3,
+    "precincts": 1
+  },
+  {
+    "town": "Quincy",
+    "ward": "1",
+    "total_votes": 7797,
+    "de_la_cruz": 27,
+    "de_la_cruz_pct": 0.346,
+    "precincts": 5
+  },
+  {
+    "town": "Quincy",
+    "ward": "2",
+    "total_votes": 5733,
+    "de_la_cruz": 25,
+    "de_la_cruz_pct": 0.436,
+    "precincts": 5
+  },
+  {
+    "town": "Quincy",
+    "ward": "3",
+    "total_votes": 7224,
+    "de_la_cruz": 34,
+    "de_la_cruz_pct": 0.471,
+    "precincts": 5
+  },
+  {
+    "town": "Quincy",
+    "ward": "4",
+    "total_votes": 7265,
+    "de_la_cruz": 25,
+    "de_la_cruz_pct": 0.344,
+    "precincts": 5
+  },
+  {
+    "town": "Quincy",
+    "ward": "5",
+    "total_votes": 7056,
+    "de_la_cruz": 35,
+    "de_la_cruz_pct": 0.496,
+    "precincts": 6
+  },
+  {
+    "town": "Quincy",
+    "ward": "6",
+    "total_votes": 7550,
+    "de_la_cruz": 35,
+    "de_la_cruz_pct": 0.464,
+    "precincts": 5
+  },
+  {
+    "town": "Randolph",
+    "ward": "-",
+    "total_votes": 15506,
+    "de_la_cruz": 42,
+    "de_la_cruz_pct": 0.271,
+    "precincts": 12
+  },
+  {
+    "town": "Raynham",
+    "ward": "-",
+    "total_votes": 9059,
+    "de_la_cruz": 26,
+    "de_la_cruz_pct": 0.287,
+    "precincts": 6
+  },
+  {
+    "town": "Reading",
+    "ward": "-",
+    "total_votes": 16650,
+    "de_la_cruz": 31,
+    "de_la_cruz_pct": 0.186,
+    "precincts": 8
+  },
+  {
+    "town": "Rehoboth",
+    "ward": "-",
+    "total_votes": 8179,
+    "de_la_cruz": 13,
+    "de_la_cruz_pct": 0.159,
+    "precincts": 4
+  },
+  {
+    "town": "Revere",
+    "ward": "1",
+    "total_votes": 3130,
+    "de_la_cruz": 18,
+    "de_la_cruz_pct": 0.575,
+    "precincts": 3
+  },
+  {
+    "town": "Revere",
+    "ward": "2",
+    "total_votes": 2142,
+    "de_la_cruz": 11,
+    "de_la_cruz_pct": 0.514,
+    "precincts": 4
+  },
+  {
+    "town": "Revere",
+    "ward": "3",
+    "total_votes": 2821,
+    "de_la_cruz": 16,
+    "de_la_cruz_pct": 0.567,
+    "precincts": 3
+  },
+  {
+    "town": "Revere",
+    "ward": "4",
+    "total_votes": 3228,
+    "de_la_cruz": 19,
+    "de_la_cruz_pct": 0.589,
+    "precincts": 3
+  },
+  {
+    "town": "Revere",
+    "ward": "5",
+    "total_votes": 3699,
+    "de_la_cruz": 11,
+    "de_la_cruz_pct": 0.297,
+    "precincts": 4
+  },
+  {
+    "town": "Revere",
+    "ward": "6",
+    "total_votes": 3573,
+    "de_la_cruz": 17,
+    "de_la_cruz_pct": 0.476,
+    "precincts": 3
+  },
+  {
+    "town": "Richmond",
+    "ward": "-",
+    "total_votes": 1019,
+    "de_la_cruz": 3,
+    "de_la_cruz_pct": 0.294,
+    "precincts": 1
+  },
+  {
+    "town": "Rochester",
+    "ward": "-",
+    "total_votes": 4033,
+    "de_la_cruz": 6,
+    "de_la_cruz_pct": 0.149,
+    "precincts": 1
+  },
+  {
+    "town": "Rockland",
+    "ward": "-",
+    "total_votes": 9777,
+    "de_la_cruz": 17,
+    "de_la_cruz_pct": 0.174,
+    "precincts": 6
+  },
+  {
+    "town": "Rockport",
+    "ward": "-",
+    "total_votes": 5232,
+    "de_la_cruz": 8,
+    "de_la_cruz_pct": 0.153,
+    "precincts": 3
+  },
+  {
+    "town": "Rowe",
+    "ward": "-",
+    "total_votes": 265,
+    "de_la_cruz": 0,
+    "de_la_cruz_pct": 0.0,
+    "precincts": 1
+  },
+  {
+    "town": "Rowley",
+    "ward": "-",
+    "total_votes": 4120,
+    "de_la_cruz": 8,
+    "de_la_cruz_pct": 0.194,
+    "precincts": 1
+  },
+  {
+    "town": "Royalston",
+    "ward": "-",
+    "total_votes": 814,
+    "de_la_cruz": 5,
+    "de_la_cruz_pct": 0.614,
+    "precincts": 1
+  },
+  {
+    "town": "Russell",
+    "ward": "-",
+    "total_votes": 911,
+    "de_la_cruz": 4,
+    "de_la_cruz_pct": 0.439,
+    "precincts": 1
+  },
+  {
+    "town": "Rutland",
+    "ward": "-",
+    "total_votes": 5969,
+    "de_la_cruz": 20,
+    "de_la_cruz_pct": 0.335,
+    "precincts": 3
+  },
+  {
+    "town": "Salem",
+    "ward": "1",
+    "total_votes": 2882,
+    "de_la_cruz": 23,
+    "de_la_cruz_pct": 0.798,
+    "precincts": 2
+  },
+  {
+    "town": "Salem",
+    "ward": "2",
+    "total_votes": 3980,
+    "de_la_cruz": 31,
+    "de_la_cruz_pct": 0.779,
+    "precincts": 2
+  },
+  {
+    "town": "Salem",
+    "ward": "3",
+    "total_votes": 3207,
+    "de_la_cruz": 32,
+    "de_la_cruz_pct": 0.998,
+    "precincts": 2
+  },
+  {
+    "town": "Salem",
+    "ward": "4",
+    "total_votes": 3373,
+    "de_la_cruz": 19,
+    "de_la_cruz_pct": 0.563,
+    "precincts": 2
+  },
+  {
+    "town": "Salem",
+    "ward": "5",
+    "total_votes": 3326,
+    "de_la_cruz": 34,
+    "de_la_cruz_pct": 1.022,
+    "precincts": 2
+  },
+  {
+    "town": "Salem",
+    "ward": "6",
+    "total_votes": 3568,
+    "de_la_cruz": 18,
+    "de_la_cruz_pct": 0.504,
+    "precincts": 2
+  },
+  {
+    "town": "Salem",
+    "ward": "7",
+    "total_votes": 3068,
+    "de_la_cruz": 16,
+    "de_la_cruz_pct": 0.522,
+    "precincts": 2
+  },
+  {
+    "town": "Salisbury",
+    "ward": "-",
+    "total_votes": 5557,
+    "de_la_cruz": 13,
+    "de_la_cruz_pct": 0.234,
+    "precincts": 3
+  },
+  {
+    "town": "Sandisfield",
+    "ward": "-",
+    "total_votes": 507,
+    "de_la_cruz": 3,
+    "de_la_cruz_pct": 0.592,
+    "precincts": 1
+  },
+  {
+    "town": "Sandwich",
+    "ward": "-",
+    "total_votes": 13770,
+    "de_la_cruz": 22,
+    "de_la_cruz_pct": 0.16,
+    "precincts": 6
+  },
+  {
+    "town": "Saugus",
+    "ward": "-",
+    "total_votes": 15174,
+    "de_la_cruz": 32,
+    "de_la_cruz_pct": 0.211,
+    "precincts": 10
+  },
+  {
+    "town": "Savoy",
+    "ward": "-",
+    "total_votes": 437,
+    "de_la_cruz": 2,
+    "de_la_cruz_pct": 0.458,
+    "precincts": 1
+  },
+  {
+    "town": "Scituate",
+    "ward": "-",
+    "total_votes": 13575,
+    "de_la_cruz": 17,
+    "de_la_cruz_pct": 0.125,
+    "precincts": 6
+  },
+  {
+    "town": "Seekonk",
+    "ward": "-",
+    "total_votes": 9171,
+    "de_la_cruz": 13,
+    "de_la_cruz_pct": 0.142,
+    "precincts": 4
+  },
+  {
+    "town": "Sharon",
+    "ward": "-",
+    "total_votes": 10906,
+    "de_la_cruz": 26,
+    "de_la_cruz_pct": 0.238,
+    "precincts": 5
+  },
+  {
+    "town": "Sheffield",
+    "ward": "-",
+    "total_votes": 2039,
+    "de_la_cruz": 1,
+    "de_la_cruz_pct": 0.049,
+    "precincts": 1
+  },
+  {
+    "town": "Shelburne",
+    "ward": "-",
+    "total_votes": 1236,
+    "de_la_cruz": 6,
+    "de_la_cruz_pct": 0.485,
+    "precincts": 1
+  },
+  {
+    "town": "Sherborn",
+    "ward": "-",
+    "total_votes": 2806,
+    "de_la_cruz": 2,
+    "de_la_cruz_pct": 0.071,
+    "precincts": 1
+  },
+  {
+    "town": "Shirley",
+    "ward": "-",
+    "total_votes": 3704,
+    "de_la_cruz": 6,
+    "de_la_cruz_pct": 0.162,
+    "precincts": 1
+  },
+  {
+    "town": "Shrewsbury",
+    "ward": "-",
+    "total_votes": 20248,
+    "de_la_cruz": 55,
+    "de_la_cruz_pct": 0.272,
+    "precincts": 10
+  },
+  {
+    "town": "Shutesbury",
+    "ward": "-",
+    "total_votes": 1264,
+    "de_la_cruz": 3,
+    "de_la_cruz_pct": 0.237,
+    "precincts": 1
+  },
+  {
+    "town": "Somerset",
+    "ward": "-",
+    "total_votes": 11131,
+    "de_la_cruz": 12,
+    "de_la_cruz_pct": 0.108,
+    "precincts": 5
+  },
+  {
+    "town": "Somerville",
+    "ward": "1",
+    "total_votes": 4688,
+    "de_la_cruz": 42,
+    "de_la_cruz_pct": 0.896,
+    "precincts": 5
+  },
+  {
+    "town": "Somerville",
+    "ward": "2",
+    "total_votes": 5932,
+    "de_la_cruz": 128,
+    "de_la_cruz_pct": 2.158,
+    "precincts": 5
+  },
+  {
+    "town": "Somerville",
+    "ward": "3",
+    "total_votes": 6226,
+    "de_la_cruz": 122,
+    "de_la_cruz_pct": 1.96,
+    "precincts": 4
+  },
+  {
+    "town": "Somerville",
+    "ward": "4",
+    "total_votes": 4983,
+    "de_la_cruz": 63,
+    "de_la_cruz_pct": 1.264,
+    "precincts": 5
+  },
+  {
+    "town": "Somerville",
+    "ward": "5",
+    "total_votes": 6531,
+    "de_la_cruz": 95,
+    "de_la_cruz_pct": 1.455,
+    "precincts": 4
+  },
+  {
+    "town": "Somerville",
+    "ward": "6",
+    "total_votes": 5961,
+    "de_la_cruz": 103,
+    "de_la_cruz_pct": 1.728,
+    "precincts": 5
+  },
+  {
+    "town": "Somerville",
+    "ward": "7",
+    "total_votes": 5643,
+    "de_la_cruz": 76,
+    "de_la_cruz_pct": 1.347,
+    "precincts": 4
+  },
+  {
+    "town": "S. Hadley",
+    "ward": "-",
+    "total_votes": 10003,
+    "de_la_cruz": 49,
+    "de_la_cruz_pct": 0.49,
+    "precincts": 5
+  },
+  {
+    "town": "Southampton",
+    "ward": "-",
+    "total_votes": 4088,
+    "de_la_cruz": 9,
+    "de_la_cruz_pct": 0.22,
+    "precincts": 2
+  },
+  {
+    "town": "Southborough",
+    "ward": "-",
+    "total_votes": 6246,
+    "de_la_cruz": 10,
+    "de_la_cruz_pct": 0.16,
+    "precincts": 3
+  },
+  {
+    "town": "Southbridge",
+    "ward": "-",
+    "total_votes": 7074,
+    "de_la_cruz": 37,
+    "de_la_cruz_pct": 0.523,
+    "precincts": 5
+  },
+  {
+    "town": "Southwick",
+    "ward": "-",
+    "total_votes": 5882,
+    "de_la_cruz": 7,
+    "de_la_cruz_pct": 0.119,
+    "precincts": 3
+  },
+  {
+    "town": "Spencer",
+    "ward": "-",
+    "total_votes": 6451,
+    "de_la_cruz": 10,
+    "de_la_cruz_pct": 0.155,
+    "precincts": 4
+  },
+  {
+    "town": "Springfield",
+    "ward": "1",
+    "total_votes": 4390,
+    "de_la_cruz": 41,
+    "de_la_cruz_pct": 0.934,
+    "precincts": 10
+  },
+  {
+    "town": "Springfield",
+    "ward": "2",
+    "total_votes": 7089,
+    "de_la_cruz": 51,
+    "de_la_cruz_pct": 0.719,
+    "precincts": 8
+  },
+  {
+    "town": "Springfield",
+    "ward": "3",
+    "total_votes": 3596,
+    "de_la_cruz": 26,
+    "de_la_cruz_pct": 0.723,
+    "precincts": 8
+  },
+  {
+    "town": "Springfield",
+    "ward": "4",
+    "total_votes": 4533,
+    "de_la_cruz": 29,
+    "de_la_cruz_pct": 0.64,
+    "precincts": 8
+  },
+  {
+    "town": "Springfield",
+    "ward": "5",
+    "total_votes": 8412,
+    "de_la_cruz": 41,
+    "de_la_cruz_pct": 0.487,
+    "precincts": 9
+  },
+  {
+    "town": "Springfield",
+    "ward": "6",
+    "total_votes": 6967,
+    "de_la_cruz": 27,
+    "de_la_cruz_pct": 0.388,
+    "precincts": 9
+  },
+  {
+    "town": "Springfield",
+    "ward": "7",
+    "total_votes": 9476,
+    "de_la_cruz": 47,
+    "de_la_cruz_pct": 0.496,
+    "precincts": 11
+  },
+  {
+    "town": "Springfield",
+    "ward": "8",
+    "total_votes": 6907,
+    "de_la_cruz": 48,
+    "de_la_cruz_pct": 0.695,
+    "precincts": 10
+  },
+  {
+    "town": "Sterling",
+    "ward": "-",
+    "total_votes": 5588,
+    "de_la_cruz": 6,
+    "de_la_cruz_pct": 0.107,
+    "precincts": 2
+  },
+  {
+    "town": "Stockbridge",
+    "ward": "-",
+    "total_votes": 1319,
+    "de_la_cruz": 4,
+    "de_la_cruz_pct": 0.303,
+    "precincts": 1
+  },
+  {
+    "town": "Stoneham",
+    "ward": "-",
+    "total_votes": 13685,
+    "de_la_cruz": 35,
+    "de_la_cruz_pct": 0.256,
+    "precincts": 7
+  },
+  {
+    "town": "Stoughton",
+    "ward": "-",
+    "total_votes": 14871,
+    "de_la_cruz": 35,
+    "de_la_cruz_pct": 0.235,
+    "precincts": 13
+  },
+  {
+    "town": "Stow",
+    "ward": "-",
+    "total_votes": 4806,
+    "de_la_cruz": 13,
+    "de_la_cruz_pct": 0.27,
+    "precincts": 2
+  },
+  {
+    "town": "Sturbridge",
+    "ward": "-",
+    "total_votes": 6046,
+    "de_la_cruz": 10,
+    "de_la_cruz_pct": 0.165,
+    "precincts": 3
+  },
+  {
+    "town": "Sudbury",
+    "ward": "-",
+    "total_votes": 11943,
+    "de_la_cruz": 25,
+    "de_la_cruz_pct": 0.209,
+    "precincts": 6
+  },
+  {
+    "town": "Sunderland",
+    "ward": "-",
+    "total_votes": 1895,
+    "de_la_cruz": 13,
+    "de_la_cruz_pct": 0.686,
+    "precincts": 1
+  },
+  {
+    "town": "Sutton",
+    "ward": "-",
+    "total_votes": 6367,
+    "de_la_cruz": 11,
+    "de_la_cruz_pct": 0.173,
+    "precincts": 3
+  },
+  {
+    "town": "Swampscott",
+    "ward": "-",
+    "total_votes": 9265,
+    "de_la_cruz": 20,
+    "de_la_cruz_pct": 0.216,
+    "precincts": 6
+  },
+  {
+    "town": "Swansea",
+    "ward": "-",
+    "total_votes": 10388,
+    "de_la_cruz": 19,
+    "de_la_cruz_pct": 0.183,
+    "precincts": 5
+  },
+  {
+    "town": "Taunton",
+    "ward": "1",
+    "total_votes": 3634,
+    "de_la_cruz": 8,
+    "de_la_cruz_pct": 0.22,
+    "precincts": 3
+  },
+  {
+    "town": "Taunton",
+    "ward": "2",
+    "total_votes": 2355,
+    "de_la_cruz": 9,
+    "de_la_cruz_pct": 0.382,
+    "precincts": 2
+  },
+  {
+    "town": "Taunton",
+    "ward": "3",
+    "total_votes": 3448,
+    "de_la_cruz": 8,
+    "de_la_cruz_pct": 0.232,
+    "precincts": 2
+  },
+  {
+    "town": "Taunton",
+    "ward": "4",
+    "total_votes": 3746,
+    "de_la_cruz": 10,
+    "de_la_cruz_pct": 0.267,
+    "precincts": 3
+  },
+  {
+    "town": "Taunton",
+    "ward": "5",
+    "total_votes": 2689,
+    "de_la_cruz": 10,
+    "de_la_cruz_pct": 0.372,
+    "precincts": 2
+  },
+  {
+    "town": "Taunton",
+    "ward": "6",
+    "total_votes": 2935,
+    "de_la_cruz": 10,
+    "de_la_cruz_pct": 0.341,
+    "precincts": 2
+  },
+  {
+    "town": "Taunton",
+    "ward": "7",
+    "total_votes": 4152,
+    "de_la_cruz": 9,
+    "de_la_cruz_pct": 0.217,
+    "precincts": 2
+  },
+  {
+    "town": "Taunton",
+    "ward": "8",
+    "total_votes": 4338,
+    "de_la_cruz": 12,
+    "de_la_cruz_pct": 0.277,
+    "precincts": 2
+  },
+  {
+    "town": "Templeton",
+    "ward": "-",
+    "total_votes": 4639,
+    "de_la_cruz": 14,
+    "de_la_cruz_pct": 0.302,
+    "precincts": 3
+  },
+  {
+    "town": "Tewksbury",
+    "ward": "-",
+    "total_votes": 18761,
+    "de_la_cruz": 31,
+    "de_la_cruz_pct": 0.165,
+    "precincts": 9
+  },
+  {
+    "town": "Tisbury",
+    "ward": "-",
+    "total_votes": 2700,
+    "de_la_cruz": 12,
+    "de_la_cruz_pct": 0.444,
+    "precincts": 1
+  },
+  {
+    "town": "Tolland",
+    "ward": "-",
+    "total_votes": 331,
+    "de_la_cruz": 0,
+    "de_la_cruz_pct": 0.0,
+    "precincts": 1
+  },
+  {
+    "town": "Topsfield",
+    "ward": "-",
+    "total_votes": 4328,
+    "de_la_cruz": 7,
+    "de_la_cruz_pct": 0.162,
+    "precincts": 2
+  },
+  {
+    "town": "Townsend",
+    "ward": "-",
+    "total_votes": 5590,
+    "de_la_cruz": 6,
+    "de_la_cruz_pct": 0.107,
+    "precincts": 3
+  },
+  {
+    "town": "Truro",
+    "ward": "-",
+    "total_votes": 1840,
+    "de_la_cruz": 3,
+    "de_la_cruz_pct": 0.163,
+    "precincts": 1
+  },
+  {
+    "town": "Tyngsborough",
+    "ward": "-",
+    "total_votes": 7592,
+    "de_la_cruz": 17,
+    "de_la_cruz_pct": 0.224,
+    "precincts": 4
+  },
+  {
+    "town": "Tyringham",
+    "ward": "-",
+    "total_votes": 326,
+    "de_la_cruz": 1,
+    "de_la_cruz_pct": 0.307,
+    "precincts": 1
+  },
+  {
+    "town": "Upton",
+    "ward": "-",
+    "total_votes": 5479,
+    "de_la_cruz": 8,
+    "de_la_cruz_pct": 0.146,
+    "precincts": 3
+  },
+  {
+    "town": "Uxbridge",
+    "ward": "-",
+    "total_votes": 9038,
+    "de_la_cruz": 19,
+    "de_la_cruz_pct": 0.21,
+    "precincts": 5
+  },
+  {
+    "town": "Wakefield",
+    "ward": "-",
+    "total_votes": 16478,
+    "de_la_cruz": 26,
+    "de_la_cruz_pct": 0.158,
+    "precincts": 7
+  },
+  {
+    "town": "Wales",
+    "ward": "-",
+    "total_votes": 1142,
+    "de_la_cruz": 0,
+    "de_la_cruz_pct": 0.0,
+    "precincts": 1
+  },
+  {
+    "town": "Walpole",
+    "ward": "-",
+    "total_votes": 16002,
+    "de_la_cruz": 21,
+    "de_la_cruz_pct": 0.131,
+    "precincts": 10
+  },
+  {
+    "town": "Waltham",
+    "ward": "1",
+    "total_votes": 4053,
+    "de_la_cruz": 9,
+    "de_la_cruz_pct": 0.222,
+    "precincts": 3
+  },
+  {
+    "town": "Waltham",
+    "ward": "2",
+    "total_votes": 3314,
+    "de_la_cruz": 8,
+    "de_la_cruz_pct": 0.241,
+    "precincts": 2
+  },
+  {
+    "town": "Waltham",
+    "ward": "3",
+    "total_votes": 4068,
+    "de_la_cruz": 12,
+    "de_la_cruz_pct": 0.295,
+    "precincts": 3
+  },
+  {
+    "town": "Waltham",
+    "ward": "4",
+    "total_votes": 2404,
+    "de_la_cruz": 10,
+    "de_la_cruz_pct": 0.416,
+    "precincts": 3
+  },
+  {
+    "town": "Waltham",
+    "ward": "5",
+    "total_votes": 2684,
+    "de_la_cruz": 13,
+    "de_la_cruz_pct": 0.484,
+    "precincts": 3
+  },
+  {
+    "town": "Waltham",
+    "ward": "6",
+    "total_votes": 2680,
+    "de_la_cruz": 18,
+    "de_la_cruz_pct": 0.672,
+    "precincts": 3
+  },
+  {
+    "town": "Waltham",
+    "ward": "7",
+    "total_votes": 2412,
+    "de_la_cruz": 7,
+    "de_la_cruz_pct": 0.29,
+    "precincts": 2
+  },
+  {
+    "town": "Waltham",
+    "ward": "8",
+    "total_votes": 2982,
+    "de_la_cruz": 17,
+    "de_la_cruz_pct": 0.57,
+    "precincts": 3
+  },
+  {
+    "town": "Waltham",
+    "ward": "9",
+    "total_votes": 2358,
+    "de_la_cruz": 22,
+    "de_la_cruz_pct": 0.933,
+    "precincts": 2
+  },
+  {
+    "town": "Ware",
+    "ward": "-",
+    "total_votes": 5129,
+    "de_la_cruz": 10,
+    "de_la_cruz_pct": 0.195,
+    "precincts": 3
+  },
+  {
+    "town": "Wareham",
+    "ward": "-",
+    "total_votes": 13229,
+    "de_la_cruz": 29,
+    "de_la_cruz_pct": 0.219,
+    "precincts": 6
+  },
+  {
+    "town": "Warren",
+    "ward": "-",
+    "total_votes": 2680,
+    "de_la_cruz": 9,
+    "de_la_cruz_pct": 0.336,
+    "precincts": 2
+  },
+  {
+    "town": "Warwick",
+    "ward": "-",
+    "total_votes": 511,
+    "de_la_cruz": 2,
+    "de_la_cruz_pct": 0.391,
+    "precincts": 1
+  },
+  {
+    "town": "Washington",
+    "ward": "-",
+    "total_votes": 360,
+    "de_la_cruz": 0,
+    "de_la_cruz_pct": 0.0,
+    "precincts": 1
+  },
+  {
+    "town": "Watertown",
+    "ward": "-",
+    "total_votes": 18288,
+    "de_la_cruz": 122,
+    "de_la_cruz_pct": 0.667,
+    "precincts": 12
+  },
+  {
+    "town": "Wayland",
+    "ward": "-",
+    "total_votes": 8934,
+    "de_la_cruz": 22,
+    "de_la_cruz_pct": 0.246,
+    "precincts": 4
+  },
+  {
+    "town": "Webster",
+    "ward": "-",
+    "total_votes": 8213,
+    "de_la_cruz": 17,
+    "de_la_cruz_pct": 0.207,
+    "precincts": 6
+  },
+  {
+    "town": "Wellesley",
+    "ward": "-",
+    "total_votes": 15530,
+    "de_la_cruz": 44,
+    "de_la_cruz_pct": 0.283,
+    "precincts": 8
+  },
+  {
+    "town": "Wellfleet",
+    "ward": "-",
+    "total_votes": 2517,
+    "de_la_cruz": 3,
+    "de_la_cruz_pct": 0.119,
+    "precincts": 1
+  },
+  {
+    "town": "Wendell",
+    "ward": "-",
+    "total_votes": 605,
+    "de_la_cruz": 4,
+    "de_la_cruz_pct": 0.661,
+    "precincts": 1
+  },
+  {
+    "town": "Wenham",
+    "ward": "-",
+    "total_votes": 2628,
+    "de_la_cruz": 5,
+    "de_la_cruz_pct": 0.19,
+    "precincts": 2
+  },
+  {
+    "town": "W. Boylston",
+    "ward": "-",
+    "total_votes": 4683,
+    "de_la_cruz": 13,
+    "de_la_cruz_pct": 0.278,
+    "precincts": 2
+  },
+  {
+    "town": "W. Bridgewater",
+    "ward": "-",
+    "total_votes": 4633,
+    "de_la_cruz": 3,
+    "de_la_cruz_pct": 0.065,
+    "precincts": 2
+  },
+  {
+    "town": "W. Brookfield",
+    "ward": "-",
+    "total_votes": 2362,
+    "de_la_cruz": 5,
+    "de_la_cruz_pct": 0.212,
+    "precincts": 1
+  },
+  {
+    "town": "W. Newbury",
+    "ward": "-",
+    "total_votes": 3299,
+    "de_la_cruz": 5,
+    "de_la_cruz_pct": 0.152,
+    "precincts": 1
+  },
+  {
+    "town": "W. Springfield",
+    "ward": "-",
+    "total_votes": 12881,
+    "de_la_cruz": 36,
+    "de_la_cruz_pct": 0.279,
+    "precincts": 8
+  },
+  {
+    "town": "W. Stockbridge",
+    "ward": "-",
+    "total_votes": 941,
+    "de_la_cruz": 4,
+    "de_la_cruz_pct": 0.425,
+    "precincts": 1
+  },
+  {
+    "town": "W. Tisbury",
+    "ward": "-",
+    "total_votes": 2205,
+    "de_la_cruz": 10,
+    "de_la_cruz_pct": 0.454,
+    "precincts": 1
+  },
+  {
+    "town": "Westborough",
+    "ward": "-",
+    "total_votes": 10463,
+    "de_la_cruz": 24,
+    "de_la_cruz_pct": 0.229,
+    "precincts": 6
+  },
+  {
+    "town": "Westfield",
+    "ward": "1",
+    "total_votes": 4025,
+    "de_la_cruz": 6,
+    "de_la_cruz_pct": 0.149,
+    "precincts": 2
+  },
+  {
+    "town": "Westfield",
+    "ward": "2",
+    "total_votes": 2553,
+    "de_la_cruz": 12,
+    "de_la_cruz_pct": 0.47,
+    "precincts": 3
+  },
+  {
+    "town": "Westfield",
+    "ward": "3",
+    "total_votes": 2949,
+    "de_la_cruz": 15,
+    "de_la_cruz_pct": 0.509,
+    "precincts": 2
+  },
+  {
+    "town": "Westfield",
+    "ward": "4",
+    "total_votes": 2947,
+    "de_la_cruz": 5,
+    "de_la_cruz_pct": 0.17,
+    "precincts": 2
+  },
+  {
+    "town": "Westfield",
+    "ward": "5",
+    "total_votes": 4344,
+    "de_la_cruz": 11,
+    "de_la_cruz_pct": 0.253,
+    "precincts": 2
+  },
+  {
+    "town": "Westfield",
+    "ward": "6",
+    "total_votes": 3478,
+    "de_la_cruz": 7,
+    "de_la_cruz_pct": 0.201,
+    "precincts": 3
+  },
+  {
+    "town": "Westford",
+    "ward": "-",
+    "total_votes": 14937,
+    "de_la_cruz": 39,
+    "de_la_cruz_pct": 0.261,
+    "precincts": 7
+  },
+  {
+    "town": "Westhampton",
+    "ward": "-",
+    "total_votes": 1248,
+    "de_la_cruz": 6,
+    "de_la_cruz_pct": 0.481,
+    "precincts": 1
+  },
+  {
+    "town": "Westminster",
+    "ward": "-",
+    "total_votes": 5409,
+    "de_la_cruz": 10,
+    "de_la_cruz_pct": 0.185,
+    "precincts": 4
+  },
+  {
+    "town": "Weston",
+    "ward": "-",
+    "total_votes": 6633,
+    "de_la_cruz": 9,
+    "de_la_cruz_pct": 0.136,
+    "precincts": 4
+  },
+  {
+    "town": "Westport",
+    "ward": "-",
+    "total_votes": 10909,
+    "de_la_cruz": 14,
+    "de_la_cruz_pct": 0.128,
+    "precincts": 5
+  },
+  {
+    "town": "Westwood",
+    "ward": "-",
+    "total_votes": 10206,
+    "de_la_cruz": 12,
+    "de_la_cruz_pct": 0.118,
+    "precincts": 5
+  },
+  {
+    "town": "Weymouth",
+    "ward": "-",
+    "total_votes": 31801,
+    "de_la_cruz": 85,
+    "de_la_cruz_pct": 0.267,
+    "precincts": 19
+  },
+  {
+    "town": "Whately",
+    "ward": "-",
+    "total_votes": 1094,
+    "de_la_cruz": 5,
+    "de_la_cruz_pct": 0.457,
+    "precincts": 1
+  },
+  {
+    "town": "Whitman",
+    "ward": "-",
+    "total_votes": 8723,
+    "de_la_cruz": 21,
+    "de_la_cruz_pct": 0.241,
+    "precincts": 4
+  },
+  {
+    "town": "Wilbraham",
+    "ward": "-",
+    "total_votes": 9305,
+    "de_la_cruz": 14,
+    "de_la_cruz_pct": 0.15,
+    "precincts": 4
+  },
+  {
+    "town": "Williamsburg",
+    "ward": "-",
+    "total_votes": 1833,
+    "de_la_cruz": 9,
+    "de_la_cruz_pct": 0.491,
+    "precincts": 1
+  },
+  {
+    "town": "Williamstown",
+    "ward": "-",
+    "total_votes": 3642,
+    "de_la_cruz": 17,
+    "de_la_cruz_pct": 0.467,
+    "precincts": 3
+  },
+  {
+    "town": "Wilmington",
+    "ward": "-",
+    "total_votes": 14400,
+    "de_la_cruz": 14,
+    "de_la_cruz_pct": 0.097,
+    "precincts": 6
+  },
+  {
+    "town": "Winchendon",
+    "ward": "-",
+    "total_votes": 5266,
+    "de_la_cruz": 12,
+    "de_la_cruz_pct": 0.228,
+    "precincts": 3
+  },
+  {
+    "town": "Winchester",
+    "ward": "-",
+    "total_votes": 13396,
+    "de_la_cruz": 20,
+    "de_la_cruz_pct": 0.149,
+    "precincts": 8
+  },
+  {
+    "town": "Windsor",
+    "ward": "-",
+    "total_votes": 561,
+    "de_la_cruz": 0,
+    "de_la_cruz_pct": 0.0,
+    "precincts": 1
+  },
+  {
+    "town": "Winthrop",
+    "ward": "-",
+    "total_votes": 9451,
+    "de_la_cruz": 28,
+    "de_la_cruz_pct": 0.296,
+    "precincts": 6
+  },
+  {
+    "town": "Woburn",
+    "ward": "1",
+    "total_votes": 2834,
+    "de_la_cruz": 7,
+    "de_la_cruz_pct": 0.247,
+    "precincts": 3
+  },
+  {
+    "town": "Woburn",
+    "ward": "2",
+    "total_votes": 3048,
+    "de_la_cruz": 7,
+    "de_la_cruz_pct": 0.23,
+    "precincts": 2
+  },
+  {
+    "town": "Woburn",
+    "ward": "3",
+    "total_votes": 3433,
+    "de_la_cruz": 5,
+    "de_la_cruz_pct": 0.146,
+    "precincts": 2
+  },
+  {
+    "town": "Woburn",
+    "ward": "4",
+    "total_votes": 3111,
+    "de_la_cruz": 3,
+    "de_la_cruz_pct": 0.096,
+    "precincts": 2
+  },
+  {
+    "town": "Woburn",
+    "ward": "5",
+    "total_votes": 3096,
+    "de_la_cruz": 8,
+    "de_la_cruz_pct": 0.258,
+    "precincts": 2
+  },
+  {
+    "town": "Woburn",
+    "ward": "6",
+    "total_votes": 2689,
+    "de_la_cruz": 8,
+    "de_la_cruz_pct": 0.298,
+    "precincts": 2
+  },
+  {
+    "town": "Woburn",
+    "ward": "7",
+    "total_votes": 3857,
+    "de_la_cruz": 8,
+    "de_la_cruz_pct": 0.207,
+    "precincts": 2
+  },
+  {
+    "town": "Worcester",
+    "ward": "1",
+    "total_votes": 9682,
+    "de_la_cruz": 36,
+    "de_la_cruz_pct": 0.372,
+    "precincts": 6
+  },
+  {
+    "town": "Worcester",
+    "ward": "2",
+    "total_votes": 8332,
+    "de_la_cruz": 31,
+    "de_la_cruz_pct": 0.372,
+    "precincts": 7
+  },
+  {
+    "town": "Worcester",
+    "ward": "3",
+    "total_votes": 5705,
+    "de_la_cruz": 38,
+    "de_la_cruz_pct": 0.666,
+    "precincts": 8
+  },
+  {
+    "town": "Worcester",
+    "ward": "4",
+    "total_votes": 5544,
+    "de_la_cruz": 36,
+    "de_la_cruz_pct": 0.649,
+    "precincts": 8
+  },
+  {
+    "town": "Worcester",
+    "ward": "5",
+    "total_votes": 7959,
+    "de_la_cruz": 55,
+    "de_la_cruz_pct": 0.691,
+    "precincts": 6
+  },
+  {
+    "town": "Worcester",
+    "ward": "6",
+    "total_votes": 4386,
+    "de_la_cruz": 24,
+    "de_la_cruz_pct": 0.547,
+    "precincts": 6
+  },
+  {
+    "town": "Worcester",
+    "ward": "7",
+    "total_votes": 7424,
+    "de_la_cruz": 40,
+    "de_la_cruz_pct": 0.539,
+    "precincts": 7
+  },
+  {
+    "town": "Worcester",
+    "ward": "8",
+    "total_votes": 3508,
+    "de_la_cruz": 27,
+    "de_la_cruz_pct": 0.77,
+    "precincts": 6
+  },
+  {
+    "town": "Worcester",
+    "ward": "9",
+    "total_votes": 9493,
+    "de_la_cruz": 41,
+    "de_la_cruz_pct": 0.432,
+    "precincts": 6
+  },
+  {
+    "town": "Worcester",
+    "ward": "10",
+    "total_votes": 4153,
+    "de_la_cruz": 56,
+    "de_la_cruz_pct": 1.348,
+    "precincts": 7
+  },
+  {
+    "town": "Worthington",
+    "ward": "-",
+    "total_votes": 878,
+    "de_la_cruz": 10,
+    "de_la_cruz_pct": 1.139,
+    "precincts": 1
+  },
+  {
+    "town": "Wrentham",
+    "ward": "-",
+    "total_votes": 7911,
+    "de_la_cruz": 17,
+    "de_la_cruz_pct": 0.215,
+    "precincts": 4
+  },
+  {
+    "town": "Yarmouth",
+    "ward": "-",
+    "total_votes": 15507,
+    "de_la_cruz": 28,
+    "de_la_cruz_pct": 0.181,
+    "precincts": 9
+  }
+]
