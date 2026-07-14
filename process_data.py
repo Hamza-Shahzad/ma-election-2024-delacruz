@@ -55,12 +55,13 @@ def main():
     data_rows = rows[2:]
 
     # Aggregations
-    town_totals = defaultdict(lambda: {"total_votes": 0, "de_la_cruz": 0, "precincts": 0})
-    ward_totals = defaultdict(lambda: defaultdict(lambda: {"total_votes": 0, "de_la_cruz": 0, "precincts": 0}))
+    town_totals = defaultdict(lambda: {"total_votes": 0, "de_la_cruz": 0, "stein": 0, "precincts": 0})
+    ward_totals = defaultdict(lambda: defaultdict(lambda: {"total_votes": 0, "de_la_cruz": 0, "stein": 0, "precincts": 0}))
     precincts = []
 
     statewide_total = 0
     statewide_delacruz = 0
+    statewide_stein = 0
 
     for row in data_rows:
         if len(row) < 14:
@@ -90,11 +91,13 @@ def main():
         # Town-level aggregation
         town_totals[city_town]["total_votes"] += total
         town_totals[city_town]["de_la_cruz"] += delacruz
+        town_totals[city_town]["stein"] += stein
         town_totals[city_town]["precincts"] += 1
 
         # Ward-level aggregation
         ward_totals[city_town][ward]["total_votes"] += total
         ward_totals[city_town][ward]["de_la_cruz"] += delacruz
+        ward_totals[city_town][ward]["stein"] += stein
         ward_totals[city_town][ward]["precincts"] += 1
 
         # Precinct-level detail
@@ -115,38 +118,48 @@ def main():
 
         statewide_total += total
         statewide_delacruz += delacruz
+        statewide_stein += stein
 
     # Build town list with percentages and ranking
     town_list = []
     for name, d in town_totals.items():
-        pct = (d["de_la_cruz"] / d["total_votes"] * 100) if d["total_votes"] > 0 else 0
+        dl_pct = (d["de_la_cruz"] / d["total_votes"] * 100) if d["total_votes"] > 0 else 0
+        stein_pct = (d["stein"] / d["total_votes"] * 100) if d["total_votes"] > 0 else 0
         town_list.append({
             "town": name,
             "total_votes": d["total_votes"],
             "de_la_cruz": d["de_la_cruz"],
-            "de_la_cruz_pct": round(pct, 3),
+            "de_la_cruz_pct": round(dl_pct, 3),
+            "stein": d["stein"],
+            "stein_pct": round(stein_pct, 3),
             "precincts": d["precincts"],
             "has_wards": len(ward_totals[name]) > 1 or "-" not in ward_totals[name],
         })
 
-    # Sort by De La Cruz % descending
+    # Sort by De La Cruz % descending and assign ranks
     town_list.sort(key=lambda t: t["de_la_cruz_pct"], reverse=True)
-
-    # Assign ranks
     for i, t in enumerate(town_list):
         t["rank"] = i + 1
+
+    # Assign Stein ranks
+    stein_sorted = sorted(town_list, key=lambda t: t["stein_pct"], reverse=True)
+    for i, t in enumerate(stein_sorted):
+        t["stein_rank"] = i + 1
 
     # Build ward list
     ward_list = []
     for town, wards in ward_totals.items():
         for ward, d in wards.items():
-            pct = (d["de_la_cruz"] / d["total_votes"] * 100) if d["total_votes"] > 0 else 0
+            dl_pct = (d["de_la_cruz"] / d["total_votes"] * 100) if d["total_votes"] > 0 else 0
+            stein_pct = (d["stein"] / d["total_votes"] * 100) if d["total_votes"] > 0 else 0
             ward_list.append({
                 "town": town,
                 "ward": ward,
                 "total_votes": d["total_votes"],
                 "de_la_cruz": d["de_la_cruz"],
-                "de_la_cruz_pct": round(pct, 3),
+                "de_la_cruz_pct": round(dl_pct, 3),
+                "stein": d["stein"],
+                "stein_pct": round(stein_pct, 3),
                 "precincts": d["precincts"],
             })
 
@@ -157,6 +170,8 @@ def main():
         "total_votes_cast": statewide_total,
         "total_de_la_cruz": statewide_delacruz,
         "de_la_cruz_pct": round(statewide_delacruz / statewide_total * 100, 3) if statewide_total > 0 else 0,
+        "total_stein": statewide_stein,
+        "stein_pct": round(statewide_stein / statewide_total * 100, 3) if statewide_total > 0 else 0,
         "total_towns": len(town_list),
         "total_precincts": len(precincts),
         "towns_with_wards": sum(1 for t in town_list if t["has_wards"]),
@@ -184,13 +199,20 @@ def main():
         print(f"Wrote {path} ({len(data)} records)")
 
     # Print summary
-    print(f"\nStatewide: {statewide_delacruz:,} De La Cruz votes out of {statewide_total:,} ({summary['de_la_cruz_pct']}%)")
+    print(f"\nStatewide De La Cruz: {statewide_delacruz:,} votes out of {statewide_total:,} ({summary['de_la_cruz_pct']}%)")
+    print(f"Statewide Stein:     {statewide_stein:,} votes out of {statewide_total:,} ({summary['stein_pct']}%)")
     print(f"Towns: {len(town_list)} | Precincts: {len(precincts)} | Towns with wards: {summary['towns_with_wards']}")
 
-    # Top 10 towns
+    # Top 10 towns by De La Cruz %
     print("\nTop 10 towns by De La Cruz %:")
     for t in town_list[:10]:
         print(f"  {t['rank']:3}. {t['town']:20s}  {t['de_la_cruz_pct']:6.2f}%  ({t['de_la_cruz']:,} / {t['total_votes']:,})")
+
+    # Top 10 towns by Stein %
+    stein_top = sorted(town_list, key=lambda t: t['stein_pct'], reverse=True)
+    print("\nTop 10 towns by Stein %:")
+    for t in stein_top[:10]:
+        print(f"  {t['stein_rank']:3}. {t['town']:20s}  {t['stein_pct']:6.2f}%  ({t['stein']:,} / {t['total_votes']:,})")
 
 
 if __name__ == "__main__":

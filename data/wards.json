@@ -5,6 +5,8 @@
     "total_votes": 9675,
     "de_la_cruz": 22,
     "de_la_cruz_pct": 0.227,
+    "stein": 47,
+    "stein_pct": 0.486,
     "precincts": 5
   },
   {
@@ -13,6 +15,8 @@
     "total_votes": 13331,
     "de_la_cruz": 35,
     "de_la_cruz_pct": 0.263,
+    "stein": 149,
+    "stein_pct": 1.118,
     "precincts": 8
   },
   {
@@ -21,6 +25,8 @@
     "total_votes": 6271,
     "de_la_cruz": 8,
     "de_la_cruz_pct": 0.128,
+    "stein": 17,
+    "stein_pct": 0.271,
     "precincts": 4
   },
   {
@@ -29,6 +35,8 @@
     "total_votes": 4395,
     "de_la_cruz": 10,
     "de_la_cruz_pct": 0.228,
+    "stein": 21,
+    "stein_pct": 0.478,
     "precincts": 5
   },
   {
@@ -37,6 +45,8 @@
     "total_votes": 15832,
     "de_la_cruz": 24,
     "de_la_cruz_pct": 0.152,
+    "stein": 109,
+    "stein_pct": 0.688,
     "precincts": 8
   },
   {
@@ -45,6 +55,8 @@
     "total_votes": 326,
     "de_la_cruz": 1,
     "de_la_cruz_pct": 0.307,
+    "stein": 3,
+    "stein_pct": 0.92,
     "precincts": 1
   },
   {
@@ -53,6 +65,8 @@
     "total_votes": 10421,
     "de_la_cruz": 15,
     "de_la_cruz_pct": 0.144,
+    "stein": 54,
+    "stein_pct": 0.518,
     "precincts": 6
   },
   {
@@ -61,6 +75,8 @@
     "total_votes": 10743,
     "de_la_cruz": 112,
     "de_la_cruz_pct": 1.043,
+    "stein": 211,
+    "stein_pct": 1.964,
     "precincts": 10
   },
   {
@@ -69,6 +85,8 @@
     "total_votes": 20679,
     "de_la_cruz": 51,
     "de_la_cruz_pct": 0.247,
+    "stein": 174,
+    "stein_pct": 0.841,
     "precincts": 11
   },
   {
@@ -77,6 +95,8 @@
     "total_votes": 351,
     "de_la_cruz": 2,
     "de_la_cruz_pct": 0.57,
+    "stein": 2,
+    "stein_pct": 0.57,
     "precincts": 1
   },
   {
@@ -85,6 +105,8 @@
     "total_votes": 27764,
     "de_la_cruz": 148,
     "de_la_cruz_pct": 0.533,
+    "stein": 306,
+    "stein_pct": 1.102,
     "precincts": 21
   },
   {
@@ -93,6 +115,8 @@
     "total_votes": 3893,
     "de_la_cruz": 10,
     "de_la_cruz_pct": 0.257,
+    "stein": 23,
+    "stein_pct": 0.591,
     "precincts": 2
   },
   {
@@ -101,6 +125,8 @@
     "total_votes": 2003,
     "de_la_cruz": 5,
     "de_la_cruz_pct": 0.25,
+    "stein": 11,
+    "stein_pct": 0.549,
     "precincts": 1
   },
   {
@@ -109,6 +135,8 @@
     "total_votes": 1216,
     "de_la_cruz": 10,
     "de_la_cruz_pct": 0.822,
+    "stein": 21,
+    "stein_pct": 1.727,
     "precincts": 1
   },
   {
@@ -117,6 +145,8 @@
     "total_votes": 9906,
     "de_la_cruz": 19,
     "de_la_cruz_pct": 0.192,
+    "stein": 69,
+    "stein_pct": 0.697,
     "precincts": 6
   },
   {
@@ -125,6 +155,8 @@
     "total_votes": 5729,
     "de_la_cruz": 9,
     "de_la_cruz_pct": 0.157,
+    "stein": 21,
+    "stein_pct": 0.367,
     "precincts": 3
   },
   {
@@ -133,6 +165,8 @@
     "total_votes": 3781,
     "de_la_cruz": 4,
     "de_la_cruz_pct": 0.106,
+    "stein": 30,
+    "stein_pct": 0.793,
     "precincts": 2
   },
   {
@@ -141,6 +175,8 @@
     "total_votes": 4133,
     "de_la_cruz": 14,
     "de_la_cruz_pct": 0.339,
+    "stein": 40,
+    "stein_pct": 0.968,
     "precincts": 2
   },
   {
@@ -149,6 +185,8 @@
     "total_votes": 3952,
     "de_la_cruz": 13,
     "de_la_cruz_pct": 0.329,
+    "stein": 37,
+    "stein_pct": 0.936,
     "precincts": 2
   },
   {
@@ -157,6 +195,8 @@
     "total_votes": 4209,
     "de_la_cruz": 18,
     "de_la_cruz_pct": 0.428,
+    "stein": 22,
+    "stein_pct": 0.523,
     "precincts": 2
   },
   {
@@ -165,6 +205,8 @@
     "total_votes": 3341,
     "de_la_cruz": 20,
     "de_la_cruz_pct": 0.599,
+    "stein": 17,
+    "stein_pct": 0.509,
     "precincts": 2
   },
   {
@@ -173,6 +215,8 @@
     "total_votes": 4061,
     "de_la_cruz": 8,
     "de_la_cruz_pct": 0.197,
+    "stein": 43,
+    "stein_pct": 1.059,
     "precincts": 2
   },
   {
@@ -181,6 +225,8 @@
     "total_votes": 10073,
     "de_la_cruz": 25,
     "de_la_cruz_pct": 0.248,
+    "stein": 64,
+    "stein_pct": 0.635,
     "precincts": 5
   },
   {
@@ -189,6 +235,8 @@
     "total_votes": 2583,
     "de_la_cruz": 6,
     "de_la_cruz_pct": 0.232,
+    "stein": 15,
+    "stein_pct": 0.581,
     "precincts": 1
   },
   {
@@ -197,6 +245,8 @@
     "total_votes": 4704,
     "de_la_cruz": 12,
     "de_la_cruz_pct": 0.255,
+    "stein": 30,
+    "stein_pct": 0.638,
     "precincts": 3
   },
   {
@@ -205,6 +255,8 @@
     "total_votes": 27997,
     "de_la_cruz": 64,
     "de_la_cruz_pct": 0.229,
+    "stein": 103,
+    "stein_pct": 0.368,
     "precincts": 13
   },
   {
@@ -213,6 +265,8 @@
     "total_votes": 3125,
     "de_la_cruz": 5,
     "de_la_cruz_pct": 0.16,
+    "stein": 12,
+    "stein_pct": 0.384,
     "precincts": 2
   },
   {
@@ -221,6 +275,8 @@
     "total_votes": 1247,
     "de_la_cruz": 4,
     "de_la_cruz_pct": 0.321,
+    "stein": 8,
+    "stein_pct": 0.642,
     "precincts": 1
   },
   {
@@ -229,6 +285,8 @@
     "total_votes": 8432,
     "de_la_cruz": 19,
     "de_la_cruz_pct": 0.225,
+    "stein": 75,
+    "stein_pct": 0.889,
     "precincts": 5
   },
   {
@@ -237,6 +295,8 @@
     "total_votes": 9631,
     "de_la_cruz": 28,
     "de_la_cruz_pct": 0.291,
+    "stein": 62,
+    "stein_pct": 0.644,
     "precincts": 4
   },
   {
@@ -245,6 +305,8 @@
     "total_votes": 10086,
     "de_la_cruz": 20,
     "de_la_cruz_pct": 0.198,
+    "stein": 55,
+    "stein_pct": 0.545,
     "precincts": 5
   },
   {
@@ -253,6 +315,8 @@
     "total_votes": 14654,
     "de_la_cruz": 77,
     "de_la_cruz_pct": 0.525,
+    "stein": 185,
+    "stein_pct": 1.262,
     "precincts": 8
   },
   {
@@ -261,6 +325,8 @@
     "total_votes": 4263,
     "de_la_cruz": 3,
     "de_la_cruz_pct": 0.07,
+    "stein": 13,
+    "stein_pct": 0.305,
     "precincts": 2
   },
   {
@@ -269,6 +335,8 @@
     "total_votes": 2429,
     "de_la_cruz": 9,
     "de_la_cruz_pct": 0.371,
+    "stein": 16,
+    "stein_pct": 0.659,
     "precincts": 1
   },
   {
@@ -277,6 +345,8 @@
     "total_votes": 1411,
     "de_la_cruz": 0,
     "de_la_cruz_pct": 0.0,
+    "stein": 14,
+    "stein_pct": 0.992,
     "precincts": 1
   },
   {
@@ -285,6 +355,8 @@
     "total_votes": 4342,
     "de_la_cruz": 11,
     "de_la_cruz_pct": 0.253,
+    "stein": 28,
+    "stein_pct": 0.645,
     "precincts": 2
   },
   {
@@ -293,6 +365,8 @@
     "total_votes": 4095,
     "de_la_cruz": 34,
     "de_la_cruz_pct": 0.83,
+    "stein": 41,
+    "stein_pct": 1.001,
     "precincts": 2
   },
   {
@@ -301,6 +375,8 @@
     "total_votes": 3288,
     "de_la_cruz": 18,
     "de_la_cruz_pct": 0.547,
+    "stein": 22,
+    "stein_pct": 0.669,
     "precincts": 2
   },
   {
@@ -309,6 +385,8 @@
     "total_votes": 3482,
     "de_la_cruz": 12,
     "de_la_cruz_pct": 0.345,
+    "stein": 21,
+    "stein_pct": 0.603,
     "precincts": 2
   },
   {
@@ -317,6 +395,8 @@
     "total_votes": 3976,
     "de_la_cruz": 10,
     "de_la_cruz_pct": 0.252,
+    "stein": 17,
+    "stein_pct": 0.428,
     "precincts": 2
   },
   {
@@ -325,6 +405,8 @@
     "total_votes": 4725,
     "de_la_cruz": 6,
     "de_la_cruz_pct": 0.127,
+    "stein": 32,
+    "stein_pct": 0.677,
     "precincts": 2
   },
   {
@@ -333,6 +415,8 @@
     "total_votes": 23881,
     "de_la_cruz": 44,
     "de_la_cruz_pct": 0.184,
+    "stein": 178,
+    "stein_pct": 0.745,
     "precincts": 12
   },
   {
@@ -341,6 +425,8 @@
     "total_votes": 5154,
     "de_la_cruz": 5,
     "de_la_cruz_pct": 0.097,
+    "stein": 25,
+    "stein_pct": 0.485,
     "precincts": 3
   },
   {
@@ -349,6 +435,8 @@
     "total_votes": 820,
     "de_la_cruz": 0,
     "de_la_cruz_pct": 0.0,
+    "stein": 1,
+    "stein_pct": 0.122,
     "precincts": 1
   },
   {
@@ -357,6 +445,8 @@
     "total_votes": 3706,
     "de_la_cruz": 9,
     "de_la_cruz_pct": 0.243,
+    "stein": 25,
+    "stein_pct": 0.675,
     "precincts": 1
   },
   {
@@ -365,6 +455,8 @@
     "total_votes": 14165,
     "de_la_cruz": 157,
     "de_la_cruz_pct": 1.108,
+    "stein": 176,
+    "stein_pct": 1.242,
     "precincts": 15
   },
   {
@@ -373,6 +465,8 @@
     "total_votes": 10328,
     "de_la_cruz": 35,
     "de_la_cruz_pct": 0.339,
+    "stein": 67,
+    "stein_pct": 0.649,
     "precincts": 8
   },
   {
@@ -381,6 +475,8 @@
     "total_votes": 19237,
     "de_la_cruz": 68,
     "de_la_cruz_pct": 0.353,
+    "stein": 182,
+    "stein_pct": 0.946,
     "precincts": 18
   },
   {
@@ -389,6 +485,8 @@
     "total_votes": 9424,
     "de_la_cruz": 41,
     "de_la_cruz_pct": 0.435,
+    "stein": 82,
+    "stein_pct": 0.87,
     "precincts": 12
   },
   {
@@ -397,6 +495,8 @@
     "total_votes": 15332,
     "de_la_cruz": 72,
     "de_la_cruz_pct": 0.47,
+    "stein": 140,
+    "stein_pct": 0.913,
     "precincts": 15
   },
   {
@@ -405,6 +505,8 @@
     "total_votes": 15511,
     "de_la_cruz": 41,
     "de_la_cruz_pct": 0.264,
+    "stein": 95,
+    "stein_pct": 0.612,
     "precincts": 13
   },
   {
@@ -413,6 +515,8 @@
     "total_votes": 9946,
     "de_la_cruz": 57,
     "de_la_cruz_pct": 0.573,
+    "stein": 74,
+    "stein_pct": 0.744,
     "precincts": 10
   },
   {
@@ -421,6 +525,8 @@
     "total_votes": 4987,
     "de_la_cruz": 37,
     "de_la_cruz_pct": 0.742,
+    "stein": 57,
+    "stein_pct": 1.143,
     "precincts": 7
   },
   {
@@ -429,6 +535,8 @@
     "total_votes": 6460,
     "de_la_cruz": 53,
     "de_la_cruz_pct": 0.82,
+    "stein": 70,
+    "stein_pct": 1.084,
     "precincts": 7
   },
   {
@@ -437,6 +545,8 @@
     "total_votes": 7277,
     "de_la_cruz": 104,
     "de_la_cruz_pct": 1.429,
+    "stein": 116,
+    "stein_pct": 1.594,
     "precincts": 10
   },
   {
@@ -445,6 +555,8 @@
     "total_votes": 9999,
     "de_la_cruz": 186,
     "de_la_cruz_pct": 1.86,
+    "stein": 209,
+    "stein_pct": 2.09,
     "precincts": 10
   },
   {
@@ -453,6 +565,8 @@
     "total_votes": 6393,
     "de_la_cruz": 85,
     "de_la_cruz_pct": 1.33,
+    "stein": 84,
+    "stein_pct": 1.314,
     "precincts": 9
   },
   {
@@ -461,6 +575,8 @@
     "total_votes": 7800,
     "de_la_cruz": 78,
     "de_la_cruz_pct": 1.0,
+    "stein": 96,
+    "stein_pct": 1.231,
     "precincts": 10
   },
   {
@@ -469,6 +585,8 @@
     "total_votes": 9582,
     "de_la_cruz": 55,
     "de_la_cruz_pct": 0.574,
+    "stein": 57,
+    "stein_pct": 0.595,
     "precincts": 14
   },
   {
@@ -477,6 +595,8 @@
     "total_votes": 5605,
     "de_la_cruz": 55,
     "de_la_cruz_pct": 0.981,
+    "stein": 46,
+    "stein_pct": 0.821,
     "precincts": 9
   },
   {
@@ -485,6 +605,8 @@
     "total_votes": 11599,
     "de_la_cruz": 86,
     "de_la_cruz_pct": 0.741,
+    "stein": 91,
+    "stein_pct": 0.785,
     "precincts": 12
   },
   {
@@ -493,6 +615,8 @@
     "total_votes": 10451,
     "de_la_cruz": 87,
     "de_la_cruz_pct": 0.832,
+    "stein": 77,
+    "stein_pct": 0.737,
     "precincts": 14
   },
   {
@@ -501,6 +625,8 @@
     "total_votes": 26923,
     "de_la_cruz": 171,
     "de_la_cruz_pct": 0.635,
+    "stein": 167,
+    "stein_pct": 0.62,
     "precincts": 23
   },
   {
@@ -509,6 +635,8 @@
     "total_votes": 13707,
     "de_la_cruz": 162,
     "de_la_cruz_pct": 1.182,
+    "stein": 210,
+    "stein_pct": 1.532,
     "precincts": 13
   },
   {
@@ -517,6 +645,8 @@
     "total_votes": 23218,
     "de_la_cruz": 114,
     "de_la_cruz_pct": 0.491,
+    "stein": 202,
+    "stein_pct": 0.87,
     "precincts": 21
   },
   {
@@ -525,6 +655,8 @@
     "total_votes": 14577,
     "de_la_cruz": 241,
     "de_la_cruz_pct": 1.653,
+    "stein": 288,
+    "stein_pct": 1.976,
     "precincts": 16
   },
   {
@@ -533,6 +665,8 @@
     "total_votes": 12892,
     "de_la_cruz": 193,
     "de_la_cruz_pct": 1.497,
+    "stein": 226,
+    "stein_pct": 1.753,
     "precincts": 13
   },
   {
@@ -541,6 +675,8 @@
     "total_votes": 12272,
     "de_la_cruz": 15,
     "de_la_cruz_pct": 0.122,
+    "stein": 49,
+    "stein_pct": 0.399,
     "precincts": 8
   },
   {
@@ -549,6 +685,8 @@
     "total_votes": 3192,
     "de_la_cruz": 4,
     "de_la_cruz_pct": 0.125,
+    "stein": 32,
+    "stein_pct": 1.003,
     "precincts": 1
   },
   {
@@ -557,6 +695,8 @@
     "total_votes": 5463,
     "de_la_cruz": 7,
     "de_la_cruz_pct": 0.128,
+    "stein": 26,
+    "stein_pct": 0.476,
     "precincts": 3
   },
   {
@@ -565,6 +705,8 @@
     "total_votes": 3387,
     "de_la_cruz": 7,
     "de_la_cruz_pct": 0.207,
+    "stein": 31,
+    "stein_pct": 0.915,
     "precincts": 1
   },
   {
@@ -573,6 +715,8 @@
     "total_votes": 20583,
     "de_la_cruz": 51,
     "de_la_cruz_pct": 0.248,
+    "stein": 132,
+    "stein_pct": 0.641,
     "precincts": 12
   },
   {
@@ -581,6 +725,8 @@
     "total_votes": 7349,
     "de_la_cruz": 12,
     "de_la_cruz_pct": 0.163,
+    "stein": 47,
+    "stein_pct": 0.64,
     "precincts": 3
   },
   {
@@ -589,6 +735,8 @@
     "total_votes": 14657,
     "de_la_cruz": 31,
     "de_la_cruz_pct": 0.212,
+    "stein": 78,
+    "stein_pct": 0.532,
     "precincts": 9
   },
   {
@@ -597,6 +745,8 @@
     "total_votes": 2363,
     "de_la_cruz": 4,
     "de_la_cruz_pct": 0.169,
+    "stein": 12,
+    "stein_pct": 0.508,
     "precincts": 1
   },
   {
@@ -605,6 +755,8 @@
     "total_votes": 5738,
     "de_la_cruz": 29,
     "de_la_cruz_pct": 0.505,
+    "stein": 23,
+    "stein_pct": 0.401,
     "precincts": 4
   },
   {
@@ -613,6 +765,8 @@
     "total_votes": 3558,
     "de_la_cruz": 18,
     "de_la_cruz_pct": 0.506,
+    "stein": 18,
+    "stein_pct": 0.506,
     "precincts": 4
   },
   {
@@ -621,6 +775,8 @@
     "total_votes": 5516,
     "de_la_cruz": 12,
     "de_la_cruz_pct": 0.218,
+    "stein": 33,
+    "stein_pct": 0.598,
     "precincts": 4
   },
   {
@@ -629,6 +785,8 @@
     "total_votes": 4817,
     "de_la_cruz": 19,
     "de_la_cruz_pct": 0.394,
+    "stein": 28,
+    "stein_pct": 0.581,
     "precincts": 4
   },
   {
@@ -637,6 +795,8 @@
     "total_votes": 5194,
     "de_la_cruz": 27,
     "de_la_cruz_pct": 0.52,
+    "stein": 32,
+    "stein_pct": 0.616,
     "precincts": 4
   },
   {
@@ -645,6 +805,8 @@
     "total_votes": 5940,
     "de_la_cruz": 21,
     "de_la_cruz_pct": 0.354,
+    "stein": 28,
+    "stein_pct": 0.471,
     "precincts": 4
   },
   {
@@ -653,6 +815,8 @@
     "total_votes": 4721,
     "de_la_cruz": 20,
     "de_la_cruz_pct": 0.424,
+    "stein": 25,
+    "stein_pct": 0.53,
     "precincts": 4
   },
   {
@@ -661,6 +825,8 @@
     "total_votes": 2107,
     "de_la_cruz": 6,
     "de_la_cruz_pct": 0.285,
+    "stein": 8,
+    "stein_pct": 0.38,
     "precincts": 1
   },
   {
@@ -669,6 +835,8 @@
     "total_votes": 28586,
     "de_la_cruz": 160,
     "de_la_cruz_pct": 0.56,
+    "stein": 361,
+    "stein_pct": 1.263,
     "precincts": 20
   },
   {
@@ -677,6 +845,8 @@
     "total_votes": 1143,
     "de_la_cruz": 4,
     "de_la_cruz_pct": 0.35,
+    "stein": 12,
+    "stein_pct": 1.05,
     "precincts": 1
   },
   {
@@ -685,6 +855,8 @@
     "total_votes": 14600,
     "de_la_cruz": 26,
     "de_la_cruz_pct": 0.178,
+    "stein": 165,
+    "stein_pct": 1.13,
     "precincts": 7
   },
   {
@@ -693,6 +865,8 @@
     "total_votes": 3036,
     "de_la_cruz": 18,
     "de_la_cruz_pct": 0.593,
+    "stein": 51,
+    "stein_pct": 1.68,
     "precincts": 4
   },
   {
@@ -701,6 +875,8 @@
     "total_votes": 4713,
     "de_la_cruz": 48,
     "de_la_cruz_pct": 1.018,
+    "stein": 94,
+    "stein_pct": 1.994,
     "precincts": 4
   },
   {
@@ -709,6 +885,8 @@
     "total_votes": 4690,
     "de_la_cruz": 73,
     "de_la_cruz_pct": 1.557,
+    "stein": 103,
+    "stein_pct": 2.196,
     "precincts": 4
   },
   {
@@ -717,6 +895,8 @@
     "total_votes": 5429,
     "de_la_cruz": 67,
     "de_la_cruz_pct": 1.234,
+    "stein": 105,
+    "stein_pct": 1.934,
     "precincts": 4
   },
   {
@@ -725,6 +905,8 @@
     "total_votes": 3501,
     "de_la_cruz": 34,
     "de_la_cruz_pct": 0.971,
+    "stein": 77,
+    "stein_pct": 2.199,
     "precincts": 3
   },
   {
@@ -733,6 +915,8 @@
     "total_votes": 4864,
     "de_la_cruz": 45,
     "de_la_cruz_pct": 0.925,
+    "stein": 102,
+    "stein_pct": 2.097,
     "precincts": 4
   },
   {
@@ -741,6 +925,8 @@
     "total_votes": 3497,
     "de_la_cruz": 42,
     "de_la_cruz_pct": 1.201,
+    "stein": 62,
+    "stein_pct": 1.773,
     "precincts": 4
   },
   {
@@ -749,6 +935,8 @@
     "total_votes": 3623,
     "de_la_cruz": 39,
     "de_la_cruz_pct": 1.076,
+    "stein": 62,
+    "stein_pct": 1.711,
     "precincts": 3
   },
   {
@@ -757,6 +945,8 @@
     "total_votes": 6383,
     "de_la_cruz": 57,
     "de_la_cruz_pct": 0.893,
+    "stein": 102,
+    "stein_pct": 1.598,
     "precincts": 3
   },
   {
@@ -765,6 +955,8 @@
     "total_votes": 6082,
     "de_la_cruz": 69,
     "de_la_cruz_pct": 1.134,
+    "stein": 117,
+    "stein_pct": 1.924,
     "precincts": 4
   },
   {
@@ -773,6 +965,8 @@
     "total_votes": 4843,
     "de_la_cruz": 41,
     "de_la_cruz_pct": 0.847,
+    "stein": 130,
+    "stein_pct": 2.684,
     "precincts": 5
   },
   {
@@ -781,6 +975,8 @@
     "total_votes": 14198,
     "de_la_cruz": 28,
     "de_la_cruz_pct": 0.197,
+    "stein": 108,
+    "stein_pct": 0.761,
     "precincts": 7
   },
   {
@@ -789,6 +985,8 @@
     "total_votes": 3461,
     "de_la_cruz": 7,
     "de_la_cruz_pct": 0.202,
+    "stein": 23,
+    "stein_pct": 0.665,
     "precincts": 1
   },
   {
@@ -797,6 +995,8 @@
     "total_votes": 7184,
     "de_la_cruz": 12,
     "de_la_cruz_pct": 0.167,
+    "stein": 29,
+    "stein_pct": 0.404,
     "precincts": 3
   },
   {
@@ -805,6 +1005,8 @@
     "total_votes": 744,
     "de_la_cruz": 1,
     "de_la_cruz_pct": 0.134,
+    "stein": 22,
+    "stein_pct": 2.957,
     "precincts": 1
   },
   {
@@ -813,6 +1015,8 @@
     "total_votes": 8296,
     "de_la_cruz": 24,
     "de_la_cruz_pct": 0.289,
+    "stein": 31,
+    "stein_pct": 0.374,
     "precincts": 5
   },
   {
@@ -821,6 +1025,8 @@
     "total_votes": 4901,
     "de_la_cruz": 10,
     "de_la_cruz_pct": 0.204,
+    "stein": 26,
+    "stein_pct": 0.531,
     "precincts": 2
   },
   {
@@ -829,6 +1035,8 @@
     "total_votes": 21705,
     "de_la_cruz": 45,
     "de_la_cruz_pct": 0.207,
+    "stein": 150,
+    "stein_pct": 0.691,
     "precincts": 13
   },
   {
@@ -837,6 +1045,8 @@
     "total_votes": 1591,
     "de_la_cruz": 25,
     "de_la_cruz_pct": 1.571,
+    "stein": 18,
+    "stein_pct": 1.131,
     "precincts": 4
   },
   {
@@ -845,6 +1055,8 @@
     "total_votes": 2552,
     "de_la_cruz": 23,
     "de_la_cruz_pct": 0.901,
+    "stein": 25,
+    "stein_pct": 0.98,
     "precincts": 4
   },
   {
@@ -853,6 +1065,8 @@
     "total_votes": 2156,
     "de_la_cruz": 24,
     "de_la_cruz_pct": 1.113,
+    "stein": 24,
+    "stein_pct": 1.113,
     "precincts": 4
   },
   {
@@ -861,6 +1075,8 @@
     "total_votes": 2570,
     "de_la_cruz": 27,
     "de_la_cruz_pct": 1.051,
+    "stein": 43,
+    "stein_pct": 1.673,
     "precincts": 4
   },
   {
@@ -869,6 +1085,8 @@
     "total_votes": 1954,
     "de_la_cruz": 0,
     "de_la_cruz_pct": 0.0,
+    "stein": 8,
+    "stein_pct": 0.409,
     "precincts": 1
   },
   {
@@ -877,6 +1095,8 @@
     "total_votes": 751,
     "de_la_cruz": 3,
     "de_la_cruz_pct": 0.399,
+    "stein": 1,
+    "stein_pct": 0.133,
     "precincts": 1
   },
   {
@@ -885,6 +1105,8 @@
     "total_votes": 836,
     "de_la_cruz": 7,
     "de_la_cruz_pct": 0.837,
+    "stein": 5,
+    "stein_pct": 0.598,
     "precincts": 1
   },
   {
@@ -893,6 +1115,8 @@
     "total_votes": 3152,
     "de_la_cruz": 6,
     "de_la_cruz_pct": 0.19,
+    "stein": 20,
+    "stein_pct": 0.635,
     "precincts": 2
   },
   {
@@ -901,6 +1125,8 @@
     "total_votes": 2465,
     "de_la_cruz": 15,
     "de_la_cruz_pct": 0.609,
+    "stein": 11,
+    "stein_pct": 0.446,
     "precincts": 2
   },
   {
@@ -909,6 +1135,8 @@
     "total_votes": 2474,
     "de_la_cruz": 12,
     "de_la_cruz_pct": 0.485,
+    "stein": 16,
+    "stein_pct": 0.647,
     "precincts": 3
   },
   {
@@ -917,6 +1145,8 @@
     "total_votes": 2444,
     "de_la_cruz": 11,
     "de_la_cruz_pct": 0.45,
+    "stein": 16,
+    "stein_pct": 0.655,
     "precincts": 2
   },
   {
@@ -925,6 +1155,8 @@
     "total_votes": 2740,
     "de_la_cruz": 15,
     "de_la_cruz_pct": 0.547,
+    "stein": 10,
+    "stein_pct": 0.365,
     "precincts": 2
   },
   {
@@ -933,6 +1165,8 @@
     "total_votes": 3287,
     "de_la_cruz": 10,
     "de_la_cruz_pct": 0.304,
+    "stein": 21,
+    "stein_pct": 0.639,
     "precincts": 4
   },
   {
@@ -941,6 +1175,8 @@
     "total_votes": 2164,
     "de_la_cruz": 12,
     "de_la_cruz_pct": 0.555,
+    "stein": 13,
+    "stein_pct": 0.601,
     "precincts": 2
   },
   {
@@ -949,6 +1185,8 @@
     "total_votes": 2869,
     "de_la_cruz": 10,
     "de_la_cruz_pct": 0.349,
+    "stein": 12,
+    "stein_pct": 0.418,
     "precincts": 2
   },
   {
@@ -957,6 +1195,8 @@
     "total_votes": 3074,
     "de_la_cruz": 10,
     "de_la_cruz_pct": 0.325,
+    "stein": 7,
+    "stein_pct": 0.228,
     "precincts": 2
   },
   {
@@ -965,6 +1205,8 @@
     "total_votes": 945,
     "de_la_cruz": 1,
     "de_la_cruz_pct": 0.106,
+    "stein": 6,
+    "stein_pct": 0.635,
     "precincts": 1
   },
   {
@@ -973,6 +1215,8 @@
     "total_votes": 980,
     "de_la_cruz": 2,
     "de_la_cruz_pct": 0.204,
+    "stein": 5,
+    "stein_pct": 0.51,
     "precincts": 1
   },
   {
@@ -981,6 +1225,8 @@
     "total_votes": 7566,
     "de_la_cruz": 21,
     "de_la_cruz_pct": 0.278,
+    "stein": 39,
+    "stein_pct": 0.515,
     "precincts": 4
   },
   {
@@ -989,6 +1235,8 @@
     "total_votes": 5431,
     "de_la_cruz": 6,
     "de_la_cruz_pct": 0.11,
+    "stein": 21,
+    "stein_pct": 0.387,
     "precincts": 3
   },
   {
@@ -997,6 +1245,8 @@
     "total_votes": 1050,
     "de_la_cruz": 1,
     "de_la_cruz_pct": 0.095,
+    "stein": 13,
+    "stein_pct": 1.238,
     "precincts": 1
   },
   {
@@ -1005,6 +1255,8 @@
     "total_votes": 12026,
     "de_la_cruz": 26,
     "de_la_cruz_pct": 0.216,
+    "stein": 73,
+    "stein_pct": 0.607,
     "precincts": 5
   },
   {
@@ -1013,6 +1265,8 @@
     "total_votes": 1310,
     "de_la_cruz": 7,
     "de_la_cruz_pct": 0.534,
+    "stein": 20,
+    "stein_pct": 1.527,
     "precincts": 1
   },
   {
@@ -1021,6 +1275,8 @@
     "total_votes": 587,
     "de_la_cruz": 4,
     "de_la_cruz_pct": 0.681,
+    "stein": 14,
+    "stein_pct": 2.385,
     "precincts": 1
   },
   {
@@ -1029,6 +1285,8 @@
     "total_votes": 3684,
     "de_la_cruz": 8,
     "de_la_cruz_pct": 0.217,
+    "stein": 29,
+    "stein_pct": 0.787,
     "precincts": 2
   },
   {
@@ -1037,6 +1295,8 @@
     "total_votes": 16535,
     "de_la_cruz": 37,
     "de_la_cruz_pct": 0.224,
+    "stein": 96,
+    "stein_pct": 0.581,
     "precincts": 8
   },
   {
@@ -1045,6 +1305,8 @@
     "total_votes": 18549,
     "de_la_cruz": 22,
     "de_la_cruz_pct": 0.119,
+    "stein": 58,
+    "stein_pct": 0.313,
     "precincts": 9
   },
   {
@@ -1053,6 +1315,8 @@
     "total_votes": 15179,
     "de_la_cruz": 42,
     "de_la_cruz_pct": 0.277,
+    "stein": 122,
+    "stein_pct": 0.804,
     "precincts": 7
   },
   {
@@ -1061,6 +1325,8 @@
     "total_votes": 3308,
     "de_la_cruz": 8,
     "de_la_cruz_pct": 0.242,
+    "stein": 38,
+    "stein_pct": 1.149,
     "precincts": 1
   },
   {
@@ -1069,6 +1335,8 @@
     "total_votes": 10316,
     "de_la_cruz": 13,
     "de_la_cruz_pct": 0.126,
+    "stein": 38,
+    "stein_pct": 0.368,
     "precincts": 5
   },
   {
@@ -1077,6 +1345,8 @@
     "total_votes": 4875,
     "de_la_cruz": 7,
     "de_la_cruz_pct": 0.144,
+    "stein": 16,
+    "stein_pct": 0.328,
     "precincts": 3
   },
   {
@@ -1085,6 +1355,8 @@
     "total_votes": 5873,
     "de_la_cruz": 4,
     "de_la_cruz_pct": 0.068,
+    "stein": 29,
+    "stein_pct": 0.494,
     "precincts": 3
   },
   {
@@ -1093,6 +1365,8 @@
     "total_votes": 3794,
     "de_la_cruz": 9,
     "de_la_cruz_pct": 0.237,
+    "stein": 37,
+    "stein_pct": 0.975,
     "precincts": 1
   },
   {
@@ -1101,6 +1375,8 @@
     "total_votes": 17622,
     "de_la_cruz": 34,
     "de_la_cruz_pct": 0.193,
+    "stein": 96,
+    "stein_pct": 0.545,
     "precincts": 10
   },
   {
@@ -1109,6 +1385,8 @@
     "total_votes": 6405,
     "de_la_cruz": 11,
     "de_la_cruz_pct": 0.172,
+    "stein": 26,
+    "stein_pct": 0.406,
     "precincts": 4
   },
   {
@@ -1117,6 +1395,8 @@
     "total_votes": 2231,
     "de_la_cruz": 3,
     "de_la_cruz_pct": 0.134,
+    "stein": 8,
+    "stein_pct": 0.359,
     "precincts": 1
   },
   {
@@ -1125,6 +1405,8 @@
     "total_votes": 10797,
     "de_la_cruz": 18,
     "de_la_cruz_pct": 0.167,
+    "stein": 45,
+    "stein_pct": 0.417,
     "precincts": 6
   },
   {
@@ -1133,6 +1415,8 @@
     "total_votes": 8660,
     "de_la_cruz": 24,
     "de_la_cruz_pct": 0.277,
+    "stein": 32,
+    "stein_pct": 0.37,
     "precincts": 4
   },
   {
@@ -1141,6 +1425,8 @@
     "total_votes": 1363,
     "de_la_cruz": 1,
     "de_la_cruz_pct": 0.073,
+    "stein": 5,
+    "stein_pct": 0.367,
     "precincts": 1
   },
   {
@@ -1149,6 +1435,8 @@
     "total_votes": 9886,
     "de_la_cruz": 14,
     "de_la_cruz_pct": 0.142,
+    "stein": 46,
+    "stein_pct": 0.465,
     "precincts": 8
   },
   {
@@ -1157,6 +1445,8 @@
     "total_votes": 4164,
     "de_la_cruz": 2,
     "de_la_cruz_pct": 0.048,
+    "stein": 24,
+    "stein_pct": 0.576,
     "precincts": 1
   },
   {
@@ -1165,6 +1455,8 @@
     "total_votes": 10261,
     "de_la_cruz": 100,
     "de_la_cruz_pct": 0.975,
+    "stein": 159,
+    "stein_pct": 1.55,
     "precincts": 5
   },
   {
@@ -1173,6 +1465,8 @@
     "total_votes": 14336,
     "de_la_cruz": 34,
     "de_la_cruz_pct": 0.237,
+    "stein": 90,
+    "stein_pct": 0.628,
     "precincts": 8
   },
   {
@@ -1181,6 +1475,8 @@
     "total_votes": 2936,
     "de_la_cruz": 6,
     "de_la_cruz_pct": 0.204,
+    "stein": 25,
+    "stein_pct": 0.851,
     "precincts": 1
   },
   {
@@ -1189,6 +1485,8 @@
     "total_votes": 956,
     "de_la_cruz": 3,
     "de_la_cruz_pct": 0.314,
+    "stein": 15,
+    "stein_pct": 1.569,
     "precincts": 1
   },
   {
@@ -1197,6 +1495,8 @@
     "total_votes": 978,
     "de_la_cruz": 4,
     "de_la_cruz_pct": 0.409,
+    "stein": 8,
+    "stein_pct": 0.818,
     "precincts": 1
   },
   {
@@ -1205,6 +1505,8 @@
     "total_votes": 2438,
     "de_la_cruz": 5,
     "de_la_cruz_pct": 0.205,
+    "stein": 13,
+    "stein_pct": 0.533,
     "precincts": 1
   },
   {
@@ -1213,6 +1515,8 @@
     "total_votes": 1828,
     "de_la_cruz": 9,
     "de_la_cruz_pct": 0.492,
+    "stein": 16,
+    "stein_pct": 0.875,
     "precincts": 4
   },
   {
@@ -1221,6 +1525,8 @@
     "total_votes": 2024,
     "de_la_cruz": 20,
     "de_la_cruz_pct": 0.988,
+    "stein": 21,
+    "stein_pct": 1.038,
     "precincts": 4
   },
   {
@@ -1229,6 +1535,8 @@
     "total_votes": 2293,
     "de_la_cruz": 3,
     "de_la_cruz_pct": 0.131,
+    "stein": 19,
+    "stein_pct": 0.829,
     "precincts": 3
   },
   {
@@ -1237,6 +1545,8 @@
     "total_votes": 2287,
     "de_la_cruz": 16,
     "de_la_cruz_pct": 0.7,
+    "stein": 12,
+    "stein_pct": 0.525,
     "precincts": 3
   },
   {
@@ -1245,6 +1555,8 @@
     "total_votes": 2006,
     "de_la_cruz": 11,
     "de_la_cruz_pct": 0.548,
+    "stein": 18,
+    "stein_pct": 0.897,
     "precincts": 3
   },
   {
@@ -1253,6 +1565,8 @@
     "total_votes": 2220,
     "de_la_cruz": 9,
     "de_la_cruz_pct": 0.405,
+    "stein": 27,
+    "stein_pct": 1.216,
     "precincts": 3
   },
   {
@@ -1261,6 +1575,8 @@
     "total_votes": 9628,
     "de_la_cruz": 13,
     "de_la_cruz_pct": 0.135,
+    "stein": 43,
+    "stein_pct": 0.447,
     "precincts": 6
   },
   {
@@ -1269,6 +1585,8 @@
     "total_votes": 4027,
     "de_la_cruz": 10,
     "de_la_cruz_pct": 0.248,
+    "stein": 13,
+    "stein_pct": 0.323,
     "precincts": 3
   },
   {
@@ -1277,6 +1595,8 @@
     "total_votes": 2686,
     "de_la_cruz": 10,
     "de_la_cruz_pct": 0.372,
+    "stein": 17,
+    "stein_pct": 0.633,
     "precincts": 3
   },
   {
@@ -1285,6 +1605,8 @@
     "total_votes": 3632,
     "de_la_cruz": 5,
     "de_la_cruz_pct": 0.138,
+    "stein": 17,
+    "stein_pct": 0.468,
     "precincts": 3
   },
   {
@@ -1293,6 +1615,8 @@
     "total_votes": 2383,
     "de_la_cruz": 8,
     "de_la_cruz_pct": 0.336,
+    "stein": 9,
+    "stein_pct": 0.378,
     "precincts": 3
   },
   {
@@ -1301,6 +1625,8 @@
     "total_votes": 2027,
     "de_la_cruz": 8,
     "de_la_cruz_pct": 0.395,
+    "stein": 7,
+    "stein_pct": 0.345,
     "precincts": 3
   },
   {
@@ -1309,6 +1635,8 @@
     "total_votes": 3561,
     "de_la_cruz": 7,
     "de_la_cruz_pct": 0.197,
+    "stein": 14,
+    "stein_pct": 0.393,
     "precincts": 3
   },
   {
@@ -1317,6 +1645,8 @@
     "total_votes": 3220,
     "de_la_cruz": 9,
     "de_la_cruz_pct": 0.28,
+    "stein": 27,
+    "stein_pct": 0.839,
     "precincts": 3
   },
   {
@@ -1325,6 +1655,8 @@
     "total_votes": 4189,
     "de_la_cruz": 9,
     "de_la_cruz_pct": 0.215,
+    "stein": 18,
+    "stein_pct": 0.43,
     "precincts": 3
   },
   {
@@ -1333,6 +1665,8 @@
     "total_votes": 5081,
     "de_la_cruz": 12,
     "de_la_cruz_pct": 0.236,
+    "stein": 14,
+    "stein_pct": 0.276,
     "precincts": 3
   },
   {
@@ -1341,6 +1675,8 @@
     "total_votes": 22252,
     "de_la_cruz": 34,
     "de_la_cruz_pct": 0.153,
+    "stein": 91,
+    "stein_pct": 0.409,
     "precincts": 9
   },
   {
@@ -1349,6 +1685,8 @@
     "total_votes": 2388,
     "de_la_cruz": 12,
     "de_la_cruz_pct": 0.503,
+    "stein": 14,
+    "stein_pct": 0.586,
     "precincts": 2
   },
   {
@@ -1357,6 +1695,8 @@
     "total_votes": 2395,
     "de_la_cruz": 19,
     "de_la_cruz_pct": 0.793,
+    "stein": 10,
+    "stein_pct": 0.418,
     "precincts": 2
   },
   {
@@ -1365,6 +1705,8 @@
     "total_votes": 3580,
     "de_la_cruz": 11,
     "de_la_cruz_pct": 0.307,
+    "stein": 21,
+    "stein_pct": 0.587,
     "precincts": 2
   },
   {
@@ -1373,6 +1715,8 @@
     "total_votes": 1925,
     "de_la_cruz": 13,
     "de_la_cruz_pct": 0.675,
+    "stein": 22,
+    "stein_pct": 1.143,
     "precincts": 2
   },
   {
@@ -1381,6 +1725,8 @@
     "total_votes": 2819,
     "de_la_cruz": 5,
     "de_la_cruz_pct": 0.177,
+    "stein": 13,
+    "stein_pct": 0.461,
     "precincts": 2
   },
   {
@@ -1389,6 +1735,8 @@
     "total_votes": 2790,
     "de_la_cruz": 6,
     "de_la_cruz_pct": 0.215,
+    "stein": 14,
+    "stein_pct": 0.502,
     "precincts": 2
   },
   {
@@ -1397,6 +1745,8 @@
     "total_votes": 416,
     "de_la_cruz": 2,
     "de_la_cruz_pct": 0.481,
+    "stein": 2,
+    "stein_pct": 0.481,
     "precincts": 1
   },
   {
@@ -1405,6 +1755,8 @@
     "total_votes": 11212,
     "de_la_cruz": 15,
     "de_la_cruz_pct": 0.134,
+    "stein": 127,
+    "stein_pct": 1.133,
     "precincts": 5
   },
   {
@@ -1413,6 +1765,8 @@
     "total_votes": 30134,
     "de_la_cruz": 107,
     "de_la_cruz_pct": 0.355,
+    "stein": 247,
+    "stein_pct": 0.82,
     "precincts": 30
   },
   {
@@ -1421,6 +1775,8 @@
     "total_votes": 20070,
     "de_la_cruz": 43,
     "de_la_cruz_pct": 0.214,
+    "stein": 110,
+    "stein_pct": 0.548,
     "precincts": 9
   },
   {
@@ -1429,6 +1785,8 @@
     "total_votes": 5587,
     "de_la_cruz": 7,
     "de_la_cruz_pct": 0.125,
+    "stein": 20,
+    "stein_pct": 0.358,
     "precincts": 3
   },
   {
@@ -1437,6 +1795,8 @@
     "total_votes": 1777,
     "de_la_cruz": 5,
     "de_la_cruz_pct": 0.281,
+    "stein": 10,
+    "stein_pct": 0.563,
     "precincts": 2
   },
   {
@@ -1445,6 +1805,8 @@
     "total_votes": 2191,
     "de_la_cruz": 5,
     "de_la_cruz_pct": 0.228,
+    "stein": 11,
+    "stein_pct": 0.502,
     "precincts": 2
   },
   {
@@ -1453,6 +1815,8 @@
     "total_votes": 1929,
     "de_la_cruz": 5,
     "de_la_cruz_pct": 0.259,
+    "stein": 9,
+    "stein_pct": 0.467,
     "precincts": 2
   },
   {
@@ -1461,6 +1825,8 @@
     "total_votes": 1645,
     "de_la_cruz": 11,
     "de_la_cruz_pct": 0.669,
+    "stein": 5,
+    "stein_pct": 0.304,
     "precincts": 2
   },
   {
@@ -1469,6 +1835,8 @@
     "total_votes": 1947,
     "de_la_cruz": 6,
     "de_la_cruz_pct": 0.308,
+    "stein": 9,
+    "stein_pct": 0.462,
     "precincts": 2
   },
   {
@@ -1477,6 +1845,8 @@
     "total_votes": 5575,
     "de_la_cruz": 11,
     "de_la_cruz_pct": 0.197,
+    "stein": 17,
+    "stein_pct": 0.305,
     "precincts": 3
   },
   {
@@ -1485,6 +1855,8 @@
     "total_votes": 1016,
     "de_la_cruz": 4,
     "de_la_cruz_pct": 0.394,
+    "stein": 9,
+    "stein_pct": 0.886,
     "precincts": 1
   },
   {
@@ -1493,6 +1865,8 @@
     "total_votes": 3892,
     "de_la_cruz": 4,
     "de_la_cruz_pct": 0.103,
+    "stein": 15,
+    "stein_pct": 0.385,
     "precincts": 2
   },
   {
@@ -1501,6 +1875,8 @@
     "total_votes": 2699,
     "de_la_cruz": 10,
     "de_la_cruz_pct": 0.371,
+    "stein": 22,
+    "stein_pct": 0.815,
     "precincts": 2
   },
   {
@@ -1509,6 +1885,8 @@
     "total_votes": 2946,
     "de_la_cruz": 8,
     "de_la_cruz_pct": 0.272,
+    "stein": 11,
+    "stein_pct": 0.373,
     "precincts": 2
   },
   {
@@ -1517,6 +1895,8 @@
     "total_votes": 4038,
     "de_la_cruz": 4,
     "de_la_cruz_pct": 0.099,
+    "stein": 23,
+    "stein_pct": 0.57,
     "precincts": 2
   },
   {
@@ -1525,6 +1905,8 @@
     "total_votes": 4323,
     "de_la_cruz": 6,
     "de_la_cruz_pct": 0.139,
+    "stein": 27,
+    "stein_pct": 0.625,
     "precincts": 2
   },
   {
@@ -1533,6 +1915,8 @@
     "total_votes": 671,
     "de_la_cruz": 1,
     "de_la_cruz_pct": 0.149,
+    "stein": 7,
+    "stein_pct": 1.043,
     "precincts": 1
   },
   {
@@ -1541,6 +1925,8 @@
     "total_votes": 70,
     "de_la_cruz": 0,
     "de_la_cruz_pct": 0.0,
+    "stein": 0,
+    "stein_pct": 0.0,
     "precincts": 1
   },
   {
@@ -1549,6 +1935,8 @@
     "total_votes": 11289,
     "de_la_cruz": 16,
     "de_la_cruz_pct": 0.142,
+    "stein": 106,
+    "stein_pct": 0.939,
     "precincts": 5
   },
   {
@@ -1557,6 +1945,8 @@
     "total_votes": 3984,
     "de_la_cruz": 8,
     "de_la_cruz_pct": 0.201,
+    "stein": 18,
+    "stein_pct": 0.452,
     "precincts": 3
   },
   {
@@ -1565,6 +1955,8 @@
     "total_votes": 995,
     "de_la_cruz": 6,
     "de_la_cruz_pct": 0.603,
+    "stein": 3,
+    "stein_pct": 0.302,
     "precincts": 1
   },
   {
@@ -1573,6 +1965,8 @@
     "total_votes": 3961,
     "de_la_cruz": 24,
     "de_la_cruz_pct": 0.606,
+    "stein": 59,
+    "stein_pct": 1.49,
     "precincts": 4
   },
   {
@@ -1581,6 +1975,8 @@
     "total_votes": 9578,
     "de_la_cruz": 84,
     "de_la_cruz_pct": 0.877,
+    "stein": 153,
+    "stein_pct": 1.597,
     "precincts": 9
   },
   {
@@ -1589,6 +1985,8 @@
     "total_votes": 7324,
     "de_la_cruz": 21,
     "de_la_cruz_pct": 0.287,
+    "stein": 45,
+    "stein_pct": 0.614,
     "precincts": 3
   },
   {
@@ -1597,6 +1995,8 @@
     "total_votes": 4469,
     "de_la_cruz": 4,
     "de_la_cruz_pct": 0.09,
+    "stein": 23,
+    "stein_pct": 0.515,
     "precincts": 2
   },
   {
@@ -1605,6 +2005,8 @@
     "total_votes": 3342,
     "de_la_cruz": 15,
     "de_la_cruz_pct": 0.449,
+    "stein": 43,
+    "stein_pct": 1.287,
     "precincts": 1
   },
   {
@@ -1613,6 +2015,8 @@
     "total_votes": 4940,
     "de_la_cruz": 6,
     "de_la_cruz_pct": 0.121,
+    "stein": 18,
+    "stein_pct": 0.364,
     "precincts": 3
   },
   {
@@ -1621,6 +2025,8 @@
     "total_votes": 4839,
     "de_la_cruz": 11,
     "de_la_cruz_pct": 0.227,
+    "stein": 24,
+    "stein_pct": 0.496,
     "precincts": 2
   },
   {
@@ -1629,6 +2035,8 @@
     "total_votes": 3293,
     "de_la_cruz": 5,
     "de_la_cruz_pct": 0.152,
+    "stein": 8,
+    "stein_pct": 0.243,
     "precincts": 1
   },
   {
@@ -1637,6 +2045,8 @@
     "total_votes": 495,
     "de_la_cruz": 1,
     "de_la_cruz_pct": 0.202,
+    "stein": 2,
+    "stein_pct": 0.404,
     "precincts": 1
   },
   {
@@ -1645,6 +2055,8 @@
     "total_votes": 9818,
     "de_la_cruz": 10,
     "de_la_cruz_pct": 0.102,
+    "stein": 33,
+    "stein_pct": 0.336,
     "precincts": 4
   },
   {
@@ -1653,6 +2065,8 @@
     "total_votes": 6871,
     "de_la_cruz": 10,
     "de_la_cruz_pct": 0.146,
+    "stein": 22,
+    "stein_pct": 0.32,
     "precincts": 3
   },
   {
@@ -1661,6 +2075,8 @@
     "total_votes": 1584,
     "de_la_cruz": 2,
     "de_la_cruz_pct": 0.126,
+    "stein": 5,
+    "stein_pct": 0.316,
     "precincts": 1
   },
   {
@@ -1669,6 +2085,8 @@
     "total_votes": 4054,
     "de_la_cruz": 3,
     "de_la_cruz_pct": 0.074,
+    "stein": 42,
+    "stein_pct": 1.036,
     "precincts": 1
   },
   {
@@ -1677,6 +2095,8 @@
     "total_votes": 9365,
     "de_la_cruz": 11,
     "de_la_cruz_pct": 0.117,
+    "stein": 51,
+    "stein_pct": 0.545,
     "precincts": 4
   },
   {
@@ -1685,6 +2105,8 @@
     "total_votes": 2251,
     "de_la_cruz": 9,
     "de_la_cruz_pct": 0.4,
+    "stein": 16,
+    "stein_pct": 0.711,
     "precincts": 1
   },
   {
@@ -1693,6 +2115,8 @@
     "total_votes": 2901,
     "de_la_cruz": 19,
     "de_la_cruz_pct": 0.655,
+    "stein": 14,
+    "stein_pct": 0.483,
     "precincts": 5
   },
   {
@@ -1701,6 +2125,8 @@
     "total_votes": 3969,
     "de_la_cruz": 13,
     "de_la_cruz_pct": 0.328,
+    "stein": 19,
+    "stein_pct": 0.479,
     "precincts": 3
   },
   {
@@ -1709,6 +2135,8 @@
     "total_votes": 3080,
     "de_la_cruz": 18,
     "de_la_cruz_pct": 0.584,
+    "stein": 13,
+    "stein_pct": 0.422,
     "precincts": 3
   },
   {
@@ -1717,6 +2145,8 @@
     "total_votes": 5787,
     "de_la_cruz": 19,
     "de_la_cruz_pct": 0.328,
+    "stein": 27,
+    "stein_pct": 0.467,
     "precincts": 3
   },
   {
@@ -1725,6 +2155,8 @@
     "total_votes": 5586,
     "de_la_cruz": 17,
     "de_la_cruz_pct": 0.304,
+    "stein": 23,
+    "stein_pct": 0.412,
     "precincts": 5
   },
   {
@@ -1733,6 +2165,8 @@
     "total_votes": 4990,
     "de_la_cruz": 11,
     "de_la_cruz_pct": 0.22,
+    "stein": 30,
+    "stein_pct": 0.601,
     "precincts": 4
   },
   {
@@ -1741,6 +2175,8 @@
     "total_votes": 5278,
     "de_la_cruz": 21,
     "de_la_cruz_pct": 0.398,
+    "stein": 22,
+    "stein_pct": 0.417,
     "precincts": 5
   },
   {
@@ -1749,6 +2185,8 @@
     "total_votes": 196,
     "de_la_cruz": 0,
     "de_la_cruz_pct": 0.0,
+    "stein": 4,
+    "stein_pct": 2.041,
     "precincts": 1
   },
   {
@@ -1757,6 +2195,8 @@
     "total_votes": 472,
     "de_la_cruz": 1,
     "de_la_cruz_pct": 0.212,
+    "stein": 8,
+    "stein_pct": 1.695,
     "precincts": 1
   },
   {
@@ -1765,6 +2205,8 @@
     "total_votes": 15849,
     "de_la_cruz": 23,
     "de_la_cruz_pct": 0.145,
+    "stein": 64,
+    "stein_pct": 0.404,
     "precincts": 8
   },
   {
@@ -1773,6 +2215,8 @@
     "total_votes": 1218,
     "de_la_cruz": 2,
     "de_la_cruz_pct": 0.164,
+    "stein": 8,
+    "stein_pct": 0.657,
     "precincts": 1
   },
   {
@@ -1781,6 +2225,8 @@
     "total_votes": 6004,
     "de_la_cruz": 9,
     "de_la_cruz_pct": 0.15,
+    "stein": 34,
+    "stein_pct": 0.566,
     "precincts": 4
   },
   {
@@ -1789,6 +2235,8 @@
     "total_votes": 12641,
     "de_la_cruz": 15,
     "de_la_cruz_pct": 0.119,
+    "stein": 94,
+    "stein_pct": 0.744,
     "precincts": 6
   },
   {
@@ -1797,6 +2245,8 @@
     "total_votes": 1589,
     "de_la_cruz": 2,
     "de_la_cruz_pct": 0.126,
+    "stein": 7,
+    "stein_pct": 0.441,
     "precincts": 1
   },
   {
@@ -1805,6 +2255,8 @@
     "total_votes": 9397,
     "de_la_cruz": 27,
     "de_la_cruz_pct": 0.287,
+    "stein": 45,
+    "stein_pct": 0.479,
     "precincts": 4
   },
   {
@@ -1813,6 +2265,8 @@
     "total_votes": 1267,
     "de_la_cruz": 15,
     "de_la_cruz_pct": 1.184,
+    "stein": 17,
+    "stein_pct": 1.342,
     "precincts": 2
   },
   {
@@ -1821,6 +2275,8 @@
     "total_votes": 1278,
     "de_la_cruz": 17,
     "de_la_cruz_pct": 1.33,
+    "stein": 3,
+    "stein_pct": 0.235,
     "precincts": 2
   },
   {
@@ -1829,6 +2285,8 @@
     "total_votes": 2424,
     "de_la_cruz": 23,
     "de_la_cruz_pct": 0.949,
+    "stein": 19,
+    "stein_pct": 0.784,
     "precincts": 2
   },
   {
@@ -1837,6 +2295,8 @@
     "total_votes": 1435,
     "de_la_cruz": 30,
     "de_la_cruz_pct": 2.091,
+    "stein": 17,
+    "stein_pct": 1.185,
     "precincts": 2
   },
   {
@@ -1845,6 +2305,8 @@
     "total_votes": 3039,
     "de_la_cruz": 20,
     "de_la_cruz_pct": 0.658,
+    "stein": 23,
+    "stein_pct": 0.757,
     "precincts": 2
   },
   {
@@ -1853,6 +2315,8 @@
     "total_votes": 2290,
     "de_la_cruz": 22,
     "de_la_cruz_pct": 0.961,
+    "stein": 27,
+    "stein_pct": 1.179,
     "precincts": 2
   },
   {
@@ -1861,6 +2325,8 @@
     "total_votes": 3226,
     "de_la_cruz": 22,
     "de_la_cruz_pct": 0.682,
+    "stein": 38,
+    "stein_pct": 1.178,
     "precincts": 2
   },
   {
@@ -1869,6 +2335,8 @@
     "total_votes": 3616,
     "de_la_cruz": 9,
     "de_la_cruz_pct": 0.249,
+    "stein": 21,
+    "stein_pct": 0.581,
     "precincts": 1
   },
   {
@@ -1877,6 +2345,8 @@
     "total_votes": 10460,
     "de_la_cruz": 17,
     "de_la_cruz_pct": 0.163,
+    "stein": 95,
+    "stein_pct": 0.908,
     "precincts": 5
   },
   {
@@ -1885,6 +2355,8 @@
     "total_votes": 2977,
     "de_la_cruz": 5,
     "de_la_cruz_pct": 0.168,
+    "stein": 13,
+    "stein_pct": 0.437,
     "precincts": 1
   },
   {
@@ -1893,6 +2365,8 @@
     "total_votes": 11433,
     "de_la_cruz": 31,
     "de_la_cruz_pct": 0.271,
+    "stein": 79,
+    "stein_pct": 0.691,
     "precincts": 6
   },
   {
@@ -1901,6 +2375,8 @@
     "total_votes": 6918,
     "de_la_cruz": 13,
     "de_la_cruz_pct": 0.188,
+    "stein": 26,
+    "stein_pct": 0.376,
     "precincts": 3
   },
   {
@@ -1909,6 +2385,8 @@
     "total_votes": 1239,
     "de_la_cruz": 1,
     "de_la_cruz_pct": 0.081,
+    "stein": 13,
+    "stein_pct": 1.049,
     "precincts": 1
   },
   {
@@ -1917,6 +2395,8 @@
     "total_votes": 9633,
     "de_la_cruz": 23,
     "de_la_cruz_pct": 0.239,
+    "stein": 48,
+    "stein_pct": 0.498,
     "precincts": 4
   },
   {
@@ -1925,6 +2405,8 @@
     "total_votes": 8760,
     "de_la_cruz": 20,
     "de_la_cruz_pct": 0.228,
+    "stein": 29,
+    "stein_pct": 0.331,
     "precincts": 4
   },
   {
@@ -1933,6 +2415,8 @@
     "total_votes": 7855,
     "de_la_cruz": 9,
     "de_la_cruz_pct": 0.115,
+    "stein": 39,
+    "stein_pct": 0.496,
     "precincts": 3
   },
   {
@@ -1941,6 +2425,8 @@
     "total_votes": 4275,
     "de_la_cruz": 9,
     "de_la_cruz_pct": 0.211,
+    "stein": 26,
+    "stein_pct": 0.608,
     "precincts": 2
   },
   {
@@ -1949,6 +2435,8 @@
     "total_votes": 1862,
     "de_la_cruz": 4,
     "de_la_cruz_pct": 0.215,
+    "stein": 16,
+    "stein_pct": 0.859,
     "precincts": 1
   },
   {
@@ -1957,6 +2445,8 @@
     "total_votes": 3431,
     "de_la_cruz": 31,
     "de_la_cruz_pct": 0.904,
+    "stein": 19,
+    "stein_pct": 0.554,
     "precincts": 5
   },
   {
@@ -1965,6 +2455,8 @@
     "total_votes": 3095,
     "de_la_cruz": 43,
     "de_la_cruz_pct": 1.389,
+    "stein": 13,
+    "stein_pct": 0.42,
     "precincts": 4
   },
   {
@@ -1973,6 +2465,8 @@
     "total_votes": 2953,
     "de_la_cruz": 28,
     "de_la_cruz_pct": 0.948,
+    "stein": 10,
+    "stein_pct": 0.339,
     "precincts": 4
   },
   {
@@ -1981,6 +2475,8 @@
     "total_votes": 3152,
     "de_la_cruz": 30,
     "de_la_cruz_pct": 0.952,
+    "stein": 13,
+    "stein_pct": 0.412,
     "precincts": 4
   },
   {
@@ -1989,6 +2485,8 @@
     "total_votes": 4462,
     "de_la_cruz": 21,
     "de_la_cruz_pct": 0.471,
+    "stein": 21,
+    "stein_pct": 0.471,
     "precincts": 5
   },
   {
@@ -1997,6 +2495,8 @@
     "total_votes": 4128,
     "de_la_cruz": 45,
     "de_la_cruz_pct": 1.09,
+    "stein": 20,
+    "stein_pct": 0.484,
     "precincts": 4
   },
   {
@@ -2005,6 +2505,8 @@
     "total_votes": 3258,
     "de_la_cruz": 9,
     "de_la_cruz_pct": 0.276,
+    "stein": 27,
+    "stein_pct": 0.829,
     "precincts": 1
   },
   {
@@ -2013,6 +2515,8 @@
     "total_votes": 6348,
     "de_la_cruz": 22,
     "de_la_cruz_pct": 0.347,
+    "stein": 35,
+    "stein_pct": 0.551,
     "precincts": 4
   },
   {
@@ -2021,6 +2525,8 @@
     "total_votes": 3297,
     "de_la_cruz": 9,
     "de_la_cruz_pct": 0.273,
+    "stein": 17,
+    "stein_pct": 0.516,
     "precincts": 1
   },
   {
@@ -2029,6 +2535,8 @@
     "total_votes": 4649,
     "de_la_cruz": 18,
     "de_la_cruz_pct": 0.387,
+    "stein": 19,
+    "stein_pct": 0.409,
     "precincts": 3
   },
   {
@@ -2037,6 +2545,8 @@
     "total_votes": 3258,
     "de_la_cruz": 8,
     "de_la_cruz_pct": 0.246,
+    "stein": 15,
+    "stein_pct": 0.46,
     "precincts": 3
   },
   {
@@ -2045,6 +2555,8 @@
     "total_votes": 4654,
     "de_la_cruz": 12,
     "de_la_cruz_pct": 0.258,
+    "stein": 27,
+    "stein_pct": 0.58,
     "precincts": 3
   },
   {
@@ -2053,6 +2565,8 @@
     "total_votes": 4696,
     "de_la_cruz": 10,
     "de_la_cruz_pct": 0.213,
+    "stein": 36,
+    "stein_pct": 0.767,
     "precincts": 3
   },
   {
@@ -2061,6 +2575,8 @@
     "total_votes": 3794,
     "de_la_cruz": 21,
     "de_la_cruz_pct": 0.554,
+    "stein": 23,
+    "stein_pct": 0.606,
     "precincts": 3
   },
   {
@@ -2069,6 +2585,8 @@
     "total_votes": 1310,
     "de_la_cruz": 9,
     "de_la_cruz_pct": 0.687,
+    "stein": 35,
+    "stein_pct": 2.672,
     "precincts": 1
   },
   {
@@ -2077,6 +2595,8 @@
     "total_votes": 18603,
     "de_la_cruz": 54,
     "de_la_cruz_pct": 0.29,
+    "stein": 309,
+    "stein_pct": 1.661,
     "precincts": 9
   },
   {
@@ -2085,6 +2605,8 @@
     "total_votes": 496,
     "de_la_cruz": 3,
     "de_la_cruz_pct": 0.605,
+    "stein": 8,
+    "stein_pct": 1.613,
     "precincts": 1
   },
   {
@@ -2093,6 +2615,8 @@
     "total_votes": 4047,
     "de_la_cruz": 5,
     "de_la_cruz_pct": 0.124,
+    "stein": 40,
+    "stein_pct": 0.988,
     "precincts": 2
   },
   {
@@ -2101,6 +2625,8 @@
     "total_votes": 6586,
     "de_la_cruz": 16,
     "de_la_cruz_pct": 0.243,
+    "stein": 31,
+    "stein_pct": 0.471,
     "precincts": 3
   },
   {
@@ -2109,6 +2635,8 @@
     "total_votes": 9842,
     "de_la_cruz": 20,
     "de_la_cruz_pct": 0.203,
+    "stein": 77,
+    "stein_pct": 0.782,
     "precincts": 5
   },
   {
@@ -2117,6 +2645,8 @@
     "total_votes": 5478,
     "de_la_cruz": 24,
     "de_la_cruz_pct": 0.438,
+    "stein": 31,
+    "stein_pct": 0.566,
     "precincts": 5
   },
   {
@@ -2125,6 +2655,8 @@
     "total_votes": 4294,
     "de_la_cruz": 21,
     "de_la_cruz_pct": 0.489,
+    "stein": 16,
+    "stein_pct": 0.373,
     "precincts": 4
   },
   {
@@ -2133,6 +2665,8 @@
     "total_votes": 6235,
     "de_la_cruz": 22,
     "de_la_cruz_pct": 0.353,
+    "stein": 51,
+    "stein_pct": 0.818,
     "precincts": 4
   },
   {
@@ -2141,6 +2675,8 @@
     "total_votes": 3571,
     "de_la_cruz": 30,
     "de_la_cruz_pct": 0.84,
+    "stein": 40,
+    "stein_pct": 1.12,
     "precincts": 6
   },
   {
@@ -2149,6 +2685,8 @@
     "total_votes": 4322,
     "de_la_cruz": 27,
     "de_la_cruz_pct": 0.625,
+    "stein": 35,
+    "stein_pct": 0.81,
     "precincts": 5
   },
   {
@@ -2157,6 +2695,8 @@
     "total_votes": 3344,
     "de_la_cruz": 11,
     "de_la_cruz_pct": 0.329,
+    "stein": 18,
+    "stein_pct": 0.538,
     "precincts": 6
   },
   {
@@ -2165,6 +2705,8 @@
     "total_votes": 3046,
     "de_la_cruz": 32,
     "de_la_cruz_pct": 1.051,
+    "stein": 21,
+    "stein_pct": 0.689,
     "precincts": 4
   },
   {
@@ -2173,6 +2715,8 @@
     "total_votes": 5102,
     "de_la_cruz": 19,
     "de_la_cruz_pct": 0.372,
+    "stein": 34,
+    "stein_pct": 0.666,
     "precincts": 5
   },
   {
@@ -2181,6 +2725,8 @@
     "total_votes": 11285,
     "de_la_cruz": 17,
     "de_la_cruz_pct": 0.151,
+    "stein": 46,
+    "stein_pct": 0.408,
     "precincts": 6
   },
   {
@@ -2189,6 +2735,8 @@
     "total_votes": 7341,
     "de_la_cruz": 17,
     "de_la_cruz_pct": 0.232,
+    "stein": 35,
+    "stein_pct": 0.477,
     "precincts": 6
   },
   {
@@ -2197,6 +2745,8 @@
     "total_votes": 7321,
     "de_la_cruz": 23,
     "de_la_cruz_pct": 0.314,
+    "stein": 43,
+    "stein_pct": 0.587,
     "precincts": 5
   },
   {
@@ -2205,6 +2755,8 @@
     "total_votes": 4472,
     "de_la_cruz": 26,
     "de_la_cruz_pct": 0.581,
+    "stein": 38,
+    "stein_pct": 0.85,
     "precincts": 4
   },
   {
@@ -2213,6 +2765,8 @@
     "total_votes": 4691,
     "de_la_cruz": 30,
     "de_la_cruz_pct": 0.64,
+    "stein": 54,
+    "stein_pct": 1.151,
     "precincts": 4
   },
   {
@@ -2221,6 +2775,8 @@
     "total_votes": 3331,
     "de_la_cruz": 29,
     "de_la_cruz_pct": 0.871,
+    "stein": 33,
+    "stein_pct": 0.991,
     "precincts": 5
   },
   {
@@ -2229,6 +2785,8 @@
     "total_votes": 3777,
     "de_la_cruz": 29,
     "de_la_cruz_pct": 0.768,
+    "stein": 25,
+    "stein_pct": 0.662,
     "precincts": 4
   },
   {
@@ -2237,6 +2795,8 @@
     "total_votes": 3293,
     "de_la_cruz": 32,
     "de_la_cruz_pct": 0.972,
+    "stein": 14,
+    "stein_pct": 0.425,
     "precincts": 4
   },
   {
@@ -2245,6 +2805,8 @@
     "total_votes": 5162,
     "de_la_cruz": 28,
     "de_la_cruz_pct": 0.542,
+    "stein": 40,
+    "stein_pct": 0.775,
     "precincts": 4
   },
   {
@@ -2253,6 +2815,8 @@
     "total_votes": 8167,
     "de_la_cruz": 9,
     "de_la_cruz_pct": 0.11,
+    "stein": 37,
+    "stein_pct": 0.453,
     "precincts": 4
   },
   {
@@ -2261,6 +2825,8 @@
     "total_votes": 2592,
     "de_la_cruz": 21,
     "de_la_cruz_pct": 0.81,
+    "stein": 31,
+    "stein_pct": 1.196,
     "precincts": 3
   },
   {
@@ -2269,6 +2835,8 @@
     "total_votes": 2629,
     "de_la_cruz": 21,
     "de_la_cruz_pct": 0.799,
+    "stein": 44,
+    "stein_pct": 1.674,
     "precincts": 3
   },
   {
@@ -2277,6 +2845,8 @@
     "total_votes": 3421,
     "de_la_cruz": 35,
     "de_la_cruz_pct": 1.023,
+    "stein": 61,
+    "stein_pct": 1.783,
     "precincts": 4
   },
   {
@@ -2285,6 +2855,8 @@
     "total_votes": 2348,
     "de_la_cruz": 22,
     "de_la_cruz_pct": 0.937,
+    "stein": 44,
+    "stein_pct": 1.874,
     "precincts": 3
   },
   {
@@ -2293,6 +2865,8 @@
     "total_votes": 3355,
     "de_la_cruz": 16,
     "de_la_cruz_pct": 0.477,
+    "stein": 36,
+    "stein_pct": 1.073,
     "precincts": 4
   },
   {
@@ -2301,6 +2875,8 @@
     "total_votes": 3238,
     "de_la_cruz": 17,
     "de_la_cruz_pct": 0.525,
+    "stein": 44,
+    "stein_pct": 1.359,
     "precincts": 3
   },
   {
@@ -2309,6 +2885,8 @@
     "total_votes": 2491,
     "de_la_cruz": 20,
     "de_la_cruz_pct": 0.803,
+    "stein": 35,
+    "stein_pct": 1.405,
     "precincts": 4
   },
   {
@@ -2317,6 +2895,8 @@
     "total_votes": 2801,
     "de_la_cruz": 21,
     "de_la_cruz_pct": 0.75,
+    "stein": 55,
+    "stein_pct": 1.964,
     "precincts": 3
   },
   {
@@ -2325,6 +2905,8 @@
     "total_votes": 3682,
     "de_la_cruz": 9,
     "de_la_cruz_pct": 0.244,
+    "stein": 22,
+    "stein_pct": 0.598,
     "precincts": 1
   },
   {
@@ -2333,6 +2915,8 @@
     "total_votes": 14101,
     "de_la_cruz": 24,
     "de_la_cruz_pct": 0.17,
+    "stein": 149,
+    "stein_pct": 1.057,
     "precincts": 9
   },
   {
@@ -2341,6 +2925,8 @@
     "total_votes": 13760,
     "de_la_cruz": 33,
     "de_la_cruz_pct": 0.24,
+    "stein": 66,
+    "stein_pct": 0.48,
     "precincts": 6
   },
   {
@@ -2349,6 +2935,8 @@
     "total_votes": 3680,
     "de_la_cruz": 4,
     "de_la_cruz_pct": 0.109,
+    "stein": 14,
+    "stein_pct": 0.38,
     "precincts": 1
   },
   {
@@ -2357,6 +2945,8 @@
     "total_votes": 2923,
     "de_la_cruz": 5,
     "de_la_cruz_pct": 0.171,
+    "stein": 17,
+    "stein_pct": 0.582,
     "precincts": 3
   },
   {
@@ -2365,6 +2955,8 @@
     "total_votes": 2645,
     "de_la_cruz": 6,
     "de_la_cruz_pct": 0.227,
+    "stein": 15,
+    "stein_pct": 0.567,
     "precincts": 3
   },
   {
@@ -2373,6 +2965,8 @@
     "total_votes": 2727,
     "de_la_cruz": 8,
     "de_la_cruz_pct": 0.293,
+    "stein": 27,
+    "stein_pct": 0.99,
     "precincts": 2
   },
   {
@@ -2381,6 +2975,8 @@
     "total_votes": 2527,
     "de_la_cruz": 5,
     "de_la_cruz_pct": 0.198,
+    "stein": 18,
+    "stein_pct": 0.712,
     "precincts": 2
   },
   {
@@ -2389,6 +2985,8 @@
     "total_votes": 2338,
     "de_la_cruz": 2,
     "de_la_cruz_pct": 0.086,
+    "stein": 18,
+    "stein_pct": 0.77,
     "precincts": 2
   },
   {
@@ -2397,6 +2995,8 @@
     "total_votes": 2686,
     "de_la_cruz": 6,
     "de_la_cruz_pct": 0.223,
+    "stein": 19,
+    "stein_pct": 0.707,
     "precincts": 2
   },
   {
@@ -2405,6 +3005,8 @@
     "total_votes": 2442,
     "de_la_cruz": 4,
     "de_la_cruz_pct": 0.164,
+    "stein": 7,
+    "stein_pct": 0.287,
     "precincts": 3
   },
   {
@@ -2413,6 +3015,8 @@
     "total_votes": 17572,
     "de_la_cruz": 23,
     "de_la_cruz_pct": 0.131,
+    "stein": 81,
+    "stein_pct": 0.461,
     "precincts": 8
   },
   {
@@ -2421,6 +3025,8 @@
     "total_votes": 10498,
     "de_la_cruz": 17,
     "de_la_cruz_pct": 0.162,
+    "stein": 28,
+    "stein_pct": 0.267,
     "precincts": 5
   },
   {
@@ -2429,6 +3035,8 @@
     "total_votes": 4961,
     "de_la_cruz": 2,
     "de_la_cruz_pct": 0.04,
+    "stein": 15,
+    "stein_pct": 0.302,
     "precincts": 2
   },
   {
@@ -2437,6 +3045,8 @@
     "total_votes": 6762,
     "de_la_cruz": 24,
     "de_la_cruz_pct": 0.355,
+    "stein": 50,
+    "stein_pct": 0.739,
     "precincts": 4
   },
   {
@@ -2445,6 +3055,8 @@
     "total_votes": 8133,
     "de_la_cruz": 12,
     "de_la_cruz_pct": 0.148,
+    "stein": 55,
+    "stein_pct": 0.676,
     "precincts": 4
   },
   {
@@ -2453,6 +3065,8 @@
     "total_votes": 3979,
     "de_la_cruz": 24,
     "de_la_cruz_pct": 0.603,
+    "stein": 53,
+    "stein_pct": 1.332,
     "precincts": 2
   },
   {
@@ -2461,6 +3075,8 @@
     "total_votes": 4298,
     "de_la_cruz": 27,
     "de_la_cruz_pct": 0.628,
+    "stein": 44,
+    "stein_pct": 1.024,
     "precincts": 2
   },
   {
@@ -2469,6 +3085,8 @@
     "total_votes": 4693,
     "de_la_cruz": 13,
     "de_la_cruz_pct": 0.277,
+    "stein": 42,
+    "stein_pct": 0.895,
     "precincts": 2
   },
   {
@@ -2477,6 +3095,8 @@
     "total_votes": 2916,
     "de_la_cruz": 25,
     "de_la_cruz_pct": 0.857,
+    "stein": 44,
+    "stein_pct": 1.509,
     "precincts": 2
   },
   {
@@ -2485,6 +3105,8 @@
     "total_votes": 3626,
     "de_la_cruz": 42,
     "de_la_cruz_pct": 1.158,
+    "stein": 56,
+    "stein_pct": 1.544,
     "precincts": 2
   },
   {
@@ -2493,6 +3115,8 @@
     "total_votes": 4324,
     "de_la_cruz": 35,
     "de_la_cruz_pct": 0.809,
+    "stein": 54,
+    "stein_pct": 1.249,
     "precincts": 3
   },
   {
@@ -2501,6 +3125,8 @@
     "total_votes": 2663,
     "de_la_cruz": 10,
     "de_la_cruz_pct": 0.376,
+    "stein": 34,
+    "stein_pct": 1.277,
     "precincts": 3
   },
   {
@@ -2509,6 +3135,8 @@
     "total_votes": 3708,
     "de_la_cruz": 27,
     "de_la_cruz_pct": 0.728,
+    "stein": 42,
+    "stein_pct": 1.133,
     "precincts": 2
   },
   {
@@ -2517,6 +3145,8 @@
     "total_votes": 8535,
     "de_la_cruz": 12,
     "de_la_cruz_pct": 0.141,
+    "stein": 37,
+    "stein_pct": 0.434,
     "precincts": 4
   },
   {
@@ -2525,6 +3155,8 @@
     "total_votes": 2515,
     "de_la_cruz": 5,
     "de_la_cruz_pct": 0.199,
+    "stein": 38,
+    "stein_pct": 1.511,
     "precincts": 2
   },
   {
@@ -2533,6 +3165,8 @@
     "total_votes": 2584,
     "de_la_cruz": 8,
     "de_la_cruz_pct": 0.31,
+    "stein": 15,
+    "stein_pct": 0.58,
     "precincts": 2
   },
   {
@@ -2541,6 +3175,8 @@
     "total_votes": 2426,
     "de_la_cruz": 4,
     "de_la_cruz_pct": 0.165,
+    "stein": 25,
+    "stein_pct": 1.031,
     "precincts": 2
   },
   {
@@ -2549,6 +3185,8 @@
     "total_votes": 2611,
     "de_la_cruz": 5,
     "de_la_cruz_pct": 0.191,
+    "stein": 28,
+    "stein_pct": 1.072,
     "precincts": 2
   },
   {
@@ -2557,6 +3195,8 @@
     "total_votes": 1876,
     "de_la_cruz": 7,
     "de_la_cruz_pct": 0.373,
+    "stein": 18,
+    "stein_pct": 0.959,
     "precincts": 2
   },
   {
@@ -2565,6 +3205,8 @@
     "total_votes": 2602,
     "de_la_cruz": 6,
     "de_la_cruz_pct": 0.231,
+    "stein": 11,
+    "stein_pct": 0.423,
     "precincts": 2
   },
   {
@@ -2573,6 +3215,8 @@
     "total_votes": 2687,
     "de_la_cruz": 14,
     "de_la_cruz_pct": 0.521,
+    "stein": 15,
+    "stein_pct": 0.558,
     "precincts": 2
   },
   {
@@ -2581,6 +3225,8 @@
     "total_votes": 4008,
     "de_la_cruz": 3,
     "de_la_cruz_pct": 0.075,
+    "stein": 15,
+    "stein_pct": 0.374,
     "precincts": 2
   },
   {
@@ -2589,6 +3235,8 @@
     "total_votes": 4350,
     "de_la_cruz": 11,
     "de_la_cruz_pct": 0.253,
+    "stein": 16,
+    "stein_pct": 0.368,
     "precincts": 2
   },
   {
@@ -2597,6 +3245,8 @@
     "total_votes": 24703,
     "de_la_cruz": 81,
     "de_la_cruz_pct": 0.328,
+    "stein": 152,
+    "stein_pct": 0.615,
     "precincts": 17
   },
   {
@@ -2605,6 +3255,8 @@
     "total_votes": 14537,
     "de_la_cruz": 26,
     "de_la_cruz_pct": 0.179,
+    "stein": 46,
+    "stein_pct": 0.316,
     "precincts": 9
   },
   {
@@ -2613,6 +3265,8 @@
     "total_votes": 317,
     "de_la_cruz": 1,
     "de_la_cruz_pct": 0.315,
+    "stein": 2,
+    "stein_pct": 0.631,
     "precincts": 1
   },
   {
@@ -2621,6 +3275,8 @@
     "total_votes": 5846,
     "de_la_cruz": 8,
     "de_la_cruz_pct": 0.137,
+    "stein": 33,
+    "stein_pct": 0.564,
     "precincts": 3
   },
   {
@@ -2629,6 +3285,8 @@
     "total_votes": 14033,
     "de_la_cruz": 33,
     "de_la_cruz_pct": 0.235,
+    "stein": 90,
+    "stein_pct": 0.641,
     "precincts": 8
   },
   {
@@ -2637,6 +3295,8 @@
     "total_votes": 8158,
     "de_la_cruz": 14,
     "de_la_cruz_pct": 0.172,
+    "stein": 46,
+    "stein_pct": 0.564,
     "precincts": 4
   },
   {
@@ -2645,6 +3305,8 @@
     "total_votes": 6065,
     "de_la_cruz": 16,
     "de_la_cruz_pct": 0.264,
+    "stein": 21,
+    "stein_pct": 0.346,
     "precincts": 3
   },
   {
@@ -2653,6 +3315,8 @@
     "total_votes": 1808,
     "de_la_cruz": 8,
     "de_la_cruz_pct": 0.442,
+    "stein": 5,
+    "stein_pct": 0.277,
     "precincts": 1
   },
   {
@@ -2661,6 +3325,8 @@
     "total_votes": 16952,
     "de_la_cruz": 43,
     "de_la_cruz_pct": 0.254,
+    "stein": 103,
+    "stein_pct": 0.608,
     "precincts": 11
   },
   {
@@ -2669,6 +3335,8 @@
     "total_votes": 66,
     "de_la_cruz": 0,
     "de_la_cruz_pct": 0.0,
+    "stein": 0,
+    "stein_pct": 0.0,
     "precincts": 1
   },
   {
@@ -2677,6 +3345,8 @@
     "total_votes": 5103,
     "de_la_cruz": 9,
     "de_la_cruz_pct": 0.176,
+    "stein": 21,
+    "stein_pct": 0.412,
     "precincts": 3
   },
   {
@@ -2685,6 +3355,8 @@
     "total_votes": 4842,
     "de_la_cruz": 49,
     "de_la_cruz_pct": 1.012,
+    "stein": 79,
+    "stein_pct": 1.632,
     "precincts": 6
   },
   {
@@ -2693,6 +3365,8 @@
     "total_votes": 604,
     "de_la_cruz": 3,
     "de_la_cruz_pct": 0.497,
+    "stein": 7,
+    "stein_pct": 1.159,
     "precincts": 1
   },
   {
@@ -2701,6 +3375,8 @@
     "total_votes": 556,
     "de_la_cruz": 0,
     "de_la_cruz_pct": 0.0,
+    "stein": 3,
+    "stein_pct": 0.54,
     "precincts": 1
   },
   {
@@ -2709,6 +3385,8 @@
     "total_votes": 125,
     "de_la_cruz": 0,
     "de_la_cruz_pct": 0.0,
+    "stein": 1,
+    "stein_pct": 0.8,
     "precincts": 1
   },
   {
@@ -2717,6 +3395,8 @@
     "total_votes": 2352,
     "de_la_cruz": 1,
     "de_la_cruz_pct": 0.043,
+    "stein": 11,
+    "stein_pct": 0.468,
     "precincts": 1
   },
   {
@@ -2725,6 +3405,8 @@
     "total_votes": 7174,
     "de_la_cruz": 17,
     "de_la_cruz_pct": 0.237,
+    "stein": 39,
+    "stein_pct": 0.544,
     "precincts": 1
   },
   {
@@ -2733,6 +3415,8 @@
     "total_votes": 21148,
     "de_la_cruz": 41,
     "de_la_cruz_pct": 0.194,
+    "stein": 144,
+    "stein_pct": 0.681,
     "precincts": 10
   },
   {
@@ -2741,6 +3425,8 @@
     "total_votes": 19706,
     "de_la_cruz": 50,
     "de_la_cruz_pct": 0.254,
+    "stein": 127,
+    "stein_pct": 0.644,
     "precincts": 10
   },
   {
@@ -2749,6 +3435,8 @@
     "total_votes": 164,
     "de_la_cruz": 0,
     "de_la_cruz_pct": 0.0,
+    "stein": 1,
+    "stein_pct": 0.61,
     "precincts": 1
   },
   {
@@ -2757,6 +3445,8 @@
     "total_votes": 8345,
     "de_la_cruz": 19,
     "de_la_cruz_pct": 0.228,
+    "stein": 29,
+    "stein_pct": 0.348,
     "precincts": 9
   },
   {
@@ -2765,6 +3455,8 @@
     "total_votes": 4564,
     "de_la_cruz": 17,
     "de_la_cruz_pct": 0.372,
+    "stein": 28,
+    "stein_pct": 0.613,
     "precincts": 6
   },
   {
@@ -2773,6 +3465,8 @@
     "total_votes": 4960,
     "de_la_cruz": 25,
     "de_la_cruz_pct": 0.504,
+    "stein": 20,
+    "stein_pct": 0.403,
     "precincts": 7
   },
   {
@@ -2781,6 +3475,8 @@
     "total_votes": 5334,
     "de_la_cruz": 34,
     "de_la_cruz_pct": 0.637,
+    "stein": 26,
+    "stein_pct": 0.487,
     "precincts": 7
   },
   {
@@ -2789,6 +3485,8 @@
     "total_votes": 7187,
     "de_la_cruz": 39,
     "de_la_cruz_pct": 0.543,
+    "stein": 34,
+    "stein_pct": 0.473,
     "precincts": 6
   },
   {
@@ -2797,6 +3495,8 @@
     "total_votes": 4546,
     "de_la_cruz": 23,
     "de_la_cruz_pct": 0.506,
+    "stein": 20,
+    "stein_pct": 0.44,
     "precincts": 6
   },
   {
@@ -2805,6 +3505,8 @@
     "total_votes": 675,
     "de_la_cruz": 0,
     "de_la_cruz_pct": 0.0,
+    "stein": 2,
+    "stein_pct": 0.296,
     "precincts": 1
   },
   {
@@ -2813,6 +3515,8 @@
     "total_votes": 1002,
     "de_la_cruz": 4,
     "de_la_cruz_pct": 0.399,
+    "stein": 5,
+    "stein_pct": 0.499,
     "precincts": 1
   },
   {
@@ -2821,6 +3525,8 @@
     "total_votes": 714,
     "de_la_cruz": 2,
     "de_la_cruz_pct": 0.28,
+    "stein": 11,
+    "stein_pct": 1.541,
     "precincts": 1
   },
   {
@@ -2829,6 +3535,8 @@
     "total_votes": 4901,
     "de_la_cruz": 3,
     "de_la_cruz_pct": 0.061,
+    "stein": 32,
+    "stein_pct": 0.653,
     "precincts": 2
   },
   {
@@ -2837,6 +3545,8 @@
     "total_votes": 2110,
     "de_la_cruz": 2,
     "de_la_cruz_pct": 0.095,
+    "stein": 10,
+    "stein_pct": 0.474,
     "precincts": 2
   },
   {
@@ -2845,6 +3555,8 @@
     "total_votes": 2071,
     "de_la_cruz": 4,
     "de_la_cruz_pct": 0.193,
+    "stein": 11,
+    "stein_pct": 0.531,
     "precincts": 1
   },
   {
@@ -2853,6 +3565,8 @@
     "total_votes": 2252,
     "de_la_cruz": 3,
     "de_la_cruz_pct": 0.133,
+    "stein": 11,
+    "stein_pct": 0.488,
     "precincts": 1
   },
   {
@@ -2861,6 +3575,8 @@
     "total_votes": 2189,
     "de_la_cruz": 1,
     "de_la_cruz_pct": 0.046,
+    "stein": 10,
+    "stein_pct": 0.457,
     "precincts": 1
   },
   {
@@ -2869,6 +3585,8 @@
     "total_votes": 1891,
     "de_la_cruz": 1,
     "de_la_cruz_pct": 0.053,
+    "stein": 4,
+    "stein_pct": 0.212,
     "precincts": 1
   },
   {
@@ -2877,6 +3595,8 @@
     "total_votes": 2066,
     "de_la_cruz": 4,
     "de_la_cruz_pct": 0.194,
+    "stein": 9,
+    "stein_pct": 0.436,
     "precincts": 1
   },
   {
@@ -2885,6 +3605,8 @@
     "total_votes": 5914,
     "de_la_cruz": 25,
     "de_la_cruz_pct": 0.423,
+    "stein": 70,
+    "stein_pct": 1.184,
     "precincts": 5
   },
   {
@@ -2893,6 +3615,8 @@
     "total_votes": 6113,
     "de_la_cruz": 22,
     "de_la_cruz_pct": 0.36,
+    "stein": 64,
+    "stein_pct": 1.047,
     "precincts": 4
   },
   {
@@ -2901,6 +3625,8 @@
     "total_votes": 6401,
     "de_la_cruz": 15,
     "de_la_cruz_pct": 0.234,
+    "stein": 51,
+    "stein_pct": 0.797,
     "precincts": 5
   },
   {
@@ -2909,6 +3635,8 @@
     "total_votes": 5482,
     "de_la_cruz": 11,
     "de_la_cruz_pct": 0.201,
+    "stein": 52,
+    "stein_pct": 0.949,
     "precincts": 4
   },
   {
@@ -2917,6 +3645,8 @@
     "total_votes": 6496,
     "de_la_cruz": 17,
     "de_la_cruz_pct": 0.262,
+    "stein": 56,
+    "stein_pct": 0.862,
     "precincts": 4
   },
   {
@@ -2925,6 +3655,8 @@
     "total_votes": 6502,
     "de_la_cruz": 16,
     "de_la_cruz_pct": 0.246,
+    "stein": 61,
+    "stein_pct": 0.938,
     "precincts": 4
   },
   {
@@ -2933,6 +3665,8 @@
     "total_votes": 4382,
     "de_la_cruz": 12,
     "de_la_cruz_pct": 0.274,
+    "stein": 52,
+    "stein_pct": 1.187,
     "precincts": 4
   },
   {
@@ -2941,6 +3675,8 @@
     "total_votes": 6053,
     "de_la_cruz": 10,
     "de_la_cruz_pct": 0.165,
+    "stein": 55,
+    "stein_pct": 0.909,
     "precincts": 4
   },
   {
@@ -2949,6 +3685,8 @@
     "total_votes": 6891,
     "de_la_cruz": 7,
     "de_la_cruz_pct": 0.102,
+    "stein": 34,
+    "stein_pct": 0.493,
     "precincts": 4
   },
   {
@@ -2957,6 +3695,8 @@
     "total_votes": 1289,
     "de_la_cruz": 5,
     "de_la_cruz_pct": 0.388,
+    "stein": 8,
+    "stein_pct": 0.621,
     "precincts": 1
   },
   {
@@ -2965,6 +3705,8 @@
     "total_votes": 1150,
     "de_la_cruz": 8,
     "de_la_cruz_pct": 0.696,
+    "stein": 10,
+    "stein_pct": 0.87,
     "precincts": 1
   },
   {
@@ -2973,6 +3715,8 @@
     "total_votes": 819,
     "de_la_cruz": 10,
     "de_la_cruz_pct": 1.221,
+    "stein": 10,
+    "stein_pct": 1.221,
     "precincts": 1
   },
   {
@@ -2981,6 +3725,8 @@
     "total_votes": 1310,
     "de_la_cruz": 4,
     "de_la_cruz_pct": 0.305,
+    "stein": 7,
+    "stein_pct": 0.534,
     "precincts": 1
   },
   {
@@ -2989,6 +3735,8 @@
     "total_votes": 1159,
     "de_la_cruz": 8,
     "de_la_cruz_pct": 0.69,
+    "stein": 6,
+    "stein_pct": 0.518,
     "precincts": 1
   },
   {
@@ -2997,6 +3745,8 @@
     "total_votes": 17141,
     "de_la_cruz": 35,
     "de_la_cruz_pct": 0.204,
+    "stein": 147,
+    "stein_pct": 0.858,
     "precincts": 8
   },
   {
@@ -3005,6 +3755,8 @@
     "total_votes": 17076,
     "de_la_cruz": 35,
     "de_la_cruz_pct": 0.205,
+    "stein": 152,
+    "stein_pct": 0.89,
     "precincts": 9
   },
   {
@@ -3013,6 +3765,8 @@
     "total_votes": 2854,
     "de_la_cruz": 8,
     "de_la_cruz_pct": 0.28,
+    "stein": 9,
+    "stein_pct": 0.315,
     "precincts": 1
   },
   {
@@ -3021,6 +3775,8 @@
     "total_votes": 10036,
     "de_la_cruz": 19,
     "de_la_cruz_pct": 0.189,
+    "stein": 36,
+    "stein_pct": 0.359,
     "precincts": 4
   },
   {
@@ -3029,6 +3785,8 @@
     "total_votes": 2470,
     "de_la_cruz": 24,
     "de_la_cruz_pct": 0.972,
+    "stein": 40,
+    "stein_pct": 1.619,
     "precincts": 2
   },
   {
@@ -3037,6 +3795,8 @@
     "total_votes": 1822,
     "de_la_cruz": 31,
     "de_la_cruz_pct": 1.701,
+    "stein": 40,
+    "stein_pct": 2.195,
     "precincts": 2
   },
   {
@@ -3045,6 +3805,8 @@
     "total_votes": 2511,
     "de_la_cruz": 66,
     "de_la_cruz_pct": 2.628,
+    "stein": 107,
+    "stein_pct": 4.261,
     "precincts": 2
   },
   {
@@ -3053,6 +3815,8 @@
     "total_votes": 2318,
     "de_la_cruz": 40,
     "de_la_cruz_pct": 1.726,
+    "stein": 38,
+    "stein_pct": 1.639,
     "precincts": 2
   },
   {
@@ -3061,6 +3825,8 @@
     "total_votes": 2439,
     "de_la_cruz": 20,
     "de_la_cruz_pct": 0.82,
+    "stein": 45,
+    "stein_pct": 1.845,
     "precincts": 2
   },
   {
@@ -3069,6 +3835,8 @@
     "total_votes": 3067,
     "de_la_cruz": 19,
     "de_la_cruz_pct": 0.619,
+    "stein": 36,
+    "stein_pct": 1.174,
     "precincts": 2
   },
   {
@@ -3077,6 +3845,8 @@
     "total_votes": 2588,
     "de_la_cruz": 27,
     "de_la_cruz_pct": 1.043,
+    "stein": 41,
+    "stein_pct": 1.584,
     "precincts": 2
   },
   {
@@ -3085,6 +3855,8 @@
     "total_votes": 9240,
     "de_la_cruz": 21,
     "de_la_cruz_pct": 0.227,
+    "stein": 120,
+    "stein_pct": 1.299,
     "precincts": 4
   },
   {
@@ -3093,6 +3865,8 @@
     "total_votes": 9276,
     "de_la_cruz": 16,
     "de_la_cruz_pct": 0.172,
+    "stein": 49,
+    "stein_pct": 0.528,
     "precincts": 5
   },
   {
@@ -3101,6 +3875,8 @@
     "total_votes": 1954,
     "de_la_cruz": 4,
     "de_la_cruz_pct": 0.205,
+    "stein": 19,
+    "stein_pct": 0.972,
     "precincts": 1
   },
   {
@@ -3109,6 +3885,8 @@
     "total_votes": 10723,
     "de_la_cruz": 19,
     "de_la_cruz_pct": 0.177,
+    "stein": 55,
+    "stein_pct": 0.513,
     "precincts": 5
   },
   {
@@ -3117,6 +3895,8 @@
     "total_votes": 7155,
     "de_la_cruz": 8,
     "de_la_cruz_pct": 0.112,
+    "stein": 31,
+    "stein_pct": 0.433,
     "precincts": 3
   },
   {
@@ -3125,6 +3905,8 @@
     "total_votes": 16344,
     "de_la_cruz": 42,
     "de_la_cruz_pct": 0.257,
+    "stein": 127,
+    "stein_pct": 0.777,
     "precincts": 9
   },
   {
@@ -3133,6 +3915,8 @@
     "total_votes": 3130,
     "de_la_cruz": 4,
     "de_la_cruz_pct": 0.128,
+    "stein": 26,
+    "stein_pct": 0.831,
     "precincts": 1
   },
   {
@@ -3141,6 +3925,8 @@
     "total_votes": 1266,
     "de_la_cruz": 2,
     "de_la_cruz_pct": 0.158,
+    "stein": 5,
+    "stein_pct": 0.395,
     "precincts": 1
   },
   {
@@ -3149,6 +3935,8 @@
     "total_votes": 3944,
     "de_la_cruz": 12,
     "de_la_cruz_pct": 0.304,
+    "stein": 17,
+    "stein_pct": 0.431,
     "precincts": 2
   },
   {
@@ -3157,6 +3945,8 @@
     "total_votes": 4822,
     "de_la_cruz": 6,
     "de_la_cruz_pct": 0.124,
+    "stein": 26,
+    "stein_pct": 0.539,
     "precincts": 2
   },
   {
@@ -3165,6 +3955,8 @@
     "total_votes": 1073,
     "de_la_cruz": 3,
     "de_la_cruz_pct": 0.28,
+    "stein": 10,
+    "stein_pct": 0.932,
     "precincts": 1
   },
   {
@@ -3173,6 +3965,8 @@
     "total_votes": 7610,
     "de_la_cruz": 21,
     "de_la_cruz_pct": 0.276,
+    "stein": 28,
+    "stein_pct": 0.368,
     "precincts": 5
   },
   {
@@ -3181,6 +3975,8 @@
     "total_votes": 6465,
     "de_la_cruz": 15,
     "de_la_cruz_pct": 0.232,
+    "stein": 37,
+    "stein_pct": 0.572,
     "precincts": 4
   },
   {
@@ -3189,6 +3985,8 @@
     "total_votes": 2997,
     "de_la_cruz": 4,
     "de_la_cruz_pct": 0.133,
+    "stein": 12,
+    "stein_pct": 0.4,
     "precincts": 1
   },
   {
@@ -3197,6 +3995,8 @@
     "total_votes": 5584,
     "de_la_cruz": 8,
     "de_la_cruz_pct": 0.143,
+    "stein": 17,
+    "stein_pct": 0.304,
     "precincts": 3
   },
   {
@@ -3205,6 +4005,8 @@
     "total_votes": 3782,
     "de_la_cruz": 4,
     "de_la_cruz_pct": 0.106,
+    "stein": 21,
+    "stein_pct": 0.555,
     "precincts": 3
   },
   {
@@ -3213,6 +4015,8 @@
     "total_votes": 3668,
     "de_la_cruz": 14,
     "de_la_cruz_pct": 0.382,
+    "stein": 14,
+    "stein_pct": 0.382,
     "precincts": 3
   },
   {
@@ -3221,6 +4025,8 @@
     "total_votes": 4864,
     "de_la_cruz": 7,
     "de_la_cruz_pct": 0.144,
+    "stein": 21,
+    "stein_pct": 0.432,
     "precincts": 4
   },
   {
@@ -3229,6 +4035,8 @@
     "total_votes": 5066,
     "de_la_cruz": 7,
     "de_la_cruz_pct": 0.138,
+    "stein": 15,
+    "stein_pct": 0.296,
     "precincts": 3
   },
   {
@@ -3237,6 +4045,8 @@
     "total_votes": 6134,
     "de_la_cruz": 2,
     "de_la_cruz_pct": 0.033,
+    "stein": 14,
+    "stein_pct": 0.228,
     "precincts": 3
   },
   {
@@ -3245,6 +4055,8 @@
     "total_votes": 861,
     "de_la_cruz": 4,
     "de_la_cruz_pct": 0.465,
+    "stein": 9,
+    "stein_pct": 1.045,
     "precincts": 1
   },
   {
@@ -3253,6 +4065,8 @@
     "total_votes": 11604,
     "de_la_cruz": 20,
     "de_la_cruz_pct": 0.172,
+    "stein": 42,
+    "stein_pct": 0.362,
     "precincts": 6
   },
   {
@@ -3261,6 +4075,8 @@
     "total_votes": 7376,
     "de_la_cruz": 20,
     "de_la_cruz_pct": 0.271,
+    "stein": 34,
+    "stein_pct": 0.461,
     "precincts": 4
   },
   {
@@ -3269,6 +4085,8 @@
     "total_votes": 528,
     "de_la_cruz": 2,
     "de_la_cruz_pct": 0.379,
+    "stein": 2,
+    "stein_pct": 0.379,
     "precincts": 1
   },
   {
@@ -3277,6 +4095,8 @@
     "total_votes": 901,
     "de_la_cruz": 5,
     "de_la_cruz_pct": 0.555,
+    "stein": 7,
+    "stein_pct": 0.777,
     "precincts": 1
   },
   {
@@ -3285,6 +4105,8 @@
     "total_votes": 1170,
     "de_la_cruz": 6,
     "de_la_cruz_pct": 0.513,
+    "stein": 4,
+    "stein_pct": 0.342,
     "precincts": 1
   },
   {
@@ -3293,6 +4115,8 @@
     "total_votes": 2662,
     "de_la_cruz": 5,
     "de_la_cruz_pct": 0.188,
+    "stein": 24,
+    "stein_pct": 0.902,
     "precincts": 2
   },
   {
@@ -3301,6 +4125,8 @@
     "total_votes": 2446,
     "de_la_cruz": 9,
     "de_la_cruz_pct": 0.368,
+    "stein": 16,
+    "stein_pct": 0.654,
     "precincts": 2
   },
   {
@@ -3309,6 +4135,8 @@
     "total_votes": 3635,
     "de_la_cruz": 9,
     "de_la_cruz_pct": 0.248,
+    "stein": 23,
+    "stein_pct": 0.633,
     "precincts": 2
   },
   {
@@ -3317,6 +4145,8 @@
     "total_votes": 3845,
     "de_la_cruz": 10,
     "de_la_cruz_pct": 0.26,
+    "stein": 28,
+    "stein_pct": 0.728,
     "precincts": 2
   },
   {
@@ -3325,6 +4155,8 @@
     "total_votes": 3083,
     "de_la_cruz": 9,
     "de_la_cruz_pct": 0.292,
+    "stein": 24,
+    "stein_pct": 0.778,
     "precincts": 2
   },
   {
@@ -3333,6 +4165,8 @@
     "total_votes": 2592,
     "de_la_cruz": 12,
     "de_la_cruz_pct": 0.463,
+    "stein": 26,
+    "stein_pct": 1.003,
     "precincts": 2
   },
   {
@@ -3341,6 +4175,8 @@
     "total_votes": 2683,
     "de_la_cruz": 6,
     "de_la_cruz_pct": 0.224,
+    "stein": 23,
+    "stein_pct": 0.857,
     "precincts": 2
   },
   {
@@ -3349,6 +4185,8 @@
     "total_votes": 432,
     "de_la_cruz": 4,
     "de_la_cruz_pct": 0.926,
+    "stein": 8,
+    "stein_pct": 1.852,
     "precincts": 1
   },
   {
@@ -3357,6 +4195,8 @@
     "total_votes": 5656,
     "de_la_cruz": 17,
     "de_la_cruz_pct": 0.301,
+    "stein": 39,
+    "stein_pct": 0.69,
     "precincts": 3
   },
   {
@@ -3365,6 +4205,8 @@
     "total_votes": 40835,
     "de_la_cruz": 68,
     "de_la_cruz_pct": 0.167,
+    "stein": 160,
+    "stein_pct": 0.392,
     "precincts": 18
   },
   {
@@ -3373,6 +4215,8 @@
     "total_votes": 2000,
     "de_la_cruz": 5,
     "de_la_cruz_pct": 0.25,
+    "stein": 10,
+    "stein_pct": 0.5,
     "precincts": 1
   },
   {
@@ -3381,6 +4225,8 @@
     "total_votes": 2559,
     "de_la_cruz": 4,
     "de_la_cruz_pct": 0.156,
+    "stein": 23,
+    "stein_pct": 0.899,
     "precincts": 1
   },
   {
@@ -3389,6 +4235,8 @@
     "total_votes": 2671,
     "de_la_cruz": 8,
     "de_la_cruz_pct": 0.3,
+    "stein": 18,
+    "stein_pct": 0.674,
     "precincts": 1
   },
   {
@@ -3397,6 +4245,8 @@
     "total_votes": 7797,
     "de_la_cruz": 27,
     "de_la_cruz_pct": 0.346,
+    "stein": 58,
+    "stein_pct": 0.744,
     "precincts": 5
   },
   {
@@ -3405,6 +4255,8 @@
     "total_votes": 5733,
     "de_la_cruz": 25,
     "de_la_cruz_pct": 0.436,
+    "stein": 75,
+    "stein_pct": 1.308,
     "precincts": 5
   },
   {
@@ -3413,6 +4265,8 @@
     "total_votes": 7224,
     "de_la_cruz": 34,
     "de_la_cruz_pct": 0.471,
+    "stein": 65,
+    "stein_pct": 0.9,
     "precincts": 5
   },
   {
@@ -3421,6 +4275,8 @@
     "total_votes": 7265,
     "de_la_cruz": 25,
     "de_la_cruz_pct": 0.344,
+    "stein": 68,
+    "stein_pct": 0.936,
     "precincts": 5
   },
   {
@@ -3429,6 +4285,8 @@
     "total_votes": 7056,
     "de_la_cruz": 35,
     "de_la_cruz_pct": 0.496,
+    "stein": 61,
+    "stein_pct": 0.865,
     "precincts": 6
   },
   {
@@ -3437,6 +4295,8 @@
     "total_votes": 7550,
     "de_la_cruz": 35,
     "de_la_cruz_pct": 0.464,
+    "stein": 51,
+    "stein_pct": 0.675,
     "precincts": 5
   },
   {
@@ -3445,6 +4305,8 @@
     "total_votes": 15506,
     "de_la_cruz": 42,
     "de_la_cruz_pct": 0.271,
+    "stein": 96,
+    "stein_pct": 0.619,
     "precincts": 12
   },
   {
@@ -3453,6 +4315,8 @@
     "total_votes": 9059,
     "de_la_cruz": 26,
     "de_la_cruz_pct": 0.287,
+    "stein": 38,
+    "stein_pct": 0.419,
     "precincts": 6
   },
   {
@@ -3461,6 +4325,8 @@
     "total_votes": 16650,
     "de_la_cruz": 31,
     "de_la_cruz_pct": 0.186,
+    "stein": 81,
+    "stein_pct": 0.486,
     "precincts": 8
   },
   {
@@ -3469,6 +4335,8 @@
     "total_votes": 8179,
     "de_la_cruz": 13,
     "de_la_cruz_pct": 0.159,
+    "stein": 27,
+    "stein_pct": 0.33,
     "precincts": 4
   },
   {
@@ -3477,6 +4345,8 @@
     "total_votes": 3130,
     "de_la_cruz": 18,
     "de_la_cruz_pct": 0.575,
+    "stein": 42,
+    "stein_pct": 1.342,
     "precincts": 3
   },
   {
@@ -3485,6 +4355,8 @@
     "total_votes": 2142,
     "de_la_cruz": 11,
     "de_la_cruz_pct": 0.514,
+    "stein": 41,
+    "stein_pct": 1.914,
     "precincts": 4
   },
   {
@@ -3493,6 +4365,8 @@
     "total_votes": 2821,
     "de_la_cruz": 16,
     "de_la_cruz_pct": 0.567,
+    "stein": 50,
+    "stein_pct": 1.772,
     "precincts": 3
   },
   {
@@ -3501,6 +4375,8 @@
     "total_votes": 3228,
     "de_la_cruz": 19,
     "de_la_cruz_pct": 0.589,
+    "stein": 28,
+    "stein_pct": 0.867,
     "precincts": 3
   },
   {
@@ -3509,6 +4385,8 @@
     "total_votes": 3699,
     "de_la_cruz": 11,
     "de_la_cruz_pct": 0.297,
+    "stein": 51,
+    "stein_pct": 1.379,
     "precincts": 4
   },
   {
@@ -3517,6 +4395,8 @@
     "total_votes": 3573,
     "de_la_cruz": 17,
     "de_la_cruz_pct": 0.476,
+    "stein": 28,
+    "stein_pct": 0.784,
     "precincts": 3
   },
   {
@@ -3525,6 +4405,8 @@
     "total_votes": 1019,
     "de_la_cruz": 3,
     "de_la_cruz_pct": 0.294,
+    "stein": 6,
+    "stein_pct": 0.589,
     "precincts": 1
   },
   {
@@ -3533,6 +4415,8 @@
     "total_votes": 4033,
     "de_la_cruz": 6,
     "de_la_cruz_pct": 0.149,
+    "stein": 9,
+    "stein_pct": 0.223,
     "precincts": 1
   },
   {
@@ -3541,6 +4425,8 @@
     "total_votes": 9777,
     "de_la_cruz": 17,
     "de_la_cruz_pct": 0.174,
+    "stein": 48,
+    "stein_pct": 0.491,
     "precincts": 6
   },
   {
@@ -3549,6 +4435,8 @@
     "total_votes": 5232,
     "de_la_cruz": 8,
     "de_la_cruz_pct": 0.153,
+    "stein": 28,
+    "stein_pct": 0.535,
     "precincts": 3
   },
   {
@@ -3557,6 +4445,8 @@
     "total_votes": 265,
     "de_la_cruz": 0,
     "de_la_cruz_pct": 0.0,
+    "stein": 2,
+    "stein_pct": 0.755,
     "precincts": 1
   },
   {
@@ -3565,6 +4455,8 @@
     "total_votes": 4120,
     "de_la_cruz": 8,
     "de_la_cruz_pct": 0.194,
+    "stein": 15,
+    "stein_pct": 0.364,
     "precincts": 1
   },
   {
@@ -3573,6 +4465,8 @@
     "total_votes": 814,
     "de_la_cruz": 5,
     "de_la_cruz_pct": 0.614,
+    "stein": 4,
+    "stein_pct": 0.491,
     "precincts": 1
   },
   {
@@ -3581,6 +4475,8 @@
     "total_votes": 911,
     "de_la_cruz": 4,
     "de_la_cruz_pct": 0.439,
+    "stein": 6,
+    "stein_pct": 0.659,
     "precincts": 1
   },
   {
@@ -3589,6 +4485,8 @@
     "total_votes": 5969,
     "de_la_cruz": 20,
     "de_la_cruz_pct": 0.335,
+    "stein": 35,
+    "stein_pct": 0.586,
     "precincts": 3
   },
   {
@@ -3597,6 +4495,8 @@
     "total_votes": 2882,
     "de_la_cruz": 23,
     "de_la_cruz_pct": 0.798,
+    "stein": 27,
+    "stein_pct": 0.937,
     "precincts": 2
   },
   {
@@ -3605,6 +4505,8 @@
     "total_votes": 3980,
     "de_la_cruz": 31,
     "de_la_cruz_pct": 0.779,
+    "stein": 30,
+    "stein_pct": 0.754,
     "precincts": 2
   },
   {
@@ -3613,6 +4515,8 @@
     "total_votes": 3207,
     "de_la_cruz": 32,
     "de_la_cruz_pct": 0.998,
+    "stein": 19,
+    "stein_pct": 0.592,
     "precincts": 2
   },
   {
@@ -3621,6 +4525,8 @@
     "total_votes": 3373,
     "de_la_cruz": 19,
     "de_la_cruz_pct": 0.563,
+    "stein": 24,
+    "stein_pct": 0.712,
     "precincts": 2
   },
   {
@@ -3629,6 +4535,8 @@
     "total_votes": 3326,
     "de_la_cruz": 34,
     "de_la_cruz_pct": 1.022,
+    "stein": 43,
+    "stein_pct": 1.293,
     "precincts": 2
   },
   {
@@ -3637,6 +4545,8 @@
     "total_votes": 3568,
     "de_la_cruz": 18,
     "de_la_cruz_pct": 0.504,
+    "stein": 27,
+    "stein_pct": 0.757,
     "precincts": 2
   },
   {
@@ -3645,6 +4555,8 @@
     "total_votes": 3068,
     "de_la_cruz": 16,
     "de_la_cruz_pct": 0.522,
+    "stein": 22,
+    "stein_pct": 0.717,
     "precincts": 2
   },
   {
@@ -3653,6 +4565,8 @@
     "total_votes": 5557,
     "de_la_cruz": 13,
     "de_la_cruz_pct": 0.234,
+    "stein": 25,
+    "stein_pct": 0.45,
     "precincts": 3
   },
   {
@@ -3661,6 +4575,8 @@
     "total_votes": 507,
     "de_la_cruz": 3,
     "de_la_cruz_pct": 0.592,
+    "stein": 4,
+    "stein_pct": 0.789,
     "precincts": 1
   },
   {
@@ -3669,6 +4585,8 @@
     "total_votes": 13770,
     "de_la_cruz": 22,
     "de_la_cruz_pct": 0.16,
+    "stein": 54,
+    "stein_pct": 0.392,
     "precincts": 6
   },
   {
@@ -3677,6 +4595,8 @@
     "total_votes": 15174,
     "de_la_cruz": 32,
     "de_la_cruz_pct": 0.211,
+    "stein": 99,
+    "stein_pct": 0.652,
     "precincts": 10
   },
   {
@@ -3685,6 +4605,8 @@
     "total_votes": 437,
     "de_la_cruz": 2,
     "de_la_cruz_pct": 0.458,
+    "stein": 3,
+    "stein_pct": 0.686,
     "precincts": 1
   },
   {
@@ -3693,6 +4615,8 @@
     "total_votes": 13575,
     "de_la_cruz": 17,
     "de_la_cruz_pct": 0.125,
+    "stein": 57,
+    "stein_pct": 0.42,
     "precincts": 6
   },
   {
@@ -3701,6 +4625,8 @@
     "total_votes": 9171,
     "de_la_cruz": 13,
     "de_la_cruz_pct": 0.142,
+    "stein": 44,
+    "stein_pct": 0.48,
     "precincts": 4
   },
   {
@@ -3709,6 +4635,8 @@
     "total_votes": 10906,
     "de_la_cruz": 26,
     "de_la_cruz_pct": 0.238,
+    "stein": 192,
+    "stein_pct": 1.76,
     "precincts": 5
   },
   {
@@ -3717,6 +4645,8 @@
     "total_votes": 2039,
     "de_la_cruz": 1,
     "de_la_cruz_pct": 0.049,
+    "stein": 26,
+    "stein_pct": 1.275,
     "precincts": 1
   },
   {
@@ -3725,6 +4655,8 @@
     "total_votes": 1236,
     "de_la_cruz": 6,
     "de_la_cruz_pct": 0.485,
+    "stein": 18,
+    "stein_pct": 1.456,
     "precincts": 1
   },
   {
@@ -3733,6 +4665,8 @@
     "total_votes": 2806,
     "de_la_cruz": 2,
     "de_la_cruz_pct": 0.071,
+    "stein": 17,
+    "stein_pct": 0.606,
     "precincts": 1
   },
   {
@@ -3741,6 +4675,8 @@
     "total_votes": 3704,
     "de_la_cruz": 6,
     "de_la_cruz_pct": 0.162,
+    "stein": 27,
+    "stein_pct": 0.729,
     "precincts": 1
   },
   {
@@ -3749,6 +4685,8 @@
     "total_votes": 20248,
     "de_la_cruz": 55,
     "de_la_cruz_pct": 0.272,
+    "stein": 331,
+    "stein_pct": 1.635,
     "precincts": 10
   },
   {
@@ -3757,6 +4695,8 @@
     "total_votes": 1264,
     "de_la_cruz": 3,
     "de_la_cruz_pct": 0.237,
+    "stein": 27,
+    "stein_pct": 2.136,
     "precincts": 1
   },
   {
@@ -3765,6 +4705,8 @@
     "total_votes": 11131,
     "de_la_cruz": 12,
     "de_la_cruz_pct": 0.108,
+    "stein": 37,
+    "stein_pct": 0.332,
     "precincts": 5
   },
   {
@@ -3773,6 +4715,8 @@
     "total_votes": 4688,
     "de_la_cruz": 42,
     "de_la_cruz_pct": 0.896,
+    "stein": 58,
+    "stein_pct": 1.237,
     "precincts": 5
   },
   {
@@ -3781,6 +4725,8 @@
     "total_votes": 5932,
     "de_la_cruz": 128,
     "de_la_cruz_pct": 2.158,
+    "stein": 132,
+    "stein_pct": 2.225,
     "precincts": 5
   },
   {
@@ -3789,6 +4735,8 @@
     "total_votes": 6226,
     "de_la_cruz": 122,
     "de_la_cruz_pct": 1.96,
+    "stein": 81,
+    "stein_pct": 1.301,
     "precincts": 4
   },
   {
@@ -3797,6 +4745,8 @@
     "total_votes": 4983,
     "de_la_cruz": 63,
     "de_la_cruz_pct": 1.264,
+    "stein": 75,
+    "stein_pct": 1.505,
     "precincts": 5
   },
   {
@@ -3805,6 +4755,8 @@
     "total_votes": 6531,
     "de_la_cruz": 95,
     "de_la_cruz_pct": 1.455,
+    "stein": 96,
+    "stein_pct": 1.47,
     "precincts": 4
   },
   {
@@ -3813,6 +4765,8 @@
     "total_votes": 5961,
     "de_la_cruz": 103,
     "de_la_cruz_pct": 1.728,
+    "stein": 99,
+    "stein_pct": 1.661,
     "precincts": 5
   },
   {
@@ -3821,6 +4775,8 @@
     "total_votes": 5643,
     "de_la_cruz": 76,
     "de_la_cruz_pct": 1.347,
+    "stein": 96,
+    "stein_pct": 1.701,
     "precincts": 4
   },
   {
@@ -3829,6 +4785,8 @@
     "total_votes": 10003,
     "de_la_cruz": 49,
     "de_la_cruz_pct": 0.49,
+    "stein": 85,
+    "stein_pct": 0.85,
     "precincts": 5
   },
   {
@@ -3837,6 +4795,8 @@
     "total_votes": 4088,
     "de_la_cruz": 9,
     "de_la_cruz_pct": 0.22,
+    "stein": 28,
+    "stein_pct": 0.685,
     "precincts": 2
   },
   {
@@ -3845,6 +4805,8 @@
     "total_votes": 6246,
     "de_la_cruz": 10,
     "de_la_cruz_pct": 0.16,
+    "stein": 53,
+    "stein_pct": 0.849,
     "precincts": 3
   },
   {
@@ -3853,6 +4815,8 @@
     "total_votes": 7074,
     "de_la_cruz": 37,
     "de_la_cruz_pct": 0.523,
+    "stein": 30,
+    "stein_pct": 0.424,
     "precincts": 5
   },
   {
@@ -3861,6 +4825,8 @@
     "total_votes": 5882,
     "de_la_cruz": 7,
     "de_la_cruz_pct": 0.119,
+    "stein": 31,
+    "stein_pct": 0.527,
     "precincts": 3
   },
   {
@@ -3869,6 +4835,8 @@
     "total_votes": 6451,
     "de_la_cruz": 10,
     "de_la_cruz_pct": 0.155,
+    "stein": 32,
+    "stein_pct": 0.496,
     "precincts": 4
   },
   {
@@ -3877,6 +4845,8 @@
     "total_votes": 4390,
     "de_la_cruz": 41,
     "de_la_cruz_pct": 0.934,
+    "stein": 32,
+    "stein_pct": 0.729,
     "precincts": 10
   },
   {
@@ -3885,6 +4855,8 @@
     "total_votes": 7089,
     "de_la_cruz": 51,
     "de_la_cruz_pct": 0.719,
+    "stein": 51,
+    "stein_pct": 0.719,
     "precincts": 8
   },
   {
@@ -3893,6 +4865,8 @@
     "total_votes": 3596,
     "de_la_cruz": 26,
     "de_la_cruz_pct": 0.723,
+    "stein": 12,
+    "stein_pct": 0.334,
     "precincts": 8
   },
   {
@@ -3901,6 +4875,8 @@
     "total_votes": 4533,
     "de_la_cruz": 29,
     "de_la_cruz_pct": 0.64,
+    "stein": 37,
+    "stein_pct": 0.816,
     "precincts": 8
   },
   {
@@ -3909,6 +4885,8 @@
     "total_votes": 8412,
     "de_la_cruz": 41,
     "de_la_cruz_pct": 0.487,
+    "stein": 40,
+    "stein_pct": 0.476,
     "precincts": 9
   },
   {
@@ -3917,6 +4895,8 @@
     "total_votes": 6967,
     "de_la_cruz": 27,
     "de_la_cruz_pct": 0.388,
+    "stein": 43,
+    "stein_pct": 0.617,
     "precincts": 9
   },
   {
@@ -3925,6 +4905,8 @@
     "total_votes": 9476,
     "de_la_cruz": 47,
     "de_la_cruz_pct": 0.496,
+    "stein": 53,
+    "stein_pct": 0.559,
     "precincts": 11
   },
   {
@@ -3933,6 +4915,8 @@
     "total_votes": 6907,
     "de_la_cruz": 48,
     "de_la_cruz_pct": 0.695,
+    "stein": 44,
+    "stein_pct": 0.637,
     "precincts": 10
   },
   {
@@ -3941,6 +4925,8 @@
     "total_votes": 5588,
     "de_la_cruz": 6,
     "de_la_cruz_pct": 0.107,
+    "stein": 26,
+    "stein_pct": 0.465,
     "precincts": 2
   },
   {
@@ -3949,6 +4935,8 @@
     "total_votes": 1319,
     "de_la_cruz": 4,
     "de_la_cruz_pct": 0.303,
+    "stein": 14,
+    "stein_pct": 1.061,
     "precincts": 1
   },
   {
@@ -3957,6 +4945,8 @@
     "total_votes": 13685,
     "de_la_cruz": 35,
     "de_la_cruz_pct": 0.256,
+    "stein": 94,
+    "stein_pct": 0.687,
     "precincts": 7
   },
   {
@@ -3965,6 +4955,8 @@
     "total_votes": 14871,
     "de_la_cruz": 35,
     "de_la_cruz_pct": 0.235,
+    "stein": 72,
+    "stein_pct": 0.484,
     "precincts": 13
   },
   {
@@ -3973,6 +4965,8 @@
     "total_votes": 4806,
     "de_la_cruz": 13,
     "de_la_cruz_pct": 0.27,
+    "stein": 42,
+    "stein_pct": 0.874,
     "precincts": 2
   },
   {
@@ -3981,6 +4975,8 @@
     "total_votes": 6046,
     "de_la_cruz": 10,
     "de_la_cruz_pct": 0.165,
+    "stein": 36,
+    "stein_pct": 0.595,
     "precincts": 3
   },
   {
@@ -3989,6 +4985,8 @@
     "total_votes": 11943,
     "de_la_cruz": 25,
     "de_la_cruz_pct": 0.209,
+    "stein": 95,
+    "stein_pct": 0.795,
     "precincts": 6
   },
   {
@@ -3997,6 +4995,8 @@
     "total_votes": 1895,
     "de_la_cruz": 13,
     "de_la_cruz_pct": 0.686,
+    "stein": 27,
+    "stein_pct": 1.425,
     "precincts": 1
   },
   {
@@ -4005,6 +5005,8 @@
     "total_votes": 6367,
     "de_la_cruz": 11,
     "de_la_cruz_pct": 0.173,
+    "stein": 29,
+    "stein_pct": 0.455,
     "precincts": 3
   },
   {
@@ -4013,6 +5015,8 @@
     "total_votes": 9265,
     "de_la_cruz": 20,
     "de_la_cruz_pct": 0.216,
+    "stein": 53,
+    "stein_pct": 0.572,
     "precincts": 6
   },
   {
@@ -4021,6 +5025,8 @@
     "total_votes": 10388,
     "de_la_cruz": 19,
     "de_la_cruz_pct": 0.183,
+    "stein": 28,
+    "stein_pct": 0.27,
     "precincts": 5
   },
   {
@@ -4029,6 +5035,8 @@
     "total_votes": 3634,
     "de_la_cruz": 8,
     "de_la_cruz_pct": 0.22,
+    "stein": 16,
+    "stein_pct": 0.44,
     "precincts": 3
   },
   {
@@ -4037,6 +5045,8 @@
     "total_votes": 2355,
     "de_la_cruz": 9,
     "de_la_cruz_pct": 0.382,
+    "stein": 7,
+    "stein_pct": 0.297,
     "precincts": 2
   },
   {
@@ -4045,6 +5055,8 @@
     "total_votes": 3448,
     "de_la_cruz": 8,
     "de_la_cruz_pct": 0.232,
+    "stein": 21,
+    "stein_pct": 0.609,
     "precincts": 2
   },
   {
@@ -4053,6 +5065,8 @@
     "total_votes": 3746,
     "de_la_cruz": 10,
     "de_la_cruz_pct": 0.267,
+    "stein": 13,
+    "stein_pct": 0.347,
     "precincts": 3
   },
   {
@@ -4061,6 +5075,8 @@
     "total_votes": 2689,
     "de_la_cruz": 10,
     "de_la_cruz_pct": 0.372,
+    "stein": 17,
+    "stein_pct": 0.632,
     "precincts": 2
   },
   {
@@ -4069,6 +5085,8 @@
     "total_votes": 2935,
     "de_la_cruz": 10,
     "de_la_cruz_pct": 0.341,
+    "stein": 9,
+    "stein_pct": 0.307,
     "precincts": 2
   },
   {
@@ -4077,6 +5095,8 @@
     "total_votes": 4152,
     "de_la_cruz": 9,
     "de_la_cruz_pct": 0.217,
+    "stein": 27,
+    "stein_pct": 0.65,
     "precincts": 2
   },
   {
@@ -4085,6 +5105,8 @@
     "total_votes": 4338,
     "de_la_cruz": 12,
     "de_la_cruz_pct": 0.277,
+    "stein": 16,
+    "stein_pct": 0.369,
     "precincts": 2
   },
   {
@@ -4093,6 +5115,8 @@
     "total_votes": 4639,
     "de_la_cruz": 14,
     "de_la_cruz_pct": 0.302,
+    "stein": 31,
+    "stein_pct": 0.668,
     "precincts": 3
   },
   {
@@ -4101,6 +5125,8 @@
     "total_votes": 18761,
     "de_la_cruz": 31,
     "de_la_cruz_pct": 0.165,
+    "stein": 91,
+    "stein_pct": 0.485,
     "precincts": 9
   },
   {
@@ -4109,6 +5135,8 @@
     "total_votes": 2700,
     "de_la_cruz": 12,
     "de_la_cruz_pct": 0.444,
+    "stein": 35,
+    "stein_pct": 1.296,
     "precincts": 1
   },
   {
@@ -4117,6 +5145,8 @@
     "total_votes": 331,
     "de_la_cruz": 0,
     "de_la_cruz_pct": 0.0,
+    "stein": 0,
+    "stein_pct": 0.0,
     "precincts": 1
   },
   {
@@ -4125,6 +5155,8 @@
     "total_votes": 4328,
     "de_la_cruz": 7,
     "de_la_cruz_pct": 0.162,
+    "stein": 21,
+    "stein_pct": 0.485,
     "precincts": 2
   },
   {
@@ -4133,6 +5165,8 @@
     "total_votes": 5590,
     "de_la_cruz": 6,
     "de_la_cruz_pct": 0.107,
+    "stein": 26,
+    "stein_pct": 0.465,
     "precincts": 3
   },
   {
@@ -4141,6 +5175,8 @@
     "total_votes": 1840,
     "de_la_cruz": 3,
     "de_la_cruz_pct": 0.163,
+    "stein": 13,
+    "stein_pct": 0.707,
     "precincts": 1
   },
   {
@@ -4149,6 +5185,8 @@
     "total_votes": 7592,
     "de_la_cruz": 17,
     "de_la_cruz_pct": 0.224,
+    "stein": 58,
+    "stein_pct": 0.764,
     "precincts": 4
   },
   {
@@ -4157,6 +5195,8 @@
     "total_votes": 326,
     "de_la_cruz": 1,
     "de_la_cruz_pct": 0.307,
+    "stein": 3,
+    "stein_pct": 0.92,
     "precincts": 1
   },
   {
@@ -4165,6 +5205,8 @@
     "total_votes": 5479,
     "de_la_cruz": 8,
     "de_la_cruz_pct": 0.146,
+    "stein": 49,
+    "stein_pct": 0.894,
     "precincts": 3
   },
   {
@@ -4173,6 +5215,8 @@
     "total_votes": 9038,
     "de_la_cruz": 19,
     "de_la_cruz_pct": 0.21,
+    "stein": 33,
+    "stein_pct": 0.365,
     "precincts": 5
   },
   {
@@ -4181,6 +5225,8 @@
     "total_votes": 16478,
     "de_la_cruz": 26,
     "de_la_cruz_pct": 0.158,
+    "stein": 73,
+    "stein_pct": 0.443,
     "precincts": 7
   },
   {
@@ -4189,6 +5235,8 @@
     "total_votes": 1142,
     "de_la_cruz": 0,
     "de_la_cruz_pct": 0.0,
+    "stein": 4,
+    "stein_pct": 0.35,
     "precincts": 1
   },
   {
@@ -4197,6 +5245,8 @@
     "total_votes": 16002,
     "de_la_cruz": 21,
     "de_la_cruz_pct": 0.131,
+    "stein": 115,
+    "stein_pct": 0.719,
     "precincts": 10
   },
   {
@@ -4205,6 +5255,8 @@
     "total_votes": 4053,
     "de_la_cruz": 9,
     "de_la_cruz_pct": 0.222,
+    "stein": 26,
+    "stein_pct": 0.642,
     "precincts": 3
   },
   {
@@ -4213,6 +5265,8 @@
     "total_votes": 3314,
     "de_la_cruz": 8,
     "de_la_cruz_pct": 0.241,
+    "stein": 28,
+    "stein_pct": 0.845,
     "precincts": 2
   },
   {
@@ -4221,6 +5275,8 @@
     "total_votes": 4068,
     "de_la_cruz": 12,
     "de_la_cruz_pct": 0.295,
+    "stein": 15,
+    "stein_pct": 0.369,
     "precincts": 3
   },
   {
@@ -4229,6 +5285,8 @@
     "total_votes": 2404,
     "de_la_cruz": 10,
     "de_la_cruz_pct": 0.416,
+    "stein": 23,
+    "stein_pct": 0.957,
     "precincts": 3
   },
   {
@@ -4237,6 +5295,8 @@
     "total_votes": 2684,
     "de_la_cruz": 13,
     "de_la_cruz_pct": 0.484,
+    "stein": 30,
+    "stein_pct": 1.118,
     "precincts": 3
   },
   {
@@ -4245,6 +5305,8 @@
     "total_votes": 2680,
     "de_la_cruz": 18,
     "de_la_cruz_pct": 0.672,
+    "stein": 21,
+    "stein_pct": 0.784,
     "precincts": 3
   },
   {
@@ -4253,6 +5315,8 @@
     "total_votes": 2412,
     "de_la_cruz": 7,
     "de_la_cruz_pct": 0.29,
+    "stein": 18,
+    "stein_pct": 0.746,
     "precincts": 2
   },
   {
@@ -4261,6 +5325,8 @@
     "total_votes": 2982,
     "de_la_cruz": 17,
     "de_la_cruz_pct": 0.57,
+    "stein": 29,
+    "stein_pct": 0.973,
     "precincts": 3
   },
   {
@@ -4269,6 +5335,8 @@
     "total_votes": 2358,
     "de_la_cruz": 22,
     "de_la_cruz_pct": 0.933,
+    "stein": 34,
+    "stein_pct": 1.442,
     "precincts": 2
   },
   {
@@ -4277,6 +5345,8 @@
     "total_votes": 5129,
     "de_la_cruz": 10,
     "de_la_cruz_pct": 0.195,
+    "stein": 31,
+    "stein_pct": 0.604,
     "precincts": 3
   },
   {
@@ -4285,6 +5355,8 @@
     "total_votes": 13229,
     "de_la_cruz": 29,
     "de_la_cruz_pct": 0.219,
+    "stein": 59,
+    "stein_pct": 0.446,
     "precincts": 6
   },
   {
@@ -4293,6 +5365,8 @@
     "total_votes": 2680,
     "de_la_cruz": 9,
     "de_la_cruz_pct": 0.336,
+    "stein": 18,
+    "stein_pct": 0.672,
     "precincts": 2
   },
   {
@@ -4301,6 +5375,8 @@
     "total_votes": 511,
     "de_la_cruz": 2,
     "de_la_cruz_pct": 0.391,
+    "stein": 10,
+    "stein_pct": 1.957,
     "precincts": 1
   },
   {
@@ -4309,6 +5385,8 @@
     "total_votes": 360,
     "de_la_cruz": 0,
     "de_la_cruz_pct": 0.0,
+    "stein": 4,
+    "stein_pct": 1.111,
     "precincts": 1
   },
   {
@@ -4317,6 +5395,8 @@
     "total_votes": 18288,
     "de_la_cruz": 122,
     "de_la_cruz_pct": 0.667,
+    "stein": 261,
+    "stein_pct": 1.427,
     "precincts": 12
   },
   {
@@ -4325,6 +5405,8 @@
     "total_votes": 8934,
     "de_la_cruz": 22,
     "de_la_cruz_pct": 0.246,
+    "stein": 99,
+    "stein_pct": 1.108,
     "precincts": 4
   },
   {
@@ -4333,6 +5415,8 @@
     "total_votes": 8213,
     "de_la_cruz": 17,
     "de_la_cruz_pct": 0.207,
+    "stein": 38,
+    "stein_pct": 0.463,
     "precincts": 6
   },
   {
@@ -4341,6 +5425,8 @@
     "total_votes": 15530,
     "de_la_cruz": 44,
     "de_la_cruz_pct": 0.283,
+    "stein": 105,
+    "stein_pct": 0.676,
     "precincts": 8
   },
   {
@@ -4349,6 +5435,8 @@
     "total_votes": 2517,
     "de_la_cruz": 3,
     "de_la_cruz_pct": 0.119,
+    "stein": 36,
+    "stein_pct": 1.43,
     "precincts": 1
   },
   {
@@ -4357,6 +5445,8 @@
     "total_votes": 605,
     "de_la_cruz": 4,
     "de_la_cruz_pct": 0.661,
+    "stein": 21,
+    "stein_pct": 3.471,
     "precincts": 1
   },
   {
@@ -4365,6 +5455,8 @@
     "total_votes": 2628,
     "de_la_cruz": 5,
     "de_la_cruz_pct": 0.19,
+    "stein": 11,
+    "stein_pct": 0.419,
     "precincts": 2
   },
   {
@@ -4373,6 +5465,8 @@
     "total_votes": 4683,
     "de_la_cruz": 13,
     "de_la_cruz_pct": 0.278,
+    "stein": 43,
+    "stein_pct": 0.918,
     "precincts": 2
   },
   {
@@ -4381,6 +5475,8 @@
     "total_votes": 4633,
     "de_la_cruz": 3,
     "de_la_cruz_pct": 0.065,
+    "stein": 14,
+    "stein_pct": 0.302,
     "precincts": 2
   },
   {
@@ -4389,6 +5485,8 @@
     "total_votes": 2362,
     "de_la_cruz": 5,
     "de_la_cruz_pct": 0.212,
+    "stein": 9,
+    "stein_pct": 0.381,
     "precincts": 1
   },
   {
@@ -4397,6 +5495,8 @@
     "total_votes": 3299,
     "de_la_cruz": 5,
     "de_la_cruz_pct": 0.152,
+    "stein": 13,
+    "stein_pct": 0.394,
     "precincts": 1
   },
   {
@@ -4405,6 +5505,8 @@
     "total_votes": 12881,
     "de_la_cruz": 36,
     "de_la_cruz_pct": 0.279,
+    "stein": 118,
+    "stein_pct": 0.916,
     "precincts": 8
   },
   {
@@ -4413,6 +5515,8 @@
     "total_votes": 941,
     "de_la_cruz": 4,
     "de_la_cruz_pct": 0.425,
+    "stein": 11,
+    "stein_pct": 1.169,
     "precincts": 1
   },
   {
@@ -4421,6 +5525,8 @@
     "total_votes": 2205,
     "de_la_cruz": 10,
     "de_la_cruz_pct": 0.454,
+    "stein": 29,
+    "stein_pct": 1.315,
     "precincts": 1
   },
   {
@@ -4429,6 +5535,8 @@
     "total_votes": 10463,
     "de_la_cruz": 24,
     "de_la_cruz_pct": 0.229,
+    "stein": 136,
+    "stein_pct": 1.3,
     "precincts": 6
   },
   {
@@ -4437,6 +5545,8 @@
     "total_votes": 4025,
     "de_la_cruz": 6,
     "de_la_cruz_pct": 0.149,
+    "stein": 12,
+    "stein_pct": 0.298,
     "precincts": 2
   },
   {
@@ -4445,6 +5555,8 @@
     "total_votes": 2553,
     "de_la_cruz": 12,
     "de_la_cruz_pct": 0.47,
+    "stein": 24,
+    "stein_pct": 0.94,
     "precincts": 3
   },
   {
@@ -4453,6 +5565,8 @@
     "total_votes": 2949,
     "de_la_cruz": 15,
     "de_la_cruz_pct": 0.509,
+    "stein": 30,
+    "stein_pct": 1.017,
     "precincts": 2
   },
   {
@@ -4461,6 +5575,8 @@
     "total_votes": 2947,
     "de_la_cruz": 5,
     "de_la_cruz_pct": 0.17,
+    "stein": 11,
+    "stein_pct": 0.373,
     "precincts": 2
   },
   {
@@ -4469,6 +5585,8 @@
     "total_votes": 4344,
     "de_la_cruz": 11,
     "de_la_cruz_pct": 0.253,
+    "stein": 18,
+    "stein_pct": 0.414,
     "precincts": 2
   },
   {
@@ -4477,6 +5595,8 @@
     "total_votes": 3478,
     "de_la_cruz": 7,
     "de_la_cruz_pct": 0.201,
+    "stein": 16,
+    "stein_pct": 0.46,
     "precincts": 3
   },
   {
@@ -4485,6 +5605,8 @@
     "total_votes": 14937,
     "de_la_cruz": 39,
     "de_la_cruz_pct": 0.261,
+    "stein": 136,
+    "stein_pct": 0.91,
     "precincts": 7
   },
   {
@@ -4493,6 +5615,8 @@
     "total_votes": 1248,
     "de_la_cruz": 6,
     "de_la_cruz_pct": 0.481,
+    "stein": 12,
+    "stein_pct": 0.962,
     "precincts": 1
   },
   {
@@ -4501,6 +5625,8 @@
     "total_votes": 5409,
     "de_la_cruz": 10,
     "de_la_cruz_pct": 0.185,
+    "stein": 23,
+    "stein_pct": 0.425,
     "precincts": 4
   },
   {
@@ -4509,6 +5635,8 @@
     "total_votes": 6633,
     "de_la_cruz": 9,
     "de_la_cruz_pct": 0.136,
+    "stein": 74,
+    "stein_pct": 1.116,
     "precincts": 4
   },
   {
@@ -4517,6 +5645,8 @@
     "total_votes": 10909,
     "de_la_cruz": 14,
     "de_la_cruz_pct": 0.128,
+    "stein": 45,
+    "stein_pct": 0.413,
     "precincts": 5
   },
   {
@@ -4525,6 +5655,8 @@
     "total_votes": 10206,
     "de_la_cruz": 12,
     "de_la_cruz_pct": 0.118,
+    "stein": 100,
+    "stein_pct": 0.98,
     "precincts": 5
   },
   {
@@ -4533,6 +5665,8 @@
     "total_votes": 31801,
     "de_la_cruz": 85,
     "de_la_cruz_pct": 0.267,
+    "stein": 179,
+    "stein_pct": 0.563,
     "precincts": 19
   },
   {
@@ -4541,6 +5675,8 @@
     "total_votes": 1094,
     "de_la_cruz": 5,
     "de_la_cruz_pct": 0.457,
+    "stein": 5,
+    "stein_pct": 0.457,
     "precincts": 1
   },
   {
@@ -4549,6 +5685,8 @@
     "total_votes": 8723,
     "de_la_cruz": 21,
     "de_la_cruz_pct": 0.241,
+    "stein": 34,
+    "stein_pct": 0.39,
     "precincts": 4
   },
   {
@@ -4557,6 +5695,8 @@
     "total_votes": 9305,
     "de_la_cruz": 14,
     "de_la_cruz_pct": 0.15,
+    "stein": 52,
+    "stein_pct": 0.559,
     "precincts": 4
   },
   {
@@ -4565,6 +5705,8 @@
     "total_votes": 1833,
     "de_la_cruz": 9,
     "de_la_cruz_pct": 0.491,
+    "stein": 38,
+    "stein_pct": 2.073,
     "precincts": 1
   },
   {
@@ -4573,6 +5715,8 @@
     "total_votes": 3642,
     "de_la_cruz": 17,
     "de_la_cruz_pct": 0.467,
+    "stein": 40,
+    "stein_pct": 1.098,
     "precincts": 3
   },
   {
@@ -4581,6 +5725,8 @@
     "total_votes": 14400,
     "de_la_cruz": 14,
     "de_la_cruz_pct": 0.097,
+    "stein": 90,
+    "stein_pct": 0.625,
     "precincts": 6
   },
   {
@@ -4589,6 +5735,8 @@
     "total_votes": 5266,
     "de_la_cruz": 12,
     "de_la_cruz_pct": 0.228,
+    "stein": 24,
+    "stein_pct": 0.456,
     "precincts": 3
   },
   {
@@ -4597,6 +5745,8 @@
     "total_votes": 13396,
     "de_la_cruz": 20,
     "de_la_cruz_pct": 0.149,
+    "stein": 108,
+    "stein_pct": 0.806,
     "precincts": 8
   },
   {
@@ -4605,6 +5755,8 @@
     "total_votes": 561,
     "de_la_cruz": 0,
     "de_la_cruz_pct": 0.0,
+    "stein": 6,
+    "stein_pct": 1.07,
     "precincts": 1
   },
   {
@@ -4613,6 +5765,8 @@
     "total_votes": 9451,
     "de_la_cruz": 28,
     "de_la_cruz_pct": 0.296,
+    "stein": 47,
+    "stein_pct": 0.497,
     "precincts": 6
   },
   {
@@ -4621,6 +5775,8 @@
     "total_votes": 2834,
     "de_la_cruz": 7,
     "de_la_cruz_pct": 0.247,
+    "stein": 34,
+    "stein_pct": 1.2,
     "precincts": 3
   },
   {
@@ -4629,6 +5785,8 @@
     "total_votes": 3048,
     "de_la_cruz": 7,
     "de_la_cruz_pct": 0.23,
+    "stein": 27,
+    "stein_pct": 0.886,
     "precincts": 2
   },
   {
@@ -4637,6 +5795,8 @@
     "total_votes": 3433,
     "de_la_cruz": 5,
     "de_la_cruz_pct": 0.146,
+    "stein": 17,
+    "stein_pct": 0.495,
     "precincts": 2
   },
   {
@@ -4645,6 +5805,8 @@
     "total_votes": 3111,
     "de_la_cruz": 3,
     "de_la_cruz_pct": 0.096,
+    "stein": 15,
+    "stein_pct": 0.482,
     "precincts": 2
   },
   {
@@ -4653,6 +5815,8 @@
     "total_votes": 3096,
     "de_la_cruz": 8,
     "de_la_cruz_pct": 0.258,
+    "stein": 28,
+    "stein_pct": 0.904,
     "precincts": 2
   },
   {
@@ -4661,6 +5825,8 @@
     "total_votes": 2689,
     "de_la_cruz": 8,
     "de_la_cruz_pct": 0.298,
+    "stein": 31,
+    "stein_pct": 1.153,
     "precincts": 2
   },
   {
@@ -4669,6 +5835,8 @@
     "total_votes": 3857,
     "de_la_cruz": 8,
     "de_la_cruz_pct": 0.207,
+    "stein": 26,
+    "stein_pct": 0.674,
     "precincts": 2
   },
   {
@@ -4677,6 +5845,8 @@
     "total_votes": 9682,
     "de_la_cruz": 36,
     "de_la_cruz_pct": 0.372,
+    "stein": 97,
+    "stein_pct": 1.002,
     "precincts": 6
   },
   {
@@ -4685,6 +5855,8 @@
     "total_votes": 8332,
     "de_la_cruz": 31,
     "de_la_cruz_pct": 0.372,
+    "stein": 60,
+    "stein_pct": 0.72,
     "precincts": 7
   },
   {
@@ -4693,6 +5865,8 @@
     "total_votes": 5705,
     "de_la_cruz": 38,
     "de_la_cruz_pct": 0.666,
+    "stein": 66,
+    "stein_pct": 1.157,
     "precincts": 8
   },
   {
@@ -4701,6 +5875,8 @@
     "total_votes": 5544,
     "de_la_cruz": 36,
     "de_la_cruz_pct": 0.649,
+    "stein": 49,
+    "stein_pct": 0.884,
     "precincts": 8
   },
   {
@@ -4709,6 +5885,8 @@
     "total_votes": 7959,
     "de_la_cruz": 55,
     "de_la_cruz_pct": 0.691,
+    "stein": 63,
+    "stein_pct": 0.792,
     "precincts": 6
   },
   {
@@ -4717,6 +5895,8 @@
     "total_votes": 4386,
     "de_la_cruz": 24,
     "de_la_cruz_pct": 0.547,
+    "stein": 32,
+    "stein_pct": 0.73,
     "precincts": 6
   },
   {
@@ -4725,6 +5905,8 @@
     "total_votes": 7424,
     "de_la_cruz": 40,
     "de_la_cruz_pct": 0.539,
+    "stein": 57,
+    "stein_pct": 0.768,
     "precincts": 7
   },
   {
@@ -4733,6 +5915,8 @@
     "total_votes": 3508,
     "de_la_cruz": 27,
     "de_la_cruz_pct": 0.77,
+    "stein": 28,
+    "stein_pct": 0.798,
     "precincts": 6
   },
   {
@@ -4741,6 +5925,8 @@
     "total_votes": 9493,
     "de_la_cruz": 41,
     "de_la_cruz_pct": 0.432,
+    "stein": 104,
+    "stein_pct": 1.096,
     "precincts": 6
   },
   {
@@ -4749,6 +5935,8 @@
     "total_votes": 4153,
     "de_la_cruz": 56,
     "de_la_cruz_pct": 1.348,
+    "stein": 62,
+    "stein_pct": 1.493,
     "precincts": 7
   },
   {
@@ -4757,6 +5945,8 @@
     "total_votes": 878,
     "de_la_cruz": 10,
     "de_la_cruz_pct": 1.139,
+    "stein": 11,
+    "stein_pct": 1.253,
     "precincts": 1
   },
   {
@@ -4765,6 +5955,8 @@
     "total_votes": 7911,
     "de_la_cruz": 17,
     "de_la_cruz_pct": 0.215,
+    "stein": 41,
+    "stein_pct": 0.518,
     "precincts": 4
   },
   {
@@ -4773,6 +5965,8 @@
     "total_votes": 15507,
     "de_la_cruz": 28,
     "de_la_cruz_pct": 0.181,
+    "stein": 66,
+    "stein_pct": 0.426,
     "precincts": 9
   }
 ]

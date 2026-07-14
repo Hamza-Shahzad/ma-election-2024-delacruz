@@ -192,6 +192,7 @@ def load_pd43_data(csv_path):
         try:
             total = int(row[13].replace(",", ""))
             delacruz = int(row[8].replace(",", ""))
+            stein = int(row[5].replace(",", ""))
             harris = int(row[3].replace(",", ""))
             trump = int(row[4].replace(",", ""))
         except (ValueError, IndexError):
@@ -205,6 +206,8 @@ def load_pd43_data(csv_path):
             "total_votes": total,
             "de_la_cruz": delacruz,
             "de_la_cruz_pct": round(delacruz / total * 100, 3) if total > 0 else 0,
+            "stein": stein,
+            "stein_pct": round(stein / total * 100, 3) if total > 0 else 0,
             "harris": harris,
             "trump": trump,
         }
@@ -391,6 +394,8 @@ def main():
                     "total_votes": 0,
                     "de_la_cruz": 0,
                     "de_la_cruz_pct": 0,
+                    "stein": 0,
+                    "stein_pct": 0,
                     "harris": 0,
                     "trump": 0,
                 }
@@ -405,6 +410,8 @@ def main():
                     "total_votes": pd["total_votes"],
                     "de_la_cruz": pd["de_la_cruz"],
                     "de_la_cruz_pct": pd["de_la_cruz_pct"],
+                    "stein": pd["stein"],
+                    "stein_pct": pd["stein_pct"],
                     "harris": pd["harris"],
                     "trump": pd["trump"],
                     # Include full town name for GeoJSON join fallback

@@ -339,6 +339,27 @@ body {
 #fill-toggle:hover { background: #3a3a5a; color: #fff; }
 #fill-toggle.active { background: var(--accent); border-color: var(--accent); color: #fff; }
 
+#legend-controls {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+#candidate-toggle {
+  background: #2a2a4a;
+  border: 1px solid #4a4a6a;
+  color: #bbb;
+  border-radius: 4px;
+  padding: 2px 8px;
+  cursor: pointer;
+  font-size: 0.62rem;
+  font-weight: 700;
+  transition: all 0.15s;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+#candidate-toggle:hover { background: #3a3a5a; color: #fff; }
+
 #legend h4 {
   font-size: 0.7rem;
   text-transform: uppercase;
@@ -539,6 +560,7 @@ body {
   .legend-gradient { height: 8px; }
   .legend-labels { font-size: 0.58rem; }
   #fill-toggle { font-size: 0.6rem; padding: 2px 6px; }
+  #candidate-toggle { font-size: 0.58rem; padding: 2px 6px; }
 
   /* Zoom hint */
   #zoom-hint {
@@ -584,11 +606,14 @@ body {
 <!-- Legend -->
 <div id="legend">
   <div id="legend-header">
-    <h4>De La Cruz Vote %</h4>
-    <button id="fill-toggle" onclick="toggleFill()" title="Toggle colored overlay to see streets">👁️ Fill</button>
+    <h4 id="legend-title">De La Cruz Vote %</h4>
+    <div id="legend-controls">
+      <button id="candidate-toggle" onclick="switchCandidate()" title="Switch between PSL and Green Party candidates">🔄 <span id="toggle-label">Stein</span></button>
+      <button id="fill-toggle" onclick="toggleFill()" title="Toggle colored overlay to see streets">👁️ Fill</button>
+    </div>
   </div>
   <div class="legend-gradient"></div>
-  <div class="legend-labels">
+  <div class="legend-labels" id="legend-labels">
     <span>0%</span><span>0.4%</span><span>0.8%</span><span>1.2%</span><span>1.6%+</span>
   </div>
 </div>
@@ -597,7 +622,7 @@ body {
 <div id="sidebar">
   <div id="sidebar-header">
     <div>
-      <h1>🗳️ Claudia De La Cruz / Karina Garcia</h1>
+      <h1 id="sidebar-candidate">🗳️ Claudia De La Cruz / Karina Garcia</h1>
       <div class="subtitle">2024 Presidential General Election — Massachusetts</div>
     </div>
     <button id="mobile-close" onclick="event.stopPropagation(); collapseMobilePanel();" title="Close panel" aria-label="Close panel">✕</button>
@@ -651,6 +676,113 @@ let vtdLayer = null;
 let selectedTown = null;
 let highlightedWard = null;  // { town, ward } or null
 const VTD_ZOOM_THRESHOLD = 12; // Show precinct boundaries at zoom >= 12
+let currentCandidate = 'delacruz';  // 'delacruz' | 'stein'
+
+// ── Candidate config helper ──
+function cand() {
+  if (currentCandidate === 'stein') {
+    return {
+      id: 'stein',
+      name: 'Jill Stein / Butch Ware',
+      shortName: 'Stein',
+      party: 'Green',
+      votesKey: 'stein',
+      pctKey: 'stein_pct',
+      rankKey: 'stein_rank',
+      summaryVotesKey: 'total_stein',
+      summaryPctKey: 'stein_pct',
+      maxPct: 3.5,
+      legendTitle: 'Stein Vote %',
+      label0: '0%',
+      labelMax: '3.5%+',
+    };
+  }
+  return {
+    id: 'delacruz',
+    name: 'Claudia De La Cruz / Karina Garcia',
+    shortName: 'De La Cruz',
+    party: 'PSL',
+    votesKey: 'de_la_cruz',
+    pctKey: 'de_la_cruz_pct',
+    rankKey: 'rank',
+    summaryVotesKey: 'total_de_la_cruz',
+    summaryPctKey: 'de_la_cruz_pct',
+    maxPct: 1.6,
+    legendTitle: 'De La Cruz Vote %',
+    label0: '0%',
+    labelMax: '1.6%+',
+  };
+}
+
+function switchCandidate() {
+  // Toggle candidate
+  currentCandidate = (currentCandidate === 'delacruz') ? 'stein' : 'delacruz';
+  const c = cand();
+
+  // Reset ward sort to default for new candidate
+  wardSortKey = null;
+
+  // Update legend
+  updateLegend();
+
+  // Update sidebar header
+  document.getElementById('sidebar-candidate').textContent = '🗳️ ' + c.name;
+
+  // Update toggle button label (show the OTHER candidate)
+  const otherCandidate = (currentCandidate === 'delacruz') ? 'stein' : 'delacruz';
+  document.getElementById('toggle-label').textContent = currentCandidate === 'delacruz' ? 'Stein' : 'De La Cruz';
+
+  // Update page title
+  document.title = c.shortName + ' — 2024 MA Presidential Election Results';
+
+  // Update toggle button title
+  document.getElementById('candidate-toggle').title =
+    currentCandidate === 'delacruz' ? 'Switch to Green Party (Jill Stein)' : 'Switch to PSL (Claudia De La Cruz)';
+
+  // Update summary stats
+  updateSummaryStats();
+
+  // Re-render selected town if any
+  if (selectedTown) {
+    renderTownDetail(selectedTown);
+  }
+
+  // Reset map styles and rebind tooltips (they're bound with stale data)
+  if (geoLayer) {
+    geoLayer.setStyle(styleFeature);
+    // Rebind town tooltips only (don't re-add click handlers)
+    geoLayer.eachLayer(layer => {
+      if (layer.feature) bindTownTooltip(layer.feature, layer);
+    });
+  }
+  if (vtdLayer) {
+    vtdLayer.setStyle(vtdStyle);
+    vtdLayer.eachLayer(layer => {
+      vtdTooltip(layer.feature, layer);
+    });
+  }
+
+  // Clear ward highlight (different candidate, different data)
+  clearWardHighlight();
+  document.querySelectorAll('.ward-row').forEach(r => r.classList.remove('highlighted'));
+}
+
+function updateLegend() {
+  const c = cand();
+  document.getElementById('legend-title').textContent = c.legendTitle;
+
+  // Update legend labels based on candidate's max %
+  const max = c.maxPct;
+  const step = max / 4;
+  const labels = document.querySelectorAll('#legend-labels span');
+  if (labels.length >= 5) {
+    labels[0].textContent = c.label0;
+    labels[1].textContent = (step).toFixed(1) + '%';
+    labels[2].textContent = (step * 2).toFixed(1) + '%';
+    labels[3].textContent = (step * 3).toFixed(1) + '%';
+    labels[4].textContent = c.labelMax;
+  }
+}
 
 const MAP = L.map('map', { zoomControl: true }).setView([42.36, -71.8], 8);
 
@@ -718,7 +850,6 @@ function denormalizeName(name) {
 }
 
 // ── Color scale ──
-const MAX_PCT = 1.6;
 let fillVisible = true;
 
 function toggleFill() {
@@ -764,15 +895,26 @@ function toggleFill() {
 
 function colorScale(pct) {
   if (pct <= 0) return '#ffffff08';
-  const stops = [
-    [0,    [255, 245, 240]],
-    [0.2,  [253, 208, 162]],
-    [0.4,  [251, 135, 118]],
-    [0.6,  [214, 97,  107]],
-    [0.8,  [158, 52,  131]],
-    [1.0,  [63,  0,   125]],
-  ];
-  const t = Math.min(Math.max(pct / MAX_PCT, 0), 1);
+  // Purple gradient for PSL, green gradient for Green Party
+  const stops = currentCandidate === 'stein'
+    ? [
+        [0,    [237, 248, 233]],
+        [0.2,  [186, 228, 179]],
+        [0.4,  [116, 196, 118]],
+        [0.6,  [49,  163, 84]],
+        [0.8,  [0,   109, 44]],
+        [1.0,  [0,   60,  26]],
+      ]
+    : [
+        [0,    [255, 245, 240]],
+        [0.2,  [253, 208, 162]],
+        [0.4,  [251, 135, 118]],
+        [0.6,  [214, 97,  107]],
+        [0.8,  [158, 52,  131]],
+        [1.0,  [63,  0,   125]],
+      ];
+  const maxPct = cand().maxPct;
+  const t = Math.min(Math.max(pct / maxPct, 0), 1);
   for (let i = 0; i < stops.length - 1; i++) {
     const [t0, c0] = stops[i];
     const [t1, c1] = stops[i + 1];
@@ -787,7 +929,7 @@ function colorScale(pct) {
 function styleFeature(feature) {
   const name = feature.properties.town || feature.properties.name || '';
   const town = window.townByGeoName ? window.townByGeoName[name] : null;
-  const pct = town ? town.de_la_cruz_pct : 0;
+  const pct = town ? (town[cand().pctKey] || 0) : 0;
   return {
     fillColor: colorScale(pct),
     weight: fillVisible ? 1 : 1.2,
@@ -800,7 +942,7 @@ function styleFeature(feature) {
 // ── VTD / Precinct layer ──
 function vtdStyle(feature) {
   const p = feature.properties;
-  const pct = p.matched ? p.de_la_cruz_pct : 0;
+  const pct = p.matched ? (p[cand().pctKey] || 0) : 0;
   return {
     fillColor: p.matched ? colorScale(pct) : '#2a2a3a',
     weight: fillVisible ? 0.5 : 0.7,
@@ -816,9 +958,11 @@ function vtdTooltip(feature, layer) {
   if (isMobile()) return;
   const p = feature.properties;
   if (p.matched) {
+    const c = cand();
     const wardLabel = p.ward && p.ward !== '-' ? ` Ward ${p.ward}` : '';
+    layer.unbindTooltip();
     layer.bindTooltip(
-      `<div class="maptip"><strong>${p.town}${wardLabel} Pct ${p.pct}</strong><br>De La Cruz: ${p.de_la_cruz_pct}% (${p.de_la_cruz.toLocaleString()} / ${p.total_votes.toLocaleString()})</div>`,
+      `<div class="maptip"><strong>${p.town}${wardLabel} Pct ${p.pct}</strong><br>${c.shortName}: ${p[c.pctKey]}% (${p[c.votesKey].toLocaleString()} / ${p.total_votes.toLocaleString()})</div>`,
       { sticky: true, direction: 'top', offset: [0, -6] }
     );
   }
@@ -834,13 +978,14 @@ function vtdClick(feature, layer) {
 
     // Show precinct popup only on mobile (hover tooltips work fine on desktop)
     if (isMobile()) {
+      const c = cand();
       const wardLabel = p.ward && p.ward !== '-' ? ` Ward ${p.ward}` : '';
       const harrisPct = p.total_votes > 0 ? (p.harris / p.total_votes * 100).toFixed(1) : '0.0';
       const trumpPct = p.total_votes > 0 ? (p.trump / p.total_votes * 100).toFixed(1) : '0.0';
       layer.bindPopup(
         `<div style="font-family:system-ui,sans-serif;font-size:13px;line-height:1.5;min-width:160px;">
           <strong style="font-size:14px;">${p.town}${wardLabel} Pct ${p.pct}</strong><br>
-          De La Cruz: <b>${p.de_la_cruz_pct}%</b> (${p.de_la_cruz.toLocaleString()} votes)<br>
+          ${c.shortName}: <b>${p[c.pctKey]}%</b> (${p[c.votesKey].toLocaleString()} votes)<br>
           Harris: ${harrisPct}% | Trump: ${trumpPct}%<br>
           <span style="color:#888;">Total: ${p.total_votes.toLocaleString()} votes</span>
         </div>`,
@@ -922,8 +1067,9 @@ async function loadData() {
 
 function updateSummaryStats() {
   if (!summaryData) return;
-  document.getElementById('stat-total').textContent = summaryData.total_de_la_cruz.toLocaleString();
-  document.getElementById('stat-dlpct').textContent = summaryData.de_la_cruz_pct + '%';
+  const c = cand();
+  document.getElementById('stat-total').textContent = summaryData[c.summaryVotesKey].toLocaleString();
+  document.getElementById('stat-dlpct').textContent = summaryData[c.summaryPctKey] + '%';
   document.getElementById('stat-towns').textContent = summaryData.total_towns;
   document.getElementById('stat-precincts').textContent = summaryData.total_precincts;
 }
@@ -945,20 +1091,27 @@ async function loadGeoJSON() {
   }
 }
 
-function onEachFeature(feature, layer) {
+function bindTownTooltip(feature, layer) {
   const name = feature.properties.town || feature.properties.name || '';
   const town = window.townByGeoName ? window.townByGeoName[name] : null;
 
-  // Tooltip
   if (town) {
+    const c = cand();
+    layer.unbindTooltip();
     layer.bindTooltip(
-      `<div class="maptip"><strong>${town.town}</strong><br>De La Cruz: ${town.de_la_cruz_pct}% (${town.de_la_cruz.toLocaleString()} / ${town.total_votes.toLocaleString()})<br>Rank: #${town.rank} of ${townsData.length}</div>`,
+      `<div class="maptip"><strong>${town.town}</strong><br>${c.shortName}: ${town[c.pctKey]}% (${town[c.votesKey].toLocaleString()} / ${town.total_votes.toLocaleString()})<br>Rank: #${town[c.rankKey]} of ${townsData.length}</div>`,
       { sticky: true, direction: 'top', offset: [0, -8] }
     );
   }
+}
+
+function onEachFeature(feature, layer) {
+  bindTownTooltip(feature, layer);
 
   // Click
   layer.on('click', () => {
+    const name = feature.properties.town || feature.properties.name || '';
+    const town = window.townByGeoName ? window.townByGeoName[name] : null;
     if (town) selectTown(town.town);
   });
 }
@@ -1062,18 +1215,19 @@ function renderTownDetail(name) {
   const townWards = wardsData.filter(w => w.town === name);
   const townPrecincts = precinctsData.filter(p => p.city_town === name);
 
+  const c = cand();
   let html = `
     <div class="town-card">
       <h2>${town.town}</h2>
-      <span class="rank-badge">Rank #${town.rank} of ${townsData.length} MA towns</span>
+      <span class="rank-badge">Rank #${town[c.rankKey]} of ${townsData.length} MA towns</span>
       <div class="town-stats">
         <div class="town-stat">
-          <div class="val">${town.de_la_cruz_pct}%</div>
-          <div class="lbl">De La Cruz %</div>
+          <div class="val">${town[c.pctKey]}%</div>
+          <div class="lbl">${c.shortName} %</div>
         </div>
         <div class="town-stat">
-          <div class="val">${town.de_la_cruz.toLocaleString()}</div>
-          <div class="lbl">De La Cruz Votes</div>
+          <div class="val">${town[c.votesKey].toLocaleString()}</div>
+          <div class="lbl">${c.shortName} Votes</div>
         </div>
         <div class="town-stat">
           <div class="val">${town.total_votes.toLocaleString()}</div>
@@ -1126,28 +1280,29 @@ function renderTownDetail(name) {
 }
 
 function renderWardTable(wards, precincts) {
-  // Sort wards initially by de_la_cruz_pct desc
-  const maxDL = Math.max(...wards.map(w => w.de_la_cruz_pct), 0.01);
+  const c = cand();
+  // Sort wards initially by candidate pct desc
+  const maxPct = Math.max(...wards.map(w => w[c.pctKey]), 0.01);
 
   let html = `<table class="ward-table" id="ward-table">
     <thead><tr>
       <th class="sortable" data-key="ward">Ward</th>
-      <th class="sortable" data-key="de_la_cruz">DL Votes</th>
-      <th class="sortable" data-key="de_la_cruz_pct">DL %</th>
+      <th class="sortable" data-key="${c.votesKey}">${c.shortName} Votes</th>
+      <th class="sortable" data-key="${c.pctKey}">${c.shortName} %</th>
       <th class="sortable" data-key="total_votes">Total</th>
       <th>Distribution</th>
     </tr></thead><tbody>`;
 
-  wards.sort((a, b) => b.de_la_cruz_pct - a.de_la_cruz_pct);
+  wards.sort((a, b) => b[c.pctKey] - a[c.pctKey]);
 
   for (const w of wards) {
-    const barW = (w.de_la_cruz_pct / maxDL * 100).toFixed(1);
+    const barW = (w[c.pctKey] / maxPct * 100).toFixed(1);
     const wardPrecincts = precincts.filter(p => p.ward === w.ward);
     html += `
       <tr class="ward-row" data-ward="${w.ward}">
         <td><strong>${w.ward === '-' ? 'All' : 'Ward ' + w.ward}</strong> <span style="font-size:0.7rem;color:var(--text-dim)">▸</span></td>
-        <td>${w.de_la_cruz.toLocaleString()}</td>
-        <td style="color:var(--accent-light);font-weight:600;">${w.de_la_cruz_pct}%</td>
+        <td>${w[c.votesKey].toLocaleString()}</td>
+        <td style="color:var(--accent-light);font-weight:600;">${w[c.pctKey]}%</td>
         <td>${w.total_votes.toLocaleString()}</td>
         <td class="bar-cell"><div class="bar-bg"><div class="bar-fill" style="width:${barW}%"></div></div></td>
       </tr>
@@ -1165,23 +1320,24 @@ function renderWardTable(wards, precincts) {
 }
 
 function renderPrecinctTable(precincts) {
+  const c = cand();
   let html = `<table>
     <thead><tr>
-      <th>Precinct</th><th>DL</th><th>DL%</th><th>Total</th>
+      <th>Precinct</th><th>${c.shortName}</th><th>${c.shortName}%</th><th>Total</th>
       <th>Harris</th><th>Trump</th>
     </tr></thead><tbody>`;
 
   precincts.sort((a, b) => {
-    const aDL = a.total_votes > 0 ? a.de_la_cruz / a.total_votes : 0;
-    const bDL = b.total_votes > 0 ? b.de_la_cruz / b.total_votes : 0;
-    return bDL - aDL;
+    const aPct = a.total_votes > 0 ? a[c.votesKey] / a.total_votes : 0;
+    const bPct = b.total_votes > 0 ? b[c.votesKey] / b.total_votes : 0;
+    return bPct - aPct;
   });
 
   for (const p of precincts) {
-    const pct = p.total_votes > 0 ? (p.de_la_cruz / p.total_votes * 100).toFixed(2) : '0.00';
+    const pct = p.total_votes > 0 ? (p[c.votesKey] / p.total_votes * 100).toFixed(2) : '0.00';
     html += `<tr>
       <td>${p.pct}</td>
-      <td>${p.de_la_cruz}</td>
+      <td>${p[c.votesKey]}</td>
       <td style="color:var(--accent-light)">${pct}%</td>
       <td>${p.total_votes.toLocaleString()}</td>
       <td style="color:#7eb8da">${p.harris.toLocaleString()}</td>
@@ -1194,11 +1350,13 @@ function renderPrecinctTable(precincts) {
 }
 
 // ── Sort ward table ──
-let wardSortKey = 'de_la_cruz_pct';
+let wardSortKey = null;  // reset on candidate switch, defaulted in renderWardTable
 let wardSortDir = 'desc';
 
 function sortWardTable(th) {
   const key = th.dataset.key;
+  // Default to candidate's pctKey if no sort key set yet
+  if (!wardSortKey) wardSortKey = cand().pctKey;
   if (wardSortKey === key) {
     wardSortDir = wardSortDir === 'asc' ? 'desc' : 'asc';
   } else {
@@ -1255,16 +1413,17 @@ function sortWardTable(th) {
 }
 
 function buildWardRows(wards, precincts) {
-  const maxDL = Math.max(...wards.map(w => w.de_la_cruz_pct), 0.01);
+  const c = cand();
+  const maxPct = Math.max(...wards.map(w => w[c.pctKey]), 0.01);
   let html = '';
   for (const w of wards) {
-    const barW = (w.de_la_cruz_pct / maxDL * 100).toFixed(1);
+    const barW = (w[c.pctKey] / maxPct * 100).toFixed(1);
     const wardPrecincts = precincts.filter(p => p.ward === w.ward);
     html += `
       <tr class="ward-row" data-ward="${w.ward}">
         <td><strong>${w.ward === '-' ? 'All' : 'Ward ' + w.ward}</strong> <span style="font-size:0.7rem;color:var(--text-dim)">▸</span></td>
-        <td>${w.de_la_cruz.toLocaleString()}</td>
-        <td style="color:var(--accent-light);font-weight:600;">${w.de_la_cruz_pct}%</td>
+        <td>${w[c.votesKey].toLocaleString()}</td>
+        <td style="color:var(--accent-light);font-weight:600;">${w[c.pctKey]}%</td>
         <td>${w.total_votes.toLocaleString()}</td>
         <td class="bar-cell"><div class="bar-bg"><div class="bar-fill" style="width:${barW}%"></div></div></td>
       </tr>
@@ -1296,10 +1455,11 @@ searchInput.addEventListener('input', () => {
     searchResults.classList.remove('visible');
     return;
   }
+  const c = cand();
   searchResults.innerHTML = matches.map(t =>
     `<div class="search-item" data-town="${t.town}">
       <span>${t.town}</span>
-      <span class="pct">#${t.rank} — ${t.de_la_cruz_pct}%</span>
+      <span class="pct">#${t[c.rankKey]} — ${t[c.pctKey]}%</span>
     </div>`
   ).join('');
   searchResults.classList.add('visible');
