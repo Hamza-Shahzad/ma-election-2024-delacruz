@@ -360,6 +360,28 @@ body {
 }
 #candidate-toggle:hover { background: #3a3a5a; color: #fff; }
 
+/* Race category selector buttons */
+.race-btn-group {
+  display: flex;
+  gap: 4px;
+  padding: 6px 0 2px 0;
+  flex-wrap: wrap;
+}
+.race-btn {
+  background: #2a2a4a;
+  border: 1px solid #4a4a6a;
+  color: #999;
+  border-radius: 4px;
+  padding: 2px 7px;
+  cursor: pointer;
+  font-size: 0.58rem;
+  font-weight: 600;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+.race-btn:hover { background: #3a3a5a; color: #ddd; }
+.race-btn.active { background: #2563eb; border-color: #3b82f6; color: #fff; }
+
 #legend h4 {
   font-size: 0.7rem;
   text-transform: uppercase;
@@ -608,9 +630,16 @@ body {
   <div id="legend-header">
     <h4 id="legend-title">De La Cruz Vote %</h4>
     <div id="legend-controls">
-      <button id="candidate-toggle" onclick="switchCandidate()" title="Switch between PSL and Green Party candidates">🔄 <span id="toggle-label">Stein</span></button>
+      <button id="candidate-toggle" onclick="cycleView()" title="Cycle through PSL, Green Party, and Race Demographics views">🔄 <span id="toggle-label">Stein</span></button>
       <button id="fill-toggle" onclick="toggleFill()" title="Toggle colored overlay to see streets">👁️ Fill</button>
     </div>
+  </div>
+  <div id="race-buttons" class="race-btn-group" style="display:none;">
+    <button class="race-btn active" data-metric="white_pct">White</button>
+    <button class="race-btn" data-metric="black_pct">Black</button>
+    <button class="race-btn" data-metric="hispanic_pct">Hispanic</button>
+    <button class="race-btn" data-metric="asian_pct">Asian</button>
+    <button class="race-btn" data-metric="multi_pct">Multi</button>
   </div>
   <div class="legend-gradient"></div>
   <div class="legend-labels" id="legend-labels">
@@ -673,14 +702,16 @@ let precinctsData = [];
 let summaryData = null;
 let geoLayer = null;
 let vtdLayer = null;
+let tractLayer = null;
 let selectedTown = null;
 let highlightedWard = null;  // { town, ward } or null
-const VTD_ZOOM_THRESHOLD = 12; // Show precinct boundaries at zoom >= 12
-let currentCandidate = 'delacruz';  // 'delacruz' | 'stein'
+const VTD_ZOOM_THRESHOLD = 12; // Show precinct/tract boundaries at zoom >= 12
+let currentView = 'delacruz';  // 'delacruz' | 'stein' | 'race'
+let raceMetric = 'white_pct';  // current race category when in race view
 
-// ── Candidate config helper ──
+// ── Candidate config helper (election views only) ──
 function cand() {
-  if (currentCandidate === 'stein') {
+  if (currentView === 'stein') {
     return {
       id: 'stein',
       name: 'Jill Stein / Butch Ware',
@@ -714,30 +745,60 @@ function cand() {
   };
 }
 
-function switchCandidate() {
-  // Toggle candidate
-  currentCandidate = (currentCandidate === 'delacruz') ? 'stein' : 'delacruz';
-  const c = cand();
+// ── Race config helper (race view only) ──
+function raceConfig() {
+  const metrics = {
+    white_pct:   { key: 'white_pct',   label: 'White (non-Hispanic)', short: 'White %',   maxPct: 100 },
+    black_pct:   { key: 'black_pct',   label: 'Black / African American (non-Hispanic)', short: 'Black %', maxPct: 50 },
+    hispanic_pct:{ key: 'hispanic_pct',label: 'Hispanic or Latino %', short: 'Hispanic %', maxPct: 60 },
+    asian_pct:   { key: 'asian_pct',   label: 'Asian (non-Hispanic)', short: 'Asian %',   maxPct: 30 },
+    multi_pct:   { key: 'multi_pct',   label: 'Two or More Races (non-Hispanic)', short: 'Multiracial %', maxPct: 15 },
+  };
+  return metrics[raceMetric] || metrics['white_pct'];
+}
 
-  // Reset ward sort to default for new candidate
+function cycleView() {
+  // Cycle through views: delacruz → stein → race → delacruz
+  const views = ['delacruz', 'stein', 'race'];
+  const idx = views.indexOf(currentView);
+  currentView = views[(idx + 1) % views.length];
+
+  // Reset ward sort to default
   wardSortKey = null;
 
   // Update legend
   updateLegend();
 
-  // Update sidebar header
-  document.getElementById('sidebar-candidate').textContent = '🗳️ ' + c.name;
+  // Show/hide race category buttons
+  const raceBtns = document.getElementById('race-buttons');
+  if (raceBtns) raceBtns.style.display = currentView === 'race' ? 'flex' : 'none';
 
-  // Update toggle button label (show the OTHER candidate)
-  const otherCandidate = (currentCandidate === 'delacruz') ? 'stein' : 'delacruz';
-  document.getElementById('toggle-label').textContent = currentCandidate === 'delacruz' ? 'Stein' : 'De La Cruz';
+  // Update sidebar header
+  if (currentView === 'race') {
+    document.getElementById('sidebar-candidate').textContent = '🌍 Race Demographics';
+  } else {
+    document.getElementById('sidebar-candidate').textContent = '🗳️ ' + cand().name;
+  }
+
+  // Update toggle button label (show the NEXT view)
+  const nextView = views[(idx + 2) % views.length];
+  const nextLabels = { delacruz: 'De La Cruz', stein: 'Stein', race: 'Race' };
+  document.getElementById('toggle-label').textContent = nextLabels[nextView];
 
   // Update page title
-  document.title = c.shortName + ' — 2024 MA Presidential Election Results';
+  if (currentView === 'race') {
+    document.title = 'Race Demographics — MA Census Tracts';
+  } else {
+    document.title = cand().shortName + ' — 2024 MA Presidential Election Results';
+  }
 
   // Update toggle button title
-  document.getElementById('candidate-toggle').title =
-    currentCandidate === 'delacruz' ? 'Switch to Green Party (Jill Stein)' : 'Switch to PSL (Claudia De La Cruz)';
+  const nextTitles = {
+    delacruz: 'Switch to PSL (Claudia De La Cruz)',
+    stein: 'Switch to Green Party (Jill Stein)',
+    race: 'Switch to Race Demographics',
+  };
+  document.getElementById('candidate-toggle').title = nextTitles[nextView];
 
   // Update summary stats
   updateSummaryStats();
@@ -747,10 +808,12 @@ function switchCandidate() {
     renderTownDetail(selectedTown);
   }
 
-  // Reset map styles and rebind tooltips (they're bound with stale data)
+  // Handle tract layer visibility
+  updateVTDLayer();
+
+  // Reset map styles and rebind tooltips
   if (geoLayer) {
     geoLayer.setStyle(styleFeature);
-    // Rebind town tooltips only (don't re-add click handlers)
     geoLayer.eachLayer(layer => {
       if (layer.feature) bindTownTooltip(layer.feature, layer);
     });
@@ -761,26 +824,56 @@ function switchCandidate() {
       vtdTooltip(layer.feature, layer);
     });
   }
+  if (tractLayer) {
+    tractLayer.setStyle(tractStyle);
+    tractLayer.eachLayer(layer => {
+      tractTooltip(layer.feature, layer);
+    });
+  }
 
-  // Clear ward highlight (different candidate, different data)
+  // Clear ward highlight
   clearWardHighlight();
   document.querySelectorAll('.ward-row').forEach(r => r.classList.remove('highlighted'));
 }
 
 function updateLegend() {
-  const c = cand();
-  document.getElementById('legend-title').textContent = c.legendTitle;
+  let title, max, label0, labelMax, gradient;
+  if (currentView === 'race') {
+    const rc = raceConfig();
+    title = rc.label;
+    max = rc.maxPct;
+    label0 = '0%';
+    labelMax = rc.maxPct + '%+';
+    gradient = 'linear-gradient(to right, #f0f6ff, #bdd7ff, #6baeff, #3182ff, #1051d6, #083089)';
+  } else if (currentView === 'stein') {
+    const c = cand();
+    title = c.legendTitle;
+    max = c.maxPct;
+    label0 = c.label0;
+    labelMax = c.labelMax;
+    gradient = 'linear-gradient(to right, #edf8e9, #bae4b3, #74c476, #31a354, #006d2c, #003c1a)';
+  } else {
+    const c = cand();
+    title = c.legendTitle;
+    max = c.maxPct;
+    label0 = c.label0;
+    labelMax = c.labelMax;
+    gradient = 'linear-gradient(to right, #fff5f0, #fdd0a2, #d6616b, #7b2c8c, #3f007d)';
+  }
+  document.getElementById('legend-title').textContent = title;
 
-  // Update legend labels based on candidate's max %
-  const max = c.maxPct;
+  // Update legend gradient
+  document.querySelector('.legend-gradient').style.background = gradient;
+
+  // Update legend labels
   const step = max / 4;
   const labels = document.querySelectorAll('#legend-labels span');
   if (labels.length >= 5) {
-    labels[0].textContent = c.label0;
+    labels[0].textContent = label0;
     labels[1].textContent = (step).toFixed(1) + '%';
     labels[2].textContent = (step * 2).toFixed(1) + '%';
     labels[3].textContent = (step * 3).toFixed(1) + '%';
-    labels[4].textContent = c.labelMax;
+    labels[4].textContent = labelMax;
   }
 }
 
@@ -867,9 +960,10 @@ function toggleFill() {
     grad.style.opacity = '0.3';
   }
 
-  // Reset all layers — styleFeature/vtdStyle now respect fillVisible
+  // Reset all layers — styleFeature/vtdStyle/tractStyle now respect fillVisible
   if (geoLayer) geoLayer.eachLayer(l => geoLayer.resetStyle(l));
   if (vtdLayer) vtdLayer.eachLayer(l => vtdLayer.resetStyle(l));
+  if (tractLayer) tractLayer.eachLayer(l => tractLayer.resetStyle(l));
 
   // Re-apply selection highlight
   if (selectedTown) {
@@ -883,6 +977,7 @@ function toggleFill() {
       });
     }
     if (vtdLayer && MAP.hasLayer(vtdLayer)) vtdLayer.bringToFront();
+    if (tractLayer && MAP.hasLayer(tractLayer)) tractLayer.bringToFront();
   }
 
   // Re-apply ward highlight
@@ -895,25 +990,41 @@ function toggleFill() {
 
 function colorScale(pct) {
   if (pct <= 0) return '#ffffff08';
-  // Purple gradient for PSL, green gradient for Green Party
-  const stops = currentCandidate === 'stein'
-    ? [
-        [0,    [237, 248, 233]],
-        [0.2,  [186, 228, 179]],
-        [0.4,  [116, 196, 118]],
-        [0.6,  [49,  163, 84]],
-        [0.8,  [0,   109, 44]],
-        [1.0,  [0,   60,  26]],
-      ]
-    : [
-        [0,    [255, 245, 240]],
-        [0.2,  [253, 208, 162]],
-        [0.4,  [251, 135, 118]],
-        [0.6,  [214, 97,  107]],
-        [0.8,  [158, 52,  131]],
-        [1.0,  [63,  0,   125]],
-      ];
-  const maxPct = cand().maxPct;
+  let stops, maxPct;
+
+  if (currentView === 'race') {
+    // Blue sequential scale for race demographics
+    const rc = raceConfig();
+    maxPct = rc.maxPct;
+    stops = [
+      [0,    [240, 247, 255]],
+      [0.2,  [189, 215, 255]],
+      [0.4,  [107, 174, 255]],
+      [0.6,  [49,  130, 255]],
+      [0.8,  [8,   81,  214]],
+      [1.0,  [8,   48,  137]],
+    ];
+  } else {
+    // Purple gradient for PSL, green gradient for Green Party
+    maxPct = cand().maxPct;
+    stops = currentView === 'stein'
+      ? [
+          [0,    [237, 248, 233]],
+          [0.2,  [186, 228, 179]],
+          [0.4,  [116, 196, 118]],
+          [0.6,  [49,  163, 84]],
+          [0.8,  [0,   109, 44]],
+          [1.0,  [0,   60,  26]],
+        ]
+      : [
+          [0,    [255, 245, 240]],
+          [0.2,  [253, 208, 162]],
+          [0.4,  [251, 135, 118]],
+          [0.6,  [214, 97,  107]],
+          [0.8,  [158, 52,  131]],
+          [1.0,  [63,  0,   125]],
+        ];
+  }
   const t = Math.min(Math.max(pct / maxPct, 0), 1);
   for (let i = 0; i < stops.length - 1; i++) {
     const [t0, c0] = stops[i];
@@ -928,14 +1039,21 @@ function colorScale(pct) {
 
 function styleFeature(feature) {
   const name = feature.properties.town || feature.properties.name || '';
-  const town = window.townByGeoName ? window.townByGeoName[name] : null;
-  const pct = town ? (town[cand().pctKey] || 0) : 0;
+  let pct;
+  if (currentView === 'race') {
+    // Look up town-level race aggregation
+    const raceData = window.townRaceData ? window.townRaceData[name] : null;
+    pct = raceData ? (raceData[raceMetric] || 0) : 0;
+  } else {
+    const town = window.townByGeoName ? window.townByGeoName[name] : null;
+    pct = town ? (town[cand().pctKey] || 0) : 0;
+  }
   return {
     fillColor: colorScale(pct),
     weight: fillVisible ? 1 : 1.2,
     opacity: fillVisible ? 0.7 : 0.8,
     color: fillVisible ? '#3a3a5a' : '#5a5a7a',
-    fillOpacity: fillVisible ? (town ? 0.85 : 0.15) : 0,
+    fillOpacity: fillVisible ? 0.85 : 0,
   };
 }
 
@@ -1012,32 +1130,193 @@ async function loadVTDGeoJSON() {
   }
 }
 
-// Zoom handler: show/hide VTD precinct layer
-function updateVTDLayer() {
-  const hint = document.getElementById('zoom-hint');
-  if (!vtdLayer) {
-    if (hint) hint.style.display = 'none';
-    return;
-  }
-  const zoom = MAP.getZoom();
-  if (zoom >= VTD_ZOOM_THRESHOLD) {
-    if (!MAP.hasLayer(vtdLayer)) {
-      vtdLayer.addTo(MAP);
-      if (geoLayer) geoLayer.setStyle({ weight: 1.5, opacity: 0.9, color: '#5a5a7a' });
-      // Re-apply ward highlight if any
-      if (highlightedWard) {
-        const hw = highlightedWard;
-        highlightedWard = null;
-        highlightWardOnMap(hw.town, hw.ward);
+// ── Census Tract / Race layer ──
+function tractStyle(feature) {
+  const p = feature.properties;
+  const pct = p[raceMetric] || 0;
+  return {
+    fillColor: colorScale(pct),
+    weight: fillVisible ? 0.3 : 0.5,
+    opacity: fillVisible ? 0.5 : 0.7,
+    color: fillVisible ? '#445577' : '#6688aa',
+    fillOpacity: fillVisible ? 0.7 : 0,
+    dashArray: null,
+  };
+}
+
+function tractTooltip(feature, layer) {
+  if (isMobile()) return;
+  const p = feature.properties;
+  layer.unbindTooltip();
+  layer.bindTooltip(
+    `<div class="maptip" style="font-size:0.72rem;max-width:200px;">
+      <strong>${p.namelsad || 'Census Tract ' + p.tract}</strong><br>
+      <span style="color:#999;">${p.town || ''}</span><br>
+      <span style="color:#7eb8da;">White: ${(p.white_pct || 0).toFixed(1)}%</span><br>
+      <span style="color:#81c784;">Black: ${(p.black_pct || 0).toFixed(1)}%</span><br>
+      <span style="color:#ff8a65;">Hispanic: ${(p.hispanic_pct || 0).toFixed(1)}%</span><br>
+      <span style="color:#64b5f6;">Asian: ${(p.asian_pct || 0).toFixed(1)}%</span><br>
+      <span style="color:#ba68c8;">Multi: ${(p.multi_pct || 0).toFixed(1)}%</span><br>
+      <span style="color:#888;">Pop: ${(p.total_pop || 0).toLocaleString()}</span>
+    </div>`,
+    { sticky: true, direction: 'top', offset: [0, -6] }
+  );
+}
+
+function tractClick(feature, layer) {
+  layer.on('click', () => {
+    const p = feature.properties;
+    if (isMobile()) {
+      layer.bindPopup(
+        `<div style="font-family:system-ui,sans-serif;font-size:12px;line-height:1.5;min-width:160px;">
+          <strong style="font-size:13px;">${p.namelsad || 'Census Tract ' + p.tract}</strong><br>
+          <span style="color:#999;">${p.town || ''}</span><br>
+          White: <b>${(p.white_pct || 0).toFixed(1)}%</b><br>
+          Black: <b>${(p.black_pct || 0).toFixed(1)}%</b><br>
+          Hispanic: <b>${(p.hispanic_pct || 0).toFixed(1)}%</b><br>
+          Asian: <b>${(p.asian_pct || 0).toFixed(1)}%</b><br>
+          Multi: <b>${(p.multi_pct || 0).toFixed(1)}%</b><br>
+          <span style="color:#888;">Total pop: ${(p.total_pop || 0).toLocaleString()}</span>
+        </div>`,
+        { closeButton: true, autoClose: true, closeOnClick: true }
+      ).openPopup();
+    }
+  });
+}
+
+async function loadTractRaceGeoJSON() {
+  try {
+    const geojson = await fetch('data/ma_tracts_race.geojson').then(r => r.json());
+    window.tractCount = geojson.features.length;
+
+    // Aggregate tract race data to towns
+    const townRaceData = {};
+    let statewideTotalPop = 0;
+    const statewideRaceCounts = { white_pct: 0, black_pct: 0, hispanic_pct: 0, asian_pct: 0, multi_pct: 0 };
+
+    for (const f of geojson.features) {
+      const p = f.properties;
+      const town = p.town || '';
+      const pop = p.total_pop || 0;
+      statewideTotalPop += pop;
+
+      if (town) {
+        if (!townRaceData[town]) {
+          townRaceData[town] = { total_pop: 0, white_pct: 0, black_pct: 0, hispanic_pct: 0, asian_pct: 0, multi_pct: 0 };
+        }
+        townRaceData[town].total_pop += pop;
+        for (const key of ['white_pct', 'black_pct', 'hispanic_pct', 'asian_pct', 'multi_pct']) {
+          townRaceData[town][key] += (p[key] || 0) * pop;
+        }
       }
     }
-    if (hint) hint.style.display = 'none';
-  } else {
-    if (MAP.hasLayer(vtdLayer)) {
-      MAP.removeLayer(vtdLayer);
-      if (geoLayer) geoLayer.setStyle({ weight: 1, opacity: 0.7, color: '#3a3a5a' });
+
+    // Compute weighted percentages for each town
+    for (const [town, data] of Object.entries(townRaceData)) {
+      if (data.total_pop > 0) {
+        for (const key of ['white_pct', 'black_pct', 'hispanic_pct', 'asian_pct', 'multi_pct']) {
+          data[key] = +(data[key] / data.total_pop).toFixed(1);
+        }
+      }
     }
-    if (hint) hint.style.display = 'block';
+    window.townRaceData = townRaceData;
+
+    // Compute statewide race percentages
+    // (we need sum of populations for each category across all tracts)
+    const sv = {};
+    for (const key of ['white_pct', 'black_pct', 'hispanic_pct', 'asian_pct', 'multi_pct']) {
+      let weightedSum = 0;
+      for (const f of geojson.features) {
+        const p = f.properties;
+        weightedSum += (p[key] || 0) * (p.total_pop || 0);
+      }
+      sv[key] = statewideTotalPop > 0 ? +(weightedSum / statewideTotalPop).toFixed(1) : 0;
+    }
+    sv.total_pop = statewideTotalPop;
+    window.statewideRaceData = sv;
+
+    // Also build a lookup from normalized town name to race data
+    // (Census GeoJSON uses full names, tract data may use abbreviated names)
+    const normTownRaceData = {};
+    for (const [town, data] of Object.entries(townRaceData)) {
+      const normName = normalizeName(town);
+      normTownRaceData[normName] = data;
+    }
+    window.townRaceData = Object.assign(normTownRaceData, window.townRaceData);
+
+    tractLayer = L.geoJSON(geojson, {
+      style: tractStyle,
+      onEachFeature: (feature, layer) => {
+        tractTooltip(feature, layer);
+        tractClick(feature, layer);
+      },
+    });
+    // Don't add to map yet — only at high zoom and only in race view
+    console.log(`Loaded ${geojson.features.length} census tract race boundaries (shown at zoom ≥ ${VTD_ZOOM_THRESHOLD} in race view)`);
+    console.log(`  Aggregated race data for ${Object.keys(townRaceData).length} towns`);
+  } catch (e) {
+    console.warn('Census tract race layer not available (run download_tracts_race.py first):', e.message);
+  }
+}
+
+// Zoom handler: show/hide VTD precinct layer or tract layer
+function updateVTDLayer() {
+  const hint = document.getElementById('zoom-hint');
+  const zoom = MAP.getZoom();
+  const highZoom = zoom >= VTD_ZOOM_THRESHOLD;
+
+  if (currentView === 'race') {
+    // Race view: manage tract layer at high zoom
+    if (!tractLayer) {
+      if (hint) hint.style.display = 'none';
+      return;
+    }
+    if (highZoom) {
+      if (!MAP.hasLayer(tractLayer)) {
+        tractLayer.addTo(MAP);
+        if (geoLayer) geoLayer.setStyle({ weight: 1.5, opacity: 0.9, color: '#5a5a7a' });
+      }
+      // Ensure VTD layer is hidden in race view
+      if (vtdLayer && MAP.hasLayer(vtdLayer)) {
+        MAP.removeLayer(vtdLayer);
+      }
+      if (hint) hint.style.display = 'none';
+    } else {
+      if (MAP.hasLayer(tractLayer)) {
+        MAP.removeLayer(tractLayer);
+        if (geoLayer) geoLayer.setStyle({ weight: 1, opacity: 0.7, color: '#3a3a5a' });
+      }
+      if (hint) hint.style.display = 'block';
+    }
+  } else {
+    // Election views: manage VTD layer at high zoom
+    if (!vtdLayer) {
+      if (hint) hint.style.display = 'none';
+      return;
+    }
+    // Ensure tract layer is hidden in election views
+    if (tractLayer && MAP.hasLayer(tractLayer)) {
+      MAP.removeLayer(tractLayer);
+    }
+    if (highZoom) {
+      if (!MAP.hasLayer(vtdLayer)) {
+        vtdLayer.addTo(MAP);
+        if (geoLayer) geoLayer.setStyle({ weight: 1.5, opacity: 0.9, color: '#5a5a7a' });
+        // Re-apply ward highlight if any
+        if (highlightedWard) {
+          const hw = highlightedWard;
+          highlightedWard = null;
+          highlightWardOnMap(hw.town, hw.ward);
+        }
+      }
+      if (hint) hint.style.display = 'none';
+    } else {
+      if (MAP.hasLayer(vtdLayer)) {
+        MAP.removeLayer(vtdLayer);
+        if (geoLayer) geoLayer.setStyle({ weight: 1, opacity: 0.7, color: '#3a3a5a' });
+      }
+      if (hint) hint.style.display = 'block';
+    }
   }
 }
 
@@ -1067,11 +1346,32 @@ async function loadData() {
 
 function updateSummaryStats() {
   if (!summaryData) return;
-  const c = cand();
-  document.getElementById('stat-total').textContent = summaryData[c.summaryVotesKey].toLocaleString();
-  document.getElementById('stat-dlpct').textContent = summaryData[c.summaryPctKey] + '%';
-  document.getElementById('stat-towns').textContent = summaryData.total_towns;
-  document.getElementById('stat-precincts').textContent = summaryData.total_precincts;
+  if (currentView === 'race') {
+    // Show statewide race demographics from ACS
+    const raceData = window.statewideRaceData;
+    if (raceData) {
+      document.getElementById('stat-total').textContent = raceData.total_pop ? raceData.total_pop.toLocaleString() : '—';
+      document.getElementById('stat-dlpct').textContent = (raceData[raceMetric] || 0).toFixed(1) + '%';
+      document.getElementById('stat-towns').textContent = '351';  // MA has 351 towns
+    }
+    document.getElementById('stat-precincts').textContent = window.tractCount ? window.tractCount.toLocaleString() : '—';
+
+    // Update stat labels for race view
+    document.querySelector('#stat-dlpct').nextElementSibling.textContent = raceConfig().short;
+    document.querySelector('#stat-towns').nextElementSibling.textContent = 'Towns';
+    document.querySelector('#stat-precincts').nextElementSibling.textContent = 'Tracts';
+  } else {
+    const c = cand();
+    document.getElementById('stat-total').textContent = summaryData[c.summaryVotesKey].toLocaleString();
+    document.getElementById('stat-dlpct').textContent = summaryData[c.summaryPctKey] + '%';
+    document.getElementById('stat-towns').textContent = summaryData.total_towns;
+    document.getElementById('stat-precincts').textContent = summaryData.total_precincts;
+
+    // Restore stat labels
+    document.querySelector('#stat-dlpct').nextElementSibling.textContent = c.shortName + ' %';
+    document.querySelector('#stat-towns').nextElementSibling.textContent = 'Towns';
+    document.querySelector('#stat-precincts').nextElementSibling.textContent = 'Precincts';
+  }
 }
 
 // ── Load GeoJSON ──
@@ -1093,15 +1393,27 @@ async function loadGeoJSON() {
 
 function bindTownTooltip(feature, layer) {
   const name = feature.properties.town || feature.properties.name || '';
-  const town = window.townByGeoName ? window.townByGeoName[name] : null;
 
-  if (town) {
-    const c = cand();
-    layer.unbindTooltip();
-    layer.bindTooltip(
-      `<div class="maptip"><strong>${town.town}</strong><br>${c.shortName}: ${town[c.pctKey]}% (${town[c.votesKey].toLocaleString()} / ${town.total_votes.toLocaleString()})<br>Rank: #${town[c.rankKey]} of ${townsData.length}</div>`,
-      { sticky: true, direction: 'top', offset: [0, -8] }
-    );
+  if (currentView === 'race') {
+    const raceData = window.townRaceData ? window.townRaceData[name] : null;
+    if (raceData) {
+      const rc = raceConfig();
+      layer.unbindTooltip();
+      layer.bindTooltip(
+        `<div class="maptip"><strong>${name}</strong><br>${rc.short}: ${raceData[raceMetric] ? raceData[raceMetric].toFixed(1) + '%' : 'N/A'}<br>Total pop: ${raceData.total_pop ? raceData.total_pop.toLocaleString() : 'N/A'}</div>`,
+        { sticky: true, direction: 'top', offset: [0, -8] }
+      );
+    }
+  } else {
+    const town = window.townByGeoName ? window.townByGeoName[name] : null;
+    if (town) {
+      const c = cand();
+      layer.unbindTooltip();
+      layer.bindTooltip(
+        `<div class="maptip"><strong>${town.town}</strong><br>${c.shortName}: ${town[c.pctKey]}% (${town[c.votesKey].toLocaleString()} / ${town.total_votes.toLocaleString()})<br>Rank: #${town[c.rankKey]} of ${townsData.length}</div>`,
+        { sticky: true, direction: 'top', offset: [0, -8] }
+      );
+    }
   }
 }
 
@@ -1152,9 +1464,12 @@ function selectTown(name, opts = {}) {
             MAP.setZoom(VTD_ZOOM_THRESHOLD);
           }
         }
-        // Ensure VTD precinct layer stays on top
+        // Ensure VTD/tract layer stays on top
         if (vtdLayer && MAP.hasLayer(vtdLayer)) {
           vtdLayer.bringToFront();
+        }
+        if (tractLayer && MAP.hasLayer(tractLayer)) {
+          tractLayer.bringToFront();
         }
       } else {
         geoLayer.resetStyle(layer);
@@ -1210,6 +1525,48 @@ function clearWardHighlight() {
 
 function renderTownDetail(name) {
   const town = window.townByDataName ? window.townByDataName[name] : null;
+
+  if (currentView === 'race') {
+    // Race view: show demographic breakdown
+    const geoName = normalizeName(name);
+    const raceData = window.townRaceData ? (window.townRaceData[geoName] || window.townRaceData[name]) : null;
+    if (!raceData) {
+      document.getElementById('detail-content').innerHTML = `<div class="town-card"><h2>${name}</h2><p>No demographic data available.</p></div>`;
+      return;
+    }
+    let html = `
+      <div class="town-card">
+        <h2>${name}</h2>
+        <span class="rank-badge">Total population: ${raceData.total_pop.toLocaleString()}</span>
+        <div class="town-stats" style="grid-template-columns: 1fr 1fr 1fr;">
+          <div class="town-stat">
+            <div class="val">${raceData.white_pct}%</div>
+            <div class="lbl">White (NH)</div>
+          </div>
+          <div class="town-stat">
+            <div class="val">${raceData.black_pct}%</div>
+            <div class="lbl">Black (NH)</div>
+          </div>
+          <div class="town-stat">
+            <div class="val">${raceData.hispanic_pct}%</div>
+            <div class="lbl">Hispanic</div>
+          </div>
+          <div class="town-stat">
+            <div class="val">${raceData.asian_pct}%</div>
+            <div class="lbl">Asian (NH)</div>
+          </div>
+          <div class="town-stat">
+            <div class="val">${raceData.multi_pct}%</div>
+            <div class="lbl">Multi (NH)</div>
+          </div>
+        </div>
+      </div>
+    `;
+    document.getElementById('detail-content').innerHTML = html;
+    return;
+  }
+
+  // Election views
   if (!town) return;
 
   const townWards = wardsData.filter(w => w.town === name);
@@ -1455,13 +1812,25 @@ searchInput.addEventListener('input', () => {
     searchResults.classList.remove('visible');
     return;
   }
-  const c = cand();
-  searchResults.innerHTML = matches.map(t =>
-    `<div class="search-item" data-town="${t.town}">
-      <span>${t.town}</span>
-      <span class="pct">#${t[c.rankKey]} — ${t[c.pctKey]}%</span>
-    </div>`
-  ).join('');
+  if (currentView === 'race') {
+    searchResults.innerHTML = matches.map(t => {
+      const geoName = normalizeName(t.town);
+      const rd = window.townRaceData ? (window.townRaceData[geoName] || window.townRaceData[t.town]) : null;
+      const pctStr = rd && rd[raceMetric] != null ? rd[raceMetric] + '%' : '—';
+      return `<div class="search-item" data-town="${t.town}">
+        <span>${t.town}</span>
+        <span class="pct">${raceConfig().short}: ${pctStr}</span>
+      </div>`;
+    }).join('');
+  } else {
+    const c = cand();
+    searchResults.innerHTML = matches.map(t =>
+      `<div class="search-item" data-town="${t.town}">
+        <span>${t.town}</span>
+        <span class="pct">#${t[c.rankKey]} — ${t[c.pctKey]}%</span>
+      </div>`
+    ).join('');
+  }
   searchResults.classList.add('visible');
 });
 
@@ -1501,11 +1870,37 @@ MAP.on('click', (e) => {
 // Zoom listener for VTD precinct layer visibility
 MAP.on('zoomend', updateVTDLayer);
 
+// ── Race category button handlers ──
+document.querySelectorAll('.race-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    raceMetric = btn.dataset.metric;
+    document.querySelectorAll('.race-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    // Update legend, map colors, and tooltips
+    updateLegend();
+    updateSummaryStats();
+    if (geoLayer) {
+      geoLayer.setStyle(styleFeature);
+      geoLayer.eachLayer(layer => {
+        if (layer.feature) bindTownTooltip(layer.feature, layer);
+      });
+    }
+    if (tractLayer && MAP.hasLayer(tractLayer)) {
+      tractLayer.setStyle(tractStyle);
+      tractLayer.eachLayer(layer => {
+        tractTooltip(layer.feature, layer);
+      });
+    }
+    if (selectedTown) renderTownDetail(selectedTown);
+  });
+});
+
 // ── Init ──
 (async function init() {
   initMobileState();
   window.addEventListener('resize', initMobileState);
   await loadData();
+  await loadTractRaceGeoJSON();
   await loadGeoJSON();
   await loadVTDGeoJSON();
 })();
