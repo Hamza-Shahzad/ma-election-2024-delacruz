@@ -367,7 +367,7 @@ body {
   padding: 6px 0 2px 0;
   flex-wrap: wrap;
 }
-.race-btn {
+.race-btn, .age-btn {
   background: #2a2a4a;
   border: 1px solid #4a4a6a;
   color: #999;
@@ -379,8 +379,8 @@ body {
   transition: all 0.15s;
   white-space: nowrap;
 }
-.race-btn:hover { background: #3a3a5a; color: #ddd; }
-.race-btn.active { background: #2563eb; border-color: #3b82f6; color: #fff; }
+.race-btn:hover, .age-btn:hover { background: #3a3a5a; color: #ddd; }
+.race-btn.active, .age-btn.active { background: #2563eb; border-color: #3b82f6; color: #fff; }
 
 #legend h4 {
   font-size: 0.7rem;
@@ -641,6 +641,15 @@ body {
     <button class="race-btn" data-metric="asian_pct">Asian</button>
     <button class="race-btn" data-metric="multi_pct">Multi</button>
   </div>
+  <div id="age-buttons" class="race-btn-group" style="display:none;">
+    <button class="age-btn active" data-metric="under18_pct">U18</button>
+    <button class="age-btn" data-metric="age18_24_pct">18-24</button>
+    <button class="age-btn" data-metric="age25_34_pct">25-34</button>
+    <button class="age-btn" data-metric="age35_44_pct">35-44</button>
+    <button class="age-btn" data-metric="age45_54_pct">45-54</button>
+    <button class="age-btn" data-metric="age55_64_pct">55-64</button>
+    <button class="age-btn" data-metric="age65plus_pct">65+</button>
+  </div>
   <div class="legend-gradient"></div>
   <div class="legend-labels" id="legend-labels">
     <span>0%</span><span>0.4%</span><span>0.8%</span><span>1.2%</span><span>1.6%+</span>
@@ -706,8 +715,10 @@ let tractLayer = null;
 let selectedTown = null;
 let highlightedWard = null;  // { town, ward } or null
 const VTD_ZOOM_THRESHOLD = 12; // Show precinct/tract boundaries at zoom >= 12
-let currentView = 'delacruz';  // 'delacruz' | 'stein' | 'race'
+let currentView = 'delacruz';  // 'delacruz' | 'stein' | 'race' | 'age'
 let raceMetric = 'white_pct';  // current race category when in race view
+let ageMetric = 'under18_pct';  // current age bracket when in age view
+let ageLayer = null;  // census tract age demographics layer
 
 // ── Candidate config helper (election views only) ──
 function cand() {
@@ -757,9 +768,23 @@ function raceConfig() {
   return metrics[raceMetric] || metrics['white_pct'];
 }
 
+// ── Age config helper (age view only) ──
+function ageConfig() {
+  const metrics = {
+    under18_pct:   { key: 'under18_pct',   label: 'Under 18 years',  short: 'Under 18 %',  maxPct: 30 },
+    age18_24_pct:  { key: 'age18_24_pct',  label: '18 to 24 years',  short: '18-24 %',     maxPct: 40 },
+    age25_34_pct:  { key: 'age25_34_pct',  label: '25 to 34 years',  short: '25-34 %',     maxPct: 30 },
+    age35_44_pct:  { key: 'age35_44_pct',  label: '35 to 44 years',  short: '35-44 %',     maxPct: 25 },
+    age45_54_pct:  { key: 'age45_54_pct',  label: '45 to 54 years',  short: '45-54 %',     maxPct: 25 },
+    age55_64_pct:  { key: 'age55_64_pct',  label: '55 to 64 years',  short: '55-64 %',     maxPct: 25 },
+    age65plus_pct: { key: 'age65plus_pct', label: '65 years and over', short: '65+ %',     maxPct: 50 },
+  };
+  return metrics[ageMetric] || metrics['under18_pct'];
+}
+
 function cycleView() {
-  // Cycle through views: delacruz → stein → race → delacruz
-  const views = ['delacruz', 'stein', 'race'];
+  // Cycle through views: delacruz → stein → race → age → delacruz
+  const views = ['delacruz', 'stein', 'race', 'age'];
   const idx = views.indexOf(currentView);
   currentView = views[(idx + 1) % views.length];
 
@@ -769,25 +794,31 @@ function cycleView() {
   // Update legend
   updateLegend();
 
-  // Show/hide race category buttons
+  // Show/hide race and age category buttons
   const raceBtns = document.getElementById('race-buttons');
   if (raceBtns) raceBtns.style.display = currentView === 'race' ? 'flex' : 'none';
+  const ageBtns = document.getElementById('age-buttons');
+  if (ageBtns) ageBtns.style.display = currentView === 'age' ? 'flex' : 'none';
 
   // Update sidebar header
   if (currentView === 'race') {
     document.getElementById('sidebar-candidate').textContent = '🌍 Race Demographics';
+  } else if (currentView === 'age') {
+    document.getElementById('sidebar-candidate').textContent = '👶 Age Demographics';
   } else {
     document.getElementById('sidebar-candidate').textContent = '🗳️ ' + cand().name;
   }
 
   // Update toggle button label (show the NEXT view)
   const nextView = views[(idx + 2) % views.length];
-  const nextLabels = { delacruz: 'De La Cruz', stein: 'Stein', race: 'Race' };
+  const nextLabels = { delacruz: 'De La Cruz', stein: 'Stein', race: 'Race', age: 'Age' };
   document.getElementById('toggle-label').textContent = nextLabels[nextView];
 
   // Update page title
   if (currentView === 'race') {
     document.title = 'Race Demographics — MA Census Tracts';
+  } else if (currentView === 'age') {
+    document.title = 'Age Demographics — MA Census Tracts';
   } else {
     document.title = cand().shortName + ' — 2024 MA Presidential Election Results';
   }
@@ -797,6 +828,7 @@ function cycleView() {
     delacruz: 'Switch to PSL (Claudia De La Cruz)',
     stein: 'Switch to Green Party (Jill Stein)',
     race: 'Switch to Race Demographics',
+    age: 'Switch to Age Demographics',
   };
   document.getElementById('candidate-toggle').title = nextTitles[nextView];
 
@@ -845,6 +877,13 @@ function updateLegend() {
     label0 = '0%';
     labelMax = rc.maxPct + '%+';
     gradient = 'linear-gradient(to right, #f0f6ff, #bdd7ff, #6baeff, #3182ff, #1051d6, #083089)';
+  } else if (currentView === 'age') {
+    const ac = ageConfig();
+    title = ac.label;
+    max = ac.maxPct;
+    label0 = '0%';
+    labelMax = ac.maxPct + '%+';
+    gradient = 'linear-gradient(to right, #fff5eb, #fed7aa, #fb923c, #ea580c, #c2410c, #7c2d12)';
   } else if (currentView === 'stein') {
     const c = cand();
     title = c.legendTitle;
@@ -960,10 +999,11 @@ function toggleFill() {
     grad.style.opacity = '0.3';
   }
 
-  // Reset all layers — styleFeature/vtdStyle/tractStyle now respect fillVisible
+  // Reset all layers — styleFeature/vtdStyle/tractStyle/ageStyle now respect fillVisible
   if (geoLayer) geoLayer.eachLayer(l => geoLayer.resetStyle(l));
   if (vtdLayer) vtdLayer.eachLayer(l => vtdLayer.resetStyle(l));
   if (tractLayer) tractLayer.eachLayer(l => tractLayer.resetStyle(l));
+  if (ageLayer) ageLayer.eachLayer(l => ageLayer.resetStyle(l));
 
   // Re-apply selection highlight
   if (selectedTown) {
@@ -978,6 +1018,7 @@ function toggleFill() {
     }
     if (vtdLayer && MAP.hasLayer(vtdLayer)) vtdLayer.bringToFront();
     if (tractLayer && MAP.hasLayer(tractLayer)) tractLayer.bringToFront();
+    if (ageLayer && MAP.hasLayer(ageLayer)) ageLayer.bringToFront();
   }
 
   // Re-apply ward highlight
@@ -1003,6 +1044,18 @@ function colorScale(pct) {
       [0.6,  [49,  130, 255]],
       [0.8,  [8,   81,  214]],
       [1.0,  [8,   48,  137]],
+    ];
+  } else if (currentView === 'age') {
+    // Warm orange/amber sequential scale for age demographics
+    const ac = ageConfig();
+    maxPct = ac.maxPct;
+    stops = [
+      [0,    [255, 245, 235]],
+      [0.2,  [254, 215, 170]],
+      [0.4,  [251, 146, 60]],
+      [0.6,  [234, 88,  12]],
+      [0.8,  [194, 65,  12]],
+      [1.0,  [124, 45,  18]],
     ];
   } else {
     // Purple gradient for PSL, green gradient for Green Party
@@ -1044,6 +1097,10 @@ function styleFeature(feature) {
     // Look up town-level race aggregation
     const raceData = window.townRaceData ? window.townRaceData[name] : null;
     pct = raceData ? (raceData[raceMetric] || 0) : 0;
+  } else if (currentView === 'age') {
+    // Look up town-level age aggregation
+    const ageData = window.townAgeData ? window.townAgeData[name] : null;
+    pct = ageData ? (ageData[ageMetric] || 0) : 0;
   } else {
     const town = window.townByGeoName ? window.townByGeoName[name] : null;
     pct = town ? (town[cand().pctKey] || 0) : 0;
@@ -1259,6 +1316,139 @@ async function loadTractRaceGeoJSON() {
   }
 }
 
+// ── Census Tract / Age layer ──
+function ageStyle(feature) {
+  const p = feature.properties;
+  const pct = p[ageMetric] || 0;
+  return {
+    fillColor: colorScale(pct),
+    weight: fillVisible ? 0.3 : 0.5,
+    opacity: fillVisible ? 0.5 : 0.7,
+    color: fillVisible ? '#775544' : '#aa8866',
+    fillOpacity: fillVisible ? 0.7 : 0,
+    dashArray: null,
+  };
+}
+
+function ageTooltip(feature, layer) {
+  if (isMobile()) return;
+  const p = feature.properties;
+  layer.unbindTooltip();
+  layer.bindTooltip(
+    `<div class="maptip" style="font-size:0.72rem;max-width:200px;">
+      <strong>${p.namelsad || 'Census Tract ' + p.tract}</strong><br>
+      <span style="color:#999;">${p.town || ''}</span><br>
+      <span style="color:#e8a87c;">Under 18: ${(p.under18_pct || 0).toFixed(1)}%</span><br>
+      <span style="color:#d4956b;">18-24: ${(p.age18_24_pct || 0).toFixed(1)}%</span><br>
+      <span style="color:#c0845b;">25-34: ${(p.age25_34_pct || 0).toFixed(1)}%</span><br>
+      <span style="color:#ad734c;">35-44: ${(p.age35_44_pct || 0).toFixed(1)}%</span><br>
+      <span style="color:#9a633e;">45-54: ${(p.age45_54_pct || 0).toFixed(1)}%</span><br>
+      <span style="color:#87532f;">55-64: ${(p.age55_64_pct || 0).toFixed(1)}%</span><br>
+      <span style="color:#724120;">65+: ${(p.age65plus_pct || 0).toFixed(1)}%</span><br>
+      <span style="color:#888;">Pop: ${(p.total_pop || 0).toLocaleString()}</span>
+    </div>`,
+    { sticky: true, direction: 'top', offset: [0, -6] }
+  );
+}
+
+function ageClick(feature, layer) {
+  layer.on('click', () => {
+    const p = feature.properties;
+    if (isMobile()) {
+      layer.bindPopup(
+        `<div style="font-family:system-ui,sans-serif;font-size:12px;line-height:1.5;min-width:160px;">
+          <strong style="font-size:13px;">${p.namelsad || 'Census Tract ' + p.tract}</strong><br>
+          <span style="color:#999;">${p.town || ''}</span><br>
+          Under 18: <b>${(p.under18_pct || 0).toFixed(1)}%</b><br>
+          18-24: <b>${(p.age18_24_pct || 0).toFixed(1)}%</b><br>
+          25-34: <b>${(p.age25_34_pct || 0).toFixed(1)}%</b><br>
+          35-44: <b>${(p.age35_44_pct || 0).toFixed(1)}%</b><br>
+          45-54: <b>${(p.age45_54_pct || 0).toFixed(1)}%</b><br>
+          55-64: <b>${(p.age55_64_pct || 0).toFixed(1)}%</b><br>
+          65+: <b>${(p.age65plus_pct || 0).toFixed(1)}%</b><br>
+          <span style="color:#888;">Total pop: ${(p.total_pop || 0).toLocaleString()}</span>
+        </div>`,
+        { closeButton: true, autoClose: true, closeOnClick: true }
+      ).openPopup();
+    }
+  });
+}
+
+async function loadTractAgeGeoJSON() {
+  try {
+    const geojson = await fetch('data/ma_tracts_age.geojson').then(r => r.json());
+    window.tractAgeCount = geojson.features.length;
+
+    // Aggregate tract age data to towns (population-weighted)
+    const townAgeData = {};
+    let statewideTotalPop = 0;
+
+    const ageKeys = ['under18_pct', 'age18_24_pct', 'age25_34_pct', 'age35_44_pct', 'age45_54_pct', 'age55_64_pct', 'age65plus_pct'];
+
+    for (const f of geojson.features) {
+      const p = f.properties;
+      const town = p.town || '';
+      const pop = p.total_pop || 0;
+      statewideTotalPop += pop;
+
+      if (town) {
+        if (!townAgeData[town]) {
+          townAgeData[town] = { total_pop: 0 };
+          for (const key of ageKeys) { townAgeData[town][key] = 0; }
+        }
+        townAgeData[town].total_pop += pop;
+        for (const key of ageKeys) {
+          townAgeData[town][key] += (p[key] || 0) * pop;
+        }
+      }
+    }
+
+    // Compute weighted percentages for each town
+    for (const [town, data] of Object.entries(townAgeData)) {
+      if (data.total_pop > 0) {
+        for (const key of ageKeys) {
+          data[key] = +(data[key] / data.total_pop).toFixed(1);
+        }
+      }
+    }
+    window.townAgeData = townAgeData;
+
+    // Compute statewide age percentages
+    const sv = {};
+    for (const key of ageKeys) {
+      let weightedSum = 0;
+      for (const f of geojson.features) {
+        const p = f.properties;
+        weightedSum += (p[key] || 0) * (p.total_pop || 0);
+      }
+      sv[key] = statewideTotalPop > 0 ? +(weightedSum / statewideTotalPop).toFixed(1) : 0;
+    }
+    sv.total_pop = statewideTotalPop;
+    window.statewideAgeData = sv;
+
+    // Build a lookup from normalized town name to age data
+    const normTownAgeData = {};
+    for (const [town, data] of Object.entries(townAgeData)) {
+      const normName = normalizeName(town);
+      normTownAgeData[normName] = data;
+    }
+    window.townAgeData = Object.assign(normTownAgeData, window.townAgeData);
+
+    ageLayer = L.geoJSON(geojson, {
+      style: ageStyle,
+      onEachFeature: (feature, layer) => {
+        ageTooltip(feature, layer);
+        ageClick(feature, layer);
+      },
+    });
+    // Don't add to map yet — only at high zoom and only in age view
+    console.log(`Loaded ${geojson.features.length} census tract age boundaries (shown at zoom ≥ ${VTD_ZOOM_THRESHOLD} in age view)`);
+    console.log(`  Aggregated age data for ${Object.keys(townAgeData).length} towns`);
+  } catch (e) {
+    console.warn('Census tract age layer not available (run download_tracts_age.py first):', e.message);
+  }
+}
+
 // Zoom handler: show/hide VTD precinct layer or tract layer
 function updateVTDLayer() {
   const hint = document.getElementById('zoom-hint');
@@ -1274,16 +1464,49 @@ function updateVTDLayer() {
     if (highZoom) {
       if (!MAP.hasLayer(tractLayer)) {
         tractLayer.addTo(MAP);
+        tractLayer.setStyle(tractStyle);
+        tractLayer.eachLayer(layer => { tractTooltip(layer.feature, layer); });
         if (geoLayer) geoLayer.setStyle({ weight: 1.5, opacity: 0.9, color: '#5a5a7a' });
       }
-      // Ensure VTD layer is hidden in race view
+      // Ensure VTD layer and age tract layer are hidden in race view
       if (vtdLayer && MAP.hasLayer(vtdLayer)) {
         MAP.removeLayer(vtdLayer);
+      }
+      if (ageLayer && MAP.hasLayer(ageLayer)) {
+        MAP.removeLayer(ageLayer);
       }
       if (hint) hint.style.display = 'none';
     } else {
       if (MAP.hasLayer(tractLayer)) {
         MAP.removeLayer(tractLayer);
+        if (geoLayer) geoLayer.setStyle({ weight: 1, opacity: 0.7, color: '#3a3a5a' });
+      }
+      if (hint) hint.style.display = 'block';
+    }
+  } else if (currentView === 'age') {
+    // Age view: manage age tract layer at high zoom
+    if (!ageLayer) {
+      if (hint) hint.style.display = 'none';
+      return;
+    }
+    if (highZoom) {
+      if (!MAP.hasLayer(ageLayer)) {
+        ageLayer.addTo(MAP);
+        ageLayer.setStyle(ageStyle);
+        ageLayer.eachLayer(layer => { ageTooltip(layer.feature, layer); });
+        if (geoLayer) geoLayer.setStyle({ weight: 1.5, opacity: 0.9, color: '#5a5a7a' });
+      }
+      // Ensure VTD layer and race tract layer are hidden in age view
+      if (vtdLayer && MAP.hasLayer(vtdLayer)) {
+        MAP.removeLayer(vtdLayer);
+      }
+      if (tractLayer && MAP.hasLayer(tractLayer)) {
+        MAP.removeLayer(tractLayer);
+      }
+      if (hint) hint.style.display = 'none';
+    } else {
+      if (MAP.hasLayer(ageLayer)) {
+        MAP.removeLayer(ageLayer);
         if (geoLayer) geoLayer.setStyle({ weight: 1, opacity: 0.7, color: '#3a3a5a' });
       }
       if (hint) hint.style.display = 'block';
@@ -1294,9 +1517,12 @@ function updateVTDLayer() {
       if (hint) hint.style.display = 'none';
       return;
     }
-    // Ensure tract layer is hidden in election views
+    // Ensure tract layers are hidden in election views
     if (tractLayer && MAP.hasLayer(tractLayer)) {
       MAP.removeLayer(tractLayer);
+    }
+    if (ageLayer && MAP.hasLayer(ageLayer)) {
+      MAP.removeLayer(ageLayer);
     }
     if (highZoom) {
       if (!MAP.hasLayer(vtdLayer)) {
@@ -1360,6 +1586,20 @@ function updateSummaryStats() {
     document.querySelector('#stat-dlpct').nextElementSibling.textContent = raceConfig().short;
     document.querySelector('#stat-towns').nextElementSibling.textContent = 'Towns';
     document.querySelector('#stat-precincts').nextElementSibling.textContent = 'Tracts';
+  } else if (currentView === 'age') {
+    // Show statewide age demographics from ACS
+    const ageData = window.statewideAgeData;
+    if (ageData) {
+      document.getElementById('stat-total').textContent = ageData.total_pop ? ageData.total_pop.toLocaleString() : '—';
+      document.getElementById('stat-dlpct').textContent = (ageData[ageMetric] || 0).toFixed(1) + '%';
+      document.getElementById('stat-towns').textContent = '351';  // MA has 351 towns
+    }
+    document.getElementById('stat-precincts').textContent = window.tractAgeCount ? window.tractAgeCount.toLocaleString() : '—';
+
+    // Update stat labels for age view
+    document.querySelector('#stat-dlpct').nextElementSibling.textContent = ageConfig().short;
+    document.querySelector('#stat-towns').nextElementSibling.textContent = 'Towns';
+    document.querySelector('#stat-precincts').nextElementSibling.textContent = 'Tracts';
   } else {
     const c = cand();
     document.getElementById('stat-total').textContent = summaryData[c.summaryVotesKey].toLocaleString();
@@ -1401,6 +1641,16 @@ function bindTownTooltip(feature, layer) {
       layer.unbindTooltip();
       layer.bindTooltip(
         `<div class="maptip"><strong>${name}</strong><br>${rc.short}: ${raceData[raceMetric] ? raceData[raceMetric].toFixed(1) + '%' : 'N/A'}<br>Total pop: ${raceData.total_pop ? raceData.total_pop.toLocaleString() : 'N/A'}</div>`,
+        { sticky: true, direction: 'top', offset: [0, -8] }
+      );
+    }
+  } else if (currentView === 'age') {
+    const ageData = window.townAgeData ? window.townAgeData[name] : null;
+    if (ageData) {
+      const ac = ageConfig();
+      layer.unbindTooltip();
+      layer.bindTooltip(
+        `<div class="maptip"><strong>${name}</strong><br>${ac.short}: ${ageData[ageMetric] ? ageData[ageMetric].toFixed(1) + '%' : 'N/A'}<br>Total pop: ${ageData.total_pop ? ageData.total_pop.toLocaleString() : 'N/A'}</div>`,
         { sticky: true, direction: 'top', offset: [0, -8] }
       );
     }
@@ -1558,6 +1808,54 @@ function renderTownDetail(name) {
           <div class="town-stat">
             <div class="val">${raceData.multi_pct}%</div>
             <div class="lbl">Multi (NH)</div>
+          </div>
+        </div>
+      </div>
+    `;
+    document.getElementById('detail-content').innerHTML = html;
+    return;
+  }
+
+  if (currentView === 'age') {
+    // Age view: show age distribution
+    const geoName = normalizeName(name);
+    const ageData = window.townAgeData ? (window.townAgeData[geoName] || window.townAgeData[name]) : null;
+    if (!ageData) {
+      document.getElementById('detail-content').innerHTML = `<div class="town-card"><h2>${name}</h2><p>No demographic data available.</p></div>`;
+      return;
+    }
+    let html = `
+      <div class="town-card">
+        <h2>${name}</h2>
+        <span class="rank-badge">Total population: ${ageData.total_pop.toLocaleString()}</span>
+        <div class="town-stats" style="grid-template-columns: 1fr 1fr 1fr;">
+          <div class="town-stat">
+            <div class="val">${ageData.under18_pct}%</div>
+            <div class="lbl">Under 18</div>
+          </div>
+          <div class="town-stat">
+            <div class="val">${ageData.age18_24_pct}%</div>
+            <div class="lbl">18-24</div>
+          </div>
+          <div class="town-stat">
+            <div class="val">${ageData.age25_34_pct}%</div>
+            <div class="lbl">25-34</div>
+          </div>
+          <div class="town-stat">
+            <div class="val">${ageData.age35_44_pct}%</div>
+            <div class="lbl">35-44</div>
+          </div>
+          <div class="town-stat">
+            <div class="val">${ageData.age45_54_pct}%</div>
+            <div class="lbl">45-54</div>
+          </div>
+          <div class="town-stat">
+            <div class="val">${ageData.age55_64_pct}%</div>
+            <div class="lbl">55-64</div>
+          </div>
+          <div class="town-stat">
+            <div class="val">${ageData.age65plus_pct}%</div>
+            <div class="lbl">65+</div>
           </div>
         </div>
       </div>
@@ -1822,6 +2120,16 @@ searchInput.addEventListener('input', () => {
         <span class="pct">${raceConfig().short}: ${pctStr}</span>
       </div>`;
     }).join('');
+  } else if (currentView === 'age') {
+    searchResults.innerHTML = matches.map(t => {
+      const geoName = normalizeName(t.town);
+      const ad = window.townAgeData ? (window.townAgeData[geoName] || window.townAgeData[t.town]) : null;
+      const pctStr = ad && ad[ageMetric] != null ? ad[ageMetric] + '%' : '—';
+      return `<div class="search-item" data-town="${t.town}">
+        <span>${t.town}</span>
+        <span class="pct">${ageConfig().short}: ${pctStr}</span>
+      </div>`;
+    }).join('');
   } else {
     const c = cand();
     searchResults.innerHTML = matches.map(t =>
@@ -1885,11 +2193,40 @@ document.querySelectorAll('.race-btn').forEach(btn => {
         if (layer.feature) bindTownTooltip(layer.feature, layer);
       });
     }
-    if (tractLayer && MAP.hasLayer(tractLayer)) {
+    if (tractLayer) {
       tractLayer.setStyle(tractStyle);
-      tractLayer.eachLayer(layer => {
-        tractTooltip(layer.feature, layer);
+      if (MAP.hasLayer(tractLayer)) {
+        tractLayer.eachLayer(layer => {
+          tractTooltip(layer.feature, layer);
+        });
+      }
+    }
+    if (selectedTown) renderTownDetail(selectedTown);
+  });
+});
+
+// ── Age category button handlers ──
+document.querySelectorAll('.age-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    ageMetric = btn.dataset.metric;
+    document.querySelectorAll('.age-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    // Update legend, map colors, and tooltips
+    updateLegend();
+    updateSummaryStats();
+    if (geoLayer) {
+      geoLayer.setStyle(styleFeature);
+      geoLayer.eachLayer(layer => {
+        if (layer.feature) bindTownTooltip(layer.feature, layer);
       });
+    }
+    if (ageLayer) {
+      ageLayer.setStyle(ageStyle);
+      if (MAP.hasLayer(ageLayer)) {
+        ageLayer.eachLayer(layer => {
+          ageTooltip(layer.feature, layer);
+        });
+      }
     }
     if (selectedTown) renderTownDetail(selectedTown);
   });
@@ -1901,6 +2238,7 @@ document.querySelectorAll('.race-btn').forEach(btn => {
   window.addEventListener('resize', initMobileState);
   await loadData();
   await loadTractRaceGeoJSON();
+  await loadTractAgeGeoJSON();
   await loadGeoJSON();
   await loadVTDGeoJSON();
 })();
