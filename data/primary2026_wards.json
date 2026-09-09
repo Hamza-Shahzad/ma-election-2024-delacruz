@@ -1,0 +1,5972 @@
+[
+  {
+    "town": "Abington",
+    "ward": "-",
+    "total_votes": 1795,
+    "markey": 1145,
+    "markey_pct": 63.788,
+    "moulton": 624,
+    "moulton_pct": 34.763,
+    "precincts": 5
+  },
+  {
+    "town": "Acton",
+    "ward": "-",
+    "total_votes": 3906,
+    "markey": 2465,
+    "markey_pct": 63.108,
+    "moulton": 1412,
+    "moulton_pct": 36.15,
+    "precincts": 8
+  },
+  {
+    "town": "Acushnet",
+    "ward": "-",
+    "total_votes": 920,
+    "markey": 614,
+    "markey_pct": 66.739,
+    "moulton": 289,
+    "moulton_pct": 31.413,
+    "precincts": 4
+  },
+  {
+    "town": "Adams",
+    "ward": "-",
+    "total_votes": 1361,
+    "markey": 879,
+    "markey_pct": 64.585,
+    "moulton": 455,
+    "moulton_pct": 33.431,
+    "precincts": 5
+  },
+  {
+    "town": "Agawam",
+    "ward": "-",
+    "total_votes": 2940,
+    "markey": 1740,
+    "markey_pct": 59.184,
+    "moulton": 1139,
+    "moulton_pct": 38.741,
+    "precincts": 8
+  },
+  {
+    "town": "Alford",
+    "ward": "-",
+    "total_votes": 118,
+    "markey": 90,
+    "markey_pct": 76.271,
+    "moulton": 27,
+    "moulton_pct": 22.881,
+    "precincts": 1
+  },
+  {
+    "town": "Amesbury",
+    "ward": "-",
+    "total_votes": 2891,
+    "markey": 1655,
+    "markey_pct": 57.247,
+    "moulton": 1205,
+    "moulton_pct": 41.681,
+    "precincts": 6
+  },
+  {
+    "town": "Amherst",
+    "ward": "-",
+    "total_votes": 3920,
+    "markey": 3000,
+    "markey_pct": 76.531,
+    "moulton": 881,
+    "moulton_pct": 22.474,
+    "precincts": 10
+  },
+  {
+    "town": "Andover",
+    "ward": "-",
+    "total_votes": 6067,
+    "markey": 3114,
+    "markey_pct": 51.327,
+    "moulton": 2861,
+    "moulton_pct": 47.157,
+    "precincts": 11
+  },
+  {
+    "town": "Aquinnah",
+    "ward": "-",
+    "total_votes": 116,
+    "markey": 80,
+    "markey_pct": 68.966,
+    "moulton": 35,
+    "moulton_pct": 30.172,
+    "precincts": 1
+  },
+  {
+    "town": "Arlington",
+    "ward": "-",
+    "total_votes": 11386,
+    "markey": 7907,
+    "markey_pct": 69.445,
+    "moulton": 3336,
+    "moulton_pct": 29.299,
+    "precincts": 21
+  },
+  {
+    "town": "Ashburnham",
+    "ward": "-",
+    "total_votes": 720,
+    "markey": 477,
+    "markey_pct": 66.25,
+    "moulton": 232,
+    "moulton_pct": 32.222,
+    "precincts": 2
+  },
+  {
+    "town": "Ashby",
+    "ward": "-",
+    "total_votes": 346,
+    "markey": 227,
+    "markey_pct": 65.607,
+    "moulton": 116,
+    "moulton_pct": 33.526,
+    "precincts": 1
+  },
+  {
+    "town": "Ashfield",
+    "ward": "-",
+    "total_votes": 486,
+    "markey": 369,
+    "markey_pct": 75.926,
+    "moulton": 115,
+    "moulton_pct": 23.663,
+    "precincts": 1
+  },
+  {
+    "town": "Ashland",
+    "ward": "-",
+    "total_votes": 2701,
+    "markey": 1788,
+    "markey_pct": 66.198,
+    "moulton": 888,
+    "moulton_pct": 32.877,
+    "precincts": 6
+  },
+  {
+    "town": "Athol",
+    "ward": "-",
+    "total_votes": 994,
+    "markey": 672,
+    "markey_pct": 67.606,
+    "moulton": 313,
+    "moulton_pct": 31.489,
+    "precincts": 3
+  },
+  {
+    "town": "Attleboro",
+    "ward": "1",
+    "total_votes": 642,
+    "markey": 385,
+    "markey_pct": 59.969,
+    "moulton": 251,
+    "moulton_pct": 39.097,
+    "precincts": 2
+  },
+  {
+    "town": "Attleboro",
+    "ward": "2",
+    "total_votes": 787,
+    "markey": 482,
+    "markey_pct": 61.245,
+    "moulton": 298,
+    "moulton_pct": 37.865,
+    "precincts": 2
+  },
+  {
+    "town": "Attleboro",
+    "ward": "3",
+    "total_votes": 798,
+    "markey": 522,
+    "markey_pct": 65.414,
+    "moulton": 270,
+    "moulton_pct": 33.835,
+    "precincts": 2
+  },
+  {
+    "town": "Attleboro",
+    "ward": "4",
+    "total_votes": 780,
+    "markey": 466,
+    "markey_pct": 59.744,
+    "moulton": 305,
+    "moulton_pct": 39.103,
+    "precincts": 2
+  },
+  {
+    "town": "Attleboro",
+    "ward": "5",
+    "total_votes": 636,
+    "markey": 404,
+    "markey_pct": 63.522,
+    "moulton": 221,
+    "moulton_pct": 34.748,
+    "precincts": 2
+  },
+  {
+    "town": "Attleboro",
+    "ward": "6",
+    "total_votes": 747,
+    "markey": 503,
+    "markey_pct": 67.336,
+    "moulton": 238,
+    "moulton_pct": 31.861,
+    "precincts": 2
+  },
+  {
+    "town": "Auburn",
+    "ward": "-",
+    "total_votes": 2026,
+    "markey": 1359,
+    "markey_pct": 67.078,
+    "moulton": 636,
+    "moulton_pct": 31.392,
+    "precincts": 5
+  },
+  {
+    "town": "Avon",
+    "ward": "-",
+    "total_votes": 531,
+    "markey": 349,
+    "markey_pct": 65.725,
+    "moulton": 164,
+    "moulton_pct": 30.885,
+    "precincts": 1
+  },
+  {
+    "town": "Ayer",
+    "ward": "-",
+    "total_votes": 1049,
+    "markey": 721,
+    "markey_pct": 68.732,
+    "moulton": 318,
+    "moulton_pct": 30.315,
+    "precincts": 3
+  },
+  {
+    "town": "Barnstable",
+    "ward": "-",
+    "total_votes": 7393,
+    "markey": 4284,
+    "markey_pct": 57.947,
+    "moulton": 2900,
+    "moulton_pct": 39.226,
+    "precincts": 13
+  },
+  {
+    "town": "Barre",
+    "ward": "-",
+    "total_votes": 546,
+    "markey": 357,
+    "markey_pct": 65.385,
+    "moulton": 181,
+    "moulton_pct": 33.15,
+    "precincts": 2
+  },
+  {
+    "town": "Becket",
+    "ward": "-",
+    "total_votes": 362,
+    "markey": 219,
+    "markey_pct": 60.497,
+    "moulton": 141,
+    "moulton_pct": 38.95,
+    "precincts": 1
+  },
+  {
+    "town": "Bedford",
+    "ward": "-",
+    "total_votes": 2702,
+    "markey": 1428,
+    "markey_pct": 52.85,
+    "moulton": 1236,
+    "moulton_pct": 45.744,
+    "precincts": 5
+  },
+  {
+    "town": "Belchertown",
+    "ward": "-",
+    "total_votes": 2954,
+    "markey": 1884,
+    "markey_pct": 63.778,
+    "moulton": 1011,
+    "moulton_pct": 34.225,
+    "precincts": 4
+  },
+  {
+    "town": "Bellingham",
+    "ward": "-",
+    "total_votes": 1887,
+    "markey": 1236,
+    "markey_pct": 65.501,
+    "moulton": 616,
+    "moulton_pct": 32.644,
+    "precincts": 5
+  },
+  {
+    "town": "Belmont",
+    "ward": "-",
+    "total_votes": 5988,
+    "markey": 3609,
+    "markey_pct": 60.271,
+    "moulton": 2252,
+    "moulton_pct": 37.609,
+    "precincts": 8
+  },
+  {
+    "town": "Berkley",
+    "ward": "-",
+    "total_votes": 509,
+    "markey": 324,
+    "markey_pct": 63.654,
+    "moulton": 181,
+    "moulton_pct": 35.56,
+    "precincts": 2
+  },
+  {
+    "town": "Berlin",
+    "ward": "-",
+    "total_votes": 621,
+    "markey": 440,
+    "markey_pct": 70.853,
+    "moulton": 175,
+    "moulton_pct": 28.18,
+    "precincts": 1
+  },
+  {
+    "town": "Bernardston",
+    "ward": "-",
+    "total_votes": 363,
+    "markey": 244,
+    "markey_pct": 67.218,
+    "moulton": 113,
+    "moulton_pct": 31.129,
+    "precincts": 1
+  },
+  {
+    "town": "Beverly",
+    "ward": "1",
+    "total_votes": 1314,
+    "markey": 742,
+    "markey_pct": 56.469,
+    "moulton": 564,
+    "moulton_pct": 42.922,
+    "precincts": 2
+  },
+  {
+    "town": "Beverly",
+    "ward": "2",
+    "total_votes": 1387,
+    "markey": 869,
+    "markey_pct": 62.653,
+    "moulton": 503,
+    "moulton_pct": 36.265,
+    "precincts": 2
+  },
+  {
+    "town": "Beverly",
+    "ward": "3",
+    "total_votes": 1015,
+    "markey": 593,
+    "markey_pct": 58.424,
+    "moulton": 409,
+    "moulton_pct": 40.296,
+    "precincts": 2
+  },
+  {
+    "town": "Beverly",
+    "ward": "4",
+    "total_votes": 1394,
+    "markey": 709,
+    "markey_pct": 50.861,
+    "moulton": 669,
+    "moulton_pct": 47.991,
+    "precincts": 2
+  },
+  {
+    "town": "Beverly",
+    "ward": "5",
+    "total_votes": 1205,
+    "markey": 605,
+    "markey_pct": 50.207,
+    "moulton": 588,
+    "moulton_pct": 48.797,
+    "precincts": 2
+  },
+  {
+    "town": "Beverly",
+    "ward": "6",
+    "total_votes": 1509,
+    "markey": 673,
+    "markey_pct": 44.599,
+    "moulton": 814,
+    "moulton_pct": 53.943,
+    "precincts": 2
+  },
+  {
+    "town": "Billerica",
+    "ward": "-",
+    "total_votes": 4977,
+    "markey": 3040,
+    "markey_pct": 61.081,
+    "moulton": 1867,
+    "moulton_pct": 37.513,
+    "precincts": 12
+  },
+  {
+    "town": "Blackstone",
+    "ward": "-",
+    "total_votes": 708,
+    "markey": 462,
+    "markey_pct": 65.254,
+    "moulton": 242,
+    "moulton_pct": 34.181,
+    "precincts": 3
+  },
+  {
+    "town": "Blandford",
+    "ward": "-",
+    "total_votes": 163,
+    "markey": 105,
+    "markey_pct": 64.417,
+    "moulton": 56,
+    "moulton_pct": 34.356,
+    "precincts": 1
+  },
+  {
+    "town": "Bolton",
+    "ward": "-",
+    "total_votes": 982,
+    "markey": 596,
+    "markey_pct": 60.692,
+    "moulton": 373,
+    "moulton_pct": 37.984,
+    "precincts": 1
+  },
+  {
+    "town": "Boston",
+    "ward": "1",
+    "total_votes": 2989,
+    "markey": 2230,
+    "markey_pct": 74.607,
+    "moulton": 689,
+    "moulton_pct": 23.051,
+    "precincts": 15
+  },
+  {
+    "town": "Boston",
+    "ward": "2",
+    "total_votes": 2653,
+    "markey": 1511,
+    "markey_pct": 56.954,
+    "moulton": 1037,
+    "moulton_pct": 39.088,
+    "precincts": 8
+  },
+  {
+    "town": "Boston",
+    "ward": "3",
+    "total_votes": 5287,
+    "markey": 3336,
+    "markey_pct": 63.098,
+    "moulton": 1789,
+    "moulton_pct": 33.838,
+    "precincts": 18
+  },
+  {
+    "town": "Boston",
+    "ward": "4",
+    "total_votes": 2671,
+    "markey": 1743,
+    "markey_pct": 65.256,
+    "moulton": 875,
+    "moulton_pct": 32.759,
+    "precincts": 12
+  },
+  {
+    "town": "Boston",
+    "ward": "5",
+    "total_votes": 4192,
+    "markey": 2550,
+    "markey_pct": 60.83,
+    "moulton": 1564,
+    "moulton_pct": 37.309,
+    "precincts": 15
+  },
+  {
+    "town": "Boston",
+    "ward": "6",
+    "total_votes": 3389,
+    "markey": 1707,
+    "markey_pct": 50.369,
+    "moulton": 1387,
+    "moulton_pct": 40.927,
+    "precincts": 13
+  },
+  {
+    "town": "Boston",
+    "ward": "7",
+    "total_votes": 2401,
+    "markey": 1417,
+    "markey_pct": 59.017,
+    "moulton": 758,
+    "moulton_pct": 31.57,
+    "precincts": 10
+  },
+  {
+    "town": "Boston",
+    "ward": "8",
+    "total_votes": 1290,
+    "markey": 996,
+    "markey_pct": 77.209,
+    "moulton": 263,
+    "moulton_pct": 20.388,
+    "precincts": 7
+  },
+  {
+    "town": "Boston",
+    "ward": "9",
+    "total_votes": 1777,
+    "markey": 1385,
+    "markey_pct": 77.94,
+    "moulton": 347,
+    "moulton_pct": 19.527,
+    "precincts": 7
+  },
+  {
+    "town": "Boston",
+    "ward": "10",
+    "total_votes": 2137,
+    "markey": 1751,
+    "markey_pct": 81.937,
+    "moulton": 342,
+    "moulton_pct": 16.004,
+    "precincts": 10
+  },
+  {
+    "town": "Boston",
+    "ward": "11",
+    "total_votes": 3718,
+    "markey": 3057,
+    "markey_pct": 82.222,
+    "moulton": 599,
+    "moulton_pct": 16.111,
+    "precincts": 10
+  },
+  {
+    "town": "Boston",
+    "ward": "12",
+    "total_votes": 1639,
+    "markey": 1408,
+    "markey_pct": 85.906,
+    "moulton": 179,
+    "moulton_pct": 10.921,
+    "precincts": 9
+  },
+  {
+    "town": "Boston",
+    "ward": "13",
+    "total_votes": 2269,
+    "markey": 1680,
+    "markey_pct": 74.041,
+    "moulton": 492,
+    "moulton_pct": 21.684,
+    "precincts": 10
+  },
+  {
+    "town": "Boston",
+    "ward": "14",
+    "total_votes": 2299,
+    "markey": 1973,
+    "markey_pct": 85.82,
+    "moulton": 276,
+    "moulton_pct": 12.005,
+    "precincts": 14
+  },
+  {
+    "town": "Boston",
+    "ward": "15",
+    "total_votes": 1318,
+    "markey": 1087,
+    "markey_pct": 82.473,
+    "moulton": 175,
+    "moulton_pct": 13.278,
+    "precincts": 9
+  },
+  {
+    "town": "Boston",
+    "ward": "16",
+    "total_votes": 3778,
+    "markey": 2372,
+    "markey_pct": 62.785,
+    "moulton": 1047,
+    "moulton_pct": 27.713,
+    "precincts": 12
+  },
+  {
+    "town": "Boston",
+    "ward": "17",
+    "total_votes": 3394,
+    "markey": 2680,
+    "markey_pct": 78.963,
+    "moulton": 616,
+    "moulton_pct": 18.15,
+    "precincts": 14
+  },
+  {
+    "town": "Boston",
+    "ward": "18",
+    "total_votes": 8611,
+    "markey": 6921,
+    "markey_pct": 80.374,
+    "moulton": 1468,
+    "moulton_pct": 17.048,
+    "precincts": 23
+  },
+  {
+    "town": "Boston",
+    "ward": "19",
+    "total_votes": 6136,
+    "markey": 4700,
+    "markey_pct": 76.597,
+    "moulton": 1346,
+    "moulton_pct": 21.936,
+    "precincts": 13
+  },
+  {
+    "town": "Boston",
+    "ward": "20",
+    "total_votes": 9378,
+    "markey": 5929,
+    "markey_pct": 63.222,
+    "moulton": 3042,
+    "moulton_pct": 32.438,
+    "precincts": 21
+  },
+  {
+    "town": "Boston",
+    "ward": "21",
+    "total_votes": 4180,
+    "markey": 3395,
+    "markey_pct": 81.22,
+    "moulton": 709,
+    "moulton_pct": 16.962,
+    "precincts": 16
+  },
+  {
+    "town": "Boston",
+    "ward": "22",
+    "total_votes": 3968,
+    "markey": 3038,
+    "markey_pct": 76.562,
+    "moulton": 838,
+    "moulton_pct": 21.119,
+    "precincts": 13
+  },
+  {
+    "town": "Bourne",
+    "ward": "-",
+    "total_votes": 2901,
+    "markey": 1778,
+    "markey_pct": 61.289,
+    "moulton": 1080,
+    "moulton_pct": 37.229,
+    "precincts": 8
+  },
+  {
+    "town": "Boxborough",
+    "ward": "-",
+    "total_votes": 877,
+    "markey": 524,
+    "markey_pct": 59.749,
+    "moulton": 348,
+    "moulton_pct": 39.681,
+    "precincts": 1
+  },
+  {
+    "town": "Boxford",
+    "ward": "-",
+    "total_votes": 1398,
+    "markey": 649,
+    "markey_pct": 46.423,
+    "moulton": 734,
+    "moulton_pct": 52.504,
+    "precincts": 3
+  },
+  {
+    "town": "Boylston",
+    "ward": "-",
+    "total_votes": 753,
+    "markey": 467,
+    "markey_pct": 62.019,
+    "moulton": 282,
+    "moulton_pct": 37.45,
+    "precincts": 1
+  },
+  {
+    "town": "Braintree",
+    "ward": "-",
+    "total_votes": 4982,
+    "markey": 2973,
+    "markey_pct": 59.675,
+    "moulton": 1776,
+    "moulton_pct": 35.648,
+    "precincts": 12
+  },
+  {
+    "town": "Brewster",
+    "ward": "-",
+    "total_votes": 2475,
+    "markey": 1605,
+    "markey_pct": 64.848,
+    "moulton": 832,
+    "moulton_pct": 33.616,
+    "precincts": 3
+  },
+  {
+    "town": "Bridgewater",
+    "ward": "-",
+    "total_votes": 2600,
+    "markey": 1715,
+    "markey_pct": 65.962,
+    "moulton": 855,
+    "moulton_pct": 32.885,
+    "precincts": 9
+  },
+  {
+    "town": "Brimfield",
+    "ward": "-",
+    "total_votes": 395,
+    "markey": 242,
+    "markey_pct": 61.266,
+    "moulton": 146,
+    "moulton_pct": 36.962,
+    "precincts": 1
+  },
+  {
+    "town": "Brockton",
+    "ward": "1",
+    "total_votes": 1250,
+    "markey": 922,
+    "markey_pct": 73.76,
+    "moulton": 300,
+    "moulton_pct": 24.0,
+    "precincts": 4
+  },
+  {
+    "town": "Brockton",
+    "ward": "2",
+    "total_votes": 654,
+    "markey": 525,
+    "markey_pct": 80.275,
+    "moulton": 111,
+    "moulton_pct": 16.972,
+    "precincts": 4
+  },
+  {
+    "town": "Brockton",
+    "ward": "3",
+    "total_votes": 1050,
+    "markey": 788,
+    "markey_pct": 75.048,
+    "moulton": 232,
+    "moulton_pct": 22.095,
+    "precincts": 4
+  },
+  {
+    "town": "Brockton",
+    "ward": "4",
+    "total_votes": 1009,
+    "markey": 764,
+    "markey_pct": 75.719,
+    "moulton": 209,
+    "moulton_pct": 20.714,
+    "precincts": 4
+  },
+  {
+    "town": "Brockton",
+    "ward": "5",
+    "total_votes": 1062,
+    "markey": 821,
+    "markey_pct": 77.307,
+    "moulton": 203,
+    "moulton_pct": 19.115,
+    "precincts": 4
+  },
+  {
+    "town": "Brockton",
+    "ward": "6",
+    "total_votes": 1180,
+    "markey": 873,
+    "markey_pct": 73.983,
+    "moulton": 281,
+    "moulton_pct": 23.814,
+    "precincts": 4
+  },
+  {
+    "town": "Brockton",
+    "ward": "7",
+    "total_votes": 1094,
+    "markey": 837,
+    "markey_pct": 76.508,
+    "moulton": 219,
+    "moulton_pct": 20.018,
+    "precincts": 4
+  },
+  {
+    "town": "Brookfield",
+    "ward": "-",
+    "total_votes": 384,
+    "markey": 248,
+    "markey_pct": 64.583,
+    "moulton": 131,
+    "moulton_pct": 34.115,
+    "precincts": 1
+  },
+  {
+    "town": "Brookline",
+    "ward": "-",
+    "total_votes": 10749,
+    "markey": 6605,
+    "markey_pct": 61.448,
+    "moulton": 3979,
+    "moulton_pct": 37.017,
+    "precincts": 20
+  },
+  {
+    "town": "Buckland",
+    "ward": "-",
+    "total_votes": 425,
+    "markey": 303,
+    "markey_pct": 71.294,
+    "moulton": 113,
+    "moulton_pct": 26.588,
+    "precincts": 1
+  },
+  {
+    "town": "Burlington",
+    "ward": "-",
+    "total_votes": 3355,
+    "markey": 1922,
+    "markey_pct": 57.288,
+    "moulton": 1366,
+    "moulton_pct": 40.715,
+    "precincts": 7
+  },
+  {
+    "town": "Cambridge",
+    "ward": "1",
+    "total_votes": 845,
+    "markey": 608,
+    "markey_pct": 71.953,
+    "moulton": 217,
+    "moulton_pct": 25.68,
+    "precincts": 4
+  },
+  {
+    "town": "Cambridge",
+    "ward": "2",
+    "total_votes": 1563,
+    "markey": 1137,
+    "markey_pct": 72.745,
+    "moulton": 391,
+    "moulton_pct": 25.016,
+    "precincts": 4
+  },
+  {
+    "town": "Cambridge",
+    "ward": "3",
+    "total_votes": 1600,
+    "markey": 1258,
+    "markey_pct": 78.625,
+    "moulton": 307,
+    "moulton_pct": 19.188,
+    "precincts": 4
+  },
+  {
+    "town": "Cambridge",
+    "ward": "4",
+    "total_votes": 2353,
+    "markey": 1732,
+    "markey_pct": 73.608,
+    "moulton": 576,
+    "moulton_pct": 24.479,
+    "precincts": 4
+  },
+  {
+    "town": "Cambridge",
+    "ward": "5",
+    "total_votes": 1298,
+    "markey": 936,
+    "markey_pct": 72.111,
+    "moulton": 340,
+    "moulton_pct": 26.194,
+    "precincts": 3
+  },
+  {
+    "town": "Cambridge",
+    "ward": "6",
+    "total_votes": 2105,
+    "markey": 1458,
+    "markey_pct": 69.264,
+    "moulton": 600,
+    "moulton_pct": 28.504,
+    "precincts": 4
+  },
+  {
+    "town": "Cambridge",
+    "ward": "7",
+    "total_votes": 1589,
+    "markey": 1135,
+    "markey_pct": 71.429,
+    "moulton": 427,
+    "moulton_pct": 26.872,
+    "precincts": 4
+  },
+  {
+    "town": "Cambridge",
+    "ward": "8",
+    "total_votes": 1721,
+    "markey": 1130,
+    "markey_pct": 65.66,
+    "moulton": 572,
+    "moulton_pct": 33.236,
+    "precincts": 3
+  },
+  {
+    "town": "Cambridge",
+    "ward": "9",
+    "total_votes": 2872,
+    "markey": 1866,
+    "markey_pct": 64.972,
+    "moulton": 959,
+    "moulton_pct": 33.391,
+    "precincts": 3
+  },
+  {
+    "town": "Cambridge",
+    "ward": "10",
+    "total_votes": 3139,
+    "markey": 2195,
+    "markey_pct": 69.927,
+    "moulton": 876,
+    "moulton_pct": 27.907,
+    "precincts": 4
+  },
+  {
+    "town": "Cambridge",
+    "ward": "11",
+    "total_votes": 1951,
+    "markey": 1464,
+    "markey_pct": 75.038,
+    "moulton": 432,
+    "moulton_pct": 22.142,
+    "precincts": 5
+  },
+  {
+    "town": "Canton",
+    "ward": "-",
+    "total_votes": 4955,
+    "markey": 2647,
+    "markey_pct": 53.421,
+    "moulton": 1953,
+    "moulton_pct": 39.415,
+    "precincts": 7
+  },
+  {
+    "town": "Carlisle",
+    "ward": "-",
+    "total_votes": 1112,
+    "markey": 641,
+    "markey_pct": 57.644,
+    "moulton": 464,
+    "moulton_pct": 41.727,
+    "precincts": 1
+  },
+  {
+    "town": "Carver",
+    "ward": "-",
+    "total_votes": 1254,
+    "markey": 841,
+    "markey_pct": 67.065,
+    "moulton": 392,
+    "moulton_pct": 31.26,
+    "precincts": 3
+  },
+  {
+    "town": "Charlemont",
+    "ward": "-",
+    "total_votes": 233,
+    "markey": 169,
+    "markey_pct": 72.532,
+    "moulton": 64,
+    "moulton_pct": 27.468,
+    "precincts": 1
+  },
+  {
+    "town": "Charlton",
+    "ward": "-",
+    "total_votes": 1266,
+    "markey": 819,
+    "markey_pct": 64.692,
+    "moulton": 434,
+    "moulton_pct": 34.281,
+    "precincts": 5
+  },
+  {
+    "town": "Chatham",
+    "ward": "-",
+    "total_votes": 1437,
+    "markey": 831,
+    "markey_pct": 57.829,
+    "moulton": 593,
+    "moulton_pct": 41.267,
+    "precincts": 2
+  },
+  {
+    "town": "Chelmsford",
+    "ward": "-",
+    "total_votes": 6010,
+    "markey": 3725,
+    "markey_pct": 61.98,
+    "moulton": 2213,
+    "moulton_pct": 36.822,
+    "precincts": 13
+  },
+  {
+    "town": "Chelsea",
+    "ward": "1",
+    "total_votes": 287,
+    "markey": 228,
+    "markey_pct": 79.443,
+    "moulton": 51,
+    "moulton_pct": 17.77,
+    "precincts": 4
+  },
+  {
+    "town": "Chelsea",
+    "ward": "2",
+    "total_votes": 547,
+    "markey": 394,
+    "markey_pct": 72.029,
+    "moulton": 133,
+    "moulton_pct": 24.314,
+    "precincts": 4
+  },
+  {
+    "town": "Chelsea",
+    "ward": "3",
+    "total_votes": 444,
+    "markey": 348,
+    "markey_pct": 78.378,
+    "moulton": 84,
+    "moulton_pct": 18.919,
+    "precincts": 4
+  },
+  {
+    "town": "Chelsea",
+    "ward": "4",
+    "total_votes": 571,
+    "markey": 392,
+    "markey_pct": 68.651,
+    "moulton": 162,
+    "moulton_pct": 28.371,
+    "precincts": 4
+  },
+  {
+    "town": "Cheshire",
+    "ward": "-",
+    "total_votes": 482,
+    "markey": 310,
+    "markey_pct": 64.315,
+    "moulton": 155,
+    "moulton_pct": 32.158,
+    "precincts": 1
+  },
+  {
+    "town": "Chester",
+    "ward": "-",
+    "total_votes": 113,
+    "markey": 67,
+    "markey_pct": 59.292,
+    "moulton": 45,
+    "moulton_pct": 39.823,
+    "precincts": 1
+  },
+  {
+    "town": "Chesterfield",
+    "ward": "-",
+    "total_votes": 236,
+    "markey": 158,
+    "markey_pct": 66.949,
+    "moulton": 74,
+    "moulton_pct": 31.356,
+    "precincts": 1
+  },
+  {
+    "town": "Chicopee",
+    "ward": "1",
+    "total_votes": 814,
+    "markey": 475,
+    "markey_pct": 58.354,
+    "moulton": 328,
+    "moulton_pct": 40.295,
+    "precincts": 2
+  },
+  {
+    "town": "Chicopee",
+    "ward": "2",
+    "total_votes": 480,
+    "markey": 306,
+    "markey_pct": 63.75,
+    "moulton": 165,
+    "moulton_pct": 34.375,
+    "precincts": 2
+  },
+  {
+    "town": "Chicopee",
+    "ward": "3",
+    "total_votes": 448,
+    "markey": 289,
+    "markey_pct": 64.509,
+    "moulton": 152,
+    "moulton_pct": 33.929,
+    "precincts": 3
+  },
+  {
+    "town": "Chicopee",
+    "ward": "4",
+    "total_votes": 621,
+    "markey": 387,
+    "markey_pct": 62.319,
+    "moulton": 215,
+    "moulton_pct": 34.622,
+    "precincts": 2
+  },
+  {
+    "town": "Chicopee",
+    "ward": "5",
+    "total_votes": 665,
+    "markey": 402,
+    "markey_pct": 60.451,
+    "moulton": 246,
+    "moulton_pct": 36.992,
+    "precincts": 2
+  },
+  {
+    "town": "Chicopee",
+    "ward": "6",
+    "total_votes": 773,
+    "markey": 461,
+    "markey_pct": 59.638,
+    "moulton": 304,
+    "moulton_pct": 39.327,
+    "precincts": 4
+  },
+  {
+    "town": "Chicopee",
+    "ward": "7",
+    "total_votes": 400,
+    "markey": 268,
+    "markey_pct": 67.0,
+    "moulton": 125,
+    "moulton_pct": 31.25,
+    "precincts": 2
+  },
+  {
+    "town": "Chicopee",
+    "ward": "8",
+    "total_votes": 632,
+    "markey": 392,
+    "markey_pct": 62.025,
+    "moulton": 229,
+    "moulton_pct": 36.234,
+    "precincts": 2
+  },
+  {
+    "town": "Chicopee",
+    "ward": "9",
+    "total_votes": 823,
+    "markey": 535,
+    "markey_pct": 65.006,
+    "moulton": 274,
+    "moulton_pct": 33.293,
+    "precincts": 2
+  },
+  {
+    "town": "Chilmark",
+    "ward": "-",
+    "total_votes": 358,
+    "markey": 219,
+    "markey_pct": 61.173,
+    "moulton": 136,
+    "moulton_pct": 37.989,
+    "precincts": 1
+  },
+  {
+    "town": "Clarksburg",
+    "ward": "-",
+    "total_votes": 288,
+    "markey": 185,
+    "markey_pct": 64.236,
+    "moulton": 87,
+    "moulton_pct": 30.208,
+    "precincts": 1
+  },
+  {
+    "town": "Clinton",
+    "ward": "-",
+    "total_votes": 1487,
+    "markey": 992,
+    "markey_pct": 66.711,
+    "moulton": 476,
+    "moulton_pct": 32.011,
+    "precincts": 4
+  },
+  {
+    "town": "Cohasset",
+    "ward": "-",
+    "total_votes": 1339,
+    "markey": 685,
+    "markey_pct": 51.158,
+    "moulton": 620,
+    "moulton_pct": 46.303,
+    "precincts": 3
+  },
+  {
+    "town": "Colrain",
+    "ward": "-",
+    "total_votes": 300,
+    "markey": 219,
+    "markey_pct": 73.0,
+    "moulton": 76,
+    "moulton_pct": 25.333,
+    "precincts": 1
+  },
+  {
+    "town": "Concord",
+    "ward": "-",
+    "total_votes": 4412,
+    "markey": 2466,
+    "markey_pct": 55.893,
+    "moulton": 1896,
+    "moulton_pct": 42.974,
+    "precincts": 5
+  },
+  {
+    "town": "Conway",
+    "ward": "-",
+    "total_votes": 486,
+    "markey": 355,
+    "markey_pct": 73.045,
+    "moulton": 129,
+    "moulton_pct": 26.543,
+    "precincts": 1
+  },
+  {
+    "town": "Cummington",
+    "ward": "-",
+    "total_votes": 230,
+    "markey": 172,
+    "markey_pct": 74.783,
+    "moulton": 54,
+    "moulton_pct": 23.478,
+    "precincts": 1
+  },
+  {
+    "town": "Dalton",
+    "ward": "-",
+    "total_votes": 904,
+    "markey": 607,
+    "markey_pct": 67.146,
+    "moulton": 291,
+    "moulton_pct": 32.19,
+    "precincts": 2
+  },
+  {
+    "town": "Danvers",
+    "ward": "-",
+    "total_votes": 4152,
+    "markey": 2302,
+    "markey_pct": 55.443,
+    "moulton": 1774,
+    "moulton_pct": 42.726,
+    "precincts": 8
+  },
+  {
+    "town": "Dartmouth",
+    "ward": "-",
+    "total_votes": 4427,
+    "markey": 2631,
+    "markey_pct": 59.431,
+    "moulton": 1677,
+    "moulton_pct": 37.881,
+    "precincts": 9
+  },
+  {
+    "town": "Dedham",
+    "ward": "-",
+    "total_votes": 4819,
+    "markey": 2831,
+    "markey_pct": 58.747,
+    "moulton": 1800,
+    "moulton_pct": 37.352,
+    "precincts": 7
+  },
+  {
+    "town": "Deerfield",
+    "ward": "-",
+    "total_votes": 1192,
+    "markey": 795,
+    "markey_pct": 66.695,
+    "moulton": 375,
+    "moulton_pct": 31.46,
+    "precincts": 1
+  },
+  {
+    "town": "Dennis",
+    "ward": "-",
+    "total_votes": 3365,
+    "markey": 1993,
+    "markey_pct": 59.227,
+    "moulton": 1268,
+    "moulton_pct": 37.682,
+    "precincts": 5
+  },
+  {
+    "town": "Dighton",
+    "ward": "-",
+    "total_votes": 666,
+    "markey": 415,
+    "markey_pct": 62.312,
+    "moulton": 228,
+    "moulton_pct": 34.234,
+    "precincts": 3
+  },
+  {
+    "town": "Douglas",
+    "ward": "-",
+    "total_votes": 650,
+    "markey": 414,
+    "markey_pct": 63.692,
+    "moulton": 233,
+    "moulton_pct": 35.846,
+    "precincts": 3
+  },
+  {
+    "town": "Dover",
+    "ward": "-",
+    "total_votes": 844,
+    "markey": 400,
+    "markey_pct": 47.393,
+    "moulton": 433,
+    "moulton_pct": 51.303,
+    "precincts": 1
+  },
+  {
+    "town": "Dracut",
+    "ward": "-",
+    "total_votes": 3164,
+    "markey": 1895,
+    "markey_pct": 59.893,
+    "moulton": 1201,
+    "moulton_pct": 37.958,
+    "precincts": 10
+  },
+  {
+    "town": "Dudley",
+    "ward": "-",
+    "total_votes": 1008,
+    "markey": 654,
+    "markey_pct": 64.881,
+    "moulton": 342,
+    "moulton_pct": 33.929,
+    "precincts": 4
+  },
+  {
+    "town": "Dunstable",
+    "ward": "-",
+    "total_votes": 528,
+    "markey": 339,
+    "markey_pct": 64.205,
+    "moulton": 188,
+    "moulton_pct": 35.606,
+    "precincts": 1
+  },
+  {
+    "town": "Duxbury",
+    "ward": "-",
+    "total_votes": 2242,
+    "markey": 1256,
+    "markey_pct": 56.021,
+    "moulton": 962,
+    "moulton_pct": 42.908,
+    "precincts": 6
+  },
+  {
+    "town": "E. Bridgewater",
+    "ward": "-",
+    "total_votes": 1389,
+    "markey": 900,
+    "markey_pct": 64.795,
+    "moulton": 475,
+    "moulton_pct": 34.197,
+    "precincts": 4
+  },
+  {
+    "town": "E. Brookfield",
+    "ward": "-",
+    "total_votes": 219,
+    "markey": 148,
+    "markey_pct": 67.58,
+    "moulton": 68,
+    "moulton_pct": 31.05,
+    "precincts": 1
+  },
+  {
+    "town": "E. Longmeadow",
+    "ward": "-",
+    "total_votes": 2208,
+    "markey": 1222,
+    "markey_pct": 55.344,
+    "moulton": 937,
+    "moulton_pct": 42.437,
+    "precincts": 8
+  },
+  {
+    "town": "Eastham",
+    "ward": "-",
+    "total_votes": 1604,
+    "markey": 1041,
+    "markey_pct": 64.9,
+    "moulton": 546,
+    "moulton_pct": 34.04,
+    "precincts": 1
+  },
+  {
+    "town": "Easthampton",
+    "ward": "-",
+    "total_votes": 4172,
+    "markey": 3053,
+    "markey_pct": 73.178,
+    "moulton": 1048,
+    "moulton_pct": 25.12,
+    "precincts": 5
+  },
+  {
+    "town": "Easton",
+    "ward": "-",
+    "total_votes": 3168,
+    "markey": 1973,
+    "markey_pct": 62.279,
+    "moulton": 1158,
+    "moulton_pct": 36.553,
+    "precincts": 8
+  },
+  {
+    "town": "Edgartown",
+    "ward": "-",
+    "total_votes": 717,
+    "markey": 447,
+    "markey_pct": 62.343,
+    "moulton": 260,
+    "moulton_pct": 36.262,
+    "precincts": 1
+  },
+  {
+    "town": "Egremont",
+    "ward": "-",
+    "total_votes": 318,
+    "markey": 226,
+    "markey_pct": 71.069,
+    "moulton": 85,
+    "moulton_pct": 26.73,
+    "precincts": 1
+  },
+  {
+    "town": "Erving",
+    "ward": "-",
+    "total_votes": 217,
+    "markey": 154,
+    "markey_pct": 70.968,
+    "moulton": 59,
+    "moulton_pct": 27.189,
+    "precincts": 1
+  },
+  {
+    "town": "Essex",
+    "ward": "-",
+    "total_votes": 705,
+    "markey": 338,
+    "markey_pct": 47.943,
+    "moulton": 359,
+    "moulton_pct": 50.922,
+    "precincts": 1
+  },
+  {
+    "town": "Everett",
+    "ward": "1",
+    "total_votes": 361,
+    "markey": 267,
+    "markey_pct": 73.961,
+    "moulton": 85,
+    "moulton_pct": 23.546,
+    "precincts": 4
+  },
+  {
+    "town": "Everett",
+    "ward": "2",
+    "total_votes": 397,
+    "markey": 298,
+    "markey_pct": 75.063,
+    "moulton": 89,
+    "moulton_pct": 22.418,
+    "precincts": 4
+  },
+  {
+    "town": "Everett",
+    "ward": "3",
+    "total_votes": 506,
+    "markey": 354,
+    "markey_pct": 69.96,
+    "moulton": 132,
+    "moulton_pct": 26.087,
+    "precincts": 3
+  },
+  {
+    "town": "Everett",
+    "ward": "4",
+    "total_votes": 525,
+    "markey": 390,
+    "markey_pct": 74.286,
+    "moulton": 117,
+    "moulton_pct": 22.286,
+    "precincts": 3
+  },
+  {
+    "town": "Everett",
+    "ward": "5",
+    "total_votes": 464,
+    "markey": 356,
+    "markey_pct": 76.724,
+    "moulton": 91,
+    "moulton_pct": 19.612,
+    "precincts": 3
+  },
+  {
+    "town": "Everett",
+    "ward": "6",
+    "total_votes": 504,
+    "markey": 391,
+    "markey_pct": 77.579,
+    "moulton": 105,
+    "moulton_pct": 20.833,
+    "precincts": 3
+  },
+  {
+    "town": "Fairhaven",
+    "ward": "-",
+    "total_votes": 2116,
+    "markey": 1399,
+    "markey_pct": 66.115,
+    "moulton": 684,
+    "moulton_pct": 32.325,
+    "precincts": 6
+  },
+  {
+    "town": "Fall River",
+    "ward": "1",
+    "total_votes": 654,
+    "markey": 377,
+    "markey_pct": 57.645,
+    "moulton": 256,
+    "moulton_pct": 39.144,
+    "precincts": 3
+  },
+  {
+    "town": "Fall River",
+    "ward": "2",
+    "total_votes": 353,
+    "markey": 233,
+    "markey_pct": 66.006,
+    "moulton": 106,
+    "moulton_pct": 30.028,
+    "precincts": 3
+  },
+  {
+    "town": "Fall River",
+    "ward": "3",
+    "total_votes": 640,
+    "markey": 406,
+    "markey_pct": 63.438,
+    "moulton": 200,
+    "moulton_pct": 31.25,
+    "precincts": 3
+  },
+  {
+    "town": "Fall River",
+    "ward": "4",
+    "total_votes": 415,
+    "markey": 276,
+    "markey_pct": 66.506,
+    "moulton": 134,
+    "moulton_pct": 32.289,
+    "precincts": 3
+  },
+  {
+    "town": "Fall River",
+    "ward": "5",
+    "total_votes": 335,
+    "markey": 236,
+    "markey_pct": 70.448,
+    "moulton": 88,
+    "moulton_pct": 26.269,
+    "precincts": 3
+  },
+  {
+    "town": "Fall River",
+    "ward": "6",
+    "total_votes": 615,
+    "markey": 409,
+    "markey_pct": 66.504,
+    "moulton": 190,
+    "moulton_pct": 30.894,
+    "precincts": 3
+  },
+  {
+    "town": "Fall River",
+    "ward": "7",
+    "total_votes": 533,
+    "markey": 349,
+    "markey_pct": 65.478,
+    "moulton": 162,
+    "moulton_pct": 30.394,
+    "precincts": 3
+  },
+  {
+    "town": "Fall River",
+    "ward": "8",
+    "total_votes": 864,
+    "markey": 523,
+    "markey_pct": 60.532,
+    "moulton": 311,
+    "moulton_pct": 35.995,
+    "precincts": 3
+  },
+  {
+    "town": "Fall River",
+    "ward": "9",
+    "total_votes": 1031,
+    "markey": 609,
+    "markey_pct": 59.069,
+    "moulton": 390,
+    "moulton_pct": 37.827,
+    "precincts": 3
+  },
+  {
+    "town": "Falmouth",
+    "ward": "-",
+    "total_votes": 7269,
+    "markey": 4385,
+    "markey_pct": 60.325,
+    "moulton": 2755,
+    "moulton_pct": 37.901,
+    "precincts": 9
+  },
+  {
+    "town": "Fitchburg",
+    "ward": "1",
+    "total_votes": 370,
+    "markey": 246,
+    "markey_pct": 66.486,
+    "moulton": 119,
+    "moulton_pct": 32.162,
+    "precincts": 2
+  },
+  {
+    "town": "Fitchburg",
+    "ward": "2",
+    "total_votes": 373,
+    "markey": 261,
+    "markey_pct": 69.973,
+    "moulton": 103,
+    "moulton_pct": 27.614,
+    "precincts": 2
+  },
+  {
+    "town": "Fitchburg",
+    "ward": "3",
+    "total_votes": 729,
+    "markey": 497,
+    "markey_pct": 68.176,
+    "moulton": 224,
+    "moulton_pct": 30.727,
+    "precincts": 2
+  },
+  {
+    "town": "Fitchburg",
+    "ward": "4",
+    "total_votes": 345,
+    "markey": 235,
+    "markey_pct": 68.116,
+    "moulton": 104,
+    "moulton_pct": 30.145,
+    "precincts": 2
+  },
+  {
+    "town": "Fitchburg",
+    "ward": "5",
+    "total_votes": 539,
+    "markey": 363,
+    "markey_pct": 67.347,
+    "moulton": 166,
+    "moulton_pct": 30.798,
+    "precincts": 2
+  },
+  {
+    "town": "Fitchburg",
+    "ward": "6",
+    "total_votes": 486,
+    "markey": 320,
+    "markey_pct": 65.844,
+    "moulton": 158,
+    "moulton_pct": 32.51,
+    "precincts": 2
+  },
+  {
+    "town": "Florida",
+    "ward": "-",
+    "total_votes": 89,
+    "markey": 56,
+    "markey_pct": 62.921,
+    "moulton": 30,
+    "moulton_pct": 33.708,
+    "precincts": 1
+  },
+  {
+    "town": "Foxborough",
+    "ward": "-",
+    "total_votes": 2319,
+    "markey": 1339,
+    "markey_pct": 57.74,
+    "moulton": 932,
+    "moulton_pct": 40.19,
+    "precincts": 5
+  },
+  {
+    "town": "Framingham",
+    "ward": "-",
+    "total_votes": 9297,
+    "markey": 6371,
+    "markey_pct": 68.527,
+    "moulton": 2810,
+    "moulton_pct": 30.225,
+    "precincts": 30
+  },
+  {
+    "town": "Franklin",
+    "ward": "-",
+    "total_votes": 4611,
+    "markey": 2696,
+    "markey_pct": 58.469,
+    "moulton": 1816,
+    "moulton_pct": 39.384,
+    "precincts": 9
+  },
+  {
+    "town": "Freetown",
+    "ward": "-",
+    "total_votes": 904,
+    "markey": 575,
+    "markey_pct": 63.606,
+    "moulton": 320,
+    "moulton_pct": 35.398,
+    "precincts": 3
+  },
+  {
+    "town": "Gardner",
+    "ward": "1",
+    "total_votes": 355,
+    "markey": 238,
+    "markey_pct": 67.042,
+    "moulton": 112,
+    "moulton_pct": 31.549,
+    "precincts": 2
+  },
+  {
+    "town": "Gardner",
+    "ward": "2",
+    "total_votes": 338,
+    "markey": 208,
+    "markey_pct": 61.538,
+    "moulton": 126,
+    "moulton_pct": 37.278,
+    "precincts": 2
+  },
+  {
+    "town": "Gardner",
+    "ward": "3",
+    "total_votes": 336,
+    "markey": 209,
+    "markey_pct": 62.202,
+    "moulton": 122,
+    "moulton_pct": 36.31,
+    "precincts": 2
+  },
+  {
+    "town": "Gardner",
+    "ward": "4",
+    "total_votes": 308,
+    "markey": 208,
+    "markey_pct": 67.532,
+    "moulton": 98,
+    "moulton_pct": 31.818,
+    "precincts": 2
+  },
+  {
+    "town": "Gardner",
+    "ward": "5",
+    "total_votes": 368,
+    "markey": 248,
+    "markey_pct": 67.391,
+    "moulton": 119,
+    "moulton_pct": 32.337,
+    "precincts": 2
+  },
+  {
+    "town": "Georgetown",
+    "ward": "-",
+    "total_votes": 1307,
+    "markey": 652,
+    "markey_pct": 49.885,
+    "moulton": 639,
+    "moulton_pct": 48.891,
+    "precincts": 3
+  },
+  {
+    "town": "Gill",
+    "ward": "-",
+    "total_votes": 312,
+    "markey": 237,
+    "markey_pct": 75.962,
+    "moulton": 71,
+    "moulton_pct": 22.756,
+    "precincts": 1
+  },
+  {
+    "town": "Gloucester",
+    "ward": "1",
+    "total_votes": 1357,
+    "markey": 713,
+    "markey_pct": 52.542,
+    "moulton": 623,
+    "moulton_pct": 45.91,
+    "precincts": 2
+  },
+  {
+    "town": "Gloucester",
+    "ward": "2",
+    "total_votes": 843,
+    "markey": 516,
+    "markey_pct": 61.21,
+    "moulton": 309,
+    "moulton_pct": 36.655,
+    "precincts": 2
+  },
+  {
+    "town": "Gloucester",
+    "ward": "3",
+    "total_votes": 843,
+    "markey": 471,
+    "markey_pct": 55.872,
+    "moulton": 359,
+    "moulton_pct": 42.586,
+    "precincts": 2
+  },
+  {
+    "town": "Gloucester",
+    "ward": "4",
+    "total_votes": 1448,
+    "markey": 765,
+    "markey_pct": 52.831,
+    "moulton": 663,
+    "moulton_pct": 45.787,
+    "precincts": 2
+  },
+  {
+    "town": "Gloucester",
+    "ward": "5",
+    "total_votes": 1369,
+    "markey": 769,
+    "markey_pct": 56.172,
+    "moulton": 582,
+    "moulton_pct": 42.513,
+    "precincts": 2
+  },
+  {
+    "town": "Goshen",
+    "ward": "-",
+    "total_votes": 186,
+    "markey": 122,
+    "markey_pct": 65.591,
+    "moulton": 62,
+    "moulton_pct": 33.333,
+    "precincts": 1
+  },
+  {
+    "town": "Gosnold",
+    "ward": "-",
+    "total_votes": 18,
+    "markey": 9,
+    "markey_pct": 50.0,
+    "moulton": 9,
+    "moulton_pct": 50.0,
+    "precincts": 1
+  },
+  {
+    "town": "Grafton",
+    "ward": "-",
+    "total_votes": 2066,
+    "markey": 1340,
+    "markey_pct": 64.86,
+    "moulton": 706,
+    "moulton_pct": 34.172,
+    "precincts": 5
+  },
+  {
+    "town": "Granby",
+    "ward": "-",
+    "total_votes": 935,
+    "markey": 582,
+    "markey_pct": 62.246,
+    "moulton": 337,
+    "moulton_pct": 36.043,
+    "precincts": 3
+  },
+  {
+    "town": "Granville",
+    "ward": "-",
+    "total_votes": 143,
+    "markey": 89,
+    "markey_pct": 62.238,
+    "moulton": 52,
+    "moulton_pct": 36.364,
+    "precincts": 1
+  },
+  {
+    "town": "Great Barrington",
+    "ward": "-",
+    "total_votes": 1217,
+    "markey": 803,
+    "markey_pct": 65.982,
+    "moulton": 388,
+    "moulton_pct": 31.882,
+    "precincts": 4
+  },
+  {
+    "town": "Greenfield",
+    "ward": "-",
+    "total_votes": 3145,
+    "markey": 2335,
+    "markey_pct": 74.245,
+    "moulton": 744,
+    "moulton_pct": 23.657,
+    "precincts": 9
+  },
+  {
+    "town": "Groton",
+    "ward": "-",
+    "total_votes": 1913,
+    "markey": 1144,
+    "markey_pct": 59.801,
+    "moulton": 749,
+    "moulton_pct": 39.153,
+    "precincts": 3
+  },
+  {
+    "town": "Groveland",
+    "ward": "-",
+    "total_votes": 1085,
+    "markey": 573,
+    "markey_pct": 52.811,
+    "moulton": 498,
+    "moulton_pct": 45.899,
+    "precincts": 2
+  },
+  {
+    "town": "Hadley",
+    "ward": "-",
+    "total_votes": 997,
+    "markey": 705,
+    "markey_pct": 70.712,
+    "moulton": 281,
+    "moulton_pct": 28.185,
+    "precincts": 1
+  },
+  {
+    "town": "Halifax",
+    "ward": "-",
+    "total_votes": 812,
+    "markey": 546,
+    "markey_pct": 67.241,
+    "moulton": 257,
+    "moulton_pct": 31.65,
+    "precincts": 3
+  },
+  {
+    "town": "Hamilton",
+    "ward": "-",
+    "total_votes": 1520,
+    "markey": 724,
+    "markey_pct": 47.632,
+    "moulton": 786,
+    "moulton_pct": 51.711,
+    "precincts": 2
+  },
+  {
+    "town": "Hampden",
+    "ward": "-",
+    "total_votes": 620,
+    "markey": 369,
+    "markey_pct": 59.516,
+    "moulton": 241,
+    "moulton_pct": 38.871,
+    "precincts": 1
+  },
+  {
+    "town": "Hancock",
+    "ward": "-",
+    "total_votes": 102,
+    "markey": 53,
+    "markey_pct": 51.961,
+    "moulton": 37,
+    "moulton_pct": 36.275,
+    "precincts": 1
+  },
+  {
+    "town": "Hanover",
+    "ward": "-",
+    "total_votes": 1742,
+    "markey": 1023,
+    "markey_pct": 58.726,
+    "moulton": 690,
+    "moulton_pct": 39.61,
+    "precincts": 4
+  },
+  {
+    "town": "Hanson",
+    "ward": "-",
+    "total_votes": 1143,
+    "markey": 715,
+    "markey_pct": 62.555,
+    "moulton": 419,
+    "moulton_pct": 36.658,
+    "precincts": 3
+  },
+  {
+    "town": "Hardwick",
+    "ward": "-",
+    "total_votes": 279,
+    "markey": 186,
+    "markey_pct": 66.667,
+    "moulton": 89,
+    "moulton_pct": 31.9,
+    "precincts": 1
+  },
+  {
+    "town": "Harvard",
+    "ward": "-",
+    "total_votes": 1265,
+    "markey": 809,
+    "markey_pct": 63.953,
+    "moulton": 453,
+    "moulton_pct": 35.81,
+    "precincts": 1
+  },
+  {
+    "town": "Harwich",
+    "ward": "-",
+    "total_votes": 2821,
+    "markey": 1727,
+    "markey_pct": 61.219,
+    "moulton": 1057,
+    "moulton_pct": 37.469,
+    "precincts": 4
+  },
+  {
+    "town": "Hatfield",
+    "ward": "-",
+    "total_votes": 691,
+    "markey": 488,
+    "markey_pct": 70.622,
+    "moulton": 201,
+    "moulton_pct": 29.088,
+    "precincts": 1
+  },
+  {
+    "town": "Haverhill",
+    "ward": "1",
+    "total_votes": 490,
+    "markey": 340,
+    "markey_pct": 69.388,
+    "moulton": 136,
+    "moulton_pct": 27.755,
+    "precincts": 5
+  },
+  {
+    "town": "Haverhill",
+    "ward": "2",
+    "total_votes": 861,
+    "markey": 601,
+    "markey_pct": 69.803,
+    "moulton": 254,
+    "moulton_pct": 29.501,
+    "precincts": 3
+  },
+  {
+    "town": "Haverhill",
+    "ward": "3",
+    "total_votes": 651,
+    "markey": 457,
+    "markey_pct": 70.2,
+    "moulton": 187,
+    "moulton_pct": 28.725,
+    "precincts": 3
+  },
+  {
+    "town": "Haverhill",
+    "ward": "4",
+    "total_votes": 1368,
+    "markey": 819,
+    "markey_pct": 59.868,
+    "moulton": 533,
+    "moulton_pct": 38.962,
+    "precincts": 3
+  },
+  {
+    "town": "Haverhill",
+    "ward": "5",
+    "total_votes": 1212,
+    "markey": 780,
+    "markey_pct": 64.356,
+    "moulton": 423,
+    "moulton_pct": 34.901,
+    "precincts": 5
+  },
+  {
+    "town": "Haverhill",
+    "ward": "6",
+    "total_votes": 1133,
+    "markey": 731,
+    "markey_pct": 64.519,
+    "moulton": 377,
+    "moulton_pct": 33.274,
+    "precincts": 4
+  },
+  {
+    "town": "Haverhill",
+    "ward": "7",
+    "total_votes": 1177,
+    "markey": 752,
+    "markey_pct": 63.891,
+    "moulton": 412,
+    "moulton_pct": 35.004,
+    "precincts": 5
+  },
+  {
+    "town": "Hawley",
+    "ward": "-",
+    "total_votes": 63,
+    "markey": 40,
+    "markey_pct": 63.492,
+    "moulton": 22,
+    "moulton_pct": 34.921,
+    "precincts": 1
+  },
+  {
+    "town": "Heath",
+    "ward": "-",
+    "total_votes": 130,
+    "markey": 93,
+    "markey_pct": 71.538,
+    "moulton": 35,
+    "moulton_pct": 26.923,
+    "precincts": 1
+  },
+  {
+    "town": "Hingham",
+    "ward": "-",
+    "total_votes": 4213,
+    "markey": 2272,
+    "markey_pct": 53.928,
+    "moulton": 1877,
+    "moulton_pct": 44.553,
+    "precincts": 8
+  },
+  {
+    "town": "Hinsdale",
+    "ward": "-",
+    "total_votes": 286,
+    "markey": 178,
+    "markey_pct": 62.238,
+    "moulton": 104,
+    "moulton_pct": 36.364,
+    "precincts": 1
+  },
+  {
+    "town": "Holbrook",
+    "ward": "-",
+    "total_votes": 1329,
+    "markey": 887,
+    "markey_pct": 66.742,
+    "moulton": 403,
+    "moulton_pct": 30.324,
+    "precincts": 4
+  },
+  {
+    "town": "Holden",
+    "ward": "-",
+    "total_votes": 2772,
+    "markey": 1708,
+    "markey_pct": 61.616,
+    "moulton": 1029,
+    "moulton_pct": 37.121,
+    "precincts": 6
+  },
+  {
+    "town": "Holland",
+    "ward": "-",
+    "total_votes": 238,
+    "markey": 143,
+    "markey_pct": 60.084,
+    "moulton": 94,
+    "moulton_pct": 39.496,
+    "precincts": 1
+  },
+  {
+    "town": "Holliston",
+    "ward": "-",
+    "total_votes": 2425,
+    "markey": 1480,
+    "markey_pct": 61.031,
+    "moulton": 928,
+    "moulton_pct": 38.268,
+    "precincts": 4
+  },
+  {
+    "town": "Holyoke",
+    "ward": "1",
+    "total_votes": 271,
+    "markey": 205,
+    "markey_pct": 75.646,
+    "moulton": 56,
+    "moulton_pct": 20.664,
+    "precincts": 2
+  },
+  {
+    "town": "Holyoke",
+    "ward": "2",
+    "total_votes": 288,
+    "markey": 218,
+    "markey_pct": 75.694,
+    "moulton": 59,
+    "moulton_pct": 20.486,
+    "precincts": 2
+  },
+  {
+    "town": "Holyoke",
+    "ward": "3",
+    "total_votes": 742,
+    "markey": 516,
+    "markey_pct": 69.542,
+    "moulton": 203,
+    "moulton_pct": 27.358,
+    "precincts": 2
+  },
+  {
+    "town": "Holyoke",
+    "ward": "4",
+    "total_votes": 380,
+    "markey": 279,
+    "markey_pct": 73.421,
+    "moulton": 91,
+    "moulton_pct": 23.947,
+    "precincts": 2
+  },
+  {
+    "town": "Holyoke",
+    "ward": "5",
+    "total_votes": 784,
+    "markey": 497,
+    "markey_pct": 63.393,
+    "moulton": 272,
+    "moulton_pct": 34.694,
+    "precincts": 2
+  },
+  {
+    "town": "Holyoke",
+    "ward": "6",
+    "total_votes": 708,
+    "markey": 500,
+    "markey_pct": 70.621,
+    "moulton": 189,
+    "moulton_pct": 26.695,
+    "precincts": 2
+  },
+  {
+    "town": "Holyoke",
+    "ward": "7",
+    "total_votes": 1257,
+    "markey": 877,
+    "markey_pct": 69.769,
+    "moulton": 346,
+    "moulton_pct": 27.526,
+    "precincts": 2
+  },
+  {
+    "town": "Hopedale",
+    "ward": "-",
+    "total_votes": 668,
+    "markey": 453,
+    "markey_pct": 67.814,
+    "moulton": 209,
+    "moulton_pct": 31.287,
+    "precincts": 1
+  },
+  {
+    "town": "Hopkinton",
+    "ward": "-",
+    "total_votes": 2159,
+    "markey": 1305,
+    "markey_pct": 60.445,
+    "moulton": 840,
+    "moulton_pct": 38.907,
+    "precincts": 5
+  },
+  {
+    "town": "Hubbardston",
+    "ward": "-",
+    "total_votes": 464,
+    "markey": 310,
+    "markey_pct": 66.81,
+    "moulton": 151,
+    "moulton_pct": 32.543,
+    "precincts": 1
+  },
+  {
+    "town": "Hudson",
+    "ward": "-",
+    "total_votes": 3102,
+    "markey": 2013,
+    "markey_pct": 64.894,
+    "moulton": 1042,
+    "moulton_pct": 33.591,
+    "precincts": 6
+  },
+  {
+    "town": "Hull",
+    "ward": "-",
+    "total_votes": 2135,
+    "markey": 1345,
+    "markey_pct": 62.998,
+    "moulton": 760,
+    "moulton_pct": 35.597,
+    "precincts": 3
+  },
+  {
+    "town": "Huntington",
+    "ward": "-",
+    "total_votes": 269,
+    "markey": 165,
+    "markey_pct": 61.338,
+    "moulton": 97,
+    "moulton_pct": 36.059,
+    "precincts": 1
+  },
+  {
+    "town": "Ipswich",
+    "ward": "-",
+    "total_votes": 3217,
+    "markey": 1621,
+    "markey_pct": 50.389,
+    "moulton": 1566,
+    "moulton_pct": 48.679,
+    "precincts": 4
+  },
+  {
+    "town": "Kingston",
+    "ward": "-",
+    "total_votes": 1579,
+    "markey": 1042,
+    "markey_pct": 65.991,
+    "moulton": 514,
+    "moulton_pct": 32.552,
+    "precincts": 4
+  },
+  {
+    "town": "Lakeville",
+    "ward": "-",
+    "total_votes": 1197,
+    "markey": 728,
+    "markey_pct": 60.819,
+    "moulton": 462,
+    "moulton_pct": 38.596,
+    "precincts": 3
+  },
+  {
+    "town": "Lancaster",
+    "ward": "-",
+    "total_votes": 838,
+    "markey": 522,
+    "markey_pct": 62.291,
+    "moulton": 312,
+    "moulton_pct": 37.232,
+    "precincts": 2
+  },
+  {
+    "town": "Lanesborough",
+    "ward": "-",
+    "total_votes": 471,
+    "markey": 350,
+    "markey_pct": 74.31,
+    "moulton": 111,
+    "moulton_pct": 23.567,
+    "precincts": 1
+  },
+  {
+    "town": "Lawrence",
+    "ward": "A",
+    "total_votes": 554,
+    "markey": 375,
+    "markey_pct": 67.69,
+    "moulton": 134,
+    "moulton_pct": 24.188,
+    "precincts": 5
+  },
+  {
+    "town": "Lawrence",
+    "ward": "B",
+    "total_votes": 487,
+    "markey": 366,
+    "markey_pct": 75.154,
+    "moulton": 86,
+    "moulton_pct": 17.659,
+    "precincts": 4
+  },
+  {
+    "town": "Lawrence",
+    "ward": "C",
+    "total_votes": 383,
+    "markey": 281,
+    "markey_pct": 73.368,
+    "moulton": 81,
+    "moulton_pct": 21.149,
+    "precincts": 4
+  },
+  {
+    "town": "Lawrence",
+    "ward": "D",
+    "total_votes": 366,
+    "markey": 270,
+    "markey_pct": 73.77,
+    "moulton": 76,
+    "moulton_pct": 20.765,
+    "precincts": 4
+  },
+  {
+    "town": "Lawrence",
+    "ward": "E",
+    "total_votes": 860,
+    "markey": 561,
+    "markey_pct": 65.233,
+    "moulton": 240,
+    "moulton_pct": 27.907,
+    "precincts": 5
+  },
+  {
+    "town": "Lawrence",
+    "ward": "F",
+    "total_votes": 645,
+    "markey": 445,
+    "markey_pct": 68.992,
+    "moulton": 148,
+    "moulton_pct": 22.946,
+    "precincts": 4
+  },
+  {
+    "town": "Lee",
+    "ward": "-",
+    "total_votes": 885,
+    "markey": 564,
+    "markey_pct": 63.729,
+    "moulton": 308,
+    "moulton_pct": 34.802,
+    "precincts": 1
+  },
+  {
+    "town": "Leicester",
+    "ward": "-",
+    "total_votes": 1042,
+    "markey": 668,
+    "markey_pct": 64.107,
+    "moulton": 361,
+    "moulton_pct": 34.645,
+    "precincts": 4
+  },
+  {
+    "town": "Lenox",
+    "ward": "-",
+    "total_votes": 1085,
+    "markey": 698,
+    "markey_pct": 64.332,
+    "moulton": 373,
+    "moulton_pct": 34.378,
+    "precincts": 1
+  },
+  {
+    "town": "Leominster",
+    "ward": "1",
+    "total_votes": 827,
+    "markey": 571,
+    "markey_pct": 69.045,
+    "moulton": 245,
+    "moulton_pct": 29.625,
+    "precincts": 3
+  },
+  {
+    "town": "Leominster",
+    "ward": "2",
+    "total_votes": 416,
+    "markey": 318,
+    "markey_pct": 76.442,
+    "moulton": 94,
+    "moulton_pct": 22.596,
+    "precincts": 3
+  },
+  {
+    "town": "Leominster",
+    "ward": "3",
+    "total_votes": 888,
+    "markey": 571,
+    "markey_pct": 64.302,
+    "moulton": 308,
+    "moulton_pct": 34.685,
+    "precincts": 3
+  },
+  {
+    "town": "Leominster",
+    "ward": "4",
+    "total_votes": 779,
+    "markey": 506,
+    "markey_pct": 64.955,
+    "moulton": 266,
+    "moulton_pct": 34.146,
+    "precincts": 3
+  },
+  {
+    "town": "Leominster",
+    "ward": "5",
+    "total_votes": 652,
+    "markey": 464,
+    "markey_pct": 71.166,
+    "moulton": 178,
+    "moulton_pct": 27.301,
+    "precincts": 3
+  },
+  {
+    "town": "Leverett",
+    "ward": "-",
+    "total_votes": 529,
+    "markey": 431,
+    "markey_pct": 81.474,
+    "moulton": 93,
+    "moulton_pct": 17.58,
+    "precincts": 1
+  },
+  {
+    "town": "Lexington",
+    "ward": "-",
+    "total_votes": 6325,
+    "markey": 3847,
+    "markey_pct": 60.822,
+    "moulton": 2414,
+    "moulton_pct": 38.166,
+    "precincts": 9
+  },
+  {
+    "town": "Leyden",
+    "ward": "-",
+    "total_votes": 173,
+    "markey": 129,
+    "markey_pct": 74.566,
+    "moulton": 44,
+    "moulton_pct": 25.434,
+    "precincts": 1
+  },
+  {
+    "town": "Lincoln",
+    "ward": "-",
+    "total_votes": 1601,
+    "markey": 929,
+    "markey_pct": 58.026,
+    "moulton": 653,
+    "moulton_pct": 40.787,
+    "precincts": 2
+  },
+  {
+    "town": "Littleton",
+    "ward": "-",
+    "total_votes": 1661,
+    "markey": 1089,
+    "markey_pct": 65.563,
+    "moulton": 558,
+    "moulton_pct": 33.594,
+    "precincts": 3
+  },
+  {
+    "town": "Longmeadow",
+    "ward": "-",
+    "total_votes": 2703,
+    "markey": 1536,
+    "markey_pct": 56.826,
+    "moulton": 1108,
+    "moulton_pct": 40.991,
+    "precincts": 5
+  },
+  {
+    "town": "Lowell",
+    "ward": "1",
+    "total_votes": 1231,
+    "markey": 847,
+    "markey_pct": 68.806,
+    "moulton": 326,
+    "moulton_pct": 26.483,
+    "precincts": 5
+  },
+  {
+    "town": "Lowell",
+    "ward": "2",
+    "total_votes": 914,
+    "markey": 635,
+    "markey_pct": 69.475,
+    "moulton": 232,
+    "moulton_pct": 25.383,
+    "precincts": 4
+  },
+  {
+    "town": "Lowell",
+    "ward": "3",
+    "total_votes": 1880,
+    "markey": 1145,
+    "markey_pct": 60.904,
+    "moulton": 653,
+    "moulton_pct": 34.734,
+    "precincts": 4
+  },
+  {
+    "town": "Lowell",
+    "ward": "4",
+    "total_votes": 846,
+    "markey": 625,
+    "markey_pct": 73.877,
+    "moulton": 210,
+    "moulton_pct": 24.823,
+    "precincts": 6
+  },
+  {
+    "town": "Lowell",
+    "ward": "5",
+    "total_votes": 910,
+    "markey": 623,
+    "markey_pct": 68.462,
+    "moulton": 246,
+    "moulton_pct": 27.033,
+    "precincts": 5
+  },
+  {
+    "town": "Lowell",
+    "ward": "6",
+    "total_votes": 883,
+    "markey": 568,
+    "markey_pct": 64.326,
+    "moulton": 191,
+    "moulton_pct": 21.631,
+    "precincts": 6
+  },
+  {
+    "town": "Lowell",
+    "ward": "7",
+    "total_votes": 753,
+    "markey": 529,
+    "markey_pct": 70.252,
+    "moulton": 129,
+    "moulton_pct": 17.131,
+    "precincts": 4
+  },
+  {
+    "town": "Lowell",
+    "ward": "8",
+    "total_votes": 1461,
+    "markey": 931,
+    "markey_pct": 63.723,
+    "moulton": 403,
+    "moulton_pct": 27.584,
+    "precincts": 5
+  },
+  {
+    "town": "Ludlow",
+    "ward": "-",
+    "total_votes": 2249,
+    "markey": 1332,
+    "markey_pct": 59.226,
+    "moulton": 865,
+    "moulton_pct": 38.462,
+    "precincts": 6
+  },
+  {
+    "town": "Lunenburg",
+    "ward": "-",
+    "total_votes": 1385,
+    "markey": 893,
+    "markey_pct": 64.477,
+    "moulton": 482,
+    "moulton_pct": 34.801,
+    "precincts": 6
+  },
+  {
+    "town": "Lynn",
+    "ward": "1",
+    "total_votes": 1977,
+    "markey": 1140,
+    "markey_pct": 57.663,
+    "moulton": 777,
+    "moulton_pct": 39.302,
+    "precincts": 5
+  },
+  {
+    "town": "Lynn",
+    "ward": "2",
+    "total_votes": 910,
+    "markey": 535,
+    "markey_pct": 58.791,
+    "moulton": 359,
+    "moulton_pct": 39.451,
+    "precincts": 4
+  },
+  {
+    "town": "Lynn",
+    "ward": "3",
+    "total_votes": 1083,
+    "markey": 677,
+    "markey_pct": 62.512,
+    "moulton": 379,
+    "moulton_pct": 34.995,
+    "precincts": 4
+  },
+  {
+    "town": "Lynn",
+    "ward": "4",
+    "total_votes": 739,
+    "markey": 469,
+    "markey_pct": 63.464,
+    "moulton": 256,
+    "moulton_pct": 34.641,
+    "precincts": 5
+  },
+  {
+    "town": "Lynn",
+    "ward": "5",
+    "total_votes": 863,
+    "markey": 529,
+    "markey_pct": 61.298,
+    "moulton": 311,
+    "moulton_pct": 36.037,
+    "precincts": 4
+  },
+  {
+    "town": "Lynn",
+    "ward": "6",
+    "total_votes": 627,
+    "markey": 403,
+    "markey_pct": 64.274,
+    "moulton": 205,
+    "moulton_pct": 32.695,
+    "precincts": 4
+  },
+  {
+    "town": "Lynn",
+    "ward": "7",
+    "total_votes": 1076,
+    "markey": 645,
+    "markey_pct": 59.944,
+    "moulton": 398,
+    "moulton_pct": 36.989,
+    "precincts": 4
+  },
+  {
+    "town": "Lynnfield",
+    "ward": "-",
+    "total_votes": 1776,
+    "markey": 838,
+    "markey_pct": 47.185,
+    "moulton": 910,
+    "moulton_pct": 51.239,
+    "precincts": 4
+  },
+  {
+    "town": "Malden",
+    "ward": "1",
+    "total_votes": 758,
+    "markey": 620,
+    "markey_pct": 81.794,
+    "moulton": 127,
+    "moulton_pct": 16.755,
+    "precincts": 3
+  },
+  {
+    "town": "Malden",
+    "ward": "2",
+    "total_votes": 798,
+    "markey": 668,
+    "markey_pct": 83.709,
+    "moulton": 112,
+    "moulton_pct": 14.035,
+    "precincts": 3
+  },
+  {
+    "town": "Malden",
+    "ward": "3",
+    "total_votes": 1293,
+    "markey": 1001,
+    "markey_pct": 77.417,
+    "moulton": 269,
+    "moulton_pct": 20.804,
+    "precincts": 4
+  },
+  {
+    "town": "Malden",
+    "ward": "4",
+    "total_votes": 720,
+    "markey": 594,
+    "markey_pct": 82.5,
+    "moulton": 117,
+    "moulton_pct": 16.25,
+    "precincts": 3
+  },
+  {
+    "town": "Malden",
+    "ward": "5",
+    "total_votes": 1192,
+    "markey": 946,
+    "markey_pct": 79.362,
+    "moulton": 229,
+    "moulton_pct": 19.211,
+    "precincts": 4
+  },
+  {
+    "town": "Malden",
+    "ward": "6",
+    "total_votes": 929,
+    "markey": 760,
+    "markey_pct": 81.808,
+    "moulton": 153,
+    "moulton_pct": 16.469,
+    "precincts": 3
+  },
+  {
+    "town": "Malden",
+    "ward": "7",
+    "total_votes": 676,
+    "markey": 560,
+    "markey_pct": 82.84,
+    "moulton": 105,
+    "moulton_pct": 15.533,
+    "precincts": 4
+  },
+  {
+    "town": "Malden",
+    "ward": "8",
+    "total_votes": 648,
+    "markey": 489,
+    "markey_pct": 75.463,
+    "moulton": 152,
+    "moulton_pct": 23.457,
+    "precincts": 3
+  },
+  {
+    "town": "Manchester-by-the-Sea",
+    "ward": "-",
+    "total_votes": 1223,
+    "markey": 550,
+    "markey_pct": 44.971,
+    "moulton": 663,
+    "moulton_pct": 54.211,
+    "precincts": 1
+  },
+  {
+    "town": "Mansfield",
+    "ward": "-",
+    "total_votes": 3053,
+    "markey": 1809,
+    "markey_pct": 59.253,
+    "moulton": 1207,
+    "moulton_pct": 39.535,
+    "precincts": 9
+  },
+  {
+    "town": "Marblehead",
+    "ward": "-",
+    "total_votes": 4919,
+    "markey": 1917,
+    "markey_pct": 38.971,
+    "moulton": 2946,
+    "moulton_pct": 59.89,
+    "precincts": 6
+  },
+  {
+    "town": "Marion",
+    "ward": "-",
+    "total_votes": 912,
+    "markey": 544,
+    "markey_pct": 59.649,
+    "moulton": 363,
+    "moulton_pct": 39.803,
+    "precincts": 1
+  },
+  {
+    "town": "Marlborough",
+    "ward": "1",
+    "total_votes": 846,
+    "markey": 552,
+    "markey_pct": 65.248,
+    "moulton": 288,
+    "moulton_pct": 34.043,
+    "precincts": 3
+  },
+  {
+    "town": "Marlborough",
+    "ward": "2",
+    "total_votes": 612,
+    "markey": 412,
+    "markey_pct": 67.32,
+    "moulton": 195,
+    "moulton_pct": 31.863,
+    "precincts": 3
+  },
+  {
+    "town": "Marlborough",
+    "ward": "3",
+    "total_votes": 600,
+    "markey": 410,
+    "markey_pct": 68.333,
+    "moulton": 184,
+    "moulton_pct": 30.667,
+    "precincts": 2
+  },
+  {
+    "town": "Marlborough",
+    "ward": "4",
+    "total_votes": 560,
+    "markey": 354,
+    "markey_pct": 63.214,
+    "moulton": 198,
+    "moulton_pct": 35.357,
+    "precincts": 2
+  },
+  {
+    "town": "Marlborough",
+    "ward": "5",
+    "total_votes": 580,
+    "markey": 397,
+    "markey_pct": 68.448,
+    "moulton": 177,
+    "moulton_pct": 30.517,
+    "precincts": 2
+  },
+  {
+    "town": "Marlborough",
+    "ward": "6",
+    "total_votes": 594,
+    "markey": 417,
+    "markey_pct": 70.202,
+    "moulton": 173,
+    "moulton_pct": 29.125,
+    "precincts": 2
+  },
+  {
+    "town": "Marlborough",
+    "ward": "7",
+    "total_votes": 566,
+    "markey": 382,
+    "markey_pct": 67.491,
+    "moulton": 177,
+    "moulton_pct": 31.272,
+    "precincts": 3
+  },
+  {
+    "town": "Marshfield",
+    "ward": "-",
+    "total_votes": 5091,
+    "markey": 3086,
+    "markey_pct": 60.617,
+    "moulton": 1885,
+    "moulton_pct": 37.026,
+    "precincts": 8
+  },
+  {
+    "town": "Mashpee",
+    "ward": "-",
+    "total_votes": 2943,
+    "markey": 1720,
+    "markey_pct": 58.444,
+    "moulton": 1194,
+    "moulton_pct": 40.571,
+    "precincts": 5
+  },
+  {
+    "town": "Mattapoisett",
+    "ward": "-",
+    "total_votes": 1249,
+    "markey": 746,
+    "markey_pct": 59.728,
+    "moulton": 493,
+    "moulton_pct": 39.472,
+    "precincts": 2
+  },
+  {
+    "town": "Maynard",
+    "ward": "-",
+    "total_votes": 2213,
+    "markey": 1531,
+    "markey_pct": 69.182,
+    "moulton": 649,
+    "moulton_pct": 29.327,
+    "precincts": 4
+  },
+  {
+    "town": "Medfield",
+    "ward": "-",
+    "total_votes": 2135,
+    "markey": 1114,
+    "markey_pct": 52.178,
+    "moulton": 980,
+    "moulton_pct": 45.902,
+    "precincts": 4
+  },
+  {
+    "town": "Medford",
+    "ward": "1",
+    "total_votes": 1188,
+    "markey": 872,
+    "markey_pct": 73.401,
+    "moulton": 286,
+    "moulton_pct": 24.074,
+    "precincts": 2
+  },
+  {
+    "town": "Medford",
+    "ward": "2",
+    "total_votes": 1351,
+    "markey": 976,
+    "markey_pct": 72.243,
+    "moulton": 339,
+    "moulton_pct": 25.093,
+    "precincts": 2
+  },
+  {
+    "town": "Medford",
+    "ward": "3",
+    "total_votes": 1740,
+    "markey": 1167,
+    "markey_pct": 67.069,
+    "moulton": 532,
+    "moulton_pct": 30.575,
+    "precincts": 2
+  },
+  {
+    "town": "Medford",
+    "ward": "4",
+    "total_votes": 1139,
+    "markey": 856,
+    "markey_pct": 75.154,
+    "moulton": 246,
+    "moulton_pct": 21.598,
+    "precincts": 2
+  },
+  {
+    "town": "Medford",
+    "ward": "5",
+    "total_votes": 1238,
+    "markey": 1008,
+    "markey_pct": 81.422,
+    "moulton": 213,
+    "moulton_pct": 17.205,
+    "precincts": 2
+  },
+  {
+    "town": "Medford",
+    "ward": "6",
+    "total_votes": 1834,
+    "markey": 1275,
+    "markey_pct": 69.52,
+    "moulton": 530,
+    "moulton_pct": 28.899,
+    "precincts": 3
+  },
+  {
+    "town": "Medford",
+    "ward": "7",
+    "total_votes": 755,
+    "markey": 581,
+    "markey_pct": 76.954,
+    "moulton": 160,
+    "moulton_pct": 21.192,
+    "precincts": 3
+  },
+  {
+    "town": "Medford",
+    "ward": "8",
+    "total_votes": 1294,
+    "markey": 991,
+    "markey_pct": 76.584,
+    "moulton": 270,
+    "moulton_pct": 20.866,
+    "precincts": 2
+  },
+  {
+    "town": "Medway",
+    "ward": "-",
+    "total_votes": 1944,
+    "markey": 1130,
+    "markey_pct": 58.128,
+    "moulton": 788,
+    "moulton_pct": 40.535,
+    "precincts": 4
+  },
+  {
+    "town": "Melrose",
+    "ward": "1",
+    "total_votes": 1034,
+    "markey": 686,
+    "markey_pct": 66.344,
+    "moulton": 330,
+    "moulton_pct": 31.915,
+    "precincts": 2
+  },
+  {
+    "town": "Melrose",
+    "ward": "2",
+    "total_votes": 895,
+    "markey": 553,
+    "markey_pct": 61.788,
+    "moulton": 319,
+    "moulton_pct": 35.642,
+    "precincts": 2
+  },
+  {
+    "town": "Melrose",
+    "ward": "3",
+    "total_votes": 901,
+    "markey": 595,
+    "markey_pct": 66.038,
+    "moulton": 291,
+    "moulton_pct": 32.297,
+    "precincts": 2
+  },
+  {
+    "town": "Melrose",
+    "ward": "4",
+    "total_votes": 884,
+    "markey": 548,
+    "markey_pct": 61.991,
+    "moulton": 317,
+    "moulton_pct": 35.86,
+    "precincts": 2
+  },
+  {
+    "town": "Melrose",
+    "ward": "5",
+    "total_votes": 570,
+    "markey": 397,
+    "markey_pct": 69.649,
+    "moulton": 160,
+    "moulton_pct": 28.07,
+    "precincts": 2
+  },
+  {
+    "town": "Melrose",
+    "ward": "6",
+    "total_votes": 901,
+    "markey": 577,
+    "markey_pct": 64.04,
+    "moulton": 309,
+    "moulton_pct": 34.295,
+    "precincts": 2
+  },
+  {
+    "town": "Melrose",
+    "ward": "7",
+    "total_votes": 945,
+    "markey": 634,
+    "markey_pct": 67.09,
+    "moulton": 296,
+    "moulton_pct": 31.323,
+    "precincts": 2
+  },
+  {
+    "town": "Mendon",
+    "ward": "-",
+    "total_votes": 688,
+    "markey": 448,
+    "markey_pct": 65.116,
+    "moulton": 235,
+    "moulton_pct": 34.157,
+    "precincts": 2
+  },
+  {
+    "town": "Merrimac",
+    "ward": "-",
+    "total_votes": 1110,
+    "markey": 584,
+    "markey_pct": 52.613,
+    "moulton": 512,
+    "moulton_pct": 46.126,
+    "precincts": 2
+  },
+  {
+    "town": "Methuen",
+    "ward": "-",
+    "total_votes": 4323,
+    "markey": 2763,
+    "markey_pct": 63.914,
+    "moulton": 1509,
+    "moulton_pct": 34.906,
+    "precincts": 17
+  },
+  {
+    "town": "Middleborough",
+    "ward": "-",
+    "total_votes": 2302,
+    "markey": 1516,
+    "markey_pct": 65.856,
+    "moulton": 751,
+    "moulton_pct": 32.624,
+    "precincts": 9
+  },
+  {
+    "town": "Middlefield",
+    "ward": "-",
+    "total_votes": 108,
+    "markey": 75,
+    "markey_pct": 69.444,
+    "moulton": 31,
+    "moulton_pct": 28.704,
+    "precincts": 1
+  },
+  {
+    "town": "Middleton",
+    "ward": "-",
+    "total_votes": 1203,
+    "markey": 651,
+    "markey_pct": 54.115,
+    "moulton": 537,
+    "moulton_pct": 44.638,
+    "precincts": 3
+  },
+  {
+    "town": "Milford",
+    "ward": "-",
+    "total_votes": 3037,
+    "markey": 1929,
+    "markey_pct": 63.517,
+    "moulton": 1072,
+    "moulton_pct": 35.298,
+    "precincts": 8
+  },
+  {
+    "town": "Millbury",
+    "ward": "-",
+    "total_votes": 1516,
+    "markey": 947,
+    "markey_pct": 62.467,
+    "moulton": 545,
+    "moulton_pct": 35.95,
+    "precincts": 4
+  },
+  {
+    "town": "Millis",
+    "ward": "-",
+    "total_votes": 1654,
+    "markey": 1009,
+    "markey_pct": 61.004,
+    "moulton": 617,
+    "moulton_pct": 37.304,
+    "precincts": 3
+  },
+  {
+    "town": "Millville",
+    "ward": "-",
+    "total_votes": 210,
+    "markey": 122,
+    "markey_pct": 58.095,
+    "moulton": 85,
+    "moulton_pct": 40.476,
+    "precincts": 1
+  },
+  {
+    "town": "Milton",
+    "ward": "-",
+    "total_votes": 6375,
+    "markey": 3450,
+    "markey_pct": 54.118,
+    "moulton": 2611,
+    "moulton_pct": 40.957,
+    "precincts": 11
+  },
+  {
+    "town": "Monroe",
+    "ward": "-",
+    "total_votes": 18,
+    "markey": 10,
+    "markey_pct": 55.556,
+    "moulton": 7,
+    "moulton_pct": 38.889,
+    "precincts": 1
+  },
+  {
+    "town": "Monson",
+    "ward": "-",
+    "total_votes": 1187,
+    "markey": 701,
+    "markey_pct": 59.056,
+    "moulton": 470,
+    "moulton_pct": 39.596,
+    "precincts": 3
+  },
+  {
+    "town": "Montague",
+    "ward": "-",
+    "total_votes": 1621,
+    "markey": 1232,
+    "markey_pct": 76.002,
+    "moulton": 365,
+    "moulton_pct": 22.517,
+    "precincts": 6
+  },
+  {
+    "town": "Monterey",
+    "ward": "-",
+    "total_votes": 230,
+    "markey": 157,
+    "markey_pct": 68.261,
+    "moulton": 66,
+    "moulton_pct": 28.696,
+    "precincts": 1
+  },
+  {
+    "town": "Montgomery",
+    "ward": "-",
+    "total_votes": 119,
+    "markey": 66,
+    "markey_pct": 55.462,
+    "moulton": 51,
+    "moulton_pct": 42.857,
+    "precincts": 1
+  },
+  {
+    "town": "Mount Washington",
+    "ward": "-",
+    "total_votes": 53,
+    "markey": 40,
+    "markey_pct": 75.472,
+    "moulton": 13,
+    "moulton_pct": 24.528,
+    "precincts": 1
+  },
+  {
+    "town": "Nahant",
+    "ward": "-",
+    "total_votes": 807,
+    "markey": 402,
+    "markey_pct": 49.814,
+    "moulton": 396,
+    "moulton_pct": 49.071,
+    "precincts": 1
+  },
+  {
+    "town": "Nantucket",
+    "ward": "-",
+    "total_votes": 1187,
+    "markey": 711,
+    "markey_pct": 59.899,
+    "moulton": 463,
+    "moulton_pct": 39.006,
+    "precincts": 1
+  },
+  {
+    "town": "Natick",
+    "ward": "-",
+    "total_votes": 6547,
+    "markey": 4020,
+    "markey_pct": 61.402,
+    "moulton": 2470,
+    "moulton_pct": 37.727,
+    "precincts": 10
+  },
+  {
+    "town": "Needham",
+    "ward": "-",
+    "total_votes": 6665,
+    "markey": 3423,
+    "markey_pct": 51.358,
+    "moulton": 3118,
+    "moulton_pct": 46.782,
+    "precincts": 10
+  },
+  {
+    "town": "New Ashford",
+    "ward": "-",
+    "total_votes": 35,
+    "markey": 22,
+    "markey_pct": 62.857,
+    "moulton": 12,
+    "moulton_pct": 34.286,
+    "precincts": 1
+  },
+  {
+    "town": "New Bedford",
+    "ward": "1",
+    "total_votes": 1501,
+    "markey": 1036,
+    "markey_pct": 69.021,
+    "moulton": 437,
+    "moulton_pct": 29.114,
+    "precincts": 9
+  },
+  {
+    "town": "New Bedford",
+    "ward": "2",
+    "total_votes": 663,
+    "markey": 442,
+    "markey_pct": 66.667,
+    "moulton": 210,
+    "moulton_pct": 31.674,
+    "precincts": 6
+  },
+  {
+    "town": "New Bedford",
+    "ward": "3",
+    "total_votes": 795,
+    "markey": 524,
+    "markey_pct": 65.912,
+    "moulton": 255,
+    "moulton_pct": 32.075,
+    "precincts": 7
+  },
+  {
+    "town": "New Bedford",
+    "ward": "4",
+    "total_votes": 1001,
+    "markey": 749,
+    "markey_pct": 74.825,
+    "moulton": 228,
+    "moulton_pct": 22.777,
+    "precincts": 7
+  },
+  {
+    "town": "New Bedford",
+    "ward": "5",
+    "total_votes": 1754,
+    "markey": 1198,
+    "markey_pct": 68.301,
+    "moulton": 515,
+    "moulton_pct": 29.361,
+    "precincts": 6
+  },
+  {
+    "town": "New Bedford",
+    "ward": "6",
+    "total_votes": 716,
+    "markey": 476,
+    "markey_pct": 66.48,
+    "moulton": 229,
+    "moulton_pct": 31.983,
+    "precincts": 6
+  },
+  {
+    "town": "New Braintree",
+    "ward": "-",
+    "total_votes": 166,
+    "markey": 111,
+    "markey_pct": 66.867,
+    "moulton": 55,
+    "moulton_pct": 33.133,
+    "precincts": 1
+  },
+  {
+    "town": "New Marlborough",
+    "ward": "-",
+    "total_votes": 242,
+    "markey": 153,
+    "markey_pct": 63.223,
+    "moulton": 85,
+    "moulton_pct": 35.124,
+    "precincts": 1
+  },
+  {
+    "town": "New Salem",
+    "ward": "-",
+    "total_votes": 223,
+    "markey": 163,
+    "markey_pct": 73.094,
+    "moulton": 59,
+    "moulton_pct": 26.457,
+    "precincts": 1
+  },
+  {
+    "town": "Newbury",
+    "ward": "-",
+    "total_votes": 1402,
+    "markey": 680,
+    "markey_pct": 48.502,
+    "moulton": 721,
+    "moulton_pct": 51.427,
+    "precincts": 2
+  },
+  {
+    "town": "Newburyport",
+    "ward": "1",
+    "total_votes": 786,
+    "markey": 403,
+    "markey_pct": 51.272,
+    "moulton": 376,
+    "moulton_pct": 47.837,
+    "precincts": 2
+  },
+  {
+    "town": "Newburyport",
+    "ward": "2",
+    "total_votes": 838,
+    "markey": 436,
+    "markey_pct": 52.029,
+    "moulton": 397,
+    "moulton_pct": 47.375,
+    "precincts": 1
+  },
+  {
+    "town": "Newburyport",
+    "ward": "3",
+    "total_votes": 903,
+    "markey": 483,
+    "markey_pct": 53.488,
+    "moulton": 412,
+    "moulton_pct": 45.626,
+    "precincts": 1
+  },
+  {
+    "town": "Newburyport",
+    "ward": "4",
+    "total_votes": 760,
+    "markey": 360,
+    "markey_pct": 47.368,
+    "moulton": 393,
+    "moulton_pct": 51.711,
+    "precincts": 1
+  },
+  {
+    "town": "Newburyport",
+    "ward": "5",
+    "total_votes": 496,
+    "markey": 252,
+    "markey_pct": 50.806,
+    "moulton": 238,
+    "moulton_pct": 47.984,
+    "precincts": 1
+  },
+  {
+    "town": "Newburyport",
+    "ward": "6",
+    "total_votes": 613,
+    "markey": 283,
+    "markey_pct": 46.166,
+    "moulton": 326,
+    "moulton_pct": 53.181,
+    "precincts": 1
+  },
+  {
+    "town": "Newton",
+    "ward": "1",
+    "total_votes": 2073,
+    "markey": 1347,
+    "markey_pct": 64.978,
+    "moulton": 667,
+    "moulton_pct": 32.176,
+    "precincts": 5
+  },
+  {
+    "town": "Newton",
+    "ward": "2",
+    "total_votes": 2448,
+    "markey": 1416,
+    "markey_pct": 57.843,
+    "moulton": 992,
+    "moulton_pct": 40.523,
+    "precincts": 4
+  },
+  {
+    "town": "Newton",
+    "ward": "3",
+    "total_votes": 2300,
+    "markey": 1311,
+    "markey_pct": 57.0,
+    "moulton": 956,
+    "moulton_pct": 41.565,
+    "precincts": 4
+  },
+  {
+    "town": "Newton",
+    "ward": "4",
+    "total_votes": 2055,
+    "markey": 1316,
+    "markey_pct": 64.039,
+    "moulton": 712,
+    "moulton_pct": 34.647,
+    "precincts": 4
+  },
+  {
+    "town": "Newton",
+    "ward": "5",
+    "total_votes": 2445,
+    "markey": 1215,
+    "markey_pct": 49.693,
+    "moulton": 1202,
+    "moulton_pct": 49.162,
+    "precincts": 4
+  },
+  {
+    "town": "Newton",
+    "ward": "6",
+    "total_votes": 2626,
+    "markey": 1533,
+    "markey_pct": 58.378,
+    "moulton": 1057,
+    "moulton_pct": 40.251,
+    "precincts": 4
+  },
+  {
+    "town": "Newton",
+    "ward": "7",
+    "total_votes": 1547,
+    "markey": 728,
+    "markey_pct": 47.059,
+    "moulton": 778,
+    "moulton_pct": 50.291,
+    "precincts": 4
+  },
+  {
+    "town": "Newton",
+    "ward": "8",
+    "total_votes": 1948,
+    "markey": 1027,
+    "markey_pct": 52.721,
+    "moulton": 883,
+    "moulton_pct": 45.329,
+    "precincts": 4
+  },
+  {
+    "town": "Norfolk",
+    "ward": "-",
+    "total_votes": 1595,
+    "markey": 935,
+    "markey_pct": 58.621,
+    "moulton": 627,
+    "moulton_pct": 39.31,
+    "precincts": 4
+  },
+  {
+    "town": "N. Adams",
+    "ward": "1",
+    "total_votes": 502,
+    "markey": 330,
+    "markey_pct": 65.737,
+    "moulton": 142,
+    "moulton_pct": 28.287,
+    "precincts": 1
+  },
+  {
+    "town": "N. Adams",
+    "ward": "2",
+    "total_votes": 460,
+    "markey": 295,
+    "markey_pct": 64.13,
+    "moulton": 131,
+    "moulton_pct": 28.478,
+    "precincts": 1
+  },
+  {
+    "town": "N. Adams",
+    "ward": "3",
+    "total_votes": 355,
+    "markey": 232,
+    "markey_pct": 65.352,
+    "moulton": 94,
+    "moulton_pct": 26.479,
+    "precincts": 1
+  },
+  {
+    "town": "N. Adams",
+    "ward": "4",
+    "total_votes": 554,
+    "markey": 373,
+    "markey_pct": 67.329,
+    "moulton": 136,
+    "moulton_pct": 24.549,
+    "precincts": 1
+  },
+  {
+    "town": "N. Adams",
+    "ward": "5",
+    "total_votes": 463,
+    "markey": 321,
+    "markey_pct": 69.33,
+    "moulton": 116,
+    "moulton_pct": 25.054,
+    "precincts": 1
+  },
+  {
+    "town": "N. Andover",
+    "ward": "-",
+    "total_votes": 4430,
+    "markey": 2314,
+    "markey_pct": 52.235,
+    "moulton": 2051,
+    "moulton_pct": 46.298,
+    "precincts": 8
+  },
+  {
+    "town": "N. Attleborough",
+    "ward": "-",
+    "total_votes": 2903,
+    "markey": 1801,
+    "markey_pct": 62.039,
+    "moulton": 1082,
+    "moulton_pct": 37.272,
+    "precincts": 9
+  },
+  {
+    "town": "N. Brookfield",
+    "ward": "-",
+    "total_votes": 474,
+    "markey": 311,
+    "markey_pct": 65.612,
+    "moulton": 157,
+    "moulton_pct": 33.122,
+    "precincts": 1
+  },
+  {
+    "town": "N. Reading",
+    "ward": "-",
+    "total_votes": 2406,
+    "markey": 1245,
+    "markey_pct": 51.746,
+    "moulton": 1130,
+    "moulton_pct": 46.966,
+    "precincts": 4
+  },
+  {
+    "town": "Northampton",
+    "ward": "1",
+    "total_votes": 1042,
+    "markey": 815,
+    "markey_pct": 78.215,
+    "moulton": 215,
+    "moulton_pct": 20.633,
+    "precincts": 2
+  },
+  {
+    "town": "Northampton",
+    "ward": "2",
+    "total_votes": 852,
+    "markey": 670,
+    "markey_pct": 78.638,
+    "moulton": 173,
+    "moulton_pct": 20.305,
+    "precincts": 2
+  },
+  {
+    "town": "Northampton",
+    "ward": "3",
+    "total_votes": 941,
+    "markey": 734,
+    "markey_pct": 78.002,
+    "moulton": 199,
+    "moulton_pct": 21.148,
+    "precincts": 2
+  },
+  {
+    "town": "Northampton",
+    "ward": "4",
+    "total_votes": 912,
+    "markey": 730,
+    "markey_pct": 80.044,
+    "moulton": 168,
+    "moulton_pct": 18.421,
+    "precincts": 2
+  },
+  {
+    "town": "Northampton",
+    "ward": "5",
+    "total_votes": 1083,
+    "markey": 864,
+    "markey_pct": 79.778,
+    "moulton": 201,
+    "moulton_pct": 18.56,
+    "precincts": 2
+  },
+  {
+    "town": "Northampton",
+    "ward": "6",
+    "total_votes": 1196,
+    "markey": 883,
+    "markey_pct": 73.829,
+    "moulton": 301,
+    "moulton_pct": 25.167,
+    "precincts": 2
+  },
+  {
+    "town": "Northampton",
+    "ward": "7",
+    "total_votes": 1130,
+    "markey": 858,
+    "markey_pct": 75.929,
+    "moulton": 258,
+    "moulton_pct": 22.832,
+    "precincts": 2
+  },
+  {
+    "town": "Northborough",
+    "ward": "-",
+    "total_votes": 1994,
+    "markey": 1213,
+    "markey_pct": 60.832,
+    "moulton": 769,
+    "moulton_pct": 38.566,
+    "precincts": 4
+  },
+  {
+    "town": "Northbridge",
+    "ward": "-",
+    "total_votes": 1463,
+    "markey": 939,
+    "markey_pct": 64.183,
+    "moulton": 514,
+    "moulton_pct": 35.133,
+    "precincts": 5
+  },
+  {
+    "town": "Northfield",
+    "ward": "-",
+    "total_votes": 547,
+    "markey": 390,
+    "markey_pct": 71.298,
+    "moulton": 148,
+    "moulton_pct": 27.057,
+    "precincts": 1
+  },
+  {
+    "town": "Norton",
+    "ward": "-",
+    "total_votes": 1941,
+    "markey": 1202,
+    "markey_pct": 61.927,
+    "moulton": 715,
+    "moulton_pct": 36.837,
+    "precincts": 5
+  },
+  {
+    "town": "Norwell",
+    "ward": "-",
+    "total_votes": 1383,
+    "markey": 808,
+    "markey_pct": 58.424,
+    "moulton": 563,
+    "moulton_pct": 40.709,
+    "precincts": 3
+  },
+  {
+    "town": "Norwood",
+    "ward": "-",
+    "total_votes": 4529,
+    "markey": 2710,
+    "markey_pct": 59.837,
+    "moulton": 1652,
+    "moulton_pct": 36.476,
+    "precincts": 9
+  },
+  {
+    "town": "Oak Bluffs",
+    "ward": "-",
+    "total_votes": 765,
+    "markey": 554,
+    "markey_pct": 72.418,
+    "moulton": 206,
+    "moulton_pct": 26.928,
+    "precincts": 1
+  },
+  {
+    "town": "Oakham",
+    "ward": "-",
+    "total_votes": 185,
+    "markey": 118,
+    "markey_pct": 63.784,
+    "moulton": 67,
+    "moulton_pct": 36.216,
+    "precincts": 1
+  },
+  {
+    "town": "Orange",
+    "ward": "-",
+    "total_votes": 713,
+    "markey": 519,
+    "markey_pct": 72.791,
+    "moulton": 188,
+    "moulton_pct": 26.367,
+    "precincts": 2
+  },
+  {
+    "town": "Orleans",
+    "ward": "-",
+    "total_votes": 1644,
+    "markey": 1011,
+    "markey_pct": 61.496,
+    "moulton": 614,
+    "moulton_pct": 37.348,
+    "precincts": 2
+  },
+  {
+    "town": "Otis",
+    "ward": "-",
+    "total_votes": 254,
+    "markey": 157,
+    "markey_pct": 61.811,
+    "moulton": 91,
+    "moulton_pct": 35.827,
+    "precincts": 1
+  },
+  {
+    "town": "Oxford",
+    "ward": "-",
+    "total_votes": 1216,
+    "markey": 780,
+    "markey_pct": 64.145,
+    "moulton": 421,
+    "moulton_pct": 34.622,
+    "precincts": 5
+  },
+  {
+    "town": "Palmer",
+    "ward": "-",
+    "total_votes": 1302,
+    "markey": 822,
+    "markey_pct": 63.134,
+    "moulton": 456,
+    "moulton_pct": 35.023,
+    "precincts": 4
+  },
+  {
+    "town": "Paxton",
+    "ward": "-",
+    "total_votes": 600,
+    "markey": 362,
+    "markey_pct": 60.333,
+    "moulton": 233,
+    "moulton_pct": 38.833,
+    "precincts": 1
+  },
+  {
+    "town": "Peabody",
+    "ward": "1",
+    "total_votes": 1359,
+    "markey": 681,
+    "markey_pct": 50.11,
+    "moulton": 641,
+    "moulton_pct": 47.167,
+    "precincts": 3
+  },
+  {
+    "town": "Peabody",
+    "ward": "2",
+    "total_votes": 816,
+    "markey": 463,
+    "markey_pct": 56.74,
+    "moulton": 336,
+    "moulton_pct": 41.176,
+    "precincts": 3
+  },
+  {
+    "town": "Peabody",
+    "ward": "3",
+    "total_votes": 854,
+    "markey": 502,
+    "markey_pct": 58.782,
+    "moulton": 331,
+    "moulton_pct": 38.759,
+    "precincts": 3
+  },
+  {
+    "town": "Peabody",
+    "ward": "4",
+    "total_votes": 1708,
+    "markey": 909,
+    "markey_pct": 53.22,
+    "moulton": 760,
+    "moulton_pct": 44.496,
+    "precincts": 4
+  },
+  {
+    "town": "Peabody",
+    "ward": "5",
+    "total_votes": 1134,
+    "markey": 594,
+    "markey_pct": 52.381,
+    "moulton": 525,
+    "moulton_pct": 46.296,
+    "precincts": 3
+  },
+  {
+    "town": "Peabody",
+    "ward": "6",
+    "total_votes": 1440,
+    "markey": 741,
+    "markey_pct": 51.458,
+    "moulton": 659,
+    "moulton_pct": 45.764,
+    "precincts": 3
+  },
+  {
+    "town": "Pelham",
+    "ward": "-",
+    "total_votes": 370,
+    "markey": 266,
+    "markey_pct": 71.892,
+    "moulton": 100,
+    "moulton_pct": 27.027,
+    "precincts": 1
+  },
+  {
+    "town": "Pembroke",
+    "ward": "-",
+    "total_votes": 1994,
+    "markey": 1280,
+    "markey_pct": 64.193,
+    "moulton": 686,
+    "moulton_pct": 34.403,
+    "precincts": 6
+  },
+  {
+    "town": "Pepperell",
+    "ward": "-",
+    "total_votes": 1505,
+    "markey": 964,
+    "markey_pct": 64.053,
+    "moulton": 527,
+    "moulton_pct": 35.017,
+    "precincts": 4
+  },
+  {
+    "town": "Peru",
+    "ward": "-",
+    "total_votes": 98,
+    "markey": 60,
+    "markey_pct": 61.224,
+    "moulton": 36,
+    "moulton_pct": 36.735,
+    "precincts": 1
+  },
+  {
+    "town": "Petersham",
+    "ward": "-",
+    "total_votes": 240,
+    "markey": 165,
+    "markey_pct": 68.75,
+    "moulton": 75,
+    "moulton_pct": 31.25,
+    "precincts": 1
+  },
+  {
+    "town": "Phillipston",
+    "ward": "-",
+    "total_votes": 162,
+    "markey": 99,
+    "markey_pct": 61.111,
+    "moulton": 62,
+    "moulton_pct": 38.272,
+    "precincts": 1
+  },
+  {
+    "town": "Pittsfield",
+    "ward": "1",
+    "total_votes": 682,
+    "markey": 456,
+    "markey_pct": 66.862,
+    "moulton": 212,
+    "moulton_pct": 31.085,
+    "precincts": 2
+  },
+  {
+    "town": "Pittsfield",
+    "ward": "2",
+    "total_votes": 567,
+    "markey": 421,
+    "markey_pct": 74.25,
+    "moulton": 143,
+    "moulton_pct": 25.22,
+    "precincts": 2
+  },
+  {
+    "town": "Pittsfield",
+    "ward": "3",
+    "total_votes": 1011,
+    "markey": 718,
+    "markey_pct": 71.019,
+    "moulton": 276,
+    "moulton_pct": 27.3,
+    "precincts": 2
+  },
+  {
+    "town": "Pittsfield",
+    "ward": "4",
+    "total_votes": 1197,
+    "markey": 810,
+    "markey_pct": 67.669,
+    "moulton": 371,
+    "moulton_pct": 30.994,
+    "precincts": 2
+  },
+  {
+    "town": "Pittsfield",
+    "ward": "5",
+    "total_votes": 832,
+    "markey": 594,
+    "markey_pct": 71.394,
+    "moulton": 225,
+    "moulton_pct": 27.043,
+    "precincts": 2
+  },
+  {
+    "town": "Pittsfield",
+    "ward": "6",
+    "total_votes": 815,
+    "markey": 577,
+    "markey_pct": 70.798,
+    "moulton": 225,
+    "moulton_pct": 27.607,
+    "precincts": 2
+  },
+  {
+    "town": "Pittsfield",
+    "ward": "7",
+    "total_votes": 605,
+    "markey": 428,
+    "markey_pct": 70.744,
+    "moulton": 163,
+    "moulton_pct": 26.942,
+    "precincts": 2
+  },
+  {
+    "town": "Plainfield",
+    "ward": "-",
+    "total_votes": 165,
+    "markey": 118,
+    "markey_pct": 71.515,
+    "moulton": 46,
+    "moulton_pct": 27.879,
+    "precincts": 1
+  },
+  {
+    "town": "Plainville",
+    "ward": "-",
+    "total_votes": 1077,
+    "markey": 677,
+    "markey_pct": 62.86,
+    "moulton": 377,
+    "moulton_pct": 35.005,
+    "precincts": 3
+  },
+  {
+    "town": "Plymouth",
+    "ward": "-",
+    "total_votes": 9831,
+    "markey": 5976,
+    "markey_pct": 60.787,
+    "moulton": 3760,
+    "moulton_pct": 38.246,
+    "precincts": 18
+  },
+  {
+    "town": "Plympton",
+    "ward": "-",
+    "total_votes": 375,
+    "markey": 238,
+    "markey_pct": 63.467,
+    "moulton": 135,
+    "moulton_pct": 36.0,
+    "precincts": 1
+  },
+  {
+    "town": "Princeton",
+    "ward": "-",
+    "total_votes": 707,
+    "markey": 462,
+    "markey_pct": 65.347,
+    "moulton": 239,
+    "moulton_pct": 33.805,
+    "precincts": 1
+  },
+  {
+    "town": "Provincetown",
+    "ward": "-",
+    "total_votes": 1236,
+    "markey": 869,
+    "markey_pct": 70.307,
+    "moulton": 359,
+    "moulton_pct": 29.045,
+    "precincts": 1
+  },
+  {
+    "town": "Quincy",
+    "ward": "1",
+    "total_votes": 2439,
+    "markey": 1490,
+    "markey_pct": 61.091,
+    "moulton": 836,
+    "moulton_pct": 34.276,
+    "precincts": 5
+  },
+  {
+    "town": "Quincy",
+    "ward": "2",
+    "total_votes": 1503,
+    "markey": 1015,
+    "markey_pct": 67.532,
+    "moulton": 436,
+    "moulton_pct": 29.009,
+    "precincts": 5
+  },
+  {
+    "town": "Quincy",
+    "ward": "3",
+    "total_votes": 2161,
+    "markey": 1416,
+    "markey_pct": 65.525,
+    "moulton": 661,
+    "moulton_pct": 30.588,
+    "precincts": 5
+  },
+  {
+    "town": "Quincy",
+    "ward": "4",
+    "total_votes": 1823,
+    "markey": 1164,
+    "markey_pct": 63.851,
+    "moulton": 581,
+    "moulton_pct": 31.871,
+    "precincts": 5
+  },
+  {
+    "town": "Quincy",
+    "ward": "5",
+    "total_votes": 2262,
+    "markey": 1497,
+    "markey_pct": 66.18,
+    "moulton": 675,
+    "moulton_pct": 29.841,
+    "precincts": 6
+  },
+  {
+    "town": "Quincy",
+    "ward": "6",
+    "total_votes": 2304,
+    "markey": 1367,
+    "markey_pct": 59.332,
+    "moulton": 799,
+    "moulton_pct": 34.679,
+    "precincts": 5
+  },
+  {
+    "town": "Randolph",
+    "ward": "-",
+    "total_votes": 3819,
+    "markey": 2899,
+    "markey_pct": 75.91,
+    "moulton": 815,
+    "moulton_pct": 21.341,
+    "precincts": 12
+  },
+  {
+    "town": "Raynham",
+    "ward": "-",
+    "total_votes": 1417,
+    "markey": 887,
+    "markey_pct": 62.597,
+    "moulton": 510,
+    "moulton_pct": 35.992,
+    "precincts": 6
+  },
+  {
+    "town": "Reading",
+    "ward": "-",
+    "total_votes": 4883,
+    "markey": 2556,
+    "markey_pct": 52.345,
+    "moulton": 2252,
+    "moulton_pct": 46.119,
+    "precincts": 8
+  },
+  {
+    "town": "Rehoboth",
+    "ward": "-",
+    "total_votes": 1077,
+    "markey": 670,
+    "markey_pct": 62.21,
+    "moulton": 398,
+    "moulton_pct": 36.955,
+    "precincts": 4
+  },
+  {
+    "town": "Revere",
+    "ward": "1",
+    "total_votes": 786,
+    "markey": 563,
+    "markey_pct": 71.628,
+    "moulton": 189,
+    "moulton_pct": 24.046,
+    "precincts": 3
+  },
+  {
+    "town": "Revere",
+    "ward": "2",
+    "total_votes": 400,
+    "markey": 281,
+    "markey_pct": 70.25,
+    "moulton": 112,
+    "moulton_pct": 28.0,
+    "precincts": 4
+  },
+  {
+    "town": "Revere",
+    "ward": "3",
+    "total_votes": 533,
+    "markey": 363,
+    "markey_pct": 68.105,
+    "moulton": 148,
+    "moulton_pct": 27.767,
+    "precincts": 3
+  },
+  {
+    "town": "Revere",
+    "ward": "4",
+    "total_votes": 573,
+    "markey": 417,
+    "markey_pct": 72.775,
+    "moulton": 145,
+    "moulton_pct": 25.305,
+    "precincts": 3
+  },
+  {
+    "town": "Revere",
+    "ward": "5",
+    "total_votes": 890,
+    "markey": 586,
+    "markey_pct": 65.843,
+    "moulton": 266,
+    "moulton_pct": 29.888,
+    "precincts": 4
+  },
+  {
+    "town": "Revere",
+    "ward": "6",
+    "total_votes": 638,
+    "markey": 427,
+    "markey_pct": 66.928,
+    "moulton": 183,
+    "moulton_pct": 28.683,
+    "precincts": 3
+  },
+  {
+    "town": "Richmond",
+    "ward": "-",
+    "total_votes": 319,
+    "markey": 192,
+    "markey_pct": 60.188,
+    "moulton": 124,
+    "moulton_pct": 38.871,
+    "precincts": 1
+  },
+  {
+    "town": "Rochester",
+    "ward": "-",
+    "total_votes": 676,
+    "markey": 437,
+    "markey_pct": 64.645,
+    "moulton": 236,
+    "moulton_pct": 34.911,
+    "precincts": 1
+  },
+  {
+    "town": "Rockland",
+    "ward": "-",
+    "total_votes": 1834,
+    "markey": 1219,
+    "markey_pct": 66.467,
+    "moulton": 581,
+    "moulton_pct": 31.679,
+    "precincts": 6
+  },
+  {
+    "town": "Rockport",
+    "ward": "-",
+    "total_votes": 2314,
+    "markey": 1273,
+    "markey_pct": 55.013,
+    "moulton": 992,
+    "moulton_pct": 42.869,
+    "precincts": 3
+  },
+  {
+    "town": "Rowe",
+    "ward": "-",
+    "total_votes": 83,
+    "markey": 53,
+    "markey_pct": 63.855,
+    "moulton": 29,
+    "moulton_pct": 34.94,
+    "precincts": 1
+  },
+  {
+    "town": "Rowley",
+    "ward": "-",
+    "total_votes": 951,
+    "markey": 523,
+    "markey_pct": 54.995,
+    "moulton": 418,
+    "moulton_pct": 43.954,
+    "precincts": 1
+  },
+  {
+    "town": "Royalston",
+    "ward": "-",
+    "total_votes": 214,
+    "markey": 142,
+    "markey_pct": 66.355,
+    "moulton": 69,
+    "moulton_pct": 32.243,
+    "precincts": 1
+  },
+  {
+    "town": "Russell",
+    "ward": "-",
+    "total_votes": 125,
+    "markey": 75,
+    "markey_pct": 60.0,
+    "moulton": 49,
+    "moulton_pct": 39.2,
+    "precincts": 1
+  },
+  {
+    "town": "Rutland",
+    "ward": "-",
+    "total_votes": 1074,
+    "markey": 703,
+    "markey_pct": 65.456,
+    "moulton": 362,
+    "moulton_pct": 33.706,
+    "precincts": 3
+  },
+  {
+    "town": "Salem",
+    "ward": "1",
+    "total_votes": 1148,
+    "markey": 796,
+    "markey_pct": 69.338,
+    "moulton": 338,
+    "moulton_pct": 29.443,
+    "precincts": 2
+  },
+  {
+    "town": "Salem",
+    "ward": "2",
+    "total_votes": 1755,
+    "markey": 1179,
+    "markey_pct": 67.179,
+    "moulton": 561,
+    "moulton_pct": 31.966,
+    "precincts": 2
+  },
+  {
+    "town": "Salem",
+    "ward": "3",
+    "total_votes": 1045,
+    "markey": 672,
+    "markey_pct": 64.306,
+    "moulton": 355,
+    "moulton_pct": 33.971,
+    "precincts": 2
+  },
+  {
+    "town": "Salem",
+    "ward": "4",
+    "total_votes": 985,
+    "markey": 603,
+    "markey_pct": 61.218,
+    "moulton": 361,
+    "moulton_pct": 36.65,
+    "precincts": 2
+  },
+  {
+    "town": "Salem",
+    "ward": "5",
+    "total_votes": 1285,
+    "markey": 901,
+    "markey_pct": 70.117,
+    "moulton": 367,
+    "moulton_pct": 28.56,
+    "precincts": 2
+  },
+  {
+    "town": "Salem",
+    "ward": "6",
+    "total_votes": 1373,
+    "markey": 905,
+    "markey_pct": 65.914,
+    "moulton": 437,
+    "moulton_pct": 31.828,
+    "precincts": 2
+  },
+  {
+    "town": "Salem",
+    "ward": "7",
+    "total_votes": 1012,
+    "markey": 582,
+    "markey_pct": 57.51,
+    "moulton": 409,
+    "moulton_pct": 40.415,
+    "precincts": 2
+  },
+  {
+    "town": "Salisbury",
+    "ward": "-",
+    "total_votes": 1205,
+    "markey": 625,
+    "markey_pct": 51.867,
+    "moulton": 560,
+    "moulton_pct": 46.473,
+    "precincts": 3
+  },
+  {
+    "town": "Sandisfield",
+    "ward": "-",
+    "total_votes": 87,
+    "markey": 63,
+    "markey_pct": 72.414,
+    "moulton": 24,
+    "moulton_pct": 27.586,
+    "precincts": 1
+  },
+  {
+    "town": "Sandwich",
+    "ward": "-",
+    "total_votes": 3371,
+    "markey": 2047,
+    "markey_pct": 60.724,
+    "moulton": 1264,
+    "moulton_pct": 37.496,
+    "precincts": 6
+  },
+  {
+    "town": "Saugus",
+    "ward": "-",
+    "total_votes": 2996,
+    "markey": 1792,
+    "markey_pct": 59.813,
+    "moulton": 1141,
+    "moulton_pct": 38.084,
+    "precincts": 10
+  },
+  {
+    "town": "Savoy",
+    "ward": "-",
+    "total_votes": 72,
+    "markey": 47,
+    "markey_pct": 65.278,
+    "moulton": 22,
+    "moulton_pct": 30.556,
+    "precincts": 1
+  },
+  {
+    "town": "Scituate",
+    "ward": "-",
+    "total_votes": 3651,
+    "markey": 2090,
+    "markey_pct": 57.245,
+    "moulton": 1497,
+    "moulton_pct": 41.002,
+    "precincts": 6
+  },
+  {
+    "town": "Seekonk",
+    "ward": "-",
+    "total_votes": 1262,
+    "markey": 772,
+    "markey_pct": 61.173,
+    "moulton": 474,
+    "moulton_pct": 37.559,
+    "precincts": 4
+  },
+  {
+    "town": "Sharon",
+    "ward": "-",
+    "total_votes": 3302,
+    "markey": 1889,
+    "markey_pct": 57.208,
+    "moulton": 1360,
+    "moulton_pct": 41.187,
+    "precincts": 5
+  },
+  {
+    "town": "Sheffield",
+    "ward": "-",
+    "total_votes": 507,
+    "markey": 319,
+    "markey_pct": 62.919,
+    "moulton": 180,
+    "moulton_pct": 35.503,
+    "precincts": 1
+  },
+  {
+    "town": "Shelburne",
+    "ward": "-",
+    "total_votes": 502,
+    "markey": 363,
+    "markey_pct": 72.311,
+    "moulton": 129,
+    "moulton_pct": 25.697,
+    "precincts": 1
+  },
+  {
+    "town": "Sherborn",
+    "ward": "-",
+    "total_votes": 791,
+    "markey": 430,
+    "markey_pct": 54.362,
+    "moulton": 352,
+    "moulton_pct": 44.501,
+    "precincts": 1
+  },
+  {
+    "town": "Shirley",
+    "ward": "-",
+    "total_votes": 802,
+    "markey": 554,
+    "markey_pct": 69.077,
+    "moulton": 238,
+    "moulton_pct": 29.676,
+    "precincts": 1
+  },
+  {
+    "town": "Shrewsbury",
+    "ward": "-",
+    "total_votes": 3996,
+    "markey": 2565,
+    "markey_pct": 64.189,
+    "moulton": 1396,
+    "moulton_pct": 34.935,
+    "precincts": 10
+  },
+  {
+    "town": "Shutesbury",
+    "ward": "-",
+    "total_votes": 488,
+    "markey": 416,
+    "markey_pct": 85.246,
+    "moulton": 70,
+    "moulton_pct": 14.344,
+    "precincts": 1
+  },
+  {
+    "town": "Somerset",
+    "ward": "-",
+    "total_votes": 2149,
+    "markey": 1382,
+    "markey_pct": 64.309,
+    "moulton": 732,
+    "moulton_pct": 34.062,
+    "precincts": 5
+  },
+  {
+    "town": "Somerville",
+    "ward": "1",
+    "total_votes": 1543,
+    "markey": 1200,
+    "markey_pct": 77.771,
+    "moulton": 310,
+    "moulton_pct": 20.091,
+    "precincts": 5
+  },
+  {
+    "town": "Somerville",
+    "ward": "2",
+    "total_votes": 2429,
+    "markey": 1953,
+    "markey_pct": 80.403,
+    "moulton": 431,
+    "moulton_pct": 17.744,
+    "precincts": 5
+  },
+  {
+    "town": "Somerville",
+    "ward": "3",
+    "total_votes": 2860,
+    "markey": 2202,
+    "markey_pct": 76.993,
+    "moulton": 583,
+    "moulton_pct": 20.385,
+    "precincts": 4
+  },
+  {
+    "town": "Somerville",
+    "ward": "4",
+    "total_votes": 1828,
+    "markey": 1452,
+    "markey_pct": 79.431,
+    "moulton": 341,
+    "moulton_pct": 18.654,
+    "precincts": 5
+  },
+  {
+    "town": "Somerville",
+    "ward": "5",
+    "total_votes": 2925,
+    "markey": 2322,
+    "markey_pct": 79.385,
+    "moulton": 559,
+    "moulton_pct": 19.111,
+    "precincts": 4
+  },
+  {
+    "town": "Somerville",
+    "ward": "6",
+    "total_votes": 2780,
+    "markey": 2176,
+    "markey_pct": 78.273,
+    "moulton": 555,
+    "moulton_pct": 19.964,
+    "precincts": 5
+  },
+  {
+    "town": "Somerville",
+    "ward": "7",
+    "total_votes": 2377,
+    "markey": 1807,
+    "markey_pct": 76.02,
+    "moulton": 514,
+    "moulton_pct": 21.624,
+    "precincts": 4
+  },
+  {
+    "town": "S. Hadley",
+    "ward": "-",
+    "total_votes": 4326,
+    "markey": 2716,
+    "markey_pct": 62.783,
+    "moulton": 1478,
+    "moulton_pct": 34.166,
+    "precincts": 5
+  },
+  {
+    "town": "Southampton",
+    "ward": "-",
+    "total_votes": 1113,
+    "markey": 674,
+    "markey_pct": 60.557,
+    "moulton": 427,
+    "moulton_pct": 38.365,
+    "precincts": 2
+  },
+  {
+    "town": "Southborough",
+    "ward": "-",
+    "total_votes": 1382,
+    "markey": 789,
+    "markey_pct": 57.091,
+    "moulton": 580,
+    "moulton_pct": 41.968,
+    "precincts": 3
+  },
+  {
+    "town": "Southbridge",
+    "ward": "-",
+    "total_votes": 1183,
+    "markey": 852,
+    "markey_pct": 72.02,
+    "moulton": 311,
+    "moulton_pct": 26.289,
+    "precincts": 5
+  },
+  {
+    "town": "Southwick",
+    "ward": "-",
+    "total_votes": 906,
+    "markey": 521,
+    "markey_pct": 57.506,
+    "moulton": 376,
+    "moulton_pct": 41.501,
+    "precincts": 3
+  },
+  {
+    "town": "Spencer",
+    "ward": "-",
+    "total_votes": 1132,
+    "markey": 727,
+    "markey_pct": 64.223,
+    "moulton": 395,
+    "moulton_pct": 34.894,
+    "precincts": 4
+  },
+  {
+    "town": "Springfield",
+    "ward": "1",
+    "total_votes": 1012,
+    "markey": 754,
+    "markey_pct": 74.506,
+    "moulton": 196,
+    "moulton_pct": 19.368,
+    "precincts": 10
+  },
+  {
+    "town": "Springfield",
+    "ward": "2",
+    "total_votes": 1672,
+    "markey": 1135,
+    "markey_pct": 67.883,
+    "moulton": 462,
+    "moulton_pct": 27.632,
+    "precincts": 8
+  },
+  {
+    "town": "Springfield",
+    "ward": "3",
+    "total_votes": 661,
+    "markey": 505,
+    "markey_pct": 76.399,
+    "moulton": 130,
+    "moulton_pct": 19.667,
+    "precincts": 8
+  },
+  {
+    "town": "Springfield",
+    "ward": "4",
+    "total_votes": 1322,
+    "markey": 988,
+    "markey_pct": 74.735,
+    "moulton": 251,
+    "moulton_pct": 18.986,
+    "precincts": 8
+  },
+  {
+    "town": "Springfield",
+    "ward": "5",
+    "total_votes": 2314,
+    "markey": 1610,
+    "markey_pct": 69.576,
+    "moulton": 612,
+    "moulton_pct": 26.448,
+    "precincts": 9
+  },
+  {
+    "town": "Springfield",
+    "ward": "6",
+    "total_votes": 1777,
+    "markey": 1205,
+    "markey_pct": 67.811,
+    "moulton": 526,
+    "moulton_pct": 29.6,
+    "precincts": 9
+  },
+  {
+    "town": "Springfield",
+    "ward": "7",
+    "total_votes": 2818,
+    "markey": 1725,
+    "markey_pct": 61.214,
+    "moulton": 979,
+    "moulton_pct": 34.741,
+    "precincts": 11
+  },
+  {
+    "town": "Springfield",
+    "ward": "8",
+    "total_votes": 1411,
+    "markey": 989,
+    "markey_pct": 70.092,
+    "moulton": 377,
+    "moulton_pct": 26.719,
+    "precincts": 10
+  },
+  {
+    "town": "Sterling",
+    "ward": "-",
+    "total_votes": 1182,
+    "markey": 718,
+    "markey_pct": 60.745,
+    "moulton": 448,
+    "moulton_pct": 37.902,
+    "precincts": 2
+  },
+  {
+    "town": "Stockbridge",
+    "ward": "-",
+    "total_votes": 512,
+    "markey": 331,
+    "markey_pct": 64.648,
+    "moulton": 175,
+    "moulton_pct": 34.18,
+    "precincts": 1
+  },
+  {
+    "town": "Stoneham",
+    "ward": "-",
+    "total_votes": 3414,
+    "markey": 2271,
+    "markey_pct": 66.52,
+    "moulton": 1087,
+    "moulton_pct": 31.839,
+    "precincts": 7
+  },
+  {
+    "town": "Stoughton",
+    "ward": "-",
+    "total_votes": 3861,
+    "markey": 2566,
+    "markey_pct": 66.459,
+    "moulton": 1148,
+    "moulton_pct": 29.733,
+    "precincts": 13
+  },
+  {
+    "town": "Stow",
+    "ward": "-",
+    "total_votes": 1543,
+    "markey": 947,
+    "markey_pct": 61.374,
+    "moulton": 578,
+    "moulton_pct": 37.459,
+    "precincts": 2
+  },
+  {
+    "town": "Sturbridge",
+    "ward": "-",
+    "total_votes": 1163,
+    "markey": 761,
+    "markey_pct": 65.434,
+    "moulton": 387,
+    "moulton_pct": 33.276,
+    "precincts": 3
+  },
+  {
+    "town": "Sudbury",
+    "ward": "-",
+    "total_votes": 3319,
+    "markey": 1910,
+    "markey_pct": 57.547,
+    "moulton": 1392,
+    "moulton_pct": 41.94,
+    "precincts": 6
+  },
+  {
+    "town": "Sunderland",
+    "ward": "-",
+    "total_votes": 692,
+    "markey": 496,
+    "markey_pct": 71.676,
+    "moulton": 188,
+    "moulton_pct": 27.168,
+    "precincts": 1
+  },
+  {
+    "town": "Sutton",
+    "ward": "-",
+    "total_votes": 1023,
+    "markey": 667,
+    "markey_pct": 65.2,
+    "moulton": 349,
+    "moulton_pct": 34.115,
+    "precincts": 3
+  },
+  {
+    "town": "Swampscott",
+    "ward": "-",
+    "total_votes": 3243,
+    "markey": 1630,
+    "markey_pct": 50.262,
+    "moulton": 1572,
+    "moulton_pct": 48.474,
+    "precincts": 6
+  },
+  {
+    "town": "Swansea",
+    "ward": "-",
+    "total_votes": 1693,
+    "markey": 1005,
+    "markey_pct": 59.362,
+    "moulton": 667,
+    "moulton_pct": 39.398,
+    "precincts": 5
+  },
+  {
+    "town": "Taunton",
+    "ward": "1",
+    "total_votes": 627,
+    "markey": 392,
+    "markey_pct": 62.52,
+    "moulton": 209,
+    "moulton_pct": 33.333,
+    "precincts": 3
+  },
+  {
+    "town": "Taunton",
+    "ward": "2",
+    "total_votes": 405,
+    "markey": 284,
+    "markey_pct": 70.123,
+    "moulton": 104,
+    "moulton_pct": 25.679,
+    "precincts": 2
+  },
+  {
+    "town": "Taunton",
+    "ward": "3",
+    "total_votes": 599,
+    "markey": 405,
+    "markey_pct": 67.613,
+    "moulton": 183,
+    "moulton_pct": 30.551,
+    "precincts": 2
+  },
+  {
+    "town": "Taunton",
+    "ward": "4",
+    "total_votes": 570,
+    "markey": 373,
+    "markey_pct": 65.439,
+    "moulton": 185,
+    "moulton_pct": 32.456,
+    "precincts": 3
+  },
+  {
+    "town": "Taunton",
+    "ward": "5",
+    "total_votes": 397,
+    "markey": 275,
+    "markey_pct": 69.27,
+    "moulton": 108,
+    "moulton_pct": 27.204,
+    "precincts": 2
+  },
+  {
+    "town": "Taunton",
+    "ward": "6",
+    "total_votes": 447,
+    "markey": 304,
+    "markey_pct": 68.009,
+    "moulton": 138,
+    "moulton_pct": 30.872,
+    "precincts": 2
+  },
+  {
+    "town": "Taunton",
+    "ward": "7",
+    "total_votes": 809,
+    "markey": 487,
+    "markey_pct": 60.198,
+    "moulton": 282,
+    "moulton_pct": 34.858,
+    "precincts": 2
+  },
+  {
+    "town": "Taunton",
+    "ward": "8",
+    "total_votes": 953,
+    "markey": 615,
+    "markey_pct": 64.533,
+    "moulton": 315,
+    "moulton_pct": 33.054,
+    "precincts": 2
+  },
+  {
+    "town": "Templeton",
+    "ward": "-",
+    "total_votes": 717,
+    "markey": 489,
+    "markey_pct": 68.201,
+    "moulton": 221,
+    "moulton_pct": 30.823,
+    "precincts": 3
+  },
+  {
+    "town": "Tewksbury",
+    "ward": "-",
+    "total_votes": 4010,
+    "markey": 2310,
+    "markey_pct": 57.606,
+    "moulton": 1634,
+    "moulton_pct": 40.748,
+    "precincts": 9
+  },
+  {
+    "town": "Tisbury",
+    "ward": "-",
+    "total_votes": 734,
+    "markey": 490,
+    "markey_pct": 66.757,
+    "moulton": 234,
+    "moulton_pct": 31.88,
+    "precincts": 1
+  },
+  {
+    "town": "Tolland",
+    "ward": "-",
+    "total_votes": 55,
+    "markey": 30,
+    "markey_pct": 54.545,
+    "moulton": 25,
+    "moulton_pct": 45.455,
+    "precincts": 1
+  },
+  {
+    "town": "Topsfield",
+    "ward": "-",
+    "total_votes": 1284,
+    "markey": 619,
+    "markey_pct": 48.209,
+    "moulton": 640,
+    "moulton_pct": 49.844,
+    "precincts": 2
+  },
+  {
+    "town": "Townsend",
+    "ward": "-",
+    "total_votes": 952,
+    "markey": 610,
+    "markey_pct": 64.076,
+    "moulton": 332,
+    "moulton_pct": 34.874,
+    "precincts": 3
+  },
+  {
+    "town": "Truro",
+    "ward": "-",
+    "total_votes": 832,
+    "markey": 575,
+    "markey_pct": 69.111,
+    "moulton": 248,
+    "moulton_pct": 29.808,
+    "precincts": 1
+  },
+  {
+    "town": "Tyngsborough",
+    "ward": "-",
+    "total_votes": 1329,
+    "markey": 844,
+    "markey_pct": 63.506,
+    "moulton": 476,
+    "moulton_pct": 35.816,
+    "precincts": 4
+  },
+  {
+    "town": "Tyringham",
+    "ward": "-",
+    "total_votes": 83,
+    "markey": 56,
+    "markey_pct": 67.47,
+    "moulton": 26,
+    "moulton_pct": 31.325,
+    "precincts": 1
+  },
+  {
+    "town": "Upton",
+    "ward": "-",
+    "total_votes": 1137,
+    "markey": 697,
+    "markey_pct": 61.302,
+    "moulton": 432,
+    "moulton_pct": 37.995,
+    "precincts": 3
+  },
+  {
+    "town": "Uxbridge",
+    "ward": "-",
+    "total_votes": 1424,
+    "markey": 877,
+    "markey_pct": 61.587,
+    "moulton": 542,
+    "moulton_pct": 38.062,
+    "precincts": 5
+  },
+  {
+    "town": "Wakefield",
+    "ward": "-",
+    "total_votes": 4654,
+    "markey": 2646,
+    "markey_pct": 56.854,
+    "moulton": 1941,
+    "moulton_pct": 41.706,
+    "precincts": 7
+  },
+  {
+    "town": "Wales",
+    "ward": "-",
+    "total_votes": 182,
+    "markey": 124,
+    "markey_pct": 68.132,
+    "moulton": 58,
+    "moulton_pct": 31.868,
+    "precincts": 1
+  },
+  {
+    "town": "Walpole",
+    "ward": "-",
+    "total_votes": 4029,
+    "markey": 2188,
+    "markey_pct": 54.306,
+    "moulton": 1716,
+    "moulton_pct": 42.591,
+    "precincts": 10
+  },
+  {
+    "town": "Waltham",
+    "ward": "1",
+    "total_votes": 1224,
+    "markey": 784,
+    "markey_pct": 64.052,
+    "moulton": 407,
+    "moulton_pct": 33.252,
+    "precincts": 3
+  },
+  {
+    "town": "Waltham",
+    "ward": "2",
+    "total_votes": 893,
+    "markey": 643,
+    "markey_pct": 72.004,
+    "moulton": 235,
+    "moulton_pct": 26.316,
+    "precincts": 2
+  },
+  {
+    "town": "Waltham",
+    "ward": "3",
+    "total_votes": 1116,
+    "markey": 764,
+    "markey_pct": 68.459,
+    "moulton": 333,
+    "moulton_pct": 29.839,
+    "precincts": 3
+  },
+  {
+    "town": "Waltham",
+    "ward": "4",
+    "total_votes": 752,
+    "markey": 472,
+    "markey_pct": 62.766,
+    "moulton": 265,
+    "moulton_pct": 35.239,
+    "precincts": 3
+  },
+  {
+    "town": "Waltham",
+    "ward": "5",
+    "total_votes": 868,
+    "markey": 642,
+    "markey_pct": 73.963,
+    "moulton": 206,
+    "moulton_pct": 23.733,
+    "precincts": 3
+  },
+  {
+    "town": "Waltham",
+    "ward": "6",
+    "total_votes": 849,
+    "markey": 606,
+    "markey_pct": 71.378,
+    "moulton": 229,
+    "moulton_pct": 26.973,
+    "precincts": 3
+  },
+  {
+    "town": "Waltham",
+    "ward": "7",
+    "total_votes": 777,
+    "markey": 530,
+    "markey_pct": 68.211,
+    "moulton": 235,
+    "moulton_pct": 30.245,
+    "precincts": 2
+  },
+  {
+    "town": "Waltham",
+    "ward": "8",
+    "total_votes": 883,
+    "markey": 640,
+    "markey_pct": 72.48,
+    "moulton": 227,
+    "moulton_pct": 25.708,
+    "precincts": 3
+  },
+  {
+    "town": "Waltham",
+    "ward": "9",
+    "total_votes": 721,
+    "markey": 549,
+    "markey_pct": 76.144,
+    "moulton": 161,
+    "moulton_pct": 22.33,
+    "precincts": 2
+  },
+  {
+    "town": "Ware",
+    "ward": "-",
+    "total_votes": 1024,
+    "markey": 619,
+    "markey_pct": 60.449,
+    "moulton": 401,
+    "moulton_pct": 39.16,
+    "precincts": 3
+  },
+  {
+    "town": "Wareham",
+    "ward": "-",
+    "total_votes": 2843,
+    "markey": 1903,
+    "markey_pct": 66.936,
+    "moulton": 909,
+    "moulton_pct": 31.973,
+    "precincts": 6
+  },
+  {
+    "town": "Warren",
+    "ward": "-",
+    "total_votes": 432,
+    "markey": 269,
+    "markey_pct": 62.269,
+    "moulton": 161,
+    "moulton_pct": 37.269,
+    "precincts": 2
+  },
+  {
+    "town": "Warwick",
+    "ward": "-",
+    "total_votes": 136,
+    "markey": 88,
+    "markey_pct": 64.706,
+    "moulton": 46,
+    "moulton_pct": 33.824,
+    "precincts": 1
+  },
+  {
+    "town": "Washington",
+    "ward": "-",
+    "total_votes": 116,
+    "markey": 84,
+    "markey_pct": 72.414,
+    "moulton": 32,
+    "moulton_pct": 27.586,
+    "precincts": 1
+  },
+  {
+    "town": "Watertown",
+    "ward": "-",
+    "total_votes": 7003,
+    "markey": 4971,
+    "markey_pct": 70.984,
+    "moulton": 1882,
+    "moulton_pct": 26.874,
+    "precincts": 12
+  },
+  {
+    "town": "Wayland",
+    "ward": "-",
+    "total_votes": 2643,
+    "markey": 1454,
+    "markey_pct": 55.013,
+    "moulton": 1164,
+    "moulton_pct": 44.041,
+    "precincts": 4
+  },
+  {
+    "town": "Webster",
+    "ward": "-",
+    "total_votes": 1282,
+    "markey": 839,
+    "markey_pct": 65.445,
+    "moulton": 426,
+    "moulton_pct": 33.229,
+    "precincts": 6
+  },
+  {
+    "town": "Wellesley",
+    "ward": "-",
+    "total_votes": 4433,
+    "markey": 2088,
+    "markey_pct": 47.101,
+    "moulton": 2288,
+    "moulton_pct": 51.613,
+    "precincts": 8
+  },
+  {
+    "town": "Wellfleet",
+    "ward": "-",
+    "total_votes": 1105,
+    "markey": 771,
+    "markey_pct": 69.774,
+    "moulton": 317,
+    "moulton_pct": 28.688,
+    "precincts": 1
+  },
+  {
+    "town": "Wendell",
+    "ward": "-",
+    "total_votes": 265,
+    "markey": 201,
+    "markey_pct": 75.849,
+    "moulton": 61,
+    "moulton_pct": 23.019,
+    "precincts": 1
+  },
+  {
+    "town": "Wenham",
+    "ward": "-",
+    "total_votes": 850,
+    "markey": 386,
+    "markey_pct": 45.412,
+    "moulton": 453,
+    "moulton_pct": 53.294,
+    "precincts": 2
+  },
+  {
+    "town": "W. Boylston",
+    "ward": "-",
+    "total_votes": 1532,
+    "markey": 850,
+    "markey_pct": 55.483,
+    "moulton": 613,
+    "moulton_pct": 40.013,
+    "precincts": 2
+  },
+  {
+    "town": "W. Bridgewater",
+    "ward": "-",
+    "total_votes": 800,
+    "markey": 500,
+    "markey_pct": 62.5,
+    "moulton": 287,
+    "moulton_pct": 35.875,
+    "precincts": 2
+  },
+  {
+    "town": "W. Brookfield",
+    "ward": "-",
+    "total_votes": 474,
+    "markey": 288,
+    "markey_pct": 60.759,
+    "moulton": 173,
+    "moulton_pct": 36.498,
+    "precincts": 1
+  },
+  {
+    "town": "W. Newbury",
+    "ward": "-",
+    "total_votes": 1009,
+    "markey": 490,
+    "markey_pct": 48.563,
+    "moulton": 509,
+    "moulton_pct": 50.446,
+    "precincts": 1
+  },
+  {
+    "town": "W. Springfield",
+    "ward": "-",
+    "total_votes": 2707,
+    "markey": 1653,
+    "markey_pct": 61.064,
+    "moulton": 997,
+    "moulton_pct": 36.83,
+    "precincts": 8
+  },
+  {
+    "town": "W. Stockbridge",
+    "ward": "-",
+    "total_votes": 296,
+    "markey": 198,
+    "markey_pct": 66.892,
+    "moulton": 96,
+    "moulton_pct": 32.432,
+    "precincts": 1
+  },
+  {
+    "town": "W. Tisbury",
+    "ward": "-",
+    "total_votes": 679,
+    "markey": 471,
+    "markey_pct": 69.367,
+    "moulton": 202,
+    "moulton_pct": 29.75,
+    "precincts": 1
+  },
+  {
+    "town": "Westborough",
+    "ward": "-",
+    "total_votes": 2545,
+    "markey": 1519,
+    "markey_pct": 59.686,
+    "moulton": 1000,
+    "moulton_pct": 39.293,
+    "precincts": 6
+  },
+  {
+    "town": "Westfield",
+    "ward": "1",
+    "total_votes": 765,
+    "markey": 462,
+    "markey_pct": 60.392,
+    "moulton": 291,
+    "moulton_pct": 38.039,
+    "precincts": 2
+  },
+  {
+    "town": "Westfield",
+    "ward": "2",
+    "total_votes": 533,
+    "markey": 328,
+    "markey_pct": 61.538,
+    "moulton": 196,
+    "moulton_pct": 36.773,
+    "precincts": 3
+  },
+  {
+    "town": "Westfield",
+    "ward": "3",
+    "total_votes": 619,
+    "markey": 412,
+    "markey_pct": 66.559,
+    "moulton": 197,
+    "moulton_pct": 31.826,
+    "precincts": 2
+  },
+  {
+    "town": "Westfield",
+    "ward": "4",
+    "total_votes": 671,
+    "markey": 405,
+    "markey_pct": 60.358,
+    "moulton": 258,
+    "moulton_pct": 38.45,
+    "precincts": 2
+  },
+  {
+    "town": "Westfield",
+    "ward": "5",
+    "total_votes": 871,
+    "markey": 491,
+    "markey_pct": 56.372,
+    "moulton": 365,
+    "moulton_pct": 41.906,
+    "precincts": 2
+  },
+  {
+    "town": "Westfield",
+    "ward": "6",
+    "total_votes": 569,
+    "markey": 342,
+    "markey_pct": 60.105,
+    "moulton": 213,
+    "moulton_pct": 37.434,
+    "precincts": 3
+  },
+  {
+    "town": "Westford",
+    "ward": "-",
+    "total_votes": 3314,
+    "markey": 2023,
+    "markey_pct": 61.044,
+    "moulton": 1258,
+    "moulton_pct": 37.96,
+    "precincts": 7
+  },
+  {
+    "town": "Westhampton",
+    "ward": "-",
+    "total_votes": 391,
+    "markey": 282,
+    "markey_pct": 72.123,
+    "moulton": 106,
+    "moulton_pct": 27.11,
+    "precincts": 1
+  },
+  {
+    "town": "Westminster",
+    "ward": "-",
+    "total_votes": 947,
+    "markey": 603,
+    "markey_pct": 63.675,
+    "moulton": 340,
+    "moulton_pct": 35.903,
+    "precincts": 4
+  },
+  {
+    "town": "Weston",
+    "ward": "-",
+    "total_votes": 1524,
+    "markey": 771,
+    "markey_pct": 50.591,
+    "moulton": 740,
+    "moulton_pct": 48.556,
+    "precincts": 4
+  },
+  {
+    "town": "Westport",
+    "ward": "-",
+    "total_votes": 2054,
+    "markey": 1175,
+    "markey_pct": 57.205,
+    "moulton": 842,
+    "moulton_pct": 40.993,
+    "precincts": 5
+  },
+  {
+    "town": "Westwood",
+    "ward": "-",
+    "total_votes": 2918,
+    "markey": 1556,
+    "markey_pct": 53.324,
+    "moulton": 1296,
+    "moulton_pct": 44.414,
+    "precincts": 5
+  },
+  {
+    "town": "Weymouth",
+    "ward": "-",
+    "total_votes": 7928,
+    "markey": 5050,
+    "markey_pct": 63.698,
+    "moulton": 2661,
+    "moulton_pct": 33.565,
+    "precincts": 19
+  },
+  {
+    "town": "Whately",
+    "ward": "-",
+    "total_votes": 355,
+    "markey": 232,
+    "markey_pct": 65.352,
+    "moulton": 118,
+    "moulton_pct": 33.239,
+    "precincts": 1
+  },
+  {
+    "town": "Whitman",
+    "ward": "-",
+    "total_votes": 1587,
+    "markey": 1003,
+    "markey_pct": 63.201,
+    "moulton": 560,
+    "moulton_pct": 35.287,
+    "precincts": 4
+  },
+  {
+    "town": "Wilbraham",
+    "ward": "-",
+    "total_votes": 2425,
+    "markey": 1391,
+    "markey_pct": 57.361,
+    "moulton": 976,
+    "moulton_pct": 40.247,
+    "precincts": 4
+  },
+  {
+    "town": "Williamsburg",
+    "ward": "-",
+    "total_votes": 683,
+    "markey": 517,
+    "markey_pct": 75.695,
+    "moulton": 164,
+    "moulton_pct": 24.012,
+    "precincts": 1
+  },
+  {
+    "town": "Williamstown",
+    "ward": "-",
+    "total_votes": 1595,
+    "markey": 1079,
+    "markey_pct": 67.649,
+    "moulton": 477,
+    "moulton_pct": 29.906,
+    "precincts": 3
+  },
+  {
+    "town": "Wilmington",
+    "ward": "-",
+    "total_votes": 3139,
+    "markey": 1770,
+    "markey_pct": 56.387,
+    "moulton": 1325,
+    "moulton_pct": 42.211,
+    "precincts": 6
+  },
+  {
+    "town": "Winchendon",
+    "ward": "-",
+    "total_votes": 802,
+    "markey": 553,
+    "markey_pct": 68.953,
+    "moulton": 240,
+    "moulton_pct": 29.925,
+    "precincts": 3
+  },
+  {
+    "town": "Winchester",
+    "ward": "-",
+    "total_votes": 3712,
+    "markey": 2026,
+    "markey_pct": 54.58,
+    "moulton": 1633,
+    "moulton_pct": 43.992,
+    "precincts": 8
+  },
+  {
+    "town": "Windsor",
+    "ward": "-",
+    "total_votes": 148,
+    "markey": 110,
+    "markey_pct": 74.324,
+    "moulton": 35,
+    "moulton_pct": 23.649,
+    "precincts": 1
+  },
+  {
+    "town": "Winthrop",
+    "ward": "-",
+    "total_votes": 2816,
+    "markey": 1681,
+    "markey_pct": 59.695,
+    "moulton": 946,
+    "moulton_pct": 33.594,
+    "precincts": 6
+  },
+  {
+    "town": "Woburn",
+    "ward": "1",
+    "total_votes": 698,
+    "markey": 462,
+    "markey_pct": 66.189,
+    "moulton": 224,
+    "moulton_pct": 32.092,
+    "precincts": 3
+  },
+  {
+    "town": "Woburn",
+    "ward": "2",
+    "total_votes": 748,
+    "markey": 516,
+    "markey_pct": 68.984,
+    "moulton": 214,
+    "moulton_pct": 28.61,
+    "precincts": 2
+  },
+  {
+    "town": "Woburn",
+    "ward": "3",
+    "total_votes": 746,
+    "markey": 477,
+    "markey_pct": 63.941,
+    "moulton": 255,
+    "moulton_pct": 34.182,
+    "precincts": 2
+  },
+  {
+    "town": "Woburn",
+    "ward": "4",
+    "total_votes": 700,
+    "markey": 465,
+    "markey_pct": 66.429,
+    "moulton": 216,
+    "moulton_pct": 30.857,
+    "precincts": 2
+  },
+  {
+    "town": "Woburn",
+    "ward": "5",
+    "total_votes": 619,
+    "markey": 392,
+    "markey_pct": 63.328,
+    "moulton": 216,
+    "moulton_pct": 34.895,
+    "precincts": 2
+  },
+  {
+    "town": "Woburn",
+    "ward": "6",
+    "total_votes": 522,
+    "markey": 354,
+    "markey_pct": 67.816,
+    "moulton": 161,
+    "moulton_pct": 30.843,
+    "precincts": 2
+  },
+  {
+    "town": "Woburn",
+    "ward": "7",
+    "total_votes": 902,
+    "markey": 540,
+    "markey_pct": 59.867,
+    "moulton": 350,
+    "moulton_pct": 38.803,
+    "precincts": 2
+  },
+  {
+    "town": "Worcester",
+    "ward": "1",
+    "total_votes": 2517,
+    "markey": 1635,
+    "markey_pct": 64.958,
+    "moulton": 833,
+    "moulton_pct": 33.095,
+    "precincts": 6
+  },
+  {
+    "town": "Worcester",
+    "ward": "2",
+    "total_votes": 2170,
+    "markey": 1477,
+    "markey_pct": 68.065,
+    "moulton": 624,
+    "moulton_pct": 28.756,
+    "precincts": 7
+  },
+  {
+    "town": "Worcester",
+    "ward": "3",
+    "total_votes": 1258,
+    "markey": 899,
+    "markey_pct": 71.463,
+    "moulton": 324,
+    "moulton_pct": 25.755,
+    "precincts": 8
+  },
+  {
+    "town": "Worcester",
+    "ward": "4",
+    "total_votes": 1192,
+    "markey": 802,
+    "markey_pct": 67.282,
+    "moulton": 352,
+    "moulton_pct": 29.53,
+    "precincts": 8
+  },
+  {
+    "town": "Worcester",
+    "ward": "5",
+    "total_votes": 1553,
+    "markey": 1063,
+    "markey_pct": 68.448,
+    "moulton": 447,
+    "moulton_pct": 28.783,
+    "precincts": 6
+  },
+  {
+    "town": "Worcester",
+    "ward": "6",
+    "total_votes": 701,
+    "markey": 526,
+    "markey_pct": 75.036,
+    "moulton": 164,
+    "moulton_pct": 23.395,
+    "precincts": 6
+  },
+  {
+    "town": "Worcester",
+    "ward": "7",
+    "total_votes": 1564,
+    "markey": 1092,
+    "markey_pct": 69.821,
+    "moulton": 445,
+    "moulton_pct": 28.453,
+    "precincts": 7
+  },
+  {
+    "town": "Worcester",
+    "ward": "8",
+    "total_votes": 538,
+    "markey": 409,
+    "markey_pct": 76.022,
+    "moulton": 110,
+    "moulton_pct": 20.446,
+    "precincts": 6
+  },
+  {
+    "town": "Worcester",
+    "ward": "9",
+    "total_votes": 2503,
+    "markey": 1686,
+    "markey_pct": 67.359,
+    "moulton": 770,
+    "moulton_pct": 30.763,
+    "precincts": 6
+  },
+  {
+    "town": "Worcester",
+    "ward": "10",
+    "total_votes": 797,
+    "markey": 620,
+    "markey_pct": 77.792,
+    "moulton": 164,
+    "moulton_pct": 20.577,
+    "precincts": 7
+  },
+  {
+    "town": "Worthington",
+    "ward": "-",
+    "total_votes": 298,
+    "markey": 203,
+    "markey_pct": 68.121,
+    "moulton": 91,
+    "moulton_pct": 30.537,
+    "precincts": 1
+  },
+  {
+    "town": "Wrentham",
+    "ward": "-",
+    "total_votes": 1616,
+    "markey": 938,
+    "markey_pct": 58.045,
+    "moulton": 653,
+    "moulton_pct": 40.408,
+    "precincts": 4
+  },
+  {
+    "town": "Yarmouth",
+    "ward": "-",
+    "total_votes": 4588,
+    "markey": 2735,
+    "markey_pct": 59.612,
+    "moulton": 1741,
+    "moulton_pct": 37.947,
+    "precincts": 9
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "total_votes_cast": 913768,
+  "total_markey": 580628,
+  "markey_pct": 63.542,
+  "total_moulton": 314198,
+  "moulton_pct": 34.385,
+  "total_all_others": 2225,
+  "total_blanks": 16717,
+  "total_towns": 351,
+  "total_precincts": 2393,
+  "towns_with_wards": 39,
+  "candidates": "Edward J. Markey / Seth W. Moulton",
+  "party": "Democratic",
+  "election": "2026 U.S. Senate Democratic Primary",
+  "source": "Massachusetts PD43+ Official Results"
+}
