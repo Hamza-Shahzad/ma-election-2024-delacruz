@@ -709,124 +709,118 @@ let townsData = [];
 let wardsData = [];
 let precinctsData = [];
 let summaryData = null;
-// 2026 U.S. Senate Democratic Primary (Markey vs. Moulton)
 let primaryTowns = [];
 let primaryWards = [];
 let primaryPrecincts = [];
 let primarySummary = null;
+let senateTowns = [];
+let senateWards = [];
+let senatePrecincts = [];
+let senateSummary = null;
+let governorTowns = [];
+let governorWards = [];
+let governorPrecincts = [];
+let governorSummary = null;
 let geoLayer = null;
 let vtdLayer = null;
 let tractLayer = null;
 let selectedTown = null;
 let highlightedWard = null;  // { town, ward } or null
 const VTD_ZOOM_THRESHOLD = 12; // Show precinct/tract boundaries at zoom >= 12
-let currentView = 'delacruz';  // 'delacruz' | 'stein' | 'markey' | 'moulton' | 'race' | 'age'
-let raceMetric = 'white_pct';  // current race category when in race view
-let ageMetric = 'under18_pct';  // current age bracket when in age view
-let ageLayer = null;  // census tract age demographics layer
+let currentView = 'delacruz';
+let raceMetric = 'white_pct';
+let ageMetric = 'under18_pct';
+let ageLayer = null;
 
-// ── Candidate config helper (election views only) ──
+const CANDIDATES = {
+  delacruz: {
+    id: 'delacruz', name: 'Claudia De La Cruz / Karina Garcia', shortName: 'De La Cruz', party: 'PSL',
+    votesKey: 'de_la_cruz', pctKey: 'de_la_cruz_pct', rankKey: 'rank',
+    summaryVotesKey: 'total_de_la_cruz', summaryPctKey: 'de_la_cruz_pct',
+    totalKey: 'total_votes', matchedKey: 'matched', maxPct: 1.6,
+    legendTitle: 'De La Cruz Vote %', label0: '0%', labelMax: '1.6%+',
+    subtitle: '2024 Presidential General Election — Massachusetts',
+  },
+  stein: {
+    id: 'stein', name: 'Jill Stein / Butch Ware', shortName: 'Stein', party: 'Green',
+    votesKey: 'stein', pctKey: 'stein_pct', rankKey: 'stein_rank',
+    summaryVotesKey: 'total_stein', summaryPctKey: 'stein_pct',
+    totalKey: 'total_votes', matchedKey: 'matched', maxPct: 3.5,
+    legendTitle: 'Stein Vote %', label0: '0%', labelMax: '3.5%+',
+    subtitle: '2024 Presidential General Election — Massachusetts',
+  },
+  markey: {
+    id: 'markey', name: 'Edward J. Markey', shortName: 'Markey', party: 'Democratic',
+    votesKey: 'markey', pctKey: 'markey_pct', rankKey: 'markey_rank',
+    summaryVotesKey: 'total_markey', summaryPctKey: 'markey_pct',
+    totalKey: 'p26_total_votes', matchedKey: 'p26_matched', maxPct: 90,
+    legendTitle: 'Markey Vote % — 2026 Dem. Senate Primary', label0: '0%', labelMax: '90%+',
+    subtitle: '2026 U.S. Senate Democratic Primary — Massachusetts',
+  },
+  moulton: {
+    id: 'moulton', name: 'Seth W. Moulton', shortName: 'Moulton', party: 'Democratic',
+    votesKey: 'moulton', pctKey: 'moulton_pct', rankKey: 'moulton_rank',
+    summaryVotesKey: 'total_moulton', summaryPctKey: 'moulton_pct',
+    totalKey: 'p26_total_votes', matchedKey: 'p26_matched', maxPct: 65,
+    legendTitle: 'Moulton Vote % — 2026 Dem. Senate Primary', label0: '0%', labelMax: '65%+',
+    subtitle: '2026 U.S. Senate Democratic Primary — Massachusetts',
+  },
+  tache: {
+    id: 'tache', name: 'Joe Tache', shortName: 'Tache', party: 'Socialism and Liberation',
+    votesKey: 's26_tache', pctKey: 's26_tache_pct', rankKey: 's26_tache_rank',
+    summaryVotesKey: 's26_tache', summaryPctKey: 's26_tache_pct',
+    totalKey: 's26_total_votes', matchedKey: 's26_matched', maxPct: 8,
+    legendTitle: 'Tache Vote % — 2026 U.S. Senate', label0: '0%', labelMax: '8%+',
+    subtitle: '2026 U.S. Senate General Election — Massachusetts',
+  },
+  james: {
+    id: 'james', name: 'Andrea James / Kayla Kittredge', shortName: 'James', party: 'Independent',
+    votesKey: 'g26_james', pctKey: 'g26_james_pct', rankKey: 'g26_james_rank',
+    summaryVotesKey: 'g26_james', summaryPctKey: 'g26_james_pct',
+    totalKey: 'g26_total_votes', matchedKey: 'g26_matched', maxPct: 11,
+    legendTitle: 'James Vote % — 2026 Governor', label0: '0%', labelMax: '11%+',
+    subtitle: '2026 Governor General Election — Massachusetts',
+  },
+};
+
 function cand() {
-  if (currentView === 'stein') {
-    return {
-      id: 'stein',
-      name: 'Jill Stein / Butch Ware',
-      shortName: 'Stein',
-      party: 'Green',
-      votesKey: 'stein',
-      pctKey: 'stein_pct',
-      rankKey: 'stein_rank',
-      summaryVotesKey: 'total_stein',
-      summaryPctKey: 'stein_pct',
-      totalKey: 'total_votes',
-      matchedKey: 'matched',
-      maxPct: 3.5,
-      legendTitle: 'Stein Vote %',
-      label0: '0%',
-      labelMax: '3.5%+',
-    };
-  }
-  if (currentView === 'markey') {
-    return {
-      id: 'markey',
-      name: 'Edward J. Markey',
-      shortName: 'Markey',
-      party: 'Democratic',
-      votesKey: 'markey',
-      pctKey: 'markey_pct',
-      rankKey: 'markey_rank',
-      summaryVotesKey: 'total_markey',
-      summaryPctKey: 'markey_pct',
-      totalKey: 'p26_total_votes',
-      matchedKey: 'p26_matched',
-      maxPct: 90,
-      legendTitle: 'Markey Vote % — 2026 Dem. Senate Primary',
-      label0: '0%',
-      labelMax: '90%+',
-    };
-  }
-  if (currentView === 'moulton') {
-    return {
-      id: 'moulton',
-      name: 'Seth W. Moulton',
-      shortName: 'Moulton',
-      party: 'Democratic',
-      votesKey: 'moulton',
-      pctKey: 'moulton_pct',
-      rankKey: 'moulton_rank',
-      summaryVotesKey: 'total_moulton',
-      summaryPctKey: 'moulton_pct',
-      totalKey: 'p26_total_votes',
-      matchedKey: 'p26_matched',
-      maxPct: 65,
-      legendTitle: 'Moulton Vote % — 2026 Dem. Senate Primary',
-      label0: '0%',
-      labelMax: '65%+',
-    };
-  }
-  return {
-    id: 'delacruz',
-    name: 'Claudia De La Cruz / Karina Garcia',
-    shortName: 'De La Cruz',
-    party: 'PSL',
-    votesKey: 'de_la_cruz',
-    pctKey: 'de_la_cruz_pct',
-    rankKey: 'rank',
-    summaryVotesKey: 'total_de_la_cruz',
-    summaryPctKey: 'de_la_cruz_pct',
-    totalKey: 'total_votes',
-    matchedKey: 'matched',
-    maxPct: 1.6,
-    legendTitle: 'De La Cruz Vote %',
-    label0: '0%',
-    labelMax: '1.6%+',
-  };
+  return CANDIDATES[currentView] || CANDIDATES.delacruz;
 }
 
-// True when viewing the 2026 U.S. Senate Democratic Primary
 function isPrimaryView() {
   return currentView === 'markey' || currentView === 'moulton';
 }
 
-// Data bundle for the active election (2024 presidential or 2026 Senate primary)
+function isSenateGeneralView() {
+  return currentView === 'tache';
+}
+
+function isGovernorGeneralView() {
+  return currentView === 'james';
+}
+
 function electionData() {
   if (isPrimaryView()) {
     return {
-      towns: primaryTowns,
-      wards: primaryWards,
-      precincts: primaryPrecincts,
-      summary: primarySummary,
-      townByGeoName: window.primaryTownByGeoName || {},
-      townByDataName: window.primaryTownByDataName || {},
+      towns: primaryTowns, wards: primaryWards, precincts: primaryPrecincts, summary: primarySummary,
+      townByGeoName: window.primaryTownByGeoName || {}, townByDataName: window.primaryTownByDataName || {},
+    };
+  }
+  if (isSenateGeneralView()) {
+    return {
+      towns: senateTowns, wards: senateWards, precincts: senatePrecincts, summary: senateSummary,
+      townByGeoName: window.senateTownByGeoName || {}, townByDataName: window.senateTownByDataName || {},
+    };
+  }
+  if (isGovernorGeneralView()) {
+    return {
+      towns: governorTowns, wards: governorWards, precincts: governorPrecincts, summary: governorSummary,
+      townByGeoName: window.governorTownByGeoName || {}, townByDataName: window.governorTownByDataName || {},
     };
   }
   return {
-    towns: townsData,
-    wards: wardsData,
-    precincts: precinctsData,
-    summary: summaryData,
-    townByGeoName: window.townByGeoName || {},
-    townByDataName: window.townByDataName || {},
+    towns: townsData, wards: wardsData, precincts: precinctsData, summary: summaryData,
+    townByGeoName: window.townByGeoName || {}, townByDataName: window.townByDataName || {},
   };
 }
 
@@ -857,60 +851,47 @@ function ageConfig() {
 }
 
 function cycleView() {
-  // Cycle through views: delacruz → stein → markey → moulton → race → age → delacruz
-  const views = ['delacruz', 'stein', 'markey', 'moulton', 'race', 'age'];
+  const views = ['delacruz', 'stein', 'markey', 'moulton', 'tache', 'james', 'race', 'age'];
   const idx = views.indexOf(currentView);
   currentView = views[(idx + 1) % views.length];
 
-  // Reset ward sort to default
   wardSortKey = null;
-
-  // Update legend
   updateLegend();
 
-  // Show/hide race and age category buttons
   const raceBtns = document.getElementById('race-buttons');
   if (raceBtns) raceBtns.style.display = currentView === 'race' ? 'flex' : 'none';
   const ageBtns = document.getElementById('age-buttons');
   if (ageBtns) ageBtns.style.display = currentView === 'age' ? 'flex' : 'none';
 
-  // Update sidebar header + subtitle
   const subtitleEl = document.getElementById('sidebar-subtitle');
   if (currentView === 'race') {
     document.getElementById('sidebar-candidate').textContent = '🌍 Race Demographics';
     if (subtitleEl) subtitleEl.textContent = 'Massachusetts Census Tracts';
+    document.title = 'Race Demographics — MA Census Tracts';
   } else if (currentView === 'age') {
     document.getElementById('sidebar-candidate').textContent = '👶 Age Demographics';
     if (subtitleEl) subtitleEl.textContent = 'Massachusetts Census Tracts';
+    document.title = 'Age Demographics — MA Census Tracts';
   } else {
     document.getElementById('sidebar-candidate').textContent = '🗳️ ' + cand().name;
-    if (subtitleEl) subtitleEl.textContent = isPrimaryView()
-      ? '2026 U.S. Senate Democratic Primary — Massachusetts'
-      : '2024 Presidential General Election — Massachusetts';
+    if (subtitleEl) subtitleEl.textContent = cand().subtitle;
+    document.title = cand().shortName + ' — ' + cand().subtitle.split(' — ')[0] + ' Results';
   }
 
-  // Update toggle button label (show the NEXT view)
   const nextView = views[(idx + 2) % views.length];
-  const nextLabels = { delacruz: 'De La Cruz', stein: 'Stein', markey: 'Markey', moulton: 'Moulton', race: 'Race', age: 'Age' };
+  const nextLabels = {
+    delacruz: 'De La Cruz', stein: 'Stein', markey: 'Markey', moulton: 'Moulton',
+    tache: 'Tache', james: 'James', race: 'Race', age: 'Age',
+  };
   document.getElementById('toggle-label').textContent = nextLabels[nextView];
 
-  // Update page title
-  if (currentView === 'race') {
-    document.title = 'Race Demographics — MA Census Tracts';
-  } else if (currentView === 'age') {
-    document.title = 'Age Demographics — MA Census Tracts';
-  } else if (isPrimaryView()) {
-    document.title = cand().shortName + ' — 2026 MA Senate Democratic Primary Results';
-  } else {
-    document.title = cand().shortName + ' — 2024 MA Presidential Election Results';
-  }
-
-  // Update toggle button title
   const nextTitles = {
     delacruz: 'Switch to PSL (Claudia De La Cruz)',
     stein: 'Switch to Green Party (Jill Stein)',
     markey: 'Switch to 2026 Senate Dem. Primary (Ed Markey)',
     moulton: 'Switch to 2026 Senate Dem. Primary (Seth Moulton)',
+    tache: 'Switch to 2026 U.S. Senate General (Joe Tache)',
+    james: 'Switch to 2026 Governor General (Andrea James)',
     race: 'Switch to Race Demographics',
     age: 'Switch to Age Demographics',
   };
@@ -982,6 +963,20 @@ function updateLegend() {
     label0 = c.label0;
     labelMax = c.labelMax;
     gradient = 'linear-gradient(to right, #fff1f2, #fecdd3, #fb7185, #e11d48, #881337, #4c0519)';
+  } else if (currentView === 'tache') {
+    const c = cand();
+    title = c.legendTitle;
+    max = c.maxPct;
+    label0 = c.label0;
+    labelMax = c.labelMax;
+    gradient = 'linear-gradient(to right, #fff7ed, #fed7aa, #fb923c, #ea580c, #9a3412, #431407)';
+  } else if (currentView === 'james') {
+    const c = cand();
+    title = c.legendTitle;
+    max = c.maxPct;
+    label0 = c.label0;
+    labelMax = c.labelMax;
+    gradient = 'linear-gradient(to right, #f0fdfa, #99f6e4, #2dd4bf, #0d9488, #115e59, #042f2e)';
   } else if (currentView === 'stein') {
     const c = cand();
     title = c.legendTitle;
@@ -1188,6 +1183,24 @@ function colorScale(pct) {
         [0.8,  [136, 19,  55]],
         [1.0,  [76,  5,   25]],
       ];
+    } else if (currentView === 'tache') {
+      stops = [
+        [0,    [255, 247, 237]],
+        [0.2,  [254, 215, 170]],
+        [0.4,  [251, 146, 60]],
+        [0.6,  [234, 88,  12]],
+        [0.8,  [154, 52,  18]],
+        [1.0,  [67,  20,  7]],
+      ];
+    } else if (currentView === 'james') {
+      stops = [
+        [0,    [240, 253, 250]],
+        [0.2,  [153, 246, 228]],
+        [0.4,  [45,  212, 191]],
+        [0.6,  [13,  148, 136]],
+        [0.8,  [17,  94,  89]],
+        [1.0,  [4,   47,  46]],
+      ];
     } else {
       // Purple gradient for PSL
       stops = [
@@ -1261,7 +1274,11 @@ function vtdTooltip(feature, layer) {
     const wardLabel = p.ward && p.ward !== '-' ? ` Ward ${p.ward}` : '';
     const body = isPrimaryView()
       ? `Markey: ${p.markey_pct}% (${p.markey.toLocaleString()})<br>Moulton: ${p.moulton_pct}% (${p.moulton.toLocaleString()})<br>Total: ${p.p26_total_votes.toLocaleString()}`
-      : `${c.shortName}: ${p[c.pctKey]}% (${p[c.votesKey].toLocaleString()} / ${p[c.totalKey].toLocaleString()})`;
+      : isSenateGeneralView()
+        ? `Tache: ${p.s26_tache_pct}% (${p.s26_tache.toLocaleString()})<br>Markey: ${p.s26_markey_pct}% | Deaton: ${p.s26_deaton_pct}%<br>Ayyadurai: ${p.s26_ayyadurai_pct}%<br>Total: ${p.s26_total_votes.toLocaleString()}`
+        : isGovernorGeneralView()
+          ? `James: ${p.g26_james_pct}% (${p.g26_james.toLocaleString()})<br>Healey: ${p.g26_healey_pct}% | Minogue: ${p.g26_minogue_pct}%<br>Total: ${p.g26_total_votes.toLocaleString()}`
+          : `${c.shortName}: ${p[c.pctKey]}% (${p[c.votesKey].toLocaleString()} / ${p[c.totalKey].toLocaleString()})`;
     layer.unbindTooltip();
     layer.bindTooltip(
       `<div class="maptip"><strong>${p.town}${wardLabel} Pct ${p.pct}</strong><br>${body}</div>`,
@@ -1287,6 +1304,14 @@ function vtdClick(feature, layer) {
         body = `Markey: <b>${p.markey_pct}%</b> (${p.markey.toLocaleString()} votes)<br>
           Moulton: <b>${p.moulton_pct}%</b> (${p.moulton.toLocaleString()} votes)<br>
           <span style="color:#888;">Total: ${p.p26_total_votes.toLocaleString()} votes</span>`;
+      } else if (isSenateGeneralView()) {
+        body = `Tache: <b>${p.s26_tache_pct}%</b> (${p.s26_tache.toLocaleString()} votes)<br>
+          Markey: ${p.s26_markey_pct}% | Deaton: ${p.s26_deaton_pct}% | Ayyadurai: ${p.s26_ayyadurai_pct}%<br>
+          <span style="color:#888;">Total: ${p.s26_total_votes.toLocaleString()} votes</span>`;
+      } else if (isGovernorGeneralView()) {
+        body = `James: <b>${p.g26_james_pct}%</b> (${p.g26_james.toLocaleString()} votes)<br>
+          Healey: ${p.g26_healey_pct}% | Minogue: ${p.g26_minogue_pct}%<br>
+          <span style="color:#888;">Total: ${p.g26_total_votes.toLocaleString()} votes</span>`;
       } else {
         const harrisPct = p.total_votes > 0 ? (p.harris / p.total_votes * 100).toFixed(1) : '0.0';
         const trumpPct = p.total_votes > 0 ? (p.trump / p.total_votes * 100).toFixed(1) : '0.0';
@@ -1683,7 +1708,12 @@ function updateVTDLayer() {
 
 // ── Load data ──
 async function loadData() {
-  const [towns, wards, precincts, summary, pTowns, pWards, pPrecincts, pSummary] = await Promise.all([
+  const [
+    towns, wards, precincts, summary,
+    pTowns, pWards, pPrecincts, pSummary,
+    sTowns, sWards, sPrecincts, sSummary,
+    gTowns, gWards, gPrecincts, gSummary,
+  ] = await Promise.all([
     fetch('data/towns.json').then(r => r.json()),
     fetch('data/wards.json').then(r => r.json()),
     fetch('data/precincts.json').then(r => r.json()),
@@ -1692,6 +1722,14 @@ async function loadData() {
     fetch('data/primary2026_wards.json').then(r => r.json()),
     fetch('data/primary2026_precincts.json').then(r => r.json()),
     fetch('data/primary2026_summary.json').then(r => r.json()),
+    fetch('data/senate2026_towns.json').then(r => r.json()),
+    fetch('data/senate2026_wards.json').then(r => r.json()),
+    fetch('data/senate2026_precincts.json').then(r => r.json()),
+    fetch('data/senate2026_summary.json').then(r => r.json()),
+    fetch('data/governor2026_towns.json').then(r => r.json()),
+    fetch('data/governor2026_wards.json').then(r => r.json()),
+    fetch('data/governor2026_precincts.json').then(r => r.json()),
+    fetch('data/governor2026_summary.json').then(r => r.json()),
   ]);
   townsData = towns;
   wardsData = wards;
@@ -1701,21 +1739,27 @@ async function loadData() {
   primaryWards = pWards;
   primaryPrecincts = pPrecincts;
   primarySummary = pSummary;
+  senateTowns = sTowns;
+  senateWards = sWards;
+  senatePrecincts = sPrecincts;
+  senateSummary = sSummary;
+  governorTowns = gTowns;
+  governorWards = gWards;
+  governorPrecincts = gPrecincts;
+  governorSummary = gSummary;
 
-  // Build lookup maps for town name normalization
-  // Census GeoJSON uses full names (North), CSV uses abbreviations (N.)
-  window.townByGeoName = {};   // GeoJSON full name -> data object
-  window.townByDataName = {};  // Data abbreviated name -> data object
-  for (const t of townsData) {
-    window.townByDataName[t.town] = t;
-    window.townByGeoName[normalizeName(t.town)] = t;
+  function buildTownLookup(prefix, data) {
+    window[prefix + 'TownByGeoName'] = {};
+    window[prefix + 'TownByDataName'] = {};
+    for (const town of data) {
+      window[prefix + 'TownByDataName'][town.town] = town;
+      window[prefix + 'TownByGeoName'][normalizeName(town.town)] = town;
+    }
   }
-  window.primaryTownByGeoName = {};
-  window.primaryTownByDataName = {};
-  for (const t of primaryTowns) {
-    window.primaryTownByDataName[t.town] = t;
-    window.primaryTownByGeoName[normalizeName(t.town)] = t;
-  }
+  buildTownLookup('', townsData);
+  buildTownLookup('primary', primaryTowns);
+  buildTownLookup('senate', senateTowns);
+  buildTownLookup('governor', governorTowns);
   updateSummaryStats();
 }
 
@@ -2133,8 +2177,14 @@ function renderPrecinctTable(precincts) {
   const ctx = isPrimaryView()
     ? [ { key: 'markey', label: 'Markey', color: '#7eb8da' },
         { key: 'moulton', label: 'Moulton', color: '#fb7185' } ]
-    : [ { key: 'harris', label: 'Harris', color: '#7eb8da' },
-        { key: 'trump', label: 'Trump', color: '#e57373' } ];
+    : isSenateGeneralView()
+      ? [ { key: 's26_markey', label: 'Markey', color: '#7eb8da' },
+          { key: 's26_deaton', label: 'Deaton', color: '#e57373' } ]
+      : isGovernorGeneralView()
+        ? [ { key: 'g26_healey', label: 'Healey', color: '#7eb8da' },
+            { key: 'g26_minogue', label: 'Minogue', color: '#e57373' } ]
+        : [ { key: 'harris', label: 'Harris', color: '#7eb8da' },
+            { key: 'trump', label: 'Trump', color: '#e57373' } ];
   let html = `<table>
     <thead><tr>
       <th>Precinct</th><th>${c.shortName}</th><th>${c.shortName}%</th><th>Total</th>

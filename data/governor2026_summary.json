@@ -1,0 +1,18 @@
+{
+  "total_votes": 2749609,
+  "all_others": 2496,
+  "blanks": 35498,
+  "g26_healey": 1691156,
+  "g26_minogue": 930508,
+  "g26_james": 89951,
+  "g26_healey_pct": 61.505,
+  "g26_minogue_pct": 33.841,
+  "g26_james_pct": 3.271,
+  "total_towns": 351,
+  "total_precincts": 2393,
+  "towns_with_wards": 39,
+  "candidates": "Healey and Driscoll / Minogue and Oliver / James and Kittredge",
+  "election": "2026 Governor General Election",
+  "source": "Massachusetts PD43+ Official Results",
+  "source_url": "https://electionstats.state.ma.us/elections/view/173526/"
+}

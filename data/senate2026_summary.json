@@ -1,0 +1,20 @@
+{
+  "total_votes": 2749609,
+  "all_others": 3811,
+  "blanks": 51371,
+  "s26_markey": 1718276,
+  "s26_deaton": 855969,
+  "s26_ayyadurai": 61085,
+  "s26_tache": 59097,
+  "s26_markey_pct": 62.492,
+  "s26_deaton_pct": 31.131,
+  "s26_ayyadurai_pct": 2.222,
+  "s26_tache_pct": 2.149,
+  "total_towns": 351,
+  "total_precincts": 2393,
+  "towns_with_wards": 39,
+  "candidates": "Edward J. Markey / John Deaton / Shiva Ayyadurai / Joe Tache",
+  "election": "2026 U.S. Senate General Election",
+  "source": "Massachusetts PD43+ Official Results",
+  "source_url": "https://electionstats.state.ma.us/elections/view/173531/"
+}
