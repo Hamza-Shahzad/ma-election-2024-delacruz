@@ -1754,11 +1754,13 @@ async function loadData() {
   governorSummary = gSummary;
 
   function buildTownLookup(prefix, data) {
-    window[prefix + 'TownByGeoName'] = {};
-    window[prefix + 'TownByDataName'] = {};
+    const geoKey = prefix ? prefix + 'TownByGeoName' : 'townByGeoName';
+    const dataKey = prefix ? prefix + 'TownByDataName' : 'townByDataName';
+    window[geoKey] = {};
+    window[dataKey] = {};
     for (const town of data) {
-      window[prefix + 'TownByDataName'][town.town] = town;
-      window[prefix + 'TownByGeoName'][normalizeName(town.town)] = town;
+      window[dataKey][town.town] = town;
+      window[geoKey][normalizeName(town.town)] = town;
     }
   }
   buildTownLookup('', townsData);
