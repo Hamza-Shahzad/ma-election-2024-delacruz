@@ -45,6 +45,9 @@ body {
 
 /* Leaflet dark tile overrides */
 .leaflet-container { background: #1a1a2e; }
+.leaflet-tile-pane {
+  filter: invert(1) hue-rotate(180deg) brightness(0.75) contrast(1.2) saturate(0.35);
+}
 
 /* ── Sidebar ── */
 #sidebar {
@@ -1012,9 +1015,10 @@ function updateLegend() {
 const MAP = L.map('map', { zoomControl: true }).setView([42.36, -71.8], 8);
 
 // OpenStreetMap tile layer (no API key required)
-L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+const baseTileLayer = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>',
   maxZoom: 19,
+  opacity: 0.22,
 }).addTo(MAP);
 
 // ── Mobile panel ──
@@ -1091,6 +1095,7 @@ function toggleFill() {
     btn.classList.add('active');
     grad.style.opacity = '0.3';
   }
+  baseTileLayer.setOpacity(fillVisible ? 0.22 : 0.9);
 
   // Reset all layers — styleFeature/vtdStyle/tractStyle/ageStyle now respect fillVisible
   if (geoLayer) geoLayer.eachLayer(l => geoLayer.resetStyle(l));
