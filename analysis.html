@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Massachusetts PSL election analysis, 2024–2026: vote growth, branch results, demographic relationships, opportunity areas, and a Leninist framework for measuring movement growth.">
+<title>Massachusetts PSL Election Analysis — 2024–2026</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #1a1a2e;
+  --surface: #16213e;
+  --surface2: #0f3460;
+  --text: #e0e0e0;
+  --text-dim: #a0a0b0;
+  --accent: #9b59b6;
+  --accent-light: #c39bdb;
+  --accent-dark: #6c3483;
+  --border: #2a2a4a;
+  --highlight: #e94560;
+  --positive: #7bd88f;
+  --negative: #ff9aa9;
+  --warning: #f2c879;
+  --content: 1180px;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+}
+a { color: var(--accent-light); text-underline-offset: 3px; }
+a:hover { color: #e3c9f2; }
+a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
+  outline: 3px solid var(--warning);
+  outline-offset: 4px;
+}
+strong { color: #fff; }
+.skip-link {
+  position: fixed;
+  top: -80px;
+  left: 16px;
+  z-index: 100;
+  background: #fff;
+  color: #111;
+  padding: 10px 16px;
+  border-radius: 6px;
+}
+.skip-link:focus { top: 12px; }
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: rgba(22, 33, 62, 0.96);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(12px);
+}
+.topbar-inner {
+  max-width: var(--content);
+  margin: 0 auto;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.brand { color: #fff; text-decoration: none; font-weight: 750; white-space: nowrap; }
+.map-link {
+  display: inline-block;
+  color: var(--accent-light);
+  text-decoration: none;
+  font-size: 0.86rem;
+  font-weight: 650;
+  white-space: nowrap;
+}
+.section-nav {
+  max-width: var(--content);
+  margin: 0 auto;
+  padding: 0 24px 10px;
+  display: flex;
+  gap: 18px;
+  overflow-x: auto;
+  font-size: 0.78rem;
+  white-space: nowrap;
+}
+.section-nav a { color: var(--text-dim); text-decoration: none; }
+.section-nav a:hover { color: #fff; }
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border);
+  background:
+    radial-gradient(circle at 85% 15%, rgba(155, 89, 182, 0.28), transparent 38%),
+    radial-gradient(circle at 15% 90%, rgba(233, 69, 96, 0.12), transparent 42%),
+    var(--surface);
+}
+.hero-inner { max-width: var(--content); margin: 0 auto; padding: 68px 24px 46px; }
+.eyebrow {
+  color: var(--accent-light);
+  font-size: 0.75rem;
+  font-weight: 750;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+h1 {
+  max-width: 900px;
+  color: #fff;
+  font-size: clamp(2.25rem, 5vw, 4.35rem);
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+  margin-bottom: 22px;
+}
+.hero-deck { max-width: 820px; color: #c9c9d6; font-size: 1.12rem; }
+.hero-deck strong { color: var(--accent-light); }
+.hero-note {
+  max-width: 900px;
+  margin-top: 20px;
+  padding-left: 14px;
+  border-left: 3px solid var(--warning);
+  color: #ddd4bd;
+  font-size: 0.9rem;
+}
+.stats-grid {
+  max-width: var(--content);
+  margin: 0 auto;
+  padding: 0 24px 42px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+.stat-card {
+  background: rgba(26, 26, 46, 0.86);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px;
+}
+.stat-value { color: var(--accent-light); font-size: 2rem; font-weight: 780; line-height: 1.15; }
+.stat-label { margin-top: 7px; color: var(--text-dim); font-size: 0.76rem; line-height: 1.4; text-transform: uppercase; letter-spacing: 0.06em; }
+
+main { max-width: var(--content); margin: 0 auto; padding: 0 24px 60px; }
+.report-section { padding-top: 58px; }
+.section-heading { max-width: 850px; margin-bottom: 24px; }
+h2 { color: #fff; font-size: clamp(1.65rem, 3vw, 2.25rem); line-height: 1.2; letter-spacing: -0.02em; margin-bottom: 10px; }
+h3 { color: #fff; font-size: 1.05rem; line-height: 1.35; margin-bottom: 8px; }
+.section-intro { color: var(--text-dim); }
+p + p { margin-top: 14px; }
+.section-intro + p, .section-intro + .callout { margin-top: 16px; }
+
+.callout {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: 8px;
+  padding: 18px 20px;
+  margin: 20px 0;
+}
+.callout.warning { border-left-color: var(--warning); }
+.callout.critical { border-left-color: var(--highlight); }
+.callout p:last-child { margin-bottom: 0; }
+.callout-title { color: #fff; font-weight: 750; margin-bottom: 5px; }
+
+.table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  margin: 20px 0;
+  background: var(--surface);
+}
+table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+caption {
+  text-align: left;
+  padding: 14px 16px;
+  color: var(--text-dim);
+  font-size: 0.8rem;
+  border-bottom: 1px solid var(--border);
+}
+th, td { padding: 12px 16px; text-align: right; border-bottom: 1px solid var(--border); white-space: nowrap; }
+th:first-child, td:first-child { text-align: left; }
+thead th { color: var(--text-dim); background: var(--bg); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.055em; }
+tbody th { color: #fff; font-weight: 600; }
+tbody tr:last-child th, tbody tr:last-child td { border-bottom: none; }
+tbody tr:hover { background: rgba(155, 89, 182, 0.07); }
+.dashboard-table td { text-align: left; }
+.total-row { background: rgba(155, 89, 182, 0.09); }
+.positive { color: var(--positive); }
+.negative { color: var(--negative); }
+.muted { color: var(--text-dim); }
+.small { font-size: 0.84rem; }
+.footnote { color: var(--text-dim); font-size: 0.82rem; margin-top: 12px; }
+
+.card-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin: 20px 0; }
+.card-grid.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px;
+}
+.card p { color: #c7c7d3; font-size: 0.92rem; }
+.card p + p { margin-top: 10px; }
+.metric { display: block; color: var(--accent-light); font-size: 1.85rem; font-weight: 780; line-height: 1.2; margin-bottom: 7px; }
+.metric.positive { color: var(--positive); }
+.metric.negative { color: var(--negative); }
+.tag {
+  display: inline-block;
+  border: 1px solid var(--accent-dark);
+  border-radius: 999px;
+  color: var(--accent-light);
+  padding: 2px 9px;
+  margin-bottom: 10px;
+  font-size: 0.68rem;
+  font-weight: 750;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.growth-panel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 22px;
+  margin: 20px 0;
+}
+.growth-label { display: flex; justify-content: space-between; gap: 12px; font-size: 0.87rem; margin-bottom: 8px; }
+.growth-track { height: 12px; background: var(--bg); border-radius: 999px; overflow: hidden; margin-bottom: 16px; }
+.growth-fill { height: 100%; width: var(--bar); background: linear-gradient(90deg, var(--accent-dark), var(--accent-light)); border-radius: inherit; }
+.growth-fill.highlight { background: linear-gradient(90deg, #a72e48, var(--highlight)); }
+.share-cell { min-width: 210px; }
+.share-number { display: inline-block; min-width: 62px; color: var(--accent-light); font-weight: 700; }
+.inline-track { display: inline-block; width: 110px; height: 7px; vertical-align: middle; background: var(--bg); border-radius: 999px; overflow: hidden; }
+.inline-fill { display: block; height: 100%; width: var(--bar); background: var(--accent); border-radius: inherit; }
+
+.finding-list, .strategy-list, .source-list { padding-left: 22px; }
+.finding-list li, .strategy-list li, .source-list li { margin: 10px 0; padding-left: 5px; }
+.finding-list li::marker { color: var(--accent-light); }
+.strategy-list { counter-reset: strategy; list-style: none; padding-left: 0; }
+.strategy-list li {
+  position: relative;
+  padding: 18px 20px 18px 62px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  counter-increment: strategy;
+}
+.strategy-list li::before {
+  content: counter(strategy);
+  position: absolute;
+  left: 18px;
+  top: 18px;
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--accent-dark);
+  color: #fff;
+  font-weight: 750;
+}
+blockquote {
+  margin: 22px 0;
+  padding: 22px 24px;
+  background: var(--surface);
+  border-left: 4px solid var(--accent);
+  color: #d4d4df;
+  font-size: 1.02rem;
+}
+blockquote cite { display: block; margin-top: 10px; color: var(--text-dim); font-size: 0.82rem; font-style: normal; }
+
+.opportunity-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin: 20px 0; }
+.opportunity-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 20px; }
+.opportunity-card p { color: #c7c7d3; font-size: 0.9rem; }
+.opportunity-card .places { color: #fff; }
+.opportunity-card .why { margin-top: 10px; color: var(--text-dim); }
+
+.downloads { display: flex; flex-wrap: wrap; gap: 10px; margin: 20px 0; }
+.download-link {
+  display: inline-block;
+  padding: 9px 13px;
+  border: 1px solid var(--accent-dark);
+  border-radius: 7px;
+  color: var(--accent-light);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 650;
+}
+.download-link:hover { background: var(--accent-dark); color: #fff; }
+code { color: #e5c9f3; background: var(--bg); border: 1px solid var(--border); border-radius: 4px; padding: 2px 5px; font-size: 0.88em; }
+pre { overflow-x: auto; background: #10101f; border: 1px solid var(--border); border-radius: 8px; padding: 16px; margin: 16px 0; }
+pre code { border: none; padding: 0; background: transparent; color: #ddd; }
+
+footer { border-top: 1px solid var(--border); background: var(--surface); }
+.footer-inner { max-width: var(--content); margin: 0 auto; padding: 28px 24px; color: var(--text-dim); font-size: 0.8rem; display: flex; justify-content: space-between; gap: 24px; }
+
+@media (max-width: 850px) {
+  .stats-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .card-grid { grid-template-columns: 1fr; }
+  .card-grid.two { grid-template-columns: 1fr; }
+  .opportunity-grid { grid-template-columns: 1fr; }
+  .hero-inner { padding-top: 48px; }
+}
+
+@media (max-width: 600px) {
+  html { scroll-padding-top: 20px; }
+  .topbar { position: static; }
+  .topbar-inner { align-items: flex-start; padding: 12px 16px; }
+  .brand { font-size: 0.88rem; white-space: normal; }
+  .map-link { font-size: 0.76rem; }
+  .section-nav { padding: 0 16px 10px; }
+  .hero-inner, main, .footer-inner { padding-left: 16px; padding-right: 16px; }
+  .stats-grid { padding-left: 16px; padding-right: 16px; gap: 8px; }
+  .stat-card { padding: 14px; }
+  .stat-value { font-size: 1.55rem; }
+  .stat-label { font-size: 0.66rem; }
+  .hero-deck { font-size: 1rem; }
+  .growth-panel { grid-template-columns: 1fr; gap: 8px; padding: 16px; }
+  .report-section { padding-top: 42px; }
+  th, td { padding: 10px 12px; font-size: 0.82rem; }
+  .share-cell { min-width: 175px; }
+  .inline-track { width: 80px; }
+  .footer-inner { flex-direction: column; gap: 10px; }
+}
+
+@media print {
+  :root { --bg: #fff; --surface: #fff; --surface2: #fff; --text: #161616; --text-dim: #444; --border: #ccc; --accent-light: #65347c; }
+  body { color: #161616; background: #fff; font-size: 11pt; }
+  .topbar, .skip-link, .downloads { display: none; }
+  .hero { background: #fff; }
+  .hero-inner { padding-top: 20px; }
+  h1, h2, h3, strong, tbody th { color: #111; }
+  .hero-deck, .card p, .opportunity-card p { color: #333; }
+  .stat-card, .card, .opportunity-card, .strategy-list li, .callout, blockquote, .growth-panel { break-inside: avoid; background: #fff; }
+  .report-section { padding-top: 28px; }
+  a { color: #4b235e; }
+  main { padding-bottom: 0; }
+}
+</style>
+</head>
+<body id="top">
+<a class="skip-link" href="#main-content">Skip to analysis</a>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="analysis.html" aria-label="Massachusetts election analysis home">MA Election Analysis <span class="muted">/ 2024–2026</span></a>
+    <a class="map-link" href="index.html">Interactive election map →</a>
+  </div>
+  <nav class="section-nav" aria-label="Report sections">
+    <a href="#statewide">Statewide</a>
+    <a href="#coalition">Coalition</a>
+    <a href="#branches">Branches</a>
+    <a href="#demographics">Demographics</a>
+    <a href="#opportunities">Opportunities</a>
+    <a href="#leninist-method">Leninist method</a>
+    <a href="#methods">Methods & sources</a>
+  </nav>
+</header>
+
+<section class="hero" aria-labelledby="report-title">
+  <div class="hero-inner">
+    <div class="eyebrow">Party for Socialism and Liberation · Massachusetts</div>
+    <h1 id="report-title">From electoral advance to durable organization</h1>
+    <p class="hero-deck">PSL’s vote total grew <strong>4.59×</strong> and its vote share grew <strong>5.86×</strong> from Claudia De La Cruz in 2024 to Joe Tache in 2026. The result shows a durable but broadening electoral geography—not, by itself, an equivalent growth in socialist organization.</p>
+    <p class="hero-note"><strong>Race clarification:</strong> the supplied official file places Andrea James and Kayla Kittredge in the <strong>2026 governor’s race</strong>, not the Senate race. Joe Tache ran for U.S. Senate. Comparisons with James therefore cross offices.</p>
+  </div>
+  <div class="stats-grid" aria-label="Headline findings">
+    <div class="stat-card"><div class="stat-value">59,097</div><div class="stat-label">Joe Tache votes in 2026, up from 12,889</div></div>
+    <div class="stat-card"><div class="stat-value">2.149%</div><div class="stat-label">Statewide Tache share, up from 0.367%</div></div>
+    <div class="stat-card"><div class="stat-value">98.2%</div><div class="stat-label">Matched precincts where PSL share increased</div></div>
+    <div class="stat-card"><div class="stat-value">70.6%</div><div class="stat-label">Net vote increase outside branch-core municipalities</div></div>
+  </div>
+</section>
+
+<main id="main-content">
+<section class="report-section" id="statewide" aria-labelledby="statewide-title">
+  <div class="section-heading">
+    <div class="eyebrow">01 · Statewide result</div>
+    <h2 id="statewide-title">A major electoral advance despite lower turnout</h2>
+    <p class="section-intro">The cleanest conclusion is about electoral support: PSL received more votes and a much larger share while total ballots fell by more than one-fifth.</p>
+  </div>
+
+  <div class="table-wrap" role="region" aria-label="Statewide results table" tabindex="0">
+    <table>
+      <caption>Official Massachusetts PD43+ results. Candidate shares use total votes cast, including blanks.</caption>
+      <thead><tr><th scope="col">Measure</th><th scope="col">2024</th><th scope="col">2026</th><th scope="col">Change</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">PSL votes</th><td>12,889</td><td>59,097</td><td class="positive"><strong>+46,208 · +358.5% · 4.59×</strong></td></tr>
+        <tr><th scope="row">PSL vote share</th><td>0.3669%</td><td>2.1493%</td><td class="positive"><strong>+1.7824 pp · 5.86×</strong></td></tr>
+        <tr><th scope="row">Total ballots</th><td>3,512,930</td><td>2,749,609</td><td class="negative">−21.73%</td></tr>
+        <tr><th scope="row">Green / independent comparison</th><td>Stein: 26,545 · 0.7556%</td><td>James: 89,951 · 3.2714%</td><td class="muted">Different offices</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="growth-panel" aria-label="PSL vote and vote-share growth">
+    <div>
+      <h3>PSL votes</h3>
+      <div class="growth-label"><span>2024 · De La Cruz</span><strong>12,889</strong></div>
+      <div class="growth-track" aria-hidden="true"><div class="growth-fill" style="--bar:21.81%"></div></div>
+      <div class="growth-label"><span>2026 · Tache</span><strong>59,097</strong></div>
+      <div class="growth-track" aria-hidden="true"><div class="growth-fill highlight" style="--bar:100%"></div></div>
+    </div>
+    <div>
+      <h3>PSL share of ballots</h3>
+      <div class="growth-label"><span>2024 · De La Cruz</span><strong>0.367%</strong></div>
+      <div class="growth-track" aria-hidden="true"><div class="growth-fill" style="--bar:17.07%"></div></div>
+      <div class="growth-label"><span>2026 · Tache</span><strong>2.149%</strong></div>
+      <div class="growth-track" aria-hidden="true"><div class="growth-fill highlight" style="--bar:100%"></div></div>
+    </div>
+  </div>
+
+  <div class="callout critical">
+    <div class="callout-title">What “growth” means here</div>
+    <p>The evidence supports “PSL electoral support grew 4.59-fold and its vote share grew 5.86-fold.” It does <strong>not</strong> support “socialist consciousness or organization grew 5.86-fold.” Membership, retention, leadership, and mass-activity data are needed for that claim.</p>
+  </div>
+
+  <div class="card-grid">
+    <article class="card"><span class="metric">195</span><h3>Precincts above 5%</h3><p>Up from zero in 2024. Precincts above 2% increased from 41 to 1,137.</p></article>
+    <article class="card"><span class="metric">97</span><h3>Municipalities above 2%</h3><p>Also up from zero. Twenty-nine municipalities exceeded 3%, compared with none in 2024.</p></article>
+    <article class="card"><span class="metric">125 → 33</span><h3>Zero-PSL precincts</h3><p>Of 125 precincts with no PSL vote in 2024, 96 recorded at least one Tache vote in 2026.</p></article>
+  </div>
+
+  <div class="card-grid two">
+    <article class="card">
+      <span class="tag">Geographic persistence</span>
+      <h3>Pearson r = 0.727 · weighted r = 0.792</h3>
+      <p>Across 2,382 matched precincts, De La Cruz and Tache support occupies similar geography. Spearman’s rank correlation is 0.645. A municipal cluster bootstrap puts the weighted correlation’s 95% interval at 0.645–0.834.</p>
+      <p>After controlling for Harris 2024 strength, the weighted partial correlation remains <strong>0.730</strong>.</p>
+    </article>
+    <article class="card">
+      <span class="tag">Turnout robustness</span>
+      <h3>Growth occurred in every turnout quintile</h3>
+      <p>The correlation between PSL share growth and precinct turnout retention is only <strong>r = −0.101</strong>. Lower turnout cannot explain away the result.</p>
+      <p>The ten largest PSL-vote municipalities supplied 39.14% of the vote in 2024 but 33.09% in 2026: support became less concentrated even as strongholds deepened.</p>
+    </article>
+  </div>
+</section>
+
+<section class="report-section" id="coalition" aria-labelledby="coalition-title">
+  <div class="section-heading">
+    <div class="eyebrow">02 · Adjacent electorates</div>
+    <h2 id="coalition-title">A distinct PSL geography, not an undifferentiated “left vote”</h2>
+    <p class="section-intro">The Green and Democratic primary results help locate sympathetic or dissatisfied electorates, but aggregate returns cannot establish individual vote transfers or political agreement.</p>
+  </div>
+
+  <div class="card-grid two">
+    <article class="card">
+      <span class="tag">James and Stein</span>
+      <h3>Moderate overlap, different coalitions</h3>
+      <p>Tache and James correlate at <strong>r = 0.519</strong> when weighted by turnout. Stein 2024 and James 2026 correlate at only <strong>0.208</strong>, far below PSL’s 0.792 continuity.</p>
+      <p>James is essentially uncorrelated with Harris strength (<strong>r = −0.067</strong>), while Tache is positively correlated (<strong>r = 0.475</strong>). PSL is more rooted in Democratic/progressive geography; James reached a broader protest electorate.</p>
+      <p>Tache outpolled James in only <strong>16 of 351 municipalities</strong>, but those included Boston, Somerville, Cambridge, Northampton, Amherst, Salem, Chelsea, and Medford.</p>
+    </article>
+    <article class="card">
+      <span class="tag">Markey and Moulton</span>
+      <h3>Affinity with Markey-primary geography</h3>
+      <p>Tache’s precinct share correlates with Markey’s two-party primary share at <strong>r = 0.564</strong>, or <strong>0.618 weighted</strong>. Controlling for Harris 2024 leaves a weighted partial correlation of <strong>0.567</strong>.</p>
+      <p>This identifies a potentially receptive progressive geography. It does not show that individual Markey primary voters transferred to Tache, particularly because the primary electorate was smaller and self-selected.</p>
+    </article>
+  </div>
+
+  <div class="callout warning">
+    <div class="callout-title">Do not add the two 2026 races and call it a unique bloc</div>
+    <p>The summed PSL/Green vote totals rose from 39,434 (1.123%) in 2024 to 149,048 (5.421%) in 2026. PSL’s share of those summed totals increased from 32.7% to 39.6%. But Senate and governor votes on the same ballots are not separate people, and the 2024 and 2026 offices differ. These are candidate-total comparisons, not a deduplicated coalition count.</p>
+  </div>
+</section>
+
+<section class="report-section" id="branches" aria-labelledby="branches-title">
+  <div class="section-heading">
+    <div class="eyebrow">03 · Organized presence</div>
+    <h2 id="branches-title">Strong branch strongholds, substantial growth elsewhere</h2>
+    <p class="section-intro">Existing branch-core municipalities produced a 3.536% Tache vote, compared with 1.833% elsewhere. Yet 70.6% of the net statewide vote increase came outside the branch core. Both depth and diffusion matter.</p>
+  </div>
+
+  <div class="table-wrap" role="region" aria-label="Branch and neighborhood results" tabindex="0">
+    <table>
+      <caption>Boston overall: 2,178 De La Cruz votes (0.821%) in 2024; 8,609 Tache votes (4.264%) in 2026.</caption>
+      <thead><tr><th scope="col">Area</th><th scope="col">2024 PSL share</th><th scope="col">2026 Tache votes</th><th scope="col">2026 Tache share</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Allston-Brighton · Wards 21–22</th><td>1.580%</td><td>2,041</td><td class="share-cell"><span class="share-number">9.505%</span><span class="inline-track" aria-hidden="true"><span class="inline-fill" style="--bar:95.05%"></span></span></td></tr>
+        <tr><th scope="row">Somerville</th><td>1.574%</td><td>2,450</td><td class="share-cell"><span class="share-number">7.308%</span><span class="inline-track" aria-hidden="true"><span class="inline-fill" style="--bar:73.08%"></span></span></td></tr>
+        <tr><th scope="row">Roxbury · mapped estimate</th><td>1.14%</td><td>608</td><td class="share-cell"><span class="share-number">5.58%</span><span class="inline-track" aria-hidden="true"><span class="inline-fill" style="--bar:55.8%"></span></span></td></tr>
+        <tr><th scope="row">East Boston · Ward 1</th><td>1.108%</td><td>553</td><td class="share-cell"><span class="share-number">5.218%</span><span class="inline-track" aria-hidden="true"><span class="inline-fill" style="--bar:52.18%"></span></span></td></tr>
+        <tr><th scope="row">Cambridge</th><td>1.052%</td><td>1,892</td><td class="share-cell"><span class="share-number">4.658%</span><span class="inline-track" aria-hidden="true"><span class="inline-fill" style="--bar:46.58%"></span></span></td></tr>
+        <tr><th scope="row">Dorchester · mapped estimate</th><td>0.85%</td><td>1,416</td><td class="share-cell"><span class="share-number">4.35%</span><span class="inline-track" aria-hidden="true"><span class="inline-fill" style="--bar:43.5%"></span></span></td></tr>
+        <tr><th scope="row">Lowell</th><td>0.526%</td><td>876</td><td class="share-cell"><span class="share-number">3.587%</span><span class="inline-track" aria-hidden="true"><span class="inline-fill" style="--bar:35.87%"></span></span></td></tr>
+        <tr><th scope="row">Worcester</th><td>0.580%</td><td>1,576</td><td class="share-cell"><span class="share-number">3.228%</span><span class="inline-track" aria-hidden="true"><span class="inline-fill" style="--bar:32.28%"></span></span></td></tr>
+        <tr><th scope="row">Springfield</th><td>0.603%</td><td>928</td><td class="share-cell"><span class="share-number">2.531%</span><span class="inline-track" aria-hidden="true"><span class="inline-fill" style="--bar:25.31%"></span></span></td></tr>
+        <tr><th scope="row">Cape Cod · 15 towns</th><td>0.165%</td><td>1,707</td><td class="share-cell"><span class="share-number">1.375%</span><span class="inline-track" aria-hidden="true"><span class="inline-fill" style="--bar:13.75%"></span></span></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="footnote">Allston-Brighton and East Boston use exact ward returns. Roxbury and Dorchester are VTD interior-point estimates using Boston Planning Department planning boundaries, which are not official neighborhood boundaries. Boston’s overall mapped vote coverage is 91.8%; those two neighborhood estimates are approximate. Other rows use complete municipal or Cape Cod aggregates.</p>
+
+  <div class="card-grid two">
+    <article class="card">
+      <h3>Consolidate the strongest bases</h3>
+      <p><strong>Allston-Brighton:</strong> Ward 21 reached 10.50%; Ward 21 Precinct 4 reached 18.10%. This is the clearest place to turn electoral support into durable neighborhood organization.</p>
+      <p><strong>Somerville:</strong> every ward fell between 6.60% and 8.72%, led by Ward 2 at 8.72%. Strength is broad, not dependent on one outlier.</p>
+      <p><strong>Cambridge:</strong> Wards 3, 5, and 4 reached 6.45%, 5.93%, and 5.79%.</p>
+    </article>
+    <article class="card">
+      <h3>Build from local peaks; diagnose weaker penetration</h3>
+      <p><strong>Lowell:</strong> Wards 4 and 7 reached 6.33% and 5.82%. <strong>Worcester:</strong> Wards 10, 8, 4, and 3 reached 5.91%, 4.85%, 4.52%, and 4.23%.</p>
+      <p><strong>Springfield:</strong> Wards 3 and 6 led at 3.27% and 3.09%. James’s stronger 4.614% indicates a wider alternative vote that did not identify with PSL to the same degree.</p>
+      <p><strong>Cape Cod:</strong> only Wellfleet (2.364%) and Provincetown (2.136%) exceeded the statewide PSL share. Falmouth and Barnstable supplied the most votes, 294 and 321. This suggests branch repair and local base-building rather than chasing percentages alone.</p>
+    </article>
+  </div>
+</section>
+
+<section class="report-section" id="demographics" aria-labelledby="demographics-title">
+  <div class="section-heading">
+    <div class="eyebrow">04 · Census relationships</div>
+    <h2 id="demographics-title">Young-adult, lower-income, progressive geography</h2>
+    <p class="section-intro">Turnout-weighted correlations across 1,373 census tracts, covering about 93% of 2026 ballots. Partial correlations control for Harris 2024 share. Race and age come from the local 2022 ACS files; income comes from Census Reporter’s ACS 2024 five-year B19013 table.</p>
+  </div>
+
+  <div class="table-wrap" role="region" aria-label="Demographic correlations" tabindex="0">
+    <table>
+      <caption>Pearson r ranges from −1 to +1. Weighted correlations give larger electorates more influence. These are tract-level, not individual-level, relationships.</caption>
+      <thead><tr><th scope="col">Tract characteristic</th><th scope="col">De La Cruz r</th><th scope="col">Tache r</th><th scope="col">Tache partial r · Harris controlled</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Log median household income</th><td class="negative">−0.296</td><td class="negative"><strong>−0.326</strong></td><td class="negative"><strong>−0.439</strong></td></tr>
+        <tr><th scope="row">Population aged 18–24</th><td>+0.211</td><td class="positive">+0.258</td><td class="positive">+0.216</td></tr>
+        <tr><th scope="row">Population aged 25–34</th><td>+0.539</td><td class="positive"><strong>+0.622</strong></td><td class="positive"><strong>+0.591</strong></td></tr>
+        <tr><th scope="row">Population aged 65+</th><td>−0.305</td><td class="negative">−0.324</td><td class="negative">−0.321</td></tr>
+        <tr><th scope="row">Black non-Hispanic population</th><td>+0.274</td><td class="positive">+0.263</td><td>+0.130</td></tr>
+        <tr><th scope="row">Hispanic population</th><td>+0.419</td><td class="positive">+0.339</td><td class="positive">+0.313</td></tr>
+        <tr><th scope="row">Asian non-Hispanic population</th><td>+0.207</td><td class="positive">+0.251</td><td>+0.084</td></tr>
+        <tr><th scope="row">White non-Hispanic population</th><td>−0.484</td><td class="negative">−0.449</td><td class="negative">−0.314</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card-grid">
+    <article class="card"><span class="metric">β = 0.406</span><h3>Harris 2024 share</h3><p>Municipal-cluster 95% interval: 0.339–0.506 in the weighted multivariate model.</p></article>
+    <article class="card"><span class="metric">β = 0.393</span><h3>Population aged 25–34</h3><p>Municipal-cluster 95% interval: 0.259–0.514. This is stronger than the 18–24 relationship and strengthened relative to 2024.</p></article>
+    <article class="card"><span class="metric negative">β = −0.273</span><h3>Log median income</h3><p>Municipal-cluster 95% interval: −0.420 to −0.189. Lower-income geography remains associated after other controls.</p></article>
+  </div>
+  <p class="footnote">The multivariate model includes Harris share, income, age, and racial composition; R² = 0.573. Coefficients are standardized, not percentage-point effects. Variance inflation factors are at most 2.01.</p>
+
+  <div class="callout warning">
+    <div class="callout-title">Three distinctions that prevent misreading the model</div>
+    <ul class="finding-list">
+      <li><strong>25–34 is not simply “student” or 18–24 support.</strong> It is the clearest age relationship, but the data do not identify students, renters, workers, or individual voters.</li>
+      <li><strong>Lower-income support is not uniquely socialist.</strong> James’s weighted correlation with log income was an even stronger −0.579. Economic distress does not automatically imply socialist consciousness.</li>
+      <li><strong>Simple racial correlations are not group preferences.</strong> After full controls, Hispanic and Asian coefficients were near zero while the Black coefficient slightly reversed. Neighborhood composition is not individual voting behavior.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="report-section" id="opportunities" aria-labelledby="opportunities-title">
+  <div class="section-heading">
+    <div class="eyebrow">05 · Where to grow</div>
+    <h2 id="opportunities-title">Prioritize scale, persistence, proximity, and local leadership</h2>
+    <p class="section-intro">The strongest opportunities combine meaningful vote totals with prior support and access to an existing branch. Tiny high-share precincts should not automatically outrank larger, durable bases.</p>
+  </div>
+
+  <div class="opportunity-grid">
+    <article class="opportunity-card">
+      <span class="tag">Greater Boston satellites</span>
+      <h3>Inner ring and North Shore</h3>
+      <p class="places">Medford 862 · 3.55%<br>Salem 685 · 3.61%<br>Quincy 955 · 2.92%<br>Watertown 476 · 3.21%<br>Arlington 666 · 2.78%<br>Malden 525 · 3.00%<br>Chelsea 271 · 4.04%</p>
+      <p class="why">Best combination of proximity and scale for existing Greater Boston organization.</p>
+    </article>
+    <article class="opportunity-card">
+      <span class="tag">Western Massachusetts</span>
+      <h3>I-91 corridor</h3>
+      <p class="places">Northampton 722 · 4.79%<br>Amherst 367 · 4.16%<br>Greenfield 312 · 3.98%<br>Holyoke 385 · 3.45%<br>Easthampton 296 · 3.31%</p>
+      <p class="why">Northampton produced about 398 more votes than expected at the statewide rate—the largest non-branch total.</p>
+    </article>
+    <article class="opportunity-card">
+      <span class="tag">Merrimack Valley</span>
+      <h3>Lowell–Lawrence</h3>
+      <p class="places">Lawrence 409 · 3.068%<br>Lowell base 876 · 3.587%</p>
+      <p class="why">Lawrence had already reached 0.933% in 2024. Its persistence and proximity to Lowell make it a higher-confidence expansion target than a one-election hotspot.</p>
+    </article>
+    <article class="opportunity-card">
+      <span class="tag">South Coast</span>
+      <h3>New Bedford, Fall River, Attleboro</h3>
+      <p class="places">New Bedford 668 · 2.61%<br>Fall River 535 · 2.45%<br>Attleboro 443 · 2.52%</p>
+      <p class="why">James was substantially stronger here. The task is to establish independent PSL organization, not assume the wider alternative vote is transferable.</p>
+    </article>
+    <article class="opportunity-card">
+      <span class="tag">Watchlist</span>
+      <h3>Berkshires and central Massachusetts</h3>
+      <p class="places">Pittsfield 433 · 2.71%<br>Fitchburg 306 · 2.67%</p>
+      <p class="why">Both combine useful scale with above-baseline performance. Investigate local contacts and leadership before deciding whether to establish a sustained presence.</p>
+    </article>
+    <article class="opportunity-card">
+      <span class="tag">Branch repair</span>
+      <h3>Cape Cod</h3>
+      <p class="places">Wellfleet 52 · 2.36%<br>Provincetown 50 · 2.14%<br>Falmouth 294 · 1.56%<br>Barnstable 321 · 1.44%</p>
+      <p class="why">Use Wellfleet and Provincetown for share, Falmouth and Barnstable for scale. Local investigation is needed before drawing conclusions from percentages alone.</p>
+    </article>
+  </div>
+
+  <div class="callout">
+    <div class="callout-title">Above-baseline watchlist</div>
+    <p>An in-sample weighted municipal model using 2024 PSL, Stein, and Harris shares explained 87.6% of municipal variation. Among places with meaningful vote volume, Pittsfield, Fall River, Quincy, Attleboro, and Fitchburg exceeded their modeled baselines by <strong>0.84, 0.74, 0.55, 0.50, and 0.36 percentage points</strong>, respectively. These are research priorities, not automatic recommendations to found branches.</p>
+  </div>
+</section>
+
+<section class="report-section" id="leninist-method" aria-labelledby="leninist-title">
+  <div class="section-heading">
+    <div class="eyebrow">06 · Elections and movement</div>
+    <h2 id="leninist-title">Reject both abstention and electoralism</h2>
+    <p class="section-intro">Lenin’s argument is not that elections are useless, nor that electing Communists is itself the road to revolution. Elections are one form of mass engagement whose value must be judged by what they help build beyond parliament.</p>
+  </div>
+
+  <blockquote>
+    Communists should not simply strive to “get seats” in parliament, but should help people think and draw the masses into struggle, using the electoral machinery established by the bourgeoisie.
+    <cite>Paraphrase with a short quotation from Lenin, <a href="https://www.marxists.org/archive/lenin/works/1920/lwc/ch10.htm">“Left-Wing” Communism: an Infantile Disorder, chapter 10</a>.</cite>
+  </blockquote>
+
+  <ol class="strategy-list">
+    <li><h3>Turn strongholds into organizing bases</h3><p>Allston-Brighton, Somerville, Cambridge, Roxbury, Lowell, and Worcester should not merely receive higher vote targets. Use them for recurring neighborhood organization, political education, tenant and labor activity, and leadership development.</p></li>
+    <li><h3>Expand through satellites before creating branches</h3><p>Existing branches should adopt nearby opportunity clusters and build durable local committees. A new branch is justified by sustained local leadership and activity, not vote share alone.</p></li>
+    <li><h3>Maintain independence while engaging wider electorates</h3><p>The Markey and Green relationships locate potentially sympathetic or dissatisfied audiences. They do not justify dissolving PSL into progressivism or treating every protest voter as a socialist. Joint activity around concrete issues should preserve independent organization and political critique.</p></li>
+    <li><h3>Prioritize mass experience over campaign-only contact</h3><p>Election contacts need year-round routes into local struggles, meetings, and responsibility. A voter file without that progression is an electoral asset, not yet a movement.</p></li>
+  </ol>
+
+  <div class="card-grid two">
+    <article class="card">
+      <h3>Participation is a means of mass education</h3>
+      <p>In <a href="https://www.marxists.org/archive/lenin/works/1920/lwc/ch07.htm">chapter 7</a>, Lenin calls participation obligatory where masses still engage with bourgeois institutions. The task is to meet that reality without mistaking the vanguard’s consciousness for that of the whole class.</p>
+    </article>
+    <article class="card">
+      <h3>Tactical flexibility must raise capacity</h3>
+      <p>In <a href="https://www.marxists.org/archive/lenin/works/1920/lwc/ch08.htm">chapter 8</a>, compromises and shifts in tactics are judged by whether they raise class consciousness, revolutionary spirit, and the ability to fight and win—not by abstract purity.</p>
+    </article>
+  </div>
+
+  <h3 id="dashboard-title">A movement-growth dashboard</h3>
+  <div class="table-wrap" role="region" aria-labelledby="dashboard-title" tabindex="0">
+    <table class="dashboard-table">
+      <caption>Electoral reach is one layer. Organization requires separate, reproducible measures.</caption>
+      <thead><tr><th scope="col">Dimension</th><th scope="col">What to record</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Electoral reach</th><td style="white-space:normal">Same-office votes and share; precincts above 2% and 5%; municipal concentration; performance relative to the previous baseline</td></tr>
+        <tr><th scope="row">Contact and conversion</th><td style="white-space:normal">Consented contacts, substantive conversations, first-event attendance, membership, and repeat participation by precinct and cohort</td></tr>
+        <tr><th scope="row">Retention and leadership</th><td style="white-space:normal">30/90/180-day activity, second-event rate, members taking responsibility, and new local organizers</td></tr>
+        <tr><th scope="row">Mass roots</th><td style="white-space:normal">Participation in tenant, labor, and community campaigns; durable committees; activity continuing outside election periods</td></tr>
+        <tr><th scope="row">Campaign learning</th><td style="white-space:normal">Dated canvassing and activity logs linked to precincts, with organized and comparison areas defined in advance</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout critical">
+    <div class="callout-title">Measure the next campaign against a real baseline</div>
+    <p>For the next comparable election, use 2026 as the baseline. Compare organized precincts with matched precincts having similar prior PSL support, Democratic strength, turnout, age, and income. A preregistered <strong>difference-in-differences</strong> analysis would estimate organizing impact better than raw vote changes.</p>
+    <p>The immediate electoral baseline is <strong>59,097 votes, 2.149%, 195 precincts above 5%, and 1,137 above 2%</strong>. The first organizational target should be systematic follow-up in high-support precincts within selected branch turf, followed by the wider 2% tier.</p>
+  </div>
+</section>
+
+<section class="report-section" id="methods" aria-labelledby="methods-title">
+  <div class="section-heading">
+    <div class="eyebrow">07 · Reproducibility</div>
+    <h2 id="methods-title">Methods, limitations, and source files</h2>
+    <p class="section-intro">All 9,573 precinct CSV rows passed component-to-total validation. Official statewide totals, branch/state sums, and output invariants were independently reconciled.</p>
+  </div>
+
+  <div class="downloads" aria-label="Download analysis files">
+    <a class="download-link" href="data/psl_analysis.json" download>Full numerical results · JSON</a>
+    <a class="download-link" href="analyze_psl_growth.py" download>Reproducible analysis · Python</a>
+    <a class="download-link" href="index.html">Explore the interactive map</a>
+  </div>
+  <p>Re-run the analysis with <code>python3 analyze_psl_growth.py</code>. The script uses only the Python standard library. A full refresh requires internet access for Census Reporter income estimates and Boston neighborhood boundaries.</p>
+
+  <div class="card-grid two">
+    <article class="card">
+      <h3>Statistical approach</h3>
+      <ul class="finding-list">
+        <li>2,393 precinct keys matched across races; 2,382 have nonzero ballots in both general elections.</li>
+        <li>Pearson and Spearman correlations, turnout weighting, partial correlations, weighted least-squares regression, and municipal cluster bootstraps.</li>
+        <li>Tract rows require at least 200 ballots in 2026 and valid income. VTDs are assigned to tracts by an interior point; approximately 93% of ballots are covered.</li>
+        <li>Opportunity scores combine vote scale, persistence, and residuals from a weighted 2024 PSL/Stein/Harris baseline model.</li>
+      </ul>
+    </article>
+    <article class="card">
+      <h3>Limits on interpretation</h3>
+      <ul class="finding-list">
+        <li>Vote counts are complete results, not survey samples. Bootstrap intervals describe geographic stability, not uncertainty in official totals.</li>
+        <li>Different offices and campaign contexts limit 2024–2026 comparisons. No individual voter transfers can be inferred.</li>
+        <li>Census findings are ecological: tract composition cannot identify an individual’s race, income, class position, age, or motivation.</li>
+        <li>Race/age use ACS 2022 and income uses ACS 2024. No occupation, union, renter, membership, or canvassing-exposure data are available.</li>
+        <li>Roxbury and Dorchester estimates depend on mapped VTD points and nonofficial planning boundaries.</li>
+      </ul>
+    </article>
+  </div>
+
+  <h3>Sources</h3>
+  <ul class="source-list small">
+    <li>Supplied Massachusetts PD43+ precinct files: <a href="PD43%2B__2024_President_General_Election_including_precincts.csv">2024 president</a>, <a href="PD43%2B__2026_U_S_Senate_General_Election_including_precincts.csv">2026 U.S. Senate</a>, <a href="PD43%2B__2026_Governor_General_Election_including_precincts.csv">2026 governor</a>, and <a href="PD43%2B__2026_U_S_Senate_Democratic_Primary_including_precincts.csv">2026 Democratic Senate primary</a>.</li>
+    <li>Official race pages: <a href="https://electionstats.state.ma.us/elections/view/173531/">2026 U.S. Senate</a> and <a href="https://electionstats.state.ma.us/elections/view/173526/">2026 governor</a>.</li>
+    <li>Local ACS 2022 tract race and age files; <a href="https://api.censusreporter.org/1.0/data/show/latest?table_ids=B19013&amp;geo_ids=140%7C04000US25">Census Reporter B19013 median household income, ACS 2024 five-year</a>.</li>
+    <li><a href="https://data.boston.gov/dataset/bpda-neighborhood-boundaries">Boston Planning Department neighborhood boundaries</a>, used only for approximate Roxbury and Dorchester estimates.</li>
+    <li>Lenin, <em>“Left-Wing” Communism: an Infantile Disorder</em>: <a href="https://www.marxists.org/archive/lenin/works/1920/lwc/ch07.htm">chapter 7</a>, <a href="https://www.marxists.org/archive/lenin/works/1920/lwc/ch08.htm">chapter 8</a>, and <a href="https://www.marxists.org/archive/lenin/works/1920/lwc/ch10.htm">chapter 10</a>.</li>
+  </ul>
+</section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div>Massachusetts PSL election analysis · 2024–2026<br>Electoral support is not a substitute for measuring organization.</div>
+    <div><a href="#top">Back to top ↑</a><br><a href="index.html">Interactive election map</a></div>
+  </div>
+</footer>
+</body>
+</html>

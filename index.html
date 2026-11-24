@@ -83,6 +83,17 @@ body {
   color: var(--text-dim);
 }
 
+#sidebar-header .analysis-link {
+  display: inline-block;
+  margin-top: 6px;
+  color: var(--accent-light);
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#sidebar-header .analysis-link:hover { text-decoration: underline; }
+
 /* ── Search ── */
 #search-wrap {
   padding: 12px 20px;
@@ -665,6 +676,7 @@ body {
     <div>
       <h1 id="sidebar-candidate">🗳️ Claudia De La Cruz / Karina Garcia</h1>
       <div class="subtitle" id="sidebar-subtitle">2024 Presidential General Election — Massachusetts</div>
+      <a class="analysis-link" href="analysis.html">2024–2026 PSL movement analysis →</a>
     </div>
     <button id="mobile-close" onclick="event.stopPropagation(); collapseMobilePanel();" title="Close panel" aria-label="Close panel">✕</button>
   </div>
